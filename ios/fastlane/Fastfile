@@ -1,0 +1,437 @@
+import(File.expand_path("../../fastlane/FastCommonfile", __dir__))
+fastlane_version "2.28.3"
+
+default_platform :ios
+
+fastlane_require "dotenv"
+
+ixguard_enable = nil
+jscrambler_enable = nil
+project_dir = File.expand_path("..", __dir__)
+output = File.expand_path("ipa", project_dir)
+podfile = File.expand_path("Podfile", project_dir)
+workspace = File.expand_path("MibancoMovil.xcworkspace", project_dir)
+xcodeproj = File.expand_path("MibancoMovil.xcodeproj", project_dir)
+ixguard_config = File.expand_path("ixguard.yml", project_dir)
+ixguard_adhoc_config = File.expand_path("ixguard_adhoc.yml", project_dir)
+
+before_all do
+  Dotenv.overload(File.expand_path("../../.env", __dir__))
+  ixguard_enable = ENV["IXGUARD_ENABLE"] == "true"
+  jscrambler_enable = ENV["JSCRAMBLER_ENABLE"] == "true"
+end
+
+
+platform_icon = ":ios:"
+current_date = date_formatted_minute
+
+platform :ios do
+
+  desc "Typescript"
+  lane :typescript do
+    name = "typescript-#{current_date}"
+    icon = "Typescript"
+    begin
+      on_start(icon, name)
+      config("empty")
+      yarn
+      on_success(icon, name, typescript("ios", name))
+    rescue => exception
+      on_error(icon, name, exception)
+    end
+  end
+
+  desc "Download last source maps from jscrambler"
+  lane :jscrambler do
+    name = "jscrambler-#{current_date}"
+    icon = "JSCrambler"
+    begin
+      on_start(icon, name)
+      on_success(icon, name, jscrambler("ios", name))
+    rescue => exception
+      on_error(icon, name, exception)
+    end
+  end
+
+  desc "Build DEV IPA"
+  lane :build_dev do
+    name = "dev-#{current_date}"
+    if ixguard_enable
+      UI.user_error!("ixGuard only available on release and qa")
+    end
+    begin
+      on_start(platform_icon, name)
+      prepare_ios("dev", output, podfile, xcodeproj)
+      gym(
+          workspace: workspace,
+          scheme: "MibancoMovil-DEV",
+          output_directory: output,
+          export_options: {
+              method: "development",
+              provisioningProfiles: {
+                  "com.mibanco.bancamovil.dev" => "com.mibanco.bancamovil.dev Development"
+              }
+          }
+      )
+      restore_ios(xcodeproj)
+      urls = {
+          :IPA => nexus("ios", name, File.expand_path("MibancoMovil.ipa", output))
+      }
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      restore_ios(xcodeproj)
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+  desc "Build Demo IPA"
+  lane :build_demo do
+    name = "demo-#{current_date}"
+    if ixguard_enable
+      UI.user_error!("ixGuard only available on release and qa")
+    end
+    begin
+      on_start(platform_icon, name)
+      prepare_ios("demo", output, podfile, xcodeproj)
+      gym(
+          workspace: workspace,
+          scheme: "MibancoMovil-QA",
+          output_directory: output,
+          export_options: {
+              method: "ad-hoc",
+              provisioningProfiles: {
+                  "com.mibanco.bancamovil.qa" => "com.mibanco.bancamovil.qa AdHoc"
+              }
+          }
+      )
+      restore_ios(xcodeproj)
+      urls = {
+          :IPA => nexus("ios", name, File.expand_path("MibancoMovil.ipa", output)),
+          :BundleSourceMap => nexus("ios", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :dSYM => nexus("ios", "#{name}_dSYM", File.expand_path("MibancoMovil.app.dSYM.zip", output))
+      }
+      if jscrambler_enable
+        urls[:JSCramblerSourceMap] = nexus("ios", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      restore_ios(xcodeproj)
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+  desc "Build QA IPA"
+  lane :build_qa do
+    name = "qa-#{current_date}"
+    begin
+      on_start(platform_icon, name)
+      prepare_ios("qa", output, podfile, xcodeproj)
+      if ixguard_enable
+        gym(
+          workspace: workspace,
+          scheme: "MibancoMovil-QA",
+          output_directory: output,
+          include_symbols: true,
+          include_bitcode: true,
+          export_options: {
+              method: "app-store",
+              provisioningProfiles: {
+                  "com.mibanco.bancamovil.qa" => "com.mibanco.bancamovil.qa AppStore"
+              }
+          },
+          toolchain: "com.guardsquare.ixguard"
+        )
+      else
+        gym(
+          workspace: workspace,
+          scheme: "MibancoMovil-QA",
+          output_directory: output,
+          export_options: {
+              method: "ad-hoc",
+              provisioningProfiles: {
+                  "com.mibanco.bancamovil.qa" => "com.mibanco.bancamovil.qa AdHoc"
+              }
+          }
+        )
+      end
+      restore_ios(xcodeproj)
+      ipa = File.expand_path("MibancoMovil.ipa", output)
+      output = File.expand_path("ipa", project_dir)
+      ipa_backup = File.expand_path("MibancoMovil_Backup.ipa", output)
+      if ixguard_enable
+        copy(ipa, ipa_backup)
+      end
+      urls = {
+          :IPA => nexus("ios", name, File.expand_path("MibancoMovil.ipa", output)),
+          :BundleSourceMap => nexus("ios", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :dSYM => nexus("ios", "#{name}_dSYM", File.expand_path("MibancoMovil.app.dSYM.zip", output))
+      }
+      if jscrambler_enable
+        #urls[:JSCramblerSourceMap] = nexus("ios", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      if ixguard_enable
+        begin
+          ipa_ofuscated = ofuscate(ipa_backup, output, ixguard_adhoc_config, "ixguard_adhoc.yml")
+          urls[:IPAOfuscated] = nexus("ios", "#{name}_ofuscated", ipa_ofuscated)
+          url_mapping = nexus("ios", "#{name}_mapping", zip_file(File.expand_path("mapping.yml", output)))
+          urls[:Mapping] = url_mapping
+        rescue => exception
+          UI.error exception.to_s
+          urls[:iXGuardError] = exception.to_s
+        end
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      restore_ios(xcodeproj)
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+  desc "Local Only Ofuscate ixguard IPA"
+  lane :ofuscated_ixguard_qa do
+    name = "qa-#{current_date}"
+    begin
+      ipa = File.expand_path("MibancoMovil.ipa", output)
+      output = File.expand_path("ipa", project_dir)
+      ipa_backup = File.expand_path("MibancoMovil_Backup.ipa", output)
+      urls = {
+          :IPA => nexus("ios", name, File.expand_path("MibancoMovil.ipa", output)),
+          :BundleSourceMap => nexus("ios", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :dSYM => nexus("ios", "#{name}_dSYM", File.expand_path("MibancoMovil.app.dSYM.zip", output))
+      }
+      if ixguard_enable
+        copy(ipa, ipa_backup)
+      end
+      if ixguard_enable
+        begin
+          ipa_ofuscated = ofuscate(ipa_backup, output, ixguard_adhoc_config, "ixguard_adhoc.yml")
+        rescue => exception
+          UI.error exception.to_s
+        end
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      restore_ios(xcodeproj)
+      on_error(platform_icon, name, exception)
+    end
+  end
+  
+  desc "Build Automation IPA"
+  lane :build_automation do
+    name = "automation-#{current_date}"
+    begin
+      on_start(platform_icon, name)
+      prepare_ios("automation", output, podfile, xcodeproj)
+      if ixguard_enable
+        gym(
+          workspace: workspace,
+          scheme: "MibancoMovil-QA",
+          output_directory: output,
+          include_symbols: true,
+          include_bitcode: true,
+          export_options: {
+              method: "app-store",
+              provisioningProfiles: {
+                  "com.mibanco.bancamovil.qa" => "com.mibanco.bancamovil.qa AppStore"
+              }
+          },
+          toolchain: "com.guardsquare.ixguard"
+        )
+      else
+        gym(
+          workspace: workspace,
+          scheme: "MibancoMovil-QA",
+          output_directory: output,
+          export_options: {
+              method: "ad-hoc",
+              provisioningProfiles: {
+                  "com.mibanco.bancamovil.qa" => "com.mibanco.bancamovil.qa AdHoc"
+              }
+          }
+        )
+      end
+      restore_ios(xcodeproj)
+      ipa = File.expand_path("MibancoMovil.ipa", output)
+      output = File.expand_path("ipa", project_dir)
+      ipa_backup = File.expand_path("MibancoMovil_Backup.ipa", output)
+      if ixguard_enable
+        copy(ipa, ipa_backup)
+      end
+      if jscrambler_enable
+        urls[:JSCramblerSourceMap] = nexus("ios", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      if ixguard_enable
+        begin
+          ipa_ofuscated = ofuscate(ipa_backup, output, ixguard_adhoc_config, "ixguard_adhoc.yml")
+          urls[:IPAOfuscated] = nexus("ios", "#{name}_ofuscated", ipa_ofuscated)
+          url_mapping = nexus("ios", "#{name}_mapping", zip_file(File.expand_path("mapping.yml", output)))
+          urls[:Mapping] = url_mapping
+        rescue => exception
+          UI.error exception.to_s
+          urls[:iXGuardError] = exception.to_s
+        end
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      restore_ios(xcodeproj)
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+  desc "Build Release IPA"
+  lane :build_release do
+    name = "release-#{current_date}"
+    begin
+      on_start(platform_icon, name)
+      prepare_ios("empty", output, podfile, xcodeproj)
+      gym(
+          workspace: workspace,
+          scheme: "MibancoMovil",
+          output_directory: output,
+          include_symbols: true,
+          include_bitcode: true,
+          export_options: {
+              method: "app-store",
+              provisioningProfiles: {
+                  "com.mibanco.bancamovil" => "com.mibanco.bancamovil AppStore"
+              }
+          },
+          toolchain: "com.guardsquare.ixguard"
+      )
+      restore_ios(xcodeproj)
+      ipa = File.expand_path("MibancoMovil.ipa", output)
+      ipa_backup = File.expand_path("MibancoMovil_Backup.ipa", output)
+      if ixguard_enable
+        copy(ipa, ipa_backup)
+      end
+      urls = {
+          :IPA => nexus("ios", name, ipa),
+          :BundleSourceMap => nexus("ios", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :dSYM => nexus("ios", "#{name}_dSYM", File.expand_path("MibancoMovil.app.dSYM.zip", output)),
+          :Docs => nexus("ios", name, zip_file(typescript_docs))
+      }
+      if jscrambler_enable
+          #urls[:JSCramblerSourceMap] = nexus("ios", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      if ixguard_enable
+        begin
+          ipa_ofuscated = ofuscate(ipa_backup, output, ixguard_config, "ixguard.yml")
+          urls[:IPAOfuscated] = nexus("ios", "#{name}_ofuscated", ipa_ofuscated)
+          url_mapping = nexus("ios", "#{name}_mapping", zip_file(File.expand_path("mapping.yml", output)))
+          urls[:Mapping] = url_mapping
+        rescue => exception
+          UI.error exception.to_s
+          urls[:iXGuardError] = exception.to_s
+        end
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      restore_ios(xcodeproj)
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+
+  desc "Build/Upload Demo IPA - APP Center"
+  lane :build_demo_appcenter do
+    name = "demo-#{current_date}"
+    if ixguard_enable
+      UI.user_error!("ixGuard only available on release and qa")
+    end
+    begin
+      on_start(platform_icon, name)
+      prepare_ios("demo", output, podfile, xcodeproj)
+      gym(
+          workspace: workspace,
+          scheme: "MibancoMovil-QA",
+          output_directory: output,
+          export_options: {
+              method: "ad-hoc",
+              provisioningProfiles: {
+                  "com.mibanco.bancamovil.qa" => "com.mibanco.bancamovil.qa AdHoc"
+              }
+          }
+      )
+      restore_ios(xcodeproj)
+      urls = {
+          :IPA => appcenter_ios_demo("ios", name, File.expand_path("MibancoMovil.ipa", output)),
+          :BundleSourceMap => appcenter_ios_demo("ios", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :dSYM => appcenter_ios_demo("ios", "#{name}_dSYM", File.expand_path("MibancoMovil.app.dSYM.zip", output))
+      }
+      if jscrambler_enable
+        urls[:JSCramblerSourceMap] = appcenter_ios_demo("ios", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      restore_ios(xcodeproj)
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+desc "Build and Upload QA IPA - App Center"
+  lane :build_qa_appcenter do
+    name = "qa-#{current_date}"
+    begin
+      on_start(platform_icon, name)
+      prepare_ios("qa", output, podfile, xcodeproj)
+      if ixguard_enable
+        gym(
+          workspace: workspace,
+          scheme: "MibancoMovil-QA",
+          output_directory: output,
+          include_symbols: true,
+          include_bitcode: true,
+          export_options: {
+              method: "app-store",
+              provisioningProfiles: {
+                  "com.mibanco.bancamovil.qa" => "com.mibanco.bancamovil.qa AppStore"
+              }
+          },
+          toolchain: "com.guardsquare.ixguard"
+        )
+      else
+        gym(
+          workspace: workspace,
+          scheme: "MibancoMovil-QA",
+          output_directory: output,
+          export_options: {
+              method: "ad-hoc",
+              provisioningProfiles: {
+                  "com.mibanco.bancamovil.qa" => "com.mibanco.bancamovil.qa AdHoc"
+              }
+          }
+        )
+      end
+      restore_ios(xcodeproj)
+      ipa = File.expand_path("MibancoMovil.ipa", output)
+      output = File.expand_path("ipa", project_dir)
+      ipa_backup = File.expand_path("MibancoMovil_Backup.ipa", output)
+      if ixguard_enable
+        copy(ipa, ipa_backup)
+      end
+      urls = {
+          :IPA => appcenter_ios_qa("ios", name, File.expand_path("MibancoMovil.ipa", output)),
+          :BundleSourceMap => appcenter_ios_qa("ios", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :dSYM => appcenter_ios_qa("ios", "#{name}_dSYM", File.expand_path("MibancoMovil.app.dSYM.zip", output))
+      }
+      if jscrambler_enable
+        urls[:JSCramblerSourceMap] = nexus("ios", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      if ixguard_enable
+        begin
+          ipa_ofuscated = ofuscate(ipa_backup, output, ixguard_adhoc_config, "ixguard_adhoc.yml")
+          urls[:IPAOfuscated] = nexus("ios", "#{name}_ofuscated", ipa_ofuscated)
+          url_mapping = nexus("ios", "#{name}_mapping", zip_file(File.expand_path("mapping.yml", output)))
+          urls[:Mapping] = url_mapping
+        rescue => exception
+          UI.error exception.to_s
+          urls[:iXGuardError] = exception.to_s
+        end
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      restore_ios(xcodeproj)
+      on_error(platform_icon, name, exception)
+    end
+  end
+end

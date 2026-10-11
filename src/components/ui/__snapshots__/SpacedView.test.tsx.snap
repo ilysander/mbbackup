@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="spacedview"
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "marginRight": 20,
+        },
+        false,
+      ]
+    }
+  >
+    <Text>
+      test
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "marginRight": 20,
+        },
+        false,
+      ]
+    }
+  >
+    <Text>
+      test
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "marginRight": 20,
+        },
+        Object {
+          "marginRight": 0,
+        },
+      ]
+    }
+  >
+    <Text>
+      test
+    </Text>
+  </View>
+</View>
+`;

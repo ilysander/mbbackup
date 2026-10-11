@@ -1,0 +1,54 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/preferences.userdata.modify.send",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "_securitySeal": 15,
+      "defaultEnvironment": 4881,
+      "mail": "",
+      "mailCode": "",
+      "_atm": "",
+      "message": "MAIL",
+      "promos": null,
+      "userBlock": [
+        "MAIL",
+        "SMS"
+      ],
+      "loanExpiration": "MAIL"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "277",
+      "date": "Wed, 26 Dec 2018 18:50:37 GMT",
+      "set-cookie": [
+        "BIGipServer~DMZ~Pool_FronEndHB=rd1o00000000000000000000ffffac13f43do8080; path=/; Httponly; Secure"
+      ],
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "cache-control": "no-store, no-cache",
+      "pragma": "no-cache",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "7888ab374bfd4247a34f9d30912514fa",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "successMessage": "Su número de celular ha sido actualizado en todos nuestros canales con éxito.",
+        "_securitySeal": 2
+      }
+    }
+  }
+}

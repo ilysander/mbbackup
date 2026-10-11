@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+Array [
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    onPressItem={[MockFunction]}
+    onRequestClose={[Function]}
+    supportedOrientations={
+      Array [
+        "portrait",
+        "portrait-upside-down",
+        "landscape",
+        "landscape-left",
+        "landscape-right",
+      ]
+    }
+    transparent={true}
+    visible={false}
+  />,
+  <View
+    accessibilityLabel="paymentsserviceschooseproviderscreen_itemselector_company"
+  >
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "minHeight": 40,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="itemselector_text_name"
+          style={
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "600",
+              "lineHeight": 18,
+            }
+          }
+        />
+      </View>
+      <View
+        accessibilityLabel="paymentsserviceschooseproviderscreen_itemselector_company"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F7F9FC",
+            "borderColor": "#E6E9ED",
+            "borderRadius": 12,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginTop": 4,
+            "minHeight": 40,
+            "opacity": 1,
+            "padding": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="itemselector_text_name"
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            sample
+          </Text>
+        </View>
+        <Image
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/selector-dots.png",
+            }
+          }
+          style={
+            Object {
+              "height": 10,
+              "marginRight": 4,
+              "tintColor": "#AAB2BD",
+              "width": 18,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>,
+]
+`;

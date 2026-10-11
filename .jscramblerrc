@@ -1,0 +1,88 @@
+{
+   "keys": {
+     "accessKey": "9E8B42D9A551896631F731A2D6B668628B176E1C",
+     "secretKey": "4F4B16B39F3143041FC3FAD721EB8D180FAC9528"
+   },
+   "applicationId": "5de58548b9bc6b0018232bda",
+   "params":[
+      {
+         "name": "whitespaceRemoval"
+      },
+      {
+         "name":"dotToBracketNotation"
+      },
+      {
+         "name":"functionReordering"
+      },
+      {
+         "name":"propertyKeysReordering"
+      },
+      {
+         "name":"booleanToAnything"
+      },
+      {
+         "name":"variableGrouping"
+      },
+      {
+         "name":"numberToString"
+      },
+      {
+         "name":"debugCodeElimination",
+         "options":{
+            "variables":[
+               "DEBUG",
+               "__DEV__",
+               "__TEST__"
+            ]
+         }
+      },
+      {
+         "name":"deadCodeInjection"
+      },
+      {
+         "name":"stringConcealing"
+      },
+      {
+         "name":"regexObfuscation"
+      },
+      {
+         "name":"identifiersRenaming",
+         "options":{
+            "mode":"SAFEST"
+         }
+      },
+      {
+         "name":"propertyKeysObfuscation",
+         "options":{
+            "encoding":[
+               "hexadecimal"
+            ]
+         }
+      },
+      {
+         "name":"variableMasking"
+      }
+   ],
+   "areSubscribersOrdered":false,
+   "applicationTypes":{
+      "webBrowserApp":false,
+      "desktopApp":false,
+      "serverApp":false,
+      "hybridMobileApp":true,
+      "javascriptNativeApp":false,
+      "html5GameApp":false
+   },
+   "languageSpecifications":{
+      "es5":true,
+      "es6":false,
+      "es7":false
+   },
+   "useRecommendedOrder":true,
+   "jscramblerVersion":"6.1",
+   "host": "200.60.21.204",
+   "port": "8081",
+   "tolerateMinification":true,
+   "sourceMaps":{
+      "sourceContent":true
+   }
+}

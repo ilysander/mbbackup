@@ -1,0 +1,393 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`session render just views 1`] = `
+<View
+  accessibilityLabel="container"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="morecontainer"
+    style={
+      Object {
+        "flex": 1,
+        "position": "relative",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="keyboardavoidingview"
+      onChangeDimensions={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+            "width": "100%",
+          },
+          Object {
+            "flex": 1,
+            "position": "relative",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <RCTScrollView
+        accessibilityLabel="keyboardavoidingview_scrollview"
+        contentContainerStyle={
+          Array [
+            Object {
+              "minHeight": 1220,
+            },
+            Object {
+              "minHeight": 1220,
+            },
+          ]
+        }
+        keyboardShouldPersistTaps="handled"
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onScroll={[Function]}
+        scrollEventThrottle={100}
+      >
+        <View>
+          <RCTSafeAreaView
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                undefined,
+              ]
+            }
+          >
+            <View>
+              <View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "paddingHorizontal": 30,
+                      "paddingTop": 20,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "padding": 5,
+                        "paddingLeft": 20,
+                        "paddingTop": 10,
+                        "width": "60%",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        Object {
+                          "color": "#434A54",
+                          "fontFamily": "Brevia",
+                          "fontSize": 13,
+                          "fontStyle": "normal",
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Pensando en ti, hemos creado estas opciones
+                    </Text>
+                  </View>
+                  <Image
+                    accessibilityLabel="banner_image_left"
+                    source={
+                      Object {
+                        "testUri": "../../../src/assets/images/adn-man-pointing-glasses.png",
+                      }
+                    }
+                    style={
+                      Object {
+                        "height": 140,
+                        "width": 140,
+                      }
+                    }
+                  />
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "justifyContent": "space-evenly",
+                      "marginHorizontal": "auto",
+                      "marginTop": 120,
+                      "paddingHorizontal": 40,
+                      "position": "absolute",
+                      "zIndex": 2,
+                    }
+                  }
+                >
+                  <View
+                    accessibilityLabel="foryoumenuscreen_tab_selector_savings"
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#E6E9ED",
+                        "borderTopLeftRadius": 40,
+                        "borderTopRightRadius": 40,
+                        "borderWidth": 1,
+                        "flexGrow": 1,
+                        "opacity": 1,
+                        "padding": 18,
+                      }
+                    }
+                  >
+                    <Image
+                      accessibilityLabel="banner_image_left"
+                      source={
+                        Object {
+                          "testUri": "../../../src/assets/images/icon-ahorrar.png",
+                        }
+                      }
+                      style={
+                        Object {
+                          "height": 40,
+                          "tintColor": "#00964B",
+                          "width": 40,
+                        }
+                      }
+                    />
+                    <Text
+                      style={
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                          "marginTop": 5,
+                        }
+                      }
+                    >
+                      Ahorrar
+                    </Text>
+                  </View>
+                  <View
+                    accessibilityLabel="foryoumenuscreen_tab_selector_insurances"
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#E6E9ED",
+                        "borderColor": "#E6E9ED",
+                        "borderTopLeftRadius": 40,
+                        "borderTopRightRadius": 40,
+                        "borderWidth": 1,
+                        "flexGrow": 1,
+                        "opacity": 1,
+                        "padding": 18,
+                      }
+                    }
+                  >
+                    <Image
+                      accessibilityLabel="banner_image_left"
+                      source={
+                        Object {
+                          "testUri": "../../../src/assets/images/icon-seguros.png",
+                        }
+                      }
+                      style={
+                        Object {
+                          "height": 27,
+                          "tintColor": "#656D78",
+                          "width": 23,
+                        }
+                      }
+                    />
+                    <Text
+                      style={
+                        Object {
+                          "color": "#656D78",
+                          "fontFamily": "Brevia",
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                          "marginTop": 5,
+                        }
+                      }
+                    >
+                      Seguros
+                    </Text>
+                  </View>
+                  <View
+                    accessibilityLabel="foryoumenuscreen_tab_selector_sellmore"
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#E6E9ED",
+                        "borderColor": "#E6E9ED",
+                        "borderTopLeftRadius": 40,
+                        "borderTopRightRadius": 40,
+                        "borderWidth": 1,
+                        "flexGrow": 1,
+                        "opacity": 1,
+                        "padding": 18,
+                        "paddingHorizontal": 2,
+                      }
+                    }
+                  >
+                    <Image
+                      accessibilityLabel="banner_image_left"
+                      source={
+                        Object {
+                          "testUri": "../../../src/assets/images/calculator.png",
+                        }
+                      }
+                      style={
+                        Object {
+                          "height": 27,
+                          "tintColor": "#656D78",
+                          "width": 23,
+                        }
+                      }
+                    />
+                    <Text
+                      style={
+                        Object {
+                          "color": "#656D78",
+                          "fontFamily": "Brevia",
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                          "marginTop": 5,
+                        }
+                      }
+                    >
+                      Vender más
+                    </Text>
+                  </View>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "#FFFFFF",
+                        "marginTop": 40,
+                        "padding": 20,
+                        "width": "100%",
+                        "zIndex": 2,
+                      },
+                      Object {
+                        "height": "100%",
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        false,
+                        false,
+                        Object {
+                          "padding": 20,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <ActivityIndicator
+                      color="#00964B"
+                      size="large"
+                    />
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+      </RCTScrollView>
+      <View
+        accessibilityLabel="morecontainer_scrollmore"
+        collapsable={false}
+        style={
+          Object {
+            "bottom": -100,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "zIndex": 1000,
+          }
+        }
+      >
+        <View
+          accessibilityLabel="scrollmore_button"
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            accessibilityLabel="scrollmore_image"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+              }
+            }
+            style={
+              Object {
+                "height": 70,
+                "width": 70,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

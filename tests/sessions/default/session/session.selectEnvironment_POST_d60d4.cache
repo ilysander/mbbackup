@@ -1,0 +1,20 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/session",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "idActivity": "session.selectEnvironment",
+      "_exchangeToken": "L3U0Z09obTMwU2NLakFJQWlEVHR5dXdWMnowYno4a3lYUWsrRkVldUZtZXU3ZVlubm5Sd2ppemNHYm81K3VEag",
+      "environment": "-1"
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

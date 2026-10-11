@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignContent": "flex-start",
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "height": 30,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 30,
+    }
+  }
+/>
+`;
+
+exports[`render just views without strong  1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignContent": "flex-start",
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "height": 30,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 30,
+    }
+  }
+/>
+`;

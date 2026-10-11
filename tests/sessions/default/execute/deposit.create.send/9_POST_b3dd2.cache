@@ -1,0 +1,42 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/deposit.create.send/9",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Ocp-Apim-Subscription-Key": "sample",
+      "Ocp-Apim-Trace": true,
+      "X-Foo-To": "",
+      "X-Bar-Si": "sample",
+      "X-Build-Id": "1234",
+      "X-Manufacturer": "abcde",
+      "X-Model": "abcde",
+      "authorization": "sample"
+    },
+    "body": {
+      "idTransaction": "",
+      "valueDate": "",
+      "isFrequentContact": "",
+      "aceptTermAndCondition": "",
+      "_otp": "",
+      "depositDetails": {
+        "amount": "",
+        "currency": "",
+        "generatedAmount": "",
+        "rate": "",
+        "term": ""
+      },
+      "debitAccount": "",
+      "frequency": "",
+      "renewDeposit": "",
+      "creditAccount": "",
+      "_mail": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

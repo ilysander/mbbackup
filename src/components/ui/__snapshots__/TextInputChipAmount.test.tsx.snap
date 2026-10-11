@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="textinput_chip_amount"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "flexDirection": "column",
+      "marginBottom": 5,
+      "marginHorizontal": 5,
+      "marginTop": 5,
+      "opacity": 1,
+      "position": "relative",
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderBottomLeftRadius": 25,
+          "borderBottomRightRadius": 12,
+          "borderColor": "#FFFFFF",
+          "borderTopLeftRadius": 25,
+          "borderTopRightRadius": 12,
+          "borderWidth": 0,
+          "flexDirection": "row",
+        },
+        false,
+        false,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#E6E9ED",
+          "borderRadius": 25,
+          "borderWidth": 1,
+          "flex": 2,
+          "justifyContent": "center",
+          "marginRight": 5,
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="amountinput_currency"
+        style={
+          Object {
+            "color": "#434A54",
+            "fontFamily": "Brevia",
+            "fontSize": 15,
+            "fontStyle": "normal",
+            "fontWeight": "600",
+            "marginHorizontal": 10,
+            "marginVertical": 10,
+          }
+        }
+      >
+        Otro monto
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 2,
+          "marginHorizontal": 5,
+        }
+      }
+    />
+  </View>
+</View>
+`;

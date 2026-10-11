@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="panel"
+>
+  <View
+    accessibilityLabel="panel_header"
+    style={
+      Array [
+        Object {
+          "paddingBottom": 5,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      accessibilityLabel="panelheader_title"
+      style={
+        Array [
+          Object {
+            "color": "#00964B",
+            "fontFamily": "Brevia",
+            "fontSize": 20,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          undefined,
+        ]
+      }
+    >
+      Prueba
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="test"
+    removeClippedSubviews={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#E6E9ED",
+          "borderRadius": 12,
+          "borderWidth": 0,
+          "elevation": 3,
+          "overflow": "visible",
+          "shadowColor": "#434A54",
+          "shadowOffset": Object {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.1,
+          "shadowRadius": 16,
+        },
+        undefined,
+        Array [
+          Object {
+            "marginBottom": 20,
+          },
+          undefined,
+        ],
+      ]
+    }
+  />
+</View>
+`;

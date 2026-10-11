@@ -1,0 +1,53 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfer.interbank.inmediate.preview/16",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "debitAccount": "12441143",
+      "amount": {
+        "quantity": "1",
+        "currency": "1"
+      },
+      "transferReason": "",
+      "destinationAccount": "80510100000062319937",
+      "mail": "gerson.pardo@avantica.net"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "613",
+      "date": "Tue, 18 Dec 2018 15:13:23 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "0e9ff28a78d94d87b427a1f5e2968675",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "requestedAmount": 1,
+        "amountCurrency": "1",
+        "debitAccountLabel": "Cuenta ahorro negocios (MN) 1184378706",
+        "totalAmount": 8,
+        "itf": 0,
+        "mibancoComission": 0,
+        "interbankComission": 7,
+        "debitAccountID": "12441143",
+        "creditAccountCCI": "80510100000062319937",
+        "bankName": "CMAC Sullana",
+        "beneficiaryName": "HORNA PINGO CARLOS DAVID",
+        "transferReason": "",
+        "mail": "gerson.pardo@avantica.net"
+      }
+    }
+  }
+}

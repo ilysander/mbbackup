@@ -1,0 +1,476 @@
+def prepare_android_release(name, task, project_dir)
+  prepare_android(name, task, project_dir)
+  gradle_tasks(task, project_dir)
+end
+
+def prepare_android_bundle(name, task, project_dir)
+  prepare_android(name, task, project_dir)
+  gradle_properties
+  sh("./android-bundle.sh")
+  #sh("cd #{project_dir} && ./gradlew #{task} || echo true")
+  gradle_tasks(task, project_dir)
+end
+
+def prepare_android(name, task, project_dir)
+  config(name)
+  yarn
+  instabug_dir = File.expand_path("../node_modules/instabug-reactnative", __dir__)
+  sed("export NODE_BINARY=node", "exit 0", File.expand_path("android/upload_sourcemap.sh", instabug_dir))
+  # sh("yarn", "jetify")
+end
+
+def gradle_tasks(task, project_dir)
+  gradle_properties
+  gradle(task: task, project_dir: project_dir)
+end
+
+def move_sourcemap(sourcemap_file,sourcemap_dir)
+  sh("mv",sourcemap_file,sourcemap_dir)
+end
+
+def remove_sourcemap(sourcemap_file)
+  sh("rm",sourcemap_file)
+end
+
+def prepare_ios(name, output, podfile, xcodeproj)
+  config(name)
+  yarn
+  instabug_dir = File.expand_path("../node_modules/instabug-reactnative", __dir__)
+  sed("export NODE_BINARY=node", "exit 0", File.expand_path("ios/upload_sourcemap.sh", instabug_dir))
+  cocoapods(repo_update: true, podfile: podfile)
+  increment_build_number(build_number: ENV["BUILD_ID"], xcodeproj: xcodeproj)
+  FileUtils.remove_dir(output, true)
+
+  pbxproj = File.expand_path("project.pbxproj", xcodeproj)
+  if ENV["JSCRAMBLER_ENABLE"] == "true"
+    sed("JSCRAMBLER_ENABLE=false", "JSCRAMBLER_ENABLE=true", pbxproj)
+  else
+    sed("JSCRAMBLER_ENABLE=true", "JSCRAMBLER_ENABLE=false", pbxproj)
+  end
+
+end
+
+def restore_ios(xcodeproj)
+  pbxproj = File.expand_path("project.pbxproj", xcodeproj)
+  if ENV["JSCRAMBLER_ENABLE"] == "true"
+    sed("JSCRAMBLER_ENABLE=true", "JSCRAMBLER_ENABLE=false", pbxproj)
+  end
+end
+
+def typescript(platform, name)
+  {
+        :Docs => nexus(platform, name, zip_file(typescript_docs)),
+  }
+end
+
+def typescript_docs
+  sh("yarn", "docs")
+  temp_dir = File.expand_path("../docs", __dir__)
+  File.expand_path("typescript", temp_dir)
+end
+
+def jscrambler(platform, name)
+  temp_dir = File.expand_path("../.jscrambler/", __dir__)
+  {
+        :DIST => nexus(platform, "#{name}_dist", zip_file(File.expand_path("dist", temp_dir))),
+        :SRC => nexus(platform, "#{name}_src", zip_file(File.expand_path("src", temp_dir))),
+        :SourceMaps => nexus(platform, "#{name}_sourcemap", zip_file(jscrambler_sourcemap)),
+  }
+end
+
+def jscrambler_sourcemap
+  jscrambler = File.expand_path("../node_modules/.bin/jscrambler", __dir__)
+  jscrambler_temp_dir = File.expand_path("../.jscrambler", __dir__)
+  config_source = File.expand_path("../.jscramblerrc", __dir__)
+  config = File.expand_path("config.json", jscrambler_temp_dir)
+  copy(config_source, config)
+  protection_id = File.expand_path("protectionId", jscrambler_temp_dir)
+  output_dir = File.expand_path("sourcemap", jscrambler_temp_dir)
+  FileUtils.mkdir_p(output_dir)
+  copy(protection_id, File.expand_path("protectionId", output_dir))
+
+  sh(jscrambler, "--config", config, "--output-dir", output_dir, "--source-maps", File.read(protection_id))
+  File.delete(config)
+  output_dir
+end
+
+def yarn
+  sh("yarn", "install", "--pure-lockfile")
+end
+
+def zip_file(path)
+  output_path = "#{path}.zip"
+  zip(path: path, output_path: output_path)
+  output_path
+end
+
+def gradle_properties
+  gradle_properties_file = File.expand_path("../android/gradle.properties", __dir__)
+  copy("#{gradle_properties_file}-dist", gradle_properties_file)
+
+  sed("ENV_RELEASE_STORE_FILE", ENV["RELEASE_STORE_FILE"], gradle_properties_file)
+  sed("ENV_RELEASE_KEY_ALIAS", ENV["RELEASE_KEY_ALIAS"], gradle_properties_file)
+  sed("ENV_RELEASE_STORE_PASSWORD", ENV["RELEASE_STORE_PASSWORD"], gradle_properties_file)
+  sed("ENV_RELEASE_KEY_PASSWORD", ENV["RELEASE_KEY_PASSWORD"], gradle_properties_file)
+
+  sed("ENV_MAVEN_REPO_URL", ENV["MAVEN_REPO_URL"], gradle_properties_file)
+  sed("ENV_MAVEN_REPO_USERNAME", ENV["MAVEN_REPO_USERNAME"], gradle_properties_file)
+  sed("ENV_MAVEN_REPO_PASSWORD", ENV["MAVEN_REPO_PASSWORD"], gradle_properties_file)
+
+  sed("ENV_DEXGUARD_ENABLE", ENV["DEXGUARD_ENABLE"], gradle_properties_file)
+  sed("ENV_DEXGUARD_LIBS", ENV["DEXGUARD_LIBS"], gradle_properties_file)
+  sed("ENV_DEXGUARD_LICENSE", ENV["DEXGUARD_LICENSE"], gradle_properties_file)
+  sed("ENV_DEXGUARD_DIR", ENV["DEXGUARD_DIR"], gradle_properties_file)
+
+  sed("ENV_GUARDSQUARE_KEY", ENV["GUARDSQUARE_KEY"], gradle_properties_file)
+
+  sed("ENV_VERSION_CODE", ENV["BUILD_ID"], gradle_properties_file)
+
+end
+
+def config(env)
+  config_file = File.expand_path("../src/Config.tsx", __dir__)
+  copy("#{config_file}-#{env}", config_file)
+end
+
+def ixguard(config, input, output, output_dir)
+  sh("ixguard", "-force", "-local", "-debug-data", output_dir, "-config", config, "-o", output, input)
+end
+
+def ofuscate(ipa, output, template, yml_archive)
+  UI.header "iXGuard"
+  ixguard_config = File.expand_path(yml_archive, output)
+  copy(template, ixguard_config)
+  sed("ENV_IXGUARD_LICENSE", ENV["IXGUARD_LICENSE"], ixguard_config)
+  if yml_archive == "ixguard_adhoc.yml"
+    sed("ENV_IXGUARD_EXPORT_PROVISIONING_FILE", ENV["IXGUARD_EXPORT_PROVISIONING_FILE"], ixguard_config)
+  end
+  ofuscated = File.expand_path("Ofuscated.ipa", output)
+  ixguard(ixguard_config, ipa, ofuscated, output)
+  ofuscated
+end
+
+def sonarqube
+  sonar(
+      project_key: "mi-banco-app",
+      project_name: "mi-banco-app",
+      sonar_login: ENV["SONAR_LOGIN"],
+      sonar_runner_args: "-Dsonar.host.url=#{ENV["SONAR_URL"]}",
+      sources_path: File.expand_path("../src", __dir__)
+  )
+end
+
+def nexus(platform, name, file)
+
+  repo_id = "mi-banco-#{platform}"
+  repo_project_name = "mibancomovil"
+  repo_project_version = ENV["BUILD_ID"]
+  repo_group_id = "builds"
+  extension = File.extname(file)
+
+  file_name = "#{repo_project_name}-#{repo_project_version}-#{name}#{extension}"
+
+  if ENV["ARTIFACT_DIR"].to_s != ""
+    artifact_dir = File.expand_path(ENV["CI"] ? "" : "#{repo_project_version}/#{date_formatted_hour}", ENV["ARTIFACT_DIR"])
+    artifact_file = File.expand_path(file_name, artifact_dir)
+    FileUtils.mkdir_p(artifact_dir)
+    FileUtils.mv(file, artifact_file)
+    file = artifact_file
+  end
+
+  UI.header "FILE: #{file}" if ENV["CI"] == nil
+
+  if ENV["NEXUS_URL"].to_s == ""
+    return file
+  end
+
+  #begin
+    #nexus_upload(
+        #nexus_version: 3,
+        #mount_path: "",
+        #file: file,
+        #repo_id: repo_id,
+        #repo_group_id: repo_group_id,
+        #repo_project_name: repo_project_name,
+        #repo_project_version: repo_project_version,
+        #repo_classifier: name,
+        #endpoint: ENV["NEXUS_URL"],
+        #username: ENV["NEXUS_USERNAME"],
+        #password: ENV["NEXUS_PASSWORD"],
+        #verbose: false
+    #)
+
+    #return "#{ENV["NEXUS_URL"]}/repository/#{repo_id}/#{repo_group_id}/#{repo_project_name}/#{repo_project_version}/#{file_name}"
+
+  #rescue => exception
+    #UI.error exception.to_s
+    #return file
+  #end
+
+end
+
+
+def appcenter_android_demo(platform, name, file)
+  repo_id = "mi-banco-#{platform}"
+  repo_project_name = "mibancomovil"
+  repo_project_version = ENV["BUILD_ID"]
+  repo_group_id = "builds"
+  extension = File.extname(file)  
+  file_name = "#{repo_project_name}-#{repo_project_version}-#{name}#{extension}"
+
+  if ENV["ARTIFACT_DIR"].to_s != ""
+    artifact_dir = File.expand_path(ENV["CI"] ? "" : "#{repo_project_version}/#{date_formatted_hour}", ENV["ARTIFACT_DIR"])
+    artifact_file = File.expand_path(file_name, artifact_dir)
+    FileUtils.mkdir_p(artifact_dir)
+    FileUtils.mv(file, artifact_file)
+    file = artifact_file
+  end
+
+  UI.header "FILE: #{file}" if ENV["CI"] == nil
+
+  begin    
+    appcenter_upload(
+      api_token:ENV["APPCENTER_API_TOKEN_DEMO_ANDROID"],
+      owner_name:"MibancoMovil",
+      owner_type:"organization",
+      app_name:ENV["APPCENTER_APP_NAME_DEMO_ANDROID"],
+      file: file,
+      destinations: ENV["APPCENTER_DISTRIBUCION_GROUP_DEMO"],
+      destination_type: "group",
+      release_notes: ENV["APPCENTER_NOTAS"],
+      notify_testers: true
+    )   
+    return "#{ENV["APPCENTER_URL"]}/repository/#{repo_id}/#{repo_group_id}/#{repo_project_name}/#{repo_project_version}/#{file_name}"
+  rescue => exception
+    UI.error exception.to_s
+    return file
+  end
+end
+
+def appcenter_android_qa(platform, name, file)
+  repo_id = "mi-banco-#{platform}"
+  repo_project_name = "mibancomovil"
+  repo_project_version = ENV["BUILD_ID"]
+  repo_group_id = "builds"
+  extension = File.extname(file)  
+  file_name = "#{repo_project_name}-#{repo_project_version}-#{name}#{extension}"
+
+  if ENV["ARTIFACT_DIR"].to_s != ""
+    artifact_dir = File.expand_path(ENV["CI"] ? "" : "#{repo_project_version}/#{date_formatted_hour}", ENV["ARTIFACT_DIR"])
+    artifact_file = File.expand_path(file_name, artifact_dir)
+    FileUtils.mkdir_p(artifact_dir)
+    FileUtils.mv(file, artifact_file)
+    file = artifact_file
+  end
+
+  UI.header "FILE: #{file}" if ENV["CI"] == nil
+
+  begin    
+    appcenter_upload(
+      api_token:ENV["APPCENTER_API_TOKEN_QA_ADROID"],
+      owner_name:"MibancoMovil",
+      owner_type:"organization",
+      app_name:ENV["APPCENTER_APP_NAME_QA_ANDROID"],
+      file: file,
+      destinations: ENV["APPCENTER_DISTRIBUCION_GROUP_ANDQA"],
+      destination_type: "group",
+      release_notes: ENV["APPCENTER_NOTAS_ANDQA"],
+      notify_testers: true
+    )    
+    return "#{ENV["APPCENTER_URL"]}/repository/#{repo_id}/#{repo_group_id}/#{repo_project_name}/#{repo_project_version}/#{file_name}"
+  rescue => exception
+    UI.error exception.to_s
+    return file
+  end
+end
+
+def appcenter_ios_demo(platform, name, file)
+  repo_id = "mi-banco-#{platform}"
+  repo_project_name = "mibancomovil"
+  repo_project_version = ENV["BUILD_ID"]
+  repo_group_id = "builds"
+  extension = File.extname(file)  
+  file_name = "#{repo_project_name}-#{repo_project_version}-#{name}#{extension}"
+
+  if ENV["ARTIFACT_DIR"].to_s != ""
+    artifact_dir = File.expand_path(ENV["CI"] ? "" : "#{repo_project_version}/#{date_formatted_hour}", ENV["ARTIFACT_DIR"])
+    artifact_file = File.expand_path(file_name, artifact_dir)
+    FileUtils.mkdir_p(artifact_dir)
+    FileUtils.mv(file, artifact_file)
+    file = artifact_file
+  end
+
+  UI.header "FILE: #{file}" if ENV["CI"] == nil
+  
+  #if ENV["APPCENTER_URL"].to_s == ""
+  #  return file
+  #end
+
+  begin    
+    appcenter_upload(
+      api_token:ENV["APPCENTER_API_TOKEN_DEMO_IOS"],
+      owner_name:"MibancoMovil",
+      owner_type:"organization",
+      app_name:ENV["APPCENTER_APP_NAME_DEMO_IOS"],
+      file: file,
+      destinations: ENV["APPCENTER_DISTRIBUCION_GROUP_IOSDEMO"],
+      destination_type: "group",
+      release_notes: ENV["APPCENTER_NOTAS"],
+      notify_testers: true
+    )    
+    return "#{ENV["APPCENTER_URL"]}/repository/#{repo_id}/#{repo_group_id}/#{repo_project_name}/#{repo_project_version}/#{file_name}"
+  rescue => exception
+    UI.error exception.to_s
+    return file
+  end
+end
+
+
+def appcenter_ios_qa(platform, name, file)
+  repo_id = "mi-banco-#{platform}"
+  repo_project_name = "mibancomovil"
+  repo_project_version = ENV["BUILD_ID"]
+  repo_group_id = "builds"
+  extension = File.extname(file)  
+  file_name = "#{repo_project_name}-#{repo_project_version}-#{name}#{extension}"
+
+  if ENV["ARTIFACT_DIR"].to_s != ""
+    artifact_dir = File.expand_path(ENV["CI"] ? "" : "#{repo_project_version}/#{date_formatted_hour}", ENV["ARTIFACT_DIR"])
+    artifact_file = File.expand_path(file_name, artifact_dir)
+    FileUtils.mkdir_p(artifact_dir)
+    FileUtils.mv(file, artifact_file)
+    file = artifact_file
+  end
+
+  UI.header "FILE: #{file}" if ENV["CI"] == nil
+
+  begin    
+    appcenter_upload(
+      api_token:ENV["APPCENTER_API_TOKEN_QA_IOS"],
+      owner_name:"MibancoMovil",
+      owner_type:"organization",
+      app_name:ENV["APPCENTER_APP_NAME_QA_IOS"],
+      file: file,
+      destinations: ENV["APPCENTER_DISTRIBUCION_GROUP_IOSQA"],
+      destination_type: "group",
+      release_notes: ENV["APPCENTER_NOTAS"],
+      notify_testers: true
+    )  
+    return "#{ENV["APPCENTER_URL"]}/repository/#{repo_id}/#{repo_group_id}/#{repo_project_name}/#{repo_project_version}/#{file_name}"
+  rescue => exception
+    UI.error exception.to_s
+    return file
+  end
+end
+
+def on_error(platform, name, exception)
+  message = "ERROR: #{platform} #{name} - Build: #{ENV["BUILD_ID"]}"
+
+  if FastlaneCore::Helper.mac?
+    notification(subtitle: "Error Build", message: message)
+  end
+
+  if ENV["SLACK_URL"].to_s == ""
+    UI.header "SLACK FALLBACK: #{message}"
+  else
+    slack(
+        message: message,
+        success: false,
+        payload: {
+            :DexGuard => ENV["DEXGUARD_ENABLE"],
+            :iXGuard => ENV["IXGUARD_ENABLE"],
+            :JSCrambler => ENV["JSCRAMBLER_ENABLE"]
+        },
+        attachment_properties: {
+            fields: [
+                {
+                    title: "Error message",
+                    value: exception.to_s,
+                    short: false
+                }
+            ]
+        }
+    )
+  end
+  UI.user_error!(exception.to_s)
+end
+
+def on_success(platform, name, urls)
+  message = "SUCCESSFUL: #{platform} #{name} - Build: #{ENV["BUILD_ID"]}"
+
+  fields = urls.collect { |idx, url| {
+      title: "URL #{idx}",
+      value: url,
+      short: false
+  } }
+  actions = urls.collect { |idx, url| {
+      type: "button",
+      text: "Download #{idx}",
+      url: url,
+      style: "primary"
+  } }
+
+  if FastlaneCore::Helper.mac?
+    notification(subtitle: "Success Build", message: message)
+  end
+
+  if ENV["SLACK_URL"].to_s == ""
+    UI.header "SLACK FALLBACK: #{message}"
+  else
+    slack(
+        message: message,
+        success: true,
+        payload: {
+            :DexGuard => ENV["DEXGUARD_ENABLE"],
+            :iXGuard => ENV["IXGUARD_ENABLE"],
+            :JSCrambler => ENV["JSCRAMBLER_ENABLE"]
+        },
+        attachment_properties: {
+            fields: fields,
+            actions: actions
+        }
+    )
+  end
+
+  urls.collect { |idx, url|
+    UI.header "URL #{idx}: #{url}"
+  }
+
+end
+
+def on_start(platform, name)
+  message = "STARTED: #{platform} #{name} - Build: #{ENV["BUILD_ID"]}"
+  if FastlaneCore::Helper.mac?
+    notification(subtitle: "Start Build", message: message)
+  end
+
+  if ENV["SLACK_URL"].to_s == ""
+    UI.header "SLACK FALLBACK: #{message}"
+  else
+    slack(
+        message: message,
+        payload: {
+            :DexGuard => ENV["DEXGUARD_ENABLE"],
+            :iXGuard => ENV["IXGUARD_ENABLE"],
+            :JSCrambler => ENV["JSCRAMBLER_ENABLE"]
+        }
+    )
+  end
+end
+
+def date_formatted_minute
+  Time.now.strftime("%d-%m-%Y_%H-%M")
+end
+
+def date_formatted_hour
+  Time.now.strftime("%d-%m-%Y_%H")
+end
+
+def copy(from, to)
+  File.open(to, "w") { |file| file.puts File.read(from) }
+end
+
+def sed(from, to, input)
+  text = File.read(input)
+  File.open(input, "w") { |file| file.puts text.gsub(from, to) }
+end

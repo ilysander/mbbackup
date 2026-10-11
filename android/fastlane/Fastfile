@@ -1,0 +1,254 @@
+import(File.expand_path("../../fastlane/FastCommonfile", __dir__))
+
+default_platform :android
+
+fastlane_require "dotenv"
+
+jscrambler_enable = nil
+project_dir = File.expand_path("..", __dir__)
+output = File.expand_path("app/build/outputs", project_dir)
+sourcemap_file = File.expand_path("app/src/main/assets/sourcemap.js", project_dir)
+sourcemap_dir = File.expand_path("app/build/", project_dir)
+
+platform_icon = ":android:"
+current_date = date_formatted_minute
+
+before_all do
+  Dotenv.overload(File.expand_path("../../.env", __dir__))
+  jscrambler_enable = ENV["JSCRAMBLER_ENABLE"] == "true"
+end
+
+
+
+platform :android do
+
+  desc "Typescript"
+  lane :typescript do
+    name = "typescript-#{current_date}"
+    icon = "Typescript"
+    begin
+      on_start(icon, name)
+      config("empty")
+      yarn
+      on_success(icon, name, typescript("android", name))
+    rescue => exception
+      on_error(icon, name, exception)
+    end
+  end
+  
+  desc "Download last source maps from jscrambler"
+  lane :jscrambler do
+    name = "jscrambler-#{current_date}"
+    icon = "JSCrambler"
+    begin
+      on_start(icon, name)
+      on_success(icon, name, jscrambler("android", name))
+    rescue => exception
+      on_error(icon, name, exception)
+    end
+  end
+
+  desc "Build DEV APK"
+  lane :build_dev do
+    name = "dev-#{current_date}"
+    begin
+      on_start(platform_icon, name)
+      prepare_android_release("dev", "clean assembleReleaseDev", project_dir)
+      urls = {
+          :APK => nexus("android", name, File.expand_path("apk/releaseDev/app-releaseDev.apk", output))
+      }
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+  desc "Build Demo APK"
+  lane :build_demo do
+    name = "demo-#{current_date}"
+    begin
+      on_start(platform_icon, name)
+      prepare_android_release("demo", "clean assembleReleaseDemo", project_dir)
+      urls = {
+          :APK => nexus("android", name, File.expand_path("apk/releaseDemo/app-releaseDemo.apk", output)),
+          :BundleSourceMap => nexus("android", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :Mapping => nexus("android", "#{name}_mapping", zip_file(File.expand_path("mapping/releaseDemo", output)))
+      }
+      if jscrambler_enable
+        urls[:JSCramblerSourceMap] = nexus("android", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+  desc "Build QA APK"
+  lane :build_qa_apk do
+    name = "qa-#{current_date}-apk"
+    begin
+      on_start(platform_icon, name)
+      prepare_android_release("qa", "clean assembleReleaseQa", project_dir)
+      urls = {
+          :APK => nexus("android", name, File.expand_path("apk/releaseQa/app-releaseQa.apk", output)),
+          :BundleSourceMap => nexus("android", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :Mapping => nexus("android", "#{name}_mapping", zip_file(File.expand_path("mapping/releaseQa", output)))
+      }
+      if jscrambler_enable
+        #urls[:JSCramblerSourceMap] = nexus("android", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+  desc "Build QA Bundle"
+  lane :build_qa do
+    name = "qa-#{current_date}"
+    begin
+      on_start(platform_icon, name)
+      prepare_android_release("qa", "clean assembleReleaseQa", project_dir)
+      urls = {
+          :APK => nexus("android", name, File.expand_path("apk/releaseQa/app-releaseQa.apk", output)),
+          :BundleSourceMap => nexus("android", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :Mapping => nexus("android", "#{name}_mapping", zip_file(File.expand_path("mapping/releaseQa", output)))
+      }
+      if jscrambler_enable
+        urls[:JSCramblerSourceMap] = nexus("android", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+  # desc "Build QA Bundle"
+  # lane :build_qa do
+  #   name = "qa-#{current_date}"
+  #   begin
+  #     on_start(platform_icon, name)
+  #     prepare_android_bundle("qa", "clean bundleReleaseQa -x bundleReleaseQaJsAndAssets", project_dir)
+  #     urls = {
+  #         :Bundle => nexus("android", name, File.expand_path("bundle/releaseQa/app-releaseQa-protected.aab", output)),
+  #         :Docs => nexus("android", name, zip_file(typescript_docs))
+  #     }
+  #     if jscrambler_enable
+  #       #urls[:JSCramblerSourceMap] = nexus("android", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+  #     end
+  #     on_success(platform_icon, name, urls)
+  #   rescue => exception
+  #     on_error(platform_icon, name, exception)
+  #   end
+  # end
+
+  desc "Build Automation APK"
+  lane :build_automation do
+    name = "automation-#{current_date}"
+    begin
+      on_start(platform_icon, name)
+      prepare_android_release("automation", "clean assembleReleaseQa", project_dir)
+      urls = {
+          :APK => nexus("android", name, File.expand_path("apk/releaseQa/app-releaseQa.apk", output)),
+          :BundleSourceMap => nexus("android", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :Mapping => nexus("android", "#{name}_mapping", zip_file(File.expand_path("mapping/releaseQa", output)))
+      }
+      if jscrambler_enable
+        urls[:JSCramblerSourceMap] = nexus("android", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      on_error(platform_icon, name, exception)
+    end
+  end
+  
+  desc "Build Release Bundle"
+  lane :build_release do
+    name = "release-#{current_date}"
+    begin
+      on_start(platform_icon, name)
+      prepare_android_bundle("empty", "clean bundleRelease -x bundleReleaseJsAndAssets", project_dir)
+      urls = {
+        :Bundle => nexus("android", name, File.expand_path("bundle/release/app-release-protected.aab", output)),
+          #:BundleSourceMap => nexus("android", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          #:Mapping => nexus("android", "#{name}_mapping", zip_file(File.expand_path("mapping/release", output))),
+        :Docs => nexus("android", name, zip_file(typescript_docs))
+      }
+      if jscrambler_enable
+        #urls[:JSCramblerSourceMap] = nexus("android", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+  desc "Build Release QA APK"
+  lane :build_release_qa do
+    name = "release-qa-#{current_date}"
+    begin
+      on_start(platform_icon, name)
+      prepare_android_release("qa", "clean assembleRelease", project_dir)
+      urls = {
+          :Bundle => nexus("android", name, File.expand_path("apk/release/app-release.apk", output)),
+          :BundleSourceMap => nexus("android", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :Mapping => nexus("android", "#{name}_mapping", zip_file(File.expand_path("mapping/release", output))),
+          :Docs => nexus("android", name, zip_file(typescript_docs))
+      }
+      if jscrambler_enable
+        urls[:JSCramblerSourceMap] = nexus("android", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+
+#--------------------------------------------------------------
+#------------NUEVOS LANES - APPCENTER
+#--------------------------------------------------------------
+desc "Build and Upload Demo APK - App Center"
+  lane :build_upload_demo_appcenter do
+    name = "demo-#{current_date}"
+    begin
+      on_start(platform_icon, name)
+      prepare_android_release("demo", "clean assembleReleaseDemo", project_dir)
+      urls = {
+          :APK => appcenter_android_demo("android", name, File.expand_path("apk/releaseDemo/app-releaseDemo.apk", output)),
+          :BundleSourceMap => appcenter_android_demo("android", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :Mapping => appcenter_android_demo("android", "#{name}_mapping", zip_file(File.expand_path("mapping/releaseDemo", output)))
+      }  
+      if jscrambler_enable
+        urls[:JSCramblerSourceMap] = appcenter_android_demo("android", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+  desc "Build and Upload QA APK - App Center"
+  lane :build_upload_qa_appcenter do
+    name = "qa-#{current_date}"
+    begin
+      on_start(platform_icon, name)
+      prepare_android_release("qa", "clean assembleReleaseQa", project_dir)
+      urls = {
+          :APK => appcenter_android_qa("android", name, File.expand_path("apk/releaseQa/app-releaseQa.apk", output)),
+          :BundleSourceMap => appcenter_android_qa("android", "#{name}_bundle_sourcemap", zip_file(File.expand_path("../sourcemap.js", output))),
+          :Mapping => appcenter_android_qa("android", "#{name}_mapping", zip_file(File.expand_path("mapping/releaseQa", output)))
+      }
+      if jscrambler_enable
+        urls[:JSCramblerSourceMap] = appcenter_android_qa("android", "#{name}_jscrambler_sourcemap", zip_file(jscrambler_sourcemap))
+      end
+      on_success(platform_icon, name, urls)
+    rescue => exception
+      on_error(platform_icon, name, exception)
+    end
+  end
+
+
+
+
+end

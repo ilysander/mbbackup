@@ -1,0 +1,76 @@
+{
+  "duration": 531,
+  "request": {
+    "url": "https://bmesrvd755.domibco.com.pe:8443/api/execute/deposits.listStatements",
+    "method": "POST",
+    "headers": {
+      "host": "dev.jerson.me:9443",
+      "content-type": "application/json",
+      "user-agent": "MibancoMovil/10 CFNetwork/975.0.3 Darwin/18.2.0",
+      "connection": "keep-alive",
+      "accept": "*/*",
+      "accept-language": "en-us",
+      "content-length": "24",
+      "accept-encoding": "br, gzip, deflate",
+      "authorization": "QlI1Qkp5Ylp4TnFwTFozOERKVnNvUEZtSlVwWlNFMUxuS2FlcDVRRERTTFZqT1FPMlhxQnBXTGp5b3ZYWjlsdlM0V0xpamkwSHZkb3NIOWtBTWV2QWFxM0ZoakxNd1BzaHJ3THYzRXFTOW5LWmVFSGs5c3c2U01RNi9YSVVFemZ3aHVmaTRXSHJCQ01hWS9aSFM3a0lhNlkrTWxjbmlRTC96OFk3T25Tc1AvK1krQ1dxekZSMmxvUjBvZ1dWc1VOS2NVcFZNL2xZWmUwZ0pvY1RZSzBHcC8vanhWcHl3UWdtTk9PQTBrUG1PNGZpRHlYMzRFM2pGTWZYMGZGZnRKTXpJZ3ZBa1JwYUtnNzVrTjBaSkJyenc9PQ"
+    },
+    "body": {
+      "idDeposit": "33932880"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "1006",
+      "date": "Mon, 25 Mar 2019 15:35:25 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "a4507747d9004bbaae72ba3e8aad4c7a",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "moreStatements": false,
+        "pageNumber": 1,
+        "statements": [
+          {
+            "id": 3529,
+            "note": null,
+            "movementIdKey": 3270,
+            "date": "2019-02-01T00:00:00.000-0500",
+            "comment": "Apert DPFF online ***5244",
+            "reference": 1020062,
+            "amount": 888,
+            "type": "D"
+          },
+          {
+            "id": 3528,
+            "note": "4545",
+            "movementIdKey": 3269,
+            "date": "2019-03-25T00:00:00.000-0500",
+            "comment": "Ret.DPF Flex:6011435244",
+            "reference": 1020026,
+            "amount": 50,
+            "type": "D"
+          },
+          {
+            "id": 3528,
+            "note": "4545",
+            "movementIdKey": 3269,
+            "date": "2019-03-25T00:00:00.000-0500",
+            "comment": "Ret.DPF Flex:6011435244",
+            "reference": 1020022,
+            "amount": 50,
+            "type": "D"
+          }
+        ],
+        "currency": null,
+        "movementsPerPage": 20
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/enrollment",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "channel": "phonegap",
+      "idActivity": "enrollment.mobile.step1",
+      "_debitcardNumber": "",
+      "_debitcardPin": "",
+      "mobileNumber": ""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "145",
+      "date": "Wed, 03 Oct 2018 23:25:36 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "33be24aedc794f8bb0653cdb6d6549b2",
+      "message": "Operación ejecutada con éxito",
+      "data": {}
+    }
+  }
+}

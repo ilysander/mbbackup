@@ -1,0 +1,7 @@
+{
+
+"sonarHost": "http://mb-sonar.westus.cloudapp.azure.com",
+
+"sonarProjectKey": "mi-banco-app"
+
+}

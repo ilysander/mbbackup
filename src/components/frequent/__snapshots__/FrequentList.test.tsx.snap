@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="morecontainer"
+  style={
+    Object {
+      "flex": 1,
+      "position": "relative",
+    }
+  }
+>
+  <RCTScrollView
+    ItemSeparatorComponent={[Function]}
+    accessibilityLabel="test"
+    accounts={Array []}
+    contentContainerStyle={
+      Array [
+        Object {
+          "padding": 0,
+        },
+        undefined,
+      ]
+    }
+    data={Array []}
+    extraData={
+      Object {
+        "isLoading": false,
+        "total": 0,
+      }
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={100}
+    serviceAvailability={[Function]}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View />
+  </RCTScrollView>
+  <View
+    accessibilityLabel="morecontainer_scrollmore"
+    collapsable={false}
+    style={
+      Object {
+        "bottom": -100,
+        "opacity": 0,
+        "position": "absolute",
+        "right": 0,
+        "zIndex": 1000,
+      }
+    }
+  >
+    <View
+      accessibilityLabel="scrollmore_button"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        accessibilityLabel="scrollmore_image"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+          }
+        }
+        style={
+          Object {
+            "height": 70,
+            "width": 70,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

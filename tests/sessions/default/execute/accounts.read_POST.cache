@@ -1,0 +1,58 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/accounts.read",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {}
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "902",
+      "date": "Wed, 17 Oct 2018 17:02:00 GMT",
+      "connection": "close"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "e8c9f5026a324b6e98aa8d3865bc7a03",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "account": {
+          "idEnvironment": 0,
+          "idProduct": "17603876",
+          "productType": "CA",
+          "productTypeLabel": null,
+          "productTypeShortLabel": null,
+          "description": null,
+          "productAlias": null,
+          "smsAlias": null,
+          "label": "",
+          "shortLabel": "Full ahorro (MN) 6000833418",
+          "extraInfo": "3|1416|484|1|6000833418|0|0|8|3",
+          "currency": "1",
+          "number": "6000833418",
+          "consolidatedAmount": 0,
+          "position": 0,
+          "canRead": false,
+          "permissions": null,
+          "cci": "04948400600083341891",
+          "availableBalance": 0.2,
+          "balance": 0.2,
+          "rate": 0,
+          "category": "faSoles",
+          "family": "8"
+        },
+        "environmentType": "retail"
+      }
+    }
+  }
+}

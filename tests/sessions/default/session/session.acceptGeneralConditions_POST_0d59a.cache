@@ -1,0 +1,20 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/session",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "idActivity": "session.acceptGeneralConditions",
+      "_exchangeToken": "3243",
+      "acceptConditions": "true"
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

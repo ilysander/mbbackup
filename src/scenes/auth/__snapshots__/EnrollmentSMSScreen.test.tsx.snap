@@ -1,0 +1,1150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enrollment render just views 1`] = `
+<View
+  accessibilityLabel="container"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="morecontainer"
+    style={
+      Object {
+        "flex": 1,
+        "position": "relative",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="keyboardavoidingview"
+      onChangeDimensions={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+            "width": "100%",
+          },
+          Object {
+            "flex": 1,
+            "position": "relative",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <RCTScrollView
+        accessibilityLabel="keyboardavoidingview_scrollview"
+        contentContainerStyle={
+          Array [
+            Object {
+              "minHeight": 1250,
+            },
+            false,
+          ]
+        }
+        keyboardShouldPersistTaps="handled"
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onScroll={[Function]}
+        scrollEventThrottle={100}
+      >
+        <View>
+          <RCTSafeAreaView
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                undefined,
+              ]
+            }
+          >
+            <View
+              accessibilityLabel="content"
+              style={
+                Array [
+                  Object {
+                    "paddingHorizontal": 20,
+                  },
+                  false,
+                  Object {
+                    "flex": 1,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                accessibilityLabel="enrollmentsmsscreen_header_data"
+                style={
+                  Array [
+                    Object {
+                      "overflow": "visible",
+                    },
+                    Object {
+                      "marginBottom": 20,
+                      "marginTop": 30,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityLabel="header_text_title"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontSize": 22,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "lineHeight": 25,
+                          "textAlign": "left",
+                        },
+                        undefined,
+                        Object {
+                          "textAlign": "center",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Por tu seguridad, estamos
+configurando tu cuenta
+en este celular
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      false,
+                    ]
+                  }
+                />
+              </View>
+              <View
+                accessibilityLabel="card"
+                removeClippedSubviews={false}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderColor": "#E6E9ED",
+                      "borderRadius": 12,
+                      "borderWidth": 0,
+                      "elevation": 3,
+                      "overflow": "visible",
+                      "shadowColor": "#434A54",
+                      "shadowOffset": Object {
+                        "height": 4,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.1,
+                      "shadowRadius": 16,
+                    },
+                    Object {
+                      "padding": 20,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  accessibilityLabel="confirmcode"
+                  autoFocus={false}
+                  onChangeText={[Function]}
+                >
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "marginBottom": 5,
+                      }
+                    }
+                  >
+                    <Modal
+                      animationType="fade"
+                      hardwareAccelerated={false}
+                      onRequestClose={[Function]}
+                      supportedOrientations={
+                        Array [
+                          "portrait",
+                          "portrait-upside-down",
+                          "landscape",
+                          "landscape-left",
+                          "landscape-right",
+                        ]
+                      }
+                      transparent={true}
+                      visible={false}
+                    />
+                    <Modal
+                      animationType="fade"
+                      hardwareAccelerated={false}
+                      onRequestClose={[Function]}
+                      supportedOrientations={
+                        Array [
+                          "portrait",
+                          "portrait-upside-down",
+                          "landscape",
+                          "landscape-left",
+                          "landscape-right",
+                        ]
+                      }
+                      transparent={true}
+                      visible={false}
+                    />
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flex": 0.2,
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/icon-phone-otp.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 32,
+                            "tintColor": "#F28F00",
+                            "width": 32,
+                          }
+                        }
+                      />
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "flex-start",
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-start",
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityLabel="confirmcode_text_code"
+                          selectable={true}
+                          style={
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 14,
+                              "fontStyle": "normal",
+                              "fontWeight": "400",
+                            }
+                          }
+                        >
+                          Ingresa el
+                           
+                          <Text
+                            style={
+                              Object {
+                                "color": "#434A54",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                                "paddingBottom": 20,
+                              }
+                            }
+                          >
+                            código
+                             
+                          </Text>
+                          recibido por
+mensaje de texto al
+                           
+                        </Text>
+                        <View
+                          accessibilityLabel="enrollmentsmsscreen_textinputcode_otp"
+                          accessible={true}
+                          collapsable={false}
+                          focusable={true}
+                          hitSlop={
+                            Object {
+                              "bottom": 10,
+                              "left": 10,
+                              "right": 10,
+                              "top": 10,
+                            }
+                          }
+                          onClick={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          style={
+                            Object {
+                              "alignContent": "center",
+                              "alignItems": "center",
+                              "alignSelf": "flex-start",
+                              "flexDirection": "row",
+                              "marginTop": 3,
+                              "opacity": 1,
+                              "padding": 0,
+                              "paddingBottom": 20,
+                              "width": 600,
+                            }
+                          }
+                        >
+                          <Text
+                            accessibilityLabel="buttonlink_text"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#656D78",
+                                  "fontFamily": "Brevia",
+                                  "fontSize": 13,
+                                  "fontStyle": "normal",
+                                  "fontWeight": "700",
+                                  "textAlign": "center",
+                                },
+                                undefined,
+                                Object {
+                                  "color": "#F28F00",
+                                },
+                                Object {
+                                  "color": "#CA7C2F",
+                                  "fontFamily": "Brevia",
+                                  "fontStyle": "italic",
+                                  "fontWeight": "400",
+                                },
+                              ]
+                            }
+                          >
+                            ¿No es tu número?
+                          </Text>
+                          <Image
+                            accessibilityLabel="buttonexternal_image"
+                            resizeMode="contain"
+                            source={
+                              Object {
+                                "testUri": "../../../src/assets/images/help-icon.png",
+                              }
+                            }
+                            style={
+                              Array [
+                                Object {
+                                  "height": 12,
+                                  "marginLeft": 3,
+                                  "tintColor": "#00964B",
+                                  "width": 12,
+                                },
+                                Object {
+                                  "tintColor": "#F28F00",
+                                },
+                                Object {
+                                  "height": 16,
+                                  "tintColor": "#CA7C2F",
+                                  "width": 16,
+                                },
+                              ]
+                            }
+                          />
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View />
+                  <View
+                    accessibilityLabel="textinputcode_container"
+                    style={
+                      Array [
+                        Object {
+                          "padding": 0,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <View
+                      accessibilityLabel="textinputcode_focus"
+                      accessible={true}
+                      collapsable={false}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "opacity": 1,
+                        }
+                      }
+                    >
+                      <View
+                        accessibilityLabel="textinputcode_codes"
+                        style={
+                          Object {
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <View
+                          accessibilityLabel="textinputcode_codes_code_0"
+                          style={
+                            Array [
+                              Object {
+                                "backgroundColor": "#F7F9FC",
+                                "borderColor": "#E6E9ED",
+                                "borderRadius": 8,
+                                "borderWidth": 1,
+                                "height": 40,
+                                "marginHorizontal": 5,
+                                "position": "relative",
+                                "width": 40,
+                              },
+                              false,
+                            ]
+                          }
+                        >
+                          <Text
+                            accessibilityLabel="textinputcode_codes_code_text0"
+                            allowFontScaling={false}
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#434A54",
+                                  "fontFamily": "Brevia",
+                                  "fontSize": 16,
+                                  "fontStyle": "normal",
+                                  "fontWeight": "700",
+                                  "marginTop": 8,
+                                  "textAlign": "center",
+                                },
+                                Object {
+                                  "color": "transparent",
+                                },
+                              ]
+                            }
+                          >
+                            0
+                          </Text>
+                        </View>
+                        <View
+                          accessibilityLabel="textinputcode_codes_code_1"
+                          style={
+                            Array [
+                              Object {
+                                "backgroundColor": "#F7F9FC",
+                                "borderColor": "#E6E9ED",
+                                "borderRadius": 8,
+                                "borderWidth": 1,
+                                "height": 40,
+                                "marginHorizontal": 5,
+                                "position": "relative",
+                                "width": 40,
+                              },
+                              false,
+                            ]
+                          }
+                        >
+                          <Text
+                            accessibilityLabel="textinputcode_codes_code_text1"
+                            allowFontScaling={false}
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#434A54",
+                                  "fontFamily": "Brevia",
+                                  "fontSize": 16,
+                                  "fontStyle": "normal",
+                                  "fontWeight": "700",
+                                  "marginTop": 8,
+                                  "textAlign": "center",
+                                },
+                                Object {
+                                  "color": "transparent",
+                                },
+                              ]
+                            }
+                          >
+                            0
+                          </Text>
+                        </View>
+                        <View
+                          accessibilityLabel="textinputcode_codes_code_2"
+                          style={
+                            Array [
+                              Object {
+                                "backgroundColor": "#F7F9FC",
+                                "borderColor": "#E6E9ED",
+                                "borderRadius": 8,
+                                "borderWidth": 1,
+                                "height": 40,
+                                "marginHorizontal": 5,
+                                "position": "relative",
+                                "width": 40,
+                              },
+                              false,
+                            ]
+                          }
+                        >
+                          <Text
+                            accessibilityLabel="textinputcode_codes_code_text2"
+                            allowFontScaling={false}
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#434A54",
+                                  "fontFamily": "Brevia",
+                                  "fontSize": 16,
+                                  "fontStyle": "normal",
+                                  "fontWeight": "700",
+                                  "marginTop": 8,
+                                  "textAlign": "center",
+                                },
+                                Object {
+                                  "color": "transparent",
+                                },
+                              ]
+                            }
+                          >
+                            0
+                          </Text>
+                        </View>
+                        <View
+                          accessibilityLabel="textinputcode_codes_code_3"
+                          style={
+                            Array [
+                              Object {
+                                "backgroundColor": "#F7F9FC",
+                                "borderColor": "#E6E9ED",
+                                "borderRadius": 8,
+                                "borderWidth": 1,
+                                "height": 40,
+                                "marginHorizontal": 5,
+                                "position": "relative",
+                                "width": 40,
+                              },
+                              false,
+                            ]
+                          }
+                        >
+                          <Text
+                            accessibilityLabel="textinputcode_codes_code_text3"
+                            allowFontScaling={false}
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#434A54",
+                                  "fontFamily": "Brevia",
+                                  "fontSize": 16,
+                                  "fontStyle": "normal",
+                                  "fontWeight": "700",
+                                  "marginTop": 8,
+                                  "textAlign": "center",
+                                },
+                                Object {
+                                  "color": "transparent",
+                                },
+                              ]
+                            }
+                          >
+                            0
+                          </Text>
+                        </View>
+                        <View
+                          accessibilityLabel="textinputcode_codes_code_4"
+                          style={
+                            Array [
+                              Object {
+                                "backgroundColor": "#F7F9FC",
+                                "borderColor": "#E6E9ED",
+                                "borderRadius": 8,
+                                "borderWidth": 1,
+                                "height": 40,
+                                "marginHorizontal": 5,
+                                "position": "relative",
+                                "width": 40,
+                              },
+                              false,
+                            ]
+                          }
+                        >
+                          <Text
+                            accessibilityLabel="textinputcode_codes_code_text4"
+                            allowFontScaling={false}
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#434A54",
+                                  "fontFamily": "Brevia",
+                                  "fontSize": 16,
+                                  "fontStyle": "normal",
+                                  "fontWeight": "700",
+                                  "marginTop": 8,
+                                  "textAlign": "center",
+                                },
+                                Object {
+                                  "color": "transparent",
+                                },
+                              ]
+                            }
+                          >
+                            0
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      accessibilityLabel="confirmcode_textinputcode_otp_container"
+                      style={
+                        Array [
+                          Object {
+                            "flexDirection": "column",
+                            "marginBottom": 20,
+                            "marginTop": 10,
+                            "position": "relative",
+                          },
+                          Object {
+                            "marginBottom": 0,
+                            "marginTop": 0,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        accessibilityLabel="textinput_label_container"
+                        style={
+                          Array [
+                            Object {
+                              "alignItems": "center",
+                              "flexDirection": "row",
+                              "paddingBottom": 4,
+                            },
+                            false,
+                            undefined,
+                          ]
+                        }
+                      />
+                      <View
+                        style={
+                          Array [
+                            Object {
+                              "position": "relative",
+                            },
+                            Object {
+                              "height": 1,
+                              "opacity": 1,
+                            },
+                          ]
+                        }
+                      >
+                        <TextInput
+                          accessibilityLabel="confirmcode_textinputcode_otp"
+                          autoCorrect={false}
+                          blurOnSubmit={true}
+                          editable={true}
+                          formatText={
+                            Object {
+                              "format": "xxxxx",
+                              "isRealTimeValidateActive": false,
+                              "keysplit": " ",
+                              "name": "smskey",
+                              "pattern": "[^0-9]+",
+                              "validateList": Array [
+                                Object {
+                                  "active": true,
+                                  "isRealTimeValidate": false,
+                                  "msjError": "Debes ingresar el código recibido por mensaje de texto",
+                                  "type": "TypeNotEmpty",
+                                  "value": true,
+                                },
+                                Object {
+                                  "active": true,
+                                  "isRealTimeValidate": false,
+                                  "msjError": "El código debe tener 5 dígitos de largo",
+                                  "type": "TypeLength",
+                                  "value": 5,
+                                },
+                                Object {
+                                  "active": true,
+                                  "isRealTimeValidate": false,
+                                  "msjError": "El código debe tener 5 dígitos de largo",
+                                  "type": "TypeFormat",
+                                  "value": true,
+                                },
+                              ],
+                            }
+                          }
+                          keyboardType="numeric"
+                          onBlur={[Function]}
+                          onChangeText={[Function]}
+                          onEmptyState={[Function]}
+                          onError={[Function]}
+                          onFocus={[Function]}
+                          placeholderTextColor="#AAB2BD"
+                          returnKeyType="done"
+                          secureTextEntry={false}
+                          selectionColor="#3FB4E5"
+                          style={
+                            Array [
+                              Object {
+                                "backgroundColor": "#F7F9FC",
+                                "borderColor": "#E6E9ED",
+                                "borderRadius": 12,
+                                "borderWidth": 1,
+                                "color": "#434A54",
+                                "fontFamily": "Brevia",
+                                "fontSize": 15,
+                                "fontStyle": "normal",
+                                "fontWeight": "400",
+                                "paddingBottom": 10,
+                                "paddingLeft": 10,
+                                "paddingRight": 8,
+                                "paddingTop": 10,
+                                "textDecorationLine": "none",
+                              },
+                              false,
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "backgroundColor": "transparent",
+                                "borderBottomWidth": 0,
+                                "borderColor": "transparent",
+                                "borderWidth": 0,
+                                "color": "transparent",
+                              },
+                            ]
+                          }
+                          underlineColorAndroid="transparent"
+                          value=""
+                        />
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "position": "absolute",
+                                "right": -30,
+                              },
+                              undefined,
+                            ]
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    accessibilityLabel="buttonlink"
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    hitSlop={
+                      Object {
+                        "bottom": 10,
+                        "left": 10,
+                        "right": 10,
+                        "top": 10,
+                      }
+                    }
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "alignContent": "center",
+                        "alignItems": "center",
+                        "alignSelf": "flex-start",
+                        "flexDirection": "row",
+                        "marginLeft": 7.5,
+                        "marginTop": 4,
+                        "opacity": 1,
+                        "padding": 6,
+                        "paddingBottom": 5,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "justifyContent": "center",
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#AAB2BD",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "600",
+                          }
+                        }
+                      >
+                        ¿No recibiste tu código?
+                        <Text
+                          style={
+                            Object {
+                              "fontFamily": "Brevia",
+                              "fontSize": 18,
+                              "fontStyle": "normal",
+                              "fontWeight": "600",
+                              "marginLeft": 10,
+                            }
+                          }
+                        >
+                            
+                          30
+                          s
+                        </Text>
+                      </Text>
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/icon-clock.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 12,
+                            "marginLeft": 5,
+                            "marginRight": 1,
+                            "resizeMode": "contain",
+                            "tintColor": "#AAB2BD",
+                            "width": 12,
+                          }
+                        }
+                      />
+                    </View>
+                    <Image
+                      accessibilityLabel="buttonexternal_image"
+                      resizeMode="contain"
+                      source={
+                        Object {
+                          "testUri": "../../../src/assets/images/arrow-icon.png",
+                        }
+                      }
+                      style={
+                        Array [
+                          Object {
+                            "height": 12,
+                            "marginLeft": 3,
+                            "tintColor": "#00964B",
+                            "width": 12,
+                          },
+                          Object {
+                            "tintColor": "#F28F00",
+                          },
+                          Array [
+                            Object {
+                              "height": 12,
+                              "marginLeft": 5,
+                              "tintColor": "#AAB2BD",
+                              "width": 6,
+                            },
+                            false,
+                          ],
+                        ]
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 40,
+                    "marginTop": 30,
+                  }
+                }
+              >
+                <View
+                  accessibilityLabel="enrollmentsmsscreen_button_continue"
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#CCD1D9",
+                      "borderColor": "#CCD1D9",
+                      "borderRadius": 25,
+                      "borderWidth": 1,
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "margin": 0,
+                      "minHeight": 40,
+                      "opacity": 1,
+                      "paddingHorizontal": 12,
+                      "zIndex": 1,
+                    }
+                  }
+                >
+                  <Text
+                    accessibilityLabel="button_text"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "Brevia",
+                          "fontSize": 16,
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                          "textAlign": "center",
+                        },
+                        undefined,
+                        undefined,
+                        undefined,
+                      ]
+                    }
+                  >
+                    Validar
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              accessibilityLabel="content"
+              style={
+                Array [
+                  Object {
+                    "paddingHorizontal": 20,
+                  },
+                  false,
+                  false,
+                  undefined,
+                ]
+              }
+            >
+              <View
+                accessibilityLabel="enrollmentsmsscreen_infocontact"
+                navigate={[MockFunction]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "marginBottom": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <Text
+                  accessibilityLabel="infocontact_text_title"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#656D78",
+                        "fontFamily": "Brevia",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "400",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  ¿Dudas o consultas?
+                </Text>
+                <View
+                  accessibilityLabel="infocontact_note"
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    accessibilityLabel="infocontact_text"
+                    style={
+                      Object {
+                        "color": "#00964B",
+                        "fontFamily": "Brevia",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "600",
+                      }
+                    }
+                  >
+                    Comunícate con nosotros al
+                     
+                  </Text>
+                  <View
+                    accessibilityLabel="infocontact_buttonlink"
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    hitSlop={
+                      Object {
+                        "bottom": 10,
+                        "left": 10,
+                        "right": 10,
+                        "top": 10,
+                      }
+                    }
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "alignContent": "center",
+                        "alignItems": "center",
+                        "alignSelf": "center",
+                        "flexDirection": "row",
+                        "opacity": 1,
+                        "padding": 0,
+                      }
+                    }
+                  >
+                    <Text
+                      accessibilityLabel="buttonlink_text"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 13,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                            "textAlign": "center",
+                          },
+                          undefined,
+                          Object {
+                            "color": "#00964B",
+                          },
+                          Array [
+                            Object {
+                              "color": "#00964B",
+                              "fontFamily": "Brevia",
+                              "fontSize": 14,
+                              "fontStyle": "normal",
+                              "fontWeight": "600",
+                            },
+                            undefined,
+                          ],
+                        ]
+                      }
+                    >
+                      (01) 319-9999
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+      </RCTScrollView>
+      <View
+        accessibilityLabel="morecontainer_scrollmore"
+        collapsable={false}
+        style={
+          Object {
+            "bottom": -100,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "zIndex": 1000,
+          }
+        }
+      >
+        <View
+          accessibilityLabel="scrollmore_button"
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            accessibilityLabel="scrollmore_image"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+              }
+            }
+            style={
+              Object {
+                "height": 70,
+                "width": 70,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

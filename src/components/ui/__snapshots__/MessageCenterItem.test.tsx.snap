@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  collapsable={false}
+  style={
+    Object {
+      "marginTop": -50,
+      "opacity": 0,
+    }
+  }
+>
+  <View
+    accessibilityLabel="messagecenteritem"
+    onLayout={[Function]}
+  >
+    <View
+      accessibilityLabel="modal_overlay"
+      activeOpacity={1}
+      onTimeout={[MockFunction]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "padding": 10,
+          },
+          Object {
+            "borderColor": "#F6323E",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Image
+        accessibilityLabel="infomessage_icon"
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/error-icon.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 21,
+              "marginRight": 10,
+              "width": 21,
+            },
+            Object {
+              "tintColor": "#F6323E",
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="infomessage_text_content"
+          style={
+            Array [
+              Object {
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "500",
+                "lineHeight": 15,
+              },
+              Object {
+                "color": "#F6323E",
+              },
+            ]
+          }
+        >
+          test
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

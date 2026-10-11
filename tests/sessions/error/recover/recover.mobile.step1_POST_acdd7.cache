@@ -1,0 +1,23 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/recover",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Ocp-Apim-Subscription-Key": "sample"
+    },
+    "body": {
+      "channel": "phonegap",
+      "idActivity": "recover.mobile.step1",
+      "_debitcardNumber": "",
+      "_documentNumber": "",
+      "_captcha": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

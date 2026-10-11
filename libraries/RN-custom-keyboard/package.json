@@ -1,0 +1,26 @@
+
+{
+  "name": "RN-custom-keyboard",
+  "version": "1.0.7",
+  "description": "custon keyboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RnTouna/RN-custom-keyboard.git"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "homepage": "https://github.com/RnTouna/RN-custom-keyboard.git",
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.40.0"
+  },
+  "dependencies": {
+      "prop-types": "^15.5.10"
+  }
+}

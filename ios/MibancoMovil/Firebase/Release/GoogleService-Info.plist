@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>192113522836-4d1qp5vaimjpr4jecn1p8ee8t345eqvf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.192113522836-4d1qp5vaimjpr4jecn1p8ee8t345eqvf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCBmb8GGZc3zRnQnvKMa2x649MU8RxC0Y4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>192113522836</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mibanco.bancamovil</string>
+	<key>PROJECT_ID</key>
+	<string>hbmovil-f1be5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hbmovil-f1be5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:192113522836:ios:d49a86133b92b804</string>
+	<key>DATABASE_URL</key>
+	<string>https://hbmovil-f1be5.firebaseio.com</string>
+</dict>
+</plist>

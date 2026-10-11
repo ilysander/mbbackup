@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="analytics_test"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#3FB4E5",
+      "borderRadius": 4,
+      "flex": 1,
+      "opacity": 1,
+      "padding": 8,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      accessibilityLabel="buttonshortcut_image"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/shortcut-payments.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 32,
+            "tintColor": "#FFFFFF",
+            "width": 32,
+          },
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignContent": "center",
+          "alignSelf": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="buttonshortcut_text_title"
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Brevia",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+            "textAlign": "center",
+          }
+        }
+      >
+        test text
+      </Text>
+    </View>
+  </View>
+</View>
+`;

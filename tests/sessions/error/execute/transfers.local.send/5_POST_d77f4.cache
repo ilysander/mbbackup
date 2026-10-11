@@ -1,0 +1,29 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfers.local.send/5",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "_otp": "",
+      "debitAccount": "31239124",
+      "frequentContact": "",
+      "isFrequentContact": "false",
+      "Amount": {
+        "currency": "1",
+        "quantity": "20.00"
+      },
+      "valueDate": "",
+      "ToAccount": "6007644726",
+      "aceptTermAndCondition": true
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/accounts.list",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {}
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "2351",
+      "date": "Wed, 19 Sep 2018 20:07:42 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "de3b52ac69874522b84337ba4d0e4d17",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "accounts": []
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Brevia-Black.otf",
+      "sha1": "5448f441a3d3ad8977f0b273eb90311bed64fa3b"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-BlackItalic.otf",
+      "sha1": "463e235acf1b098fa3434341a0cea8281db1d341"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-Bold.otf",
+      "sha1": "cbbdd18cd46e59643216413244e6635ff715814e"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-BoldItalic.otf",
+      "sha1": "ba9ca80c58e6c4b15b0ac059f8bf94323b2e03b4"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-ExtraBlack.otf",
+      "sha1": "849d890e1de8e93f2f6d926c5c66844b3e9a6653"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-ExtraBlackItalic.otf",
+      "sha1": "96562c5e3e3784f22f0c8a6252eb519da37f80df"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-Light.otf",
+      "sha1": "ab14d2993b0f2fcacc06381c1b888cf2449e8531"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-LightItalic.otf",
+      "sha1": "e7220a21174808ddcd3bf631cc92bc3fef84959e"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-Medium.otf",
+      "sha1": "b06a73e198ddb797246ee4fe522ba7a9b063aa0a"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-MediumItalic.otf",
+      "sha1": "77d5c67bf22a1f981dc9a4ead1c6c5e42735717c"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-Regular.otf",
+      "sha1": "7f03a615360ccf726a723876cae900c464c27b4c"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-RegularItalic.otf",
+      "sha1": "2d197bd0f58f35ed97854288ae7d743186b8d8fb"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-SemiBold.otf",
+      "sha1": "bfbfbd8a3ec92b427f958a591fcb159315eb59ab"
+    },
+    {
+      "path": "src/assets/fonts/Brevia-SemiBoldItalic.otf",
+      "sha1": "d1181084ca11f9499697ec87a8968577f7991a79"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Black.ttf",
+      "sha1": "c572416b9587c40d49ea60c7128f7f17b9317ad8"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Bold.ttf",
+      "sha1": "0ce37ced9c5fcac9bdc452a432c1258870ba4677"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Medium.ttf",
+      "sha1": "5f16f4d6dbb4a4f12d8ae96488ac209bb49762a5"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Regular.ttf",
+      "sha1": "dd1b1db13ff1f72138c134c62f38fef83749f36a"
+    }
+  ]
+}

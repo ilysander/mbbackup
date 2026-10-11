@@ -1,0 +1,2006 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`session render just views 1`] = `
+<View
+  accessibilityLabel="container"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 100,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#F7F9FC",
+          "height": 25,
+          "left": 0,
+          "overflow": "visible",
+          "position": "absolute",
+          "right": 0,
+          "top": -20,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFD100",
+              "borderBottomLeftRadius": 20,
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "right": 60,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      accessibilityLabel="formsteps"
+      style={
+        Object {
+          "alignSelf": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="formsteps_step_1"
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+            },
+            Object {
+              "zIndex": 4,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="formsteps_indicator"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 22,
+                "justifyContent": "center",
+                "paddingBottom": 4,
+                "position": "relative",
+                "width": 34,
+              },
+              false,
+              undefined,
+            ]
+          }
+        >
+          <Image
+            resizeMode="stretch"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/step-flag.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 22,
+                  "left": 0,
+                  "position": "absolute",
+                  "tintColor": "#E6E9ED",
+                  "top": 0,
+                  "width": 34,
+                },
+                Object {
+                  "tintColor": "#FFD100",
+                },
+                false,
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#AAB2BD",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                  "textAlign": "center",
+                },
+                Object {
+                  "color": "#434A54",
+                },
+                false,
+              ]
+            }
+          >
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="formsteps_step_2"
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+            },
+            Object {
+              "zIndex": 3,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="formsteps_split"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#E6E9ED",
+                "height": 5,
+                "marginHorizontal": -4,
+                "overflow": "hidden",
+                "width": 80,
+              },
+              undefined,
+              Object {
+                "width": 182.66666666666666,
+              },
+              Object {
+                "backgroundColor": "#FFD100",
+              },
+            ]
+          }
+        />
+        <View
+          accessibilityLabel="formsteps_indicator"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 22,
+                "justifyContent": "center",
+                "paddingBottom": 4,
+                "position": "relative",
+                "width": 34,
+              },
+              false,
+              undefined,
+            ]
+          }
+        >
+          <Image
+            resizeMode="stretch"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/step-flag.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 22,
+                  "left": 0,
+                  "position": "absolute",
+                  "tintColor": "#E6E9ED",
+                  "top": 0,
+                  "width": 34,
+                },
+                Object {
+                  "tintColor": "#FFD100",
+                },
+                false,
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#AAB2BD",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                  "textAlign": "center",
+                },
+                Object {
+                  "color": "#434A54",
+                },
+                false,
+              ]
+            }
+          >
+            2
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="formsteps_step_3"
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+            },
+            Object {
+              "zIndex": 2,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="formsteps_split"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#E6E9ED",
+                "height": 5,
+                "marginHorizontal": -4,
+                "overflow": "hidden",
+                "width": 80,
+              },
+              undefined,
+              Object {
+                "width": 182.66666666666666,
+              },
+              Object {
+                "backgroundColor": "#FFD100",
+              },
+            ]
+          }
+        />
+        <View
+          accessibilityLabel="formsteps_indicator"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 22,
+                "justifyContent": "center",
+                "paddingBottom": 4,
+                "position": "relative",
+                "width": 34,
+              },
+              false,
+              undefined,
+            ]
+          }
+        >
+          <Image
+            resizeMode="stretch"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/step-flag.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 22,
+                  "left": 0,
+                  "position": "absolute",
+                  "tintColor": "#E6E9ED",
+                  "top": 0,
+                  "width": 34,
+                },
+                Object {
+                  "tintColor": "#FFD100",
+                },
+                false,
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#AAB2BD",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                  "textAlign": "center",
+                },
+                Object {
+                  "color": "#434A54",
+                },
+                false,
+              ]
+            }
+          >
+            3
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="formsteps_step_4"
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+            },
+            Object {
+              "zIndex": 1,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="formsteps_split"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#E6E9ED",
+                "height": 5,
+                "marginHorizontal": -4,
+                "overflow": "hidden",
+                "width": 80,
+              },
+              undefined,
+              Object {
+                "width": 182.66666666666666,
+              },
+              Object {
+                "backgroundColor": "#FFD100",
+              },
+            ]
+          }
+        />
+        <View
+          accessibilityLabel="formsteps_indicator"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 22,
+                "justifyContent": "center",
+                "paddingBottom": 4,
+                "position": "relative",
+                "width": 34,
+              },
+              Object {
+                "height": 30,
+                "paddingBottom": 0,
+                "width": 40,
+              },
+              undefined,
+            ]
+          }
+        >
+          <Image
+            resizeMode="stretch"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/step-flag.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 22,
+                  "left": 0,
+                  "position": "absolute",
+                  "tintColor": "#E6E9ED",
+                  "top": 0,
+                  "width": 34,
+                },
+                Object {
+                  "tintColor": "#FFD100",
+                },
+                Object {
+                  "height": 30,
+                  "width": 40,
+                },
+              ]
+            }
+          />
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/icon-check.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "bottom": -1,
+                  "height": 8,
+                  "tintColor": "#AAB2BD",
+                  "width": 14,
+                },
+                Object {
+                  "tintColor": "#434A54",
+                },
+                Object {
+                  "bottom": 2,
+                  "height": 12,
+                  "left": 1,
+                  "width": 14,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="morecontainer"
+    style={
+      Object {
+        "flex": 1,
+        "position": "relative",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="keyboardavoidingview"
+      onChangeDimensions={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+            "width": "100%",
+          },
+          Object {
+            "flex": 1,
+            "position": "relative",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <RCTScrollView
+        accessibilityLabel="keyboardavoidingview_scrollview"
+        contentContainerStyle={
+          Array [
+            Object {
+              "minHeight": 1220,
+            },
+            false,
+          ]
+        }
+        keyboardShouldPersistTaps="handled"
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onScroll={[Function]}
+        scrollEventThrottle={100}
+      >
+        <View>
+          <RCTSafeAreaView
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                undefined,
+              ]
+            }
+          >
+            <View
+              accessibilityLabel="content"
+              style={
+                Array [
+                  Object {
+                    "paddingHorizontal": 20,
+                  },
+                  false,
+                  Object {
+                    "flex": 1,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Image
+                resizeMode="contain"
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/images/adn-man-pointing.png",
+                  }
+                }
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "height": 142,
+                    "marginTop": 30,
+                    "width": 149,
+                  }
+                }
+              />
+              <View
+                accessibilityLabel="loansreschedulemessagescreen_header"
+                style={
+                  Array [
+                    Object {
+                      "overflow": "visible",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityLabel="header_text_title"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontSize": 22,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "lineHeight": 25,
+                          "textAlign": "left",
+                        },
+                        undefined,
+                        Object {
+                          "textAlign": "center",
+                        },
+                        Object {
+                          "fontFamily": "Brevia",
+                          "fontSize": 22,
+                          "fontStyle": "italic",
+                          "fontWeight": "700",
+                          "lineHeight": 35,
+                          "marginTop": 8,
+                          "textAlign": "center",
+                        },
+                      ]
+                    }
+                  >
+                    ¡Juntos saldremos adelante!
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#F28F00",
+                          "fontFamily": "Brevia",
+                          "fontSize": 16,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "lineHeight": 19,
+                          "marginBottom": 16,
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      Esperamos que este beneficio
+
+                      <Text>
+                        te ayude a estar mejor.
+                      </Text>
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                accessibilityLabel="card"
+                removeClippedSubviews={false}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderColor": "#E6E9ED",
+                      "borderRadius": 12,
+                      "borderWidth": 0,
+                      "elevation": 3,
+                      "overflow": "visible",
+                      "shadowColor": "#434A54",
+                      "shadowOffset": Object {
+                        "height": 4,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.1,
+                      "shadowRadius": 16,
+                    },
+                    undefined,
+                    Object {
+                      "alignItems": "center",
+                      "marginBottom": 20,
+                    },
+                  ]
+                }
+              >
+                <Image
+                  resizeMode="stretch"
+                  source={
+                    Object {
+                      "testUri": "../../../src/assets/images/flags-large.png",
+                    }
+                  }
+                  style={
+                    Object {
+                      "height": 32,
+                      "width": "80%",
+                    }
+                  }
+                />
+                <View
+                  accessibilityLabel="loansreschedulesuccessscreen_header"
+                  style={
+                    Array [
+                      Object {
+                        "overflow": "visible",
+                      },
+                      Object {
+                        "marginVertical": 20,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "flexDirection": "row",
+                          "flexWrap": "wrap",
+                          "position": "relative",
+                        },
+                        Object {
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      accessibilityLabel="header_text_title"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#00964B",
+                            "fontFamily": "Brevia",
+                            "fontSize": 22,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                            "lineHeight": 25,
+                            "textAlign": "left",
+                          },
+                          undefined,
+                          Object {
+                            "textAlign": "center",
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      Constancia de
+reprogramación
+de préstamo
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "flexDirection": "row",
+                          "flexWrap": "wrap",
+                          "position": "relative",
+                        },
+                        Object {
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                        },
+                        false,
+                      ]
+                    }
+                  />
+                </View>
+                <View
+                  style={
+                    Object {
+                      "paddingBottom": 10,
+                      "paddingHorizontal": 20,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Text
+                        accessibilityLabel="loansreschedulesuccessscreen_label_nameloan"
+                        style={
+                          Array [
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 13,
+                              "fontStyle": "normal",
+                              "fontWeight": "400",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        Nombre del préstamo
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      Préstamo ActivoFijo
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Text
+                        accessibilityLabel="loansreschedulesuccessscreen_label_amountloan"
+                        style={
+                          Array [
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 13,
+                              "fontStyle": "normal",
+                              "fontWeight": "400",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        Monto del préstamo
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      S/ 151,924.33
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Text
+                        accessibilityLabel="loansreschedulesuccessscreen_label_fee"
+                        style={
+                          Array [
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 13,
+                              "fontStyle": "normal",
+                              "fontWeight": "400",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        Cuota
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      S/ 1,900.67
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Text
+                        accessibilityLabel="loansreschedulesuccessscreen_label_tcea"
+                        style={
+                          Array [
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 13,
+                              "fontStyle": "normal",
+                              "fontWeight": "400",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        Tasa de costo efectivo anual (TCEA)
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      45.56%
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Text
+                        accessibilityLabel="loansreschedulesuccessscreen_label_periodgrace"
+                        style={
+                          Array [
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 13,
+                              "fontStyle": "normal",
+                              "fontWeight": "400",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        Periodo de gracia
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      3 meses
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Text
+                        accessibilityLabel="loansreschedulesuccessscreen_label_term"
+                        style={
+                          Array [
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 13,
+                              "fontStyle": "normal",
+                              "fontWeight": "400",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        Plazo adicional
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      3 meses más
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Text
+                        accessibilityLabel="loansreschedulesuccessscreen_label_datetime"
+                        style={
+                          Array [
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 13,
+                              "fontStyle": "normal",
+                              "fontWeight": "400",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        Fecha del próximo pago
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      25 abr 2020
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Text
+                        accessibilityLabel="loansreschedulesuccessscreen_label_operation"
+                        style={
+                          Array [
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 13,
+                              "fontStyle": "normal",
+                              "fontWeight": "400",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        Número de operación
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      67686868
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "marginBottom": 10,
+                      }
+                    }
+                  >
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Text
+                        accessibilityLabel="loansreschedulesuccessscreen_label_datetimeoperation"
+                        style={
+                          Array [
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 13,
+                              "fontStyle": "normal",
+                              "fontWeight": "400",
+                            },
+                            undefined,
+                          ]
+                        }
+                      >
+                        Fecha y hora de la operación
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      11/03/2020 00:00:00
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                accessibilityLabel="card"
+                removeClippedSubviews={false}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderColor": "#E6E9ED",
+                      "borderRadius": 12,
+                      "borderWidth": 0,
+                      "elevation": 3,
+                      "overflow": "visible",
+                      "shadowColor": "#434A54",
+                      "shadowOffset": Object {
+                        "height": 4,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.1,
+                      "shadowRadius": 16,
+                    },
+                    Object {
+                      "padding": 20,
+                    },
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderColor": "#F28F00",
+                        "borderWidth": 1,
+                        "flexDirection": "row",
+                      },
+                      Object {
+                        "paddingHorizontal": 20,
+                        "paddingVertical": 10,
+                      },
+                    ],
+                  ]
+                }
+              >
+                <Image
+                  accessibilityLabel="callmessage_icon"
+                  source={
+                    Object {
+                      "testUri": "../../../src/assets/images/icon-headset.png",
+                    }
+                  }
+                  style={
+                    Object {
+                      "height": 46,
+                      "marginRight": 25,
+                      "tintColor": "#F28F00",
+                      "width": 46,
+                    }
+                  }
+                />
+                <Text
+                  accessibilityLabel="callmessage_text"
+                  style={
+                    Object {
+                      "color": "#F28F00",
+                      "flex": 1,
+                      "fontFamily": "Brevia",
+                      "fontSize": 13,
+                      "fontStyle": "normal",
+                      "fontWeight": "500",
+                      "lineHeight": 18,
+                      "textAlign": "left",
+                    }
+                  }
+                >
+                  En los siguientes días te llamaremos para coordinar el envío mensual de tu estado de cuenta.
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginTop": 20,
+                  }
+                }
+              >
+                <View
+                  accessibilityLabel="loansreschedulesuccessscreen_button_share"
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#FFFFFF",
+                      "borderColor": "#00964B",
+                      "borderRadius": 25,
+                      "borderWidth": 1,
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "margin": 0,
+                      "marginBottom": 20,
+                      "minHeight": 40,
+                      "opacity": 1,
+                      "paddingHorizontal": 12,
+                      "zIndex": 1,
+                    }
+                  }
+                >
+                  <Text
+                    accessibilityLabel="button_text"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "Brevia",
+                          "fontSize": 16,
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                          "textAlign": "center",
+                        },
+                        undefined,
+                        Object {
+                          "color": "#00964B",
+                        },
+                        Object {
+                          "fontSize": 16,
+                        },
+                      ]
+                    }
+                  >
+                    Compartir constancia
+                  </Text>
+                </View>
+                <View
+                  accessibilityLabel="loansreschedulesuccessscreen_button_end"
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#00964B",
+                      "borderColor": "#00964B",
+                      "borderRadius": 25,
+                      "borderWidth": 1,
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "margin": 0,
+                      "marginBottom": 20,
+                      "minHeight": 40,
+                      "opacity": 1,
+                      "paddingHorizontal": 12,
+                      "zIndex": 1,
+                    }
+                  }
+                >
+                  <Text
+                    accessibilityLabel="button_text"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "Brevia",
+                          "fontSize": 16,
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                          "textAlign": "center",
+                        },
+                        undefined,
+                        undefined,
+                        Object {
+                          "fontSize": 16,
+                        },
+                      ]
+                    }
+                  >
+                    Terminar
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "borderColor": "#434A54",
+                    "borderWidth": 2,
+                    "position": "absolute",
+                    "top": -10000,
+                  },
+                  false,
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#CCD1D9",
+                  }
+                }
+              >
+                <View
+                  accessibilityRole="button"
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {},
+                      ]
+                    }
+                  >
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#007AFF",
+                            "fontSize": 18,
+                            "margin": 8,
+                            "textAlign": "center",
+                          },
+                        ]
+                      }
+                    >
+                      Cerrar previsualización
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "white",
+                      "paddingBottom": 20,
+                      "width": 360,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignContent": "center",
+                      "alignItems": "center",
+                      "backgroundColor": "#00964B",
+                      "height": 170,
+                      "justifyContent": "center",
+                    }
+                  }
+                >
+                  <Image
+                    resizeMode="contain"
+                    source={
+                      Object {
+                        "testUri": "../../../src/assets/images/header-bar-alter.png",
+                      }
+                    }
+                    style={
+                      Object {
+                        "alignSelf": "center",
+                        "height": 38,
+                        "width": "100%",
+                      }
+                    }
+                  />
+                  <View
+                    style={
+                      Object {
+                        "paddingVertical": 20,
+                      }
+                    }
+                  >
+                    <Image
+                      resizeMode="contain"
+                      source={
+                        Object {
+                          "testUri": "../../../src/assets/images/logo.png",
+                        }
+                      }
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "height": 80,
+                        }
+                      }
+                    />
+                  </View>
+                </View>
+                <View
+                  accessibilityLabel="card"
+                  removeClippedSubviews={false}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#E6E9ED",
+                        "borderRadius": 12,
+                        "borderWidth": 0,
+                        "elevation": 3,
+                        "overflow": "visible",
+                        "shadowColor": "#434A54",
+                        "shadowOffset": Object {
+                          "height": 4,
+                          "width": 0,
+                        },
+                        "shadowOpacity": 0.1,
+                        "shadowRadius": 16,
+                      },
+                      undefined,
+                      Array [
+                        Object {
+                          "marginHorizontal": 20,
+                          "marginTop": 30,
+                          "padding": 20,
+                          "paddingTop": 0,
+                        },
+                        false,
+                      ],
+                    ]
+                  }
+                >
+                  <Image
+                    resizeMode="stretch"
+                    source={
+                      Object {
+                        "testUri": "../../../src/assets/images/flags-large.png",
+                      }
+                    }
+                    style={
+                      Object {
+                        "alignSelf": "center",
+                        "height": 32,
+                        "width": 250,
+                      }
+                    }
+                  />
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontSize": 22,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "marginBottom": 20,
+                          "marginHorizontal": 40,
+                          "marginTop": 10,
+                          "textAlign": "center",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Constancia de
+reprogramación
+ de préstamo
+                  </Text>
+                  <View>
+                    <View
+                      style={
+                        Object {
+                          "paddingBottom": 10,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        Nombre del préstamo
+                      </Text>
+                      <View>
+                        <Text
+                          style={
+                            Array [
+                              Object {
+                                "color": "#656D78",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              },
+                            ]
+                          }
+                        >
+                          Préstamo ActivoFijo
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "paddingBottom": 5,
+                          "paddingTop": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        Monto del préstamo
+                      </Text>
+                      <View>
+                        <Text
+                          style={
+                            Array [
+                              Object {
+                                "color": "#656D78",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              },
+                            ]
+                          }
+                        >
+                          S/ 151,924.33
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "paddingBottom": 5,
+                          "paddingTop": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        Cuota
+                      </Text>
+                      <View>
+                        <Text
+                          style={
+                            Array [
+                              Object {
+                                "color": "#656D78",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              },
+                            ]
+                          }
+                        >
+                          S/ 1,900.67
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "paddingBottom": 5,
+                          "paddingTop": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        Tasa de costo efectivo anual (TCEA)
+                      </Text>
+                      <View>
+                        <Text
+                          style={
+                            Array [
+                              Object {
+                                "color": "#656D78",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              },
+                            ]
+                          }
+                        >
+                          45.56%
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "paddingBottom": 5,
+                          "paddingTop": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        Periodo de gracia
+                      </Text>
+                      <View>
+                        <Text
+                          style={
+                            Array [
+                              Object {
+                                "color": "#656D78",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              },
+                            ]
+                          }
+                        >
+                          3 meses
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "paddingBottom": 5,
+                          "paddingTop": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        Plazo adicional
+                      </Text>
+                      <View>
+                        <Text
+                          style={
+                            Array [
+                              Object {
+                                "color": "#656D78",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              },
+                            ]
+                          }
+                        >
+                          3 meses más
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "paddingBottom": 5,
+                          "paddingTop": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        Fecha del próximo pago
+                      </Text>
+                      <View>
+                        <Text
+                          style={
+                            Array [
+                              Object {
+                                "color": "#656D78",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              },
+                            ]
+                          }
+                        >
+                          25 Abr 2020
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "paddingBottom": 5,
+                          "paddingTop": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        Número de operación
+                      </Text>
+                      <View>
+                        <Text
+                          style={
+                            Array [
+                              Object {
+                                "color": "#656D78",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              },
+                            ]
+                          }
+                        >
+                          67686868
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "paddingTop": 10,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        Fecha y hora de la operación
+                      </Text>
+                      <View>
+                        <Text
+                          style={
+                            Array [
+                              Object {
+                                "color": "#656D78",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              },
+                            ]
+                          }
+                        >
+                          11/03/2020 00:00:00
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+      </RCTScrollView>
+      <View
+        accessibilityLabel="morecontainer_scrollmore"
+        collapsable={false}
+        style={
+          Object {
+            "bottom": -100,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "zIndex": 1000,
+          }
+        }
+      >
+        <View
+          accessibilityLabel="scrollmore_button"
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            accessibilityLabel="scrollmore_image"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+              }
+            }
+            style={
+              Object {
+                "height": 70,
+                "width": 70,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

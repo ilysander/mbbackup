@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "paddingHorizontal": 20,
+        "paddingVertical": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    accessibilityLabel="deviceitem_image_icon"
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/mobile-dark-icon.png",
+      }
+    }
+    style={
+      Object {
+        "height": 32,
+        "marginRight": 20,
+        "marginVertical": 12,
+        "resizeMode": "contain",
+        "tintColor": "#AAB2BD",
+        "width": 32,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "marginTop": 6.5,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="deviceitem_text_devicename"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "600",
+              },
+            ]
+          }
+        >
+          test
+        </Text>
+        <Text
+          accessibilityLabel="deviceitem_text_deviceactivedescription"
+          style={
+            Object {
+              "color": "#3FB4E5",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "500",
+              "marginBottom": 6.5,
+            }
+          }
+        >
+          Este equipo celular
+        </Text>
+      </View>
+    </View>
+  </View>
+  <Text
+    accessibilityLabel="deviceitem_text_devicename"
+    style={
+      Object {
+        "color": "#F6323E",
+        "fontFamily": "Brevia",
+        "fontSize": 14,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+      }
+    }
+  >
+    test
+  </Text>
+</View>
+`;

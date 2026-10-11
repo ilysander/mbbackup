@@ -1,0 +1,21 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/pay.loan.own.send/6",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "valueDate": "",
+      "aceptTermAndCondition": "true",
+      "isFrequentContact": "false"
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

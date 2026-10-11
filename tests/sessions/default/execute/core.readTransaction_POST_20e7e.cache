@@ -1,0 +1,146 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/core.readTransaction",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "idTransaction": "123456789"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "date": "Tue, 13 Nov 2018 22:30:42 GMT",
+      "connection": "close"
+    },
+  "body": {
+    "code": "COR000I",
+    "idTransaction": "ddd9415301b946999a93c4c2082f83c0",
+    "message": "Operación ejecutada con éxito",
+    "data": {
+      "transaction": {
+        "idTransaction": "65d472e506814249be0d4d101c674ee7",
+        "idParentTransaction": null,
+        "creationDateTime": "2018-09-19T15:08:34.700-0500",
+        "submitDateTime": "2018-09-19T15:08:36.173-0500",
+        "valueDateTime": "2018-09-19T15:08:34.700-0500",
+        "idEnvironment": 299,
+        "idTransactionStatus": "FINISHED",
+        "transactionStatusName": null,
+        "transactionData": null,
+        "data": {
+          "amount": {
+            "currency": "1",
+            "quantity": 100
+          },
+          "userEmail":"pablo_zoza@gmail.com",
+          "destinationAccount": "28978535",
+          "originAccount": "31725164",
+          "date": "19/09/2018 15:08:36",
+          "codigoAutorizacion": 1024315,
+          "debitAmount": 31.15,
+          "exchangeRate": "El cambio a S/ es de S/ 3.210, el monto en $ es de $ 31.15",
+          "ticketOnly": "value",
+          "debitAccountLabel": "Cuenta ahorro negocios (ME) 6009812537",
+          "destinationAccountLabel": "Full ahorro (MN) 6007456520",
+          "debitCurrency": "2",
+          "exchange": 3.21
+        },
+        "idUserCreator": "88d1c2273e464117bfe805433f9c7ea3",
+        "idActivity": "transfers.internal.send",
+        "activityName": "Transferencia entre mis cuentas en MiBanco",
+        "totalAmount": {"quantity":100},
+        "products": [
+          {
+            "idActivity": "transfers.internal.send",
+            "idField": "originAccount",
+            "idPermission": "transfer.internal",
+            "idProduct": "31725164"
+          }
+        ],
+        "signatures": [
+          {
+            "idTransactionSignature": 2610,
+            "idTransaction": "65d472e506814249be0d4d101c674ee7",
+            "creationDateTime": "2018-09-19T15:08:34.700-0500",
+            "valid": true,
+            "idUser": "88d1c2273e464117bfe805433f9c7ea3",
+            "userFirstName": "PABLO ",
+            "userLastName": "ABARCA",
+            "extendedData": "",
+            "signatureLevel": "A",
+            "channel": null,
+            "userAgent": null,
+            "ip": "200.60.21.201",
+            "signatureLocation": null,
+            "usernameLabel": "********0988",
+            "userFullName": "ABARCA, PABLO "
+          }
+        ],
+        "channel": "frontend",
+        "productsLabel": null,
+        "signatureGroupUsed": "A",
+        "modificationDateTime": "2018-09-19T15:08:34.700-0500",
+        "idUserEditor": "88d1c2273e464117bfe805433f9c7ea3",
+        "idForm": 4,
+        "userCreatorFirstName": "PABLO ",
+        "userCreatorLastName": "ABARCA",
+        "userEditorFirstName": "PABLO ",
+        "userEditorLastName": "ABARCA",
+        "userCreatorIp": "200.60.21.201",
+        "userEditorIp": "200.60.21.201",
+        "userCreatorLocation": null,
+        "userEditorLocation": null,
+        "executingStartedAtDateTime": null,
+        "statusLabel": "FINALIZADO",
+        "usersSigners": "PABLO  ABARCA",
+        "valueDateAsString": "19/09/2018",
+        "creatorUsername": "5227894f2265d7234a0536d65c3d270a623331a05ebd96f00bafa7f9f51ee0f7",
+        "creatorUsernameLabel": "********0988",
+        "editorUsernameLabel": "********0988",
+        "extendedData": "{\"amount\":{\"currency\":\"1\",\"quantity\":100.0},\"destinationAccount\":\"28978535\",\"originAccount\":\"31725164\",\"date\":\"19/09/2018 15:08:36\",\"codigoAutorizacion\":1024315,\"debitAmount\":31.15,\"exchangeRate\":\"El cambio a S/ es de S/ 3.210, el monto en $ es de $ 31.15\",\"ticketOnly\":\"value\",\"debitAccountLabel\":\"Cuenta ahorro negocios (ME) 6009812537\",\"destinationAccountLabel\":\"Full ahorro (MN) 6007456520\",\"debitCurrency\":\"2\",\"exchange\":3.21}",
+        "successfullyCompleted": true,
+        "creationDateTimeAsString": "19/09/2018 15:08:34",
+        "fullCreationDateTimeAsString": "19/09/2018 15:08",
+        "submitDateTimeAsString": "19/09/2018 15:08:36",
+        "fullSubmitDateTimeAsString": "19/09/2018 15:08",
+        "shortDescriptionForMobile": "",
+        "transactionAmountDescription": "",
+        "shortDescription": "",
+        "fullDescription": "<div class=\"datosTrans\"><ul class=\"firstLevel\"><li class=\"title firmas\">Historial y firmas</li><li class=\"firmas\"><ul class=\"firmantes\"><li class=\"firmado\"><span class=\"nombre_firmante\">ABARCA, PABLO </span><span class=\"usuario_firmante\">(********0988)</span><span class=\"separador_firmante\">-</span><span class=\"fecha_firma\">19/09/2018 15:08</span></li></ul></li></ul></div>",
+        "totalAmountAsString": "100,00",
+        "final": true
+      },
+      "usedSignatures": [
+        {
+          "idTransactionSignature": 2610,
+          "idTransaction": "65d472e506814249be0d4d101c674ee7",
+          "creationDateTime": "2018-09-19T15:08:34.700-0500",
+          "valid": true,
+          "idUser": "88d1c2273e464117bfe805433f9c7ea3",
+          "userFirstName": "PABLO ",
+          "userLastName": "ABARCA",
+          "extendedData": "",
+          "signatureLevel": "A",
+          "channel": null,
+          "userAgent": null,
+          "ip": "200.60.21.201",
+          "signatureLocation": null,
+          "usernameLabel": "********0988",
+          "userFullName": "ABARCA, PABLO "
+        }
+      ],
+      "otherSignatures": []
+    }
+  }
+}
+}

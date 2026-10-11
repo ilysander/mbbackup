@@ -1,0 +1,156 @@
+# Facephi
+-keep class com.facephi.** { *; }
+-keep class com.facephi.selphi.** { *; }
+-keep class com.facephi.selphi.Widget.** { *; }
+-keep class com.facephi.selphid.** { *; }
+-keep class com.facephi.selphid.Widget.* { *; }
+-keep class com.reactlibrary.selphid.** { *; }
+-keep class com.reactlibrary.** { *; }
+-keep class com.microblink.** { *; }
+-keep interface com.facephi.** { *; }
+-keep interface com.facephi.selphi.** { *; }
+-keep interface com.facephi.selphi.Widget.** { *; }
+-keep interface com.facephi.selphid.** { *; }
+-keep interface com.facephi.selphid.Widget.* { *; }
+-keep interface com.reactlibrary.selphid.** { *; }
+-keep interface com.reactlibrary.** { *; }
+-keep interface com.microblink.** { *; }
+
+-keep class com.google.android.gms.** { *; }
+-keep interface com.google.android.gms.** { *; }
+#-dontwarm com.google.android.gms.**
+
+#Huawei
+-ignorewarnings
+-keep class com.huawei.agconnect.**{*;}
+
+# Common
+-keepattributes Signature
+-keepattributes *Annotation*
+-keepattributes Exceptions
+-keepattributes InnerClasses
+-keep class com.hianalytics.android.**{*;}
+-keep class com.huawei.updatesdk.**{*;}
+-keep class com.huawei.hms.**{*;}
+-repackageclasses
+
+# SVG 
+-keep class com.horcrux.svg.** {*;}
+
+# Fast RSA
+-keep class go.** { *; }
+-keep class rsa.** { *; }
+
+# Facebook
+-keep class com.facebook.** { *; }
+-keep interface com.facebook.** { *; }
+#-dontwarn com.facebook.**
+
+# Keyboard
+-keep class cn.reactnative.customkeyboard.** { *; }
+-keep interface cn.reactnative.customkeyboard.** { *; }
+#-dontwarn com.facebook.**
+
+# AndroidX
+#-keep class androidx.** { *; }
+#-keep interface androidx.** { *; }
+
+# Firebase
+-keep class com.google.firebase.** { *; }
+-keep interface com.google.firebase.** { *; }
+#-keep class org.apache.** { *; }
+#-keepnames class com.fasterxml.jackson.** { *; }
+#-keepnames class javax.servlet.** { *; }
+#-keepnames class org.ietf.jgss.** { *; }
+
+# Supoort
+#-keep class android.** { *; }
+#-keep interface android.** { *; }
+
+# okhttp
+#-keep class okhttp3.** { *; }
+#-keep interface okhttp3.** { *; }
+
+# fabric
+#-keep class io.fabric.** { *; }
+#-keep interface io.fabric.** { *; }
+
+# okio
+#-keep interface okio.** { *; }
+#-keep class okio.** { *; }
+
+# Google
+-keep interface com.google.** { *; }
+-keep class com.google.** { *; }
+#-dontwarn com.google.**
+
+# Crashlytics
+#-keep interface com.crashlytics.** { *; }
+#-keep class com.crashlytics.** { *; }
+
+# Invertase
+#-keep interface io.invertase.** { *; }
+#-keep class io.invertase.** { *; }
+#-dontwarn io.invertase.**
+
+# Realm => si se desactiva genera error al abrir el app
+#-keep interface io.realm.** { *; }
+-keep class io.realm.react.** { *; }
+
+
+# Instabug
+#-keep interface com.instabug.** { *; }
+#-keep class com.instabug.**
+#-dontwarn com.instabug.**
+
+# Other libs
+#-keep interface com.shockwave.** { *; }
+#-keep class com.shockwave.**
+
+#-keep interface org.reactivestreams.** { *; }
+#-keep class org.reactivestreams.**
+
+#Huawei
+-keep class com.google.android.gms.common.** {*;}
+-keep class com.hianalytics.android.**{*;}
+-keep class com.huawei.updatesdk.**{*;}
+-keep class com.huawei.hms.**{*;}
+
+# Remove logs
+-assumenosideeffects class android.util.Log {
+    public static boolean isLoggable(java.lang.String, int);
+    public static int v(...);
+    public static int d(...);
+    public static int i(...);
+    public static int w(...);
+    public static int e(...);
+    public static int println(int, java.lang.String, java.lang.String);
+    public static java.lang.String getStackTraceString(java.lang.Throwable);
+    
+    # Warning: removing terrible failure logging calls might change behavior
+    #          for devices < API Level 23.
+    public static int wtf(...);
+}
+# Remove IOFabric logging calls.
+-assumenosideeffects class io.fabric.sdk.android.Logger {
+    public void v(...);
+    public void d(...);
+    public void i(...);
+    public void w(...);
+    public void e(...);
+    public void log(...);
+}
+# Remove Java logging calls.
+-assumenosideeffects class java.util.logging.Logger {
+    public static java.util.logging.Logger getLogger(...);
+    public boolean isLoggable(java.util.logging.Level);
+    public void entering(...);
+    public void exiting(...);
+    public void finest(...);
+    public void finer(...);
+    public void fine(...);
+    public void config(...);
+    public void info(...);
+    public void warning(...);
+    public void severe(...);
+}

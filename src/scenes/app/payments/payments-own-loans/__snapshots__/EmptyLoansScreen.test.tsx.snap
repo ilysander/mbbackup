@@ -1,0 +1,328 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`session render just views 1`] = `
+<View
+  accessibilityLabel="container"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="morecontainer"
+    style={
+      Object {
+        "flex": 1,
+        "position": "relative",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="keyboardavoidingview"
+      onChangeDimensions={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+            "width": "100%",
+          },
+          Object {
+            "flex": 1,
+            "position": "relative",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <RCTScrollView
+        accessibilityLabel="keyboardavoidingview_scrollview"
+        contentContainerStyle={
+          Array [
+            Object {
+              "minHeight": 1220,
+            },
+            false,
+          ]
+        }
+        keyboardShouldPersistTaps="handled"
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onScroll={[Function]}
+        scrollEventThrottle={100}
+      >
+        <View>
+          <RCTSafeAreaView
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                undefined,
+              ]
+            }
+          >
+            <View
+              accessibilityLabel="content"
+              style={
+                Array [
+                  Object {
+                    "paddingHorizontal": 20,
+                  },
+                  false,
+                  Object {
+                    "flex": 1,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
+              }
+            />
+            <View
+              accessibilityLabel="content"
+              style={
+                Array [
+                  Object {
+                    "paddingHorizontal": 20,
+                  },
+                  false,
+                  Object {
+                    "flex": 1,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "paddingHorizontal": 40,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#00964B",
+                      "fontFamily": "Brevia",
+                      "fontSize": 32,
+                      "fontStyle": "italic",
+                      "fontWeight": "700",
+                      "lineHeight": 35,
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  ¿Necesitas un préstamo?
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "paddingHorizontal": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#656D78",
+                      "fontFamily": "Brevia",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "500",
+                      "lineHeight": 20,
+                      "marginVertical": 20,
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Solicítalo fácilmente llamando a tu asesor de negocios, o acercándote a una agencia de Mibanco.
+                </Text>
+              </View>
+              <View
+                accessibilityLabel="emptyloansscreen_button_map"
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#00964B",
+                    "borderColor": "#00964B",
+                    "borderRadius": 25,
+                    "borderWidth": 1,
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "margin": 0,
+                    "marginBottom": 20,
+                    "marginHorizontal": 10,
+                    "minHeight": 40,
+                    "opacity": 1,
+                    "paddingHorizontal": 12,
+                    "zIndex": 1,
+                  }
+                }
+              >
+                <Text
+                  accessibilityLabel="button_text"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#FFFFFF",
+                        "fontFamily": "Brevia",
+                        "fontSize": 16,
+                        "fontStyle": "normal",
+                        "fontWeight": "600",
+                        "textAlign": "center",
+                      },
+                      undefined,
+                      undefined,
+                      Object {
+                        "fontFamily": "Brevia",
+                        "fontSize": 16,
+                        "fontStyle": "normal",
+                        "fontWeight": "600",
+                        "lineHeight": 19,
+                        "margin": 0,
+                        "padding": 0,
+                      },
+                    ]
+                  }
+                >
+                  Ubica tu agencia más cercana
+                </Text>
+              </View>
+              <View
+                accessibilityLabel="emptyloansscreen_button_kind_of_loans"
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#00964B",
+                    "borderRadius": 25,
+                    "borderWidth": 1,
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "margin": 0,
+                    "marginBottom": 20,
+                    "marginHorizontal": 10,
+                    "minHeight": 40,
+                    "opacity": 1,
+                    "padding": 7,
+                    "paddingHorizontal": 12,
+                    "zIndex": 1,
+                  }
+                }
+              >
+                <Text
+                  accessibilityLabel="button_text"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#FFFFFF",
+                        "fontFamily": "Brevia",
+                        "fontSize": 16,
+                        "fontStyle": "normal",
+                        "fontWeight": "600",
+                        "textAlign": "center",
+                      },
+                      undefined,
+                      Object {
+                        "color": "#00964B",
+                      },
+                      Object {
+                        "fontFamily": "Brevia",
+                        "fontSize": 16,
+                        "fontStyle": "normal",
+                        "fontWeight": "600",
+                        "lineHeight": 19,
+                        "margin": 0,
+                        "padding": 0,
+                      },
+                    ]
+                  }
+                >
+                  Conoce nuestros tipos de préstamo
+                </Text>
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+      </RCTScrollView>
+      <View
+        accessibilityLabel="morecontainer_scrollmore"
+        collapsable={false}
+        style={
+          Object {
+            "bottom": -100,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "zIndex": 1000,
+          }
+        }
+      >
+        <View
+          accessibilityLabel="scrollmore_button"
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            accessibilityLabel="scrollmore_image"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+              }
+            }
+            style={
+              Object {
+                "height": 70,
+                "width": 70,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

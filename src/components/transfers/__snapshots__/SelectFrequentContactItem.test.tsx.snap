@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 1,
+        "borderColor": "#CCD1D9",
+        "flexDirection": "row",
+        "marginLeft": 10,
+        "marginRight": 10,
+        "paddingHorizontal": 8,
+        "paddingVertical": 10,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="selectfrequentcontactitem_alias"
+        style={
+          Object {
+            "color": "#656D78",
+            "fontFamily": "Brevia",
+            "fontSize": 15,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+          }
+        }
+      />
+      <Text
+        accessibilityLabel="selectfrequentcontactitem_description"
+        style={
+          Object {
+            "color": "#656D78",
+            "fontFamily": "Brevia",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

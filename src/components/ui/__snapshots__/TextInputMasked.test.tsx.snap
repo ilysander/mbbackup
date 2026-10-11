@@ -1,0 +1,319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`View with in props 1`] = `
+<View
+  accessibilityLabel="textinputmasked_touchable_container"
+  activeOpacity={0.5}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+          "marginBottom": 20,
+          "marginTop": 10,
+          "position": "relative",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="textinputmasked_label_container"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "paddingBottom": 4,
+            "zIndex": 2,
+          },
+          false,
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "position": "relative",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="textinputmasked_text"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F7F9FC",
+              "borderColor": "#E6E9ED",
+              "borderRadius": 12,
+              "borderWidth": 1,
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 8,
+              "paddingTop": 10,
+              "textDecorationLine": "none",
+            },
+            Object {
+              "paddingLeft": 40,
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        style={
+          Object {
+            "bottom": 1,
+            "justifyContent": "center",
+            "left": 10,
+            "position": "absolute",
+            "top": 0,
+          }
+        }
+      >
+        <Image
+          accessibilityLabel="textinputmasked_icon"
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/card-icon.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 20,
+                "tintColor": "#AAB2BD",
+                "width": 20,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "position": "absolute",
+              "right": -30,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`View without format in props 1`] = `
+<View
+  accessibilityLabel="textinputmasked_touchable_container"
+  activeOpacity={0.5}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+          "marginBottom": 20,
+          "marginTop": 10,
+          "position": "relative",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="textinputmasked_label_container"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "paddingBottom": 4,
+            "zIndex": 2,
+          },
+          false,
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "position": "relative",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="textinputmasked_text"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F7F9FC",
+              "borderColor": "#E6E9ED",
+              "borderRadius": 12,
+              "borderWidth": 1,
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 8,
+              "paddingTop": 10,
+              "textDecorationLine": "none",
+            },
+            Object {
+              "paddingLeft": 40,
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        style={
+          Object {
+            "bottom": 1,
+            "justifyContent": "center",
+            "left": 10,
+            "position": "absolute",
+            "top": 0,
+          }
+        }
+      >
+        <Image
+          accessibilityLabel="textinputmasked_icon"
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/card-icon.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 20,
+                "tintColor": "#AAB2BD",
+                "width": 20,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "position": "absolute",
+              "right": -30,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="textinputmasked_touchable_container"
+  activeOpacity={0.5}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+          "marginBottom": 20,
+          "marginTop": 10,
+          "position": "relative",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="textinputmasked_label_container"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "paddingBottom": 4,
+            "zIndex": 2,
+          },
+          false,
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "position": "relative",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="textinputmasked_text"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F7F9FC",
+              "borderColor": "#E6E9ED",
+              "borderRadius": 12,
+              "borderWidth": 1,
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 8,
+              "paddingTop": 10,
+              "textDecorationLine": "none",
+            },
+            false,
+            undefined,
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "position": "absolute",
+              "right": -30,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

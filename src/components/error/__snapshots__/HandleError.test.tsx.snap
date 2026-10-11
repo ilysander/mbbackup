@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views android 1`] = `<View />`;
+
+exports[`render just views ios 1`] = `<View />`;

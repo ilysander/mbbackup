@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    accessibilityLabel="info_text_title"
+    style={
+      Array [
+        Object {
+          "color": "#434A54",
+          "fontFamily": "Brevia",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+        },
+        undefined,
+      ]
+    }
+  >
+    Demo
+  </Text>
+</View>
+`;

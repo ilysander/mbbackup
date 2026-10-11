@@ -1,0 +1,66 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/loans.read",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "idAccount": "",
+      "refreshData": ""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "e73e64501a2f4800bd95de1ee62e5c22",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "loan": {
+          "idEnvironment": 0,
+          "idProduct": "27975028",
+          "productType": "PR",
+          "productTypeLabel": null,
+          "productTypeShortLabel": null,
+          "description": null,
+          "productAlias": "Préstamo Vivienda 1094305666",
+          "smsAlias": null,
+          "label": "Vivienda 109430566",
+          "shortLabel": "Préstamo Vivienda 1094305666",
+          "extraInfo": "5|1520|13|1|109430566|0|0|1|12",
+          "currency": "1",
+          "number": "1520",
+          "consolidatedAmount": 0,
+          "position": 0,
+          "canRead": false,
+          "permissions": null,
+          "loanAmount": 25393.64,
+          "amountPerDayOfLateness": 2684.77,
+          "totalAmountOfFees": 67,
+          "currentCapitalBalance": 23713.02,
+          "nextFeeAmount": 2751.77,
+          "groupFeeAmount": 0,
+          "nextFeeDueDate": "2018-03-27T00:00:00.000-0600",
+          "paymentDate": "0019-03-12T00:00:00.000-0600",
+          "paidFees": 2,
+          "totalFees": 24,
+          "apr": 25.34,
+          "aprc": 27.36,
+          "creditLineProductID": null,
+          "category": "Vivienda",
+          "family": "1",
+          "subFamily": "12",
+          "loanNumber": "109430566"
+        },
+        "numberOfFees": 24,
+        "currency": "1"
+      }
+    }
+  }
+}

@@ -1,0 +1,778 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  style={
+    Object {
+      "padding": 20,
+      "paddingBottom": 10,
+    }
+  }
+>
+  <View
+    accessibilityLabel="transactiontransfersotherbanks_panelitem_amount"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#FAB500",
+                  "fontFamily": "Brevia",
+                  "fontStyle": "normal",
+                  "fontWeight": "800",
+                },
+              ]
+            }
+          >
+            
+
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#434A54",
+                    "fontFamily": "Brevia",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "700",
+                  },
+                  Object {
+                    "color": "#FAB500",
+                    "fontFamily": "Brevia",
+                    "fontSize": 20,
+                    "fontStyle": "normal",
+                    "fontWeight": "800",
+                  },
+                ]
+              }
+            >
+              undefined 0.00
+            </Text>
+          </Text>
+          <View
+            accessibilityLabel="transactiontransfersotherbanks_panelitem_exchangerate"
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View>
+              <Text
+                accessibilityLabel="transfers_exchangerate_purchase"
+                style={
+                  Array [
+                    Object {
+                      "color": "#FAB500",
+                      "fontFamily": "Brevia",
+                      "fontSize": 13,
+                      "fontStyle": "normal",
+                      "fontWeight": "700",
+                      "margin": 0,
+                      "paddingHorizontal": 1,
+                      "textAlign": "left",
+                    },
+                    Object {
+                      "color": "#FAB500",
+                      "fontFamily": "Brevia",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "700",
+                      "lineHeight": 15,
+                    },
+                  ]
+                }
+              >
+                Tipo de cambio
+                : 
+                S/ 12.230
+              </Text>
+              <Text
+                accessibilityLabel="transfers_exchangerate_sale"
+                style={
+                  Array [
+                    Object {
+                      "color": "#FAB500",
+                      "fontFamily": "Brevia",
+                      "fontSize": 13,
+                      "fontStyle": "normal",
+                      "fontWeight": "700",
+                      "margin": 0,
+                      "paddingHorizontal": 1,
+                      "textAlign": "left",
+                    },
+                    Object {
+                      "color": "#FAB500",
+                      "fontFamily": "Brevia",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "700",
+                      "lineHeight": 15,
+                    },
+                  ]
+                }
+              >
+                Monto al cambio
+                : 
+                undefined 20.00
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiontransfersotherbanks_panelitem_detail"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingBottom": 5,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "paddingBottom": 5,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#FAB500",
+                    "fontFamily": "Brevia",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "700",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              Comisión Interbancaria: 
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#FAB500",
+                    "fontFamily": "Brevia",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "700",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              Comisión Mibanco: 
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#FAB500",
+                    "fontFamily": "Brevia",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "700",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              ITF: undefined 0.05
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiontransfersotherbanks_panelitem_transaction_type"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Tipo de transferencia
+            
+
+            <Text
+              style={
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                }
+              }
+            />
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiontransfersotherbanks_panelitem_source_account"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Cuenta de origen
+            
+
+            <Text
+              style={
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                }
+              }
+            >
+              Préstamo LineaDeCredito - 109689003
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiontransfersotherbanks_panelitem_interbank_account"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Cuenta interbancaria en dólares
+            
+
+            <Text
+              style={
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                }
+              }
+            >
+              
+
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiontransfersotherbanks_panelitem_beneficiary"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Beneficiario
+            
+
+            <Text
+              style={
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                }
+              }
+            />
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiontransfersotherbanks_panelitem_transaction_number"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Número de operación
+            
+
+            <Text
+              style={
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                }
+              }
+            />
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiontransfersotherbanks_panelitem_recipient"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Beneficiario
+            
+
+            <Text
+              style={
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                }
+              }
+            >
+              Loayza Garcia Eufracio
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiontransfersotherbanks_panelitem_date"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Fecha y hora
+            
+
+            <Text
+              style={
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                }
+              }
+            >
+              Fecha inválida
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

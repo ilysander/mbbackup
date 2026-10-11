@@ -1,0 +1,827 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="securekeyboard"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#CCD1D9",
+        "bottom": 0,
+        "elevation": 3,
+        "left": 0,
+        "paddingBottom": 5,
+        "paddingTop": 5,
+        "right": 0,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "center",
+        "margin": 10,
+        "marginTop": 5,
+        "maxWidth": 400,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "20%",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="securekeyboard_key_0"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F7F9FC",
+            "borderRadius": 6,
+            "elevation": 2,
+            "flex": 1,
+            "margin": 6,
+            "opacity": 1,
+            "padding": 10,
+            "shadowColor": "rgba(0,0,0,0.2)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="securekeyboard_key_text"
+          allowFontScaling={false}
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 34,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            }
+          }
+        >
+          0
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "20%",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="securekeyboard_key_1"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F7F9FC",
+            "borderRadius": 6,
+            "elevation": 2,
+            "flex": 1,
+            "margin": 6,
+            "opacity": 1,
+            "padding": 10,
+            "shadowColor": "rgba(0,0,0,0.2)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="securekeyboard_key_text"
+          allowFontScaling={false}
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 34,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            }
+          }
+        >
+          1
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "20%",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="securekeyboard_key_2"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F7F9FC",
+            "borderRadius": 6,
+            "elevation": 2,
+            "flex": 1,
+            "margin": 6,
+            "opacity": 1,
+            "padding": 10,
+            "shadowColor": "rgba(0,0,0,0.2)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="securekeyboard_key_text"
+          allowFontScaling={false}
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 34,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            }
+          }
+        >
+          2
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "20%",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="securekeyboard_key_3"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F7F9FC",
+            "borderRadius": 6,
+            "elevation": 2,
+            "flex": 1,
+            "margin": 6,
+            "opacity": 1,
+            "padding": 10,
+            "shadowColor": "rgba(0,0,0,0.2)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="securekeyboard_key_text"
+          allowFontScaling={false}
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 34,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            }
+          }
+        >
+          3
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "20%",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="securekeyboard_key_4"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F7F9FC",
+            "borderRadius": 6,
+            "elevation": 2,
+            "flex": 1,
+            "margin": 6,
+            "opacity": 1,
+            "padding": 10,
+            "shadowColor": "rgba(0,0,0,0.2)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="securekeyboard_key_text"
+          allowFontScaling={false}
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 34,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            }
+          }
+        >
+          4
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "20%",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="securekeyboard_key_5"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F7F9FC",
+            "borderRadius": 6,
+            "elevation": 2,
+            "flex": 1,
+            "margin": 6,
+            "opacity": 1,
+            "padding": 10,
+            "shadowColor": "rgba(0,0,0,0.2)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="securekeyboard_key_text"
+          allowFontScaling={false}
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 34,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            }
+          }
+        >
+          5
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "20%",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="securekeyboard_key_6"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F7F9FC",
+            "borderRadius": 6,
+            "elevation": 2,
+            "flex": 1,
+            "margin": 6,
+            "opacity": 1,
+            "padding": 10,
+            "shadowColor": "rgba(0,0,0,0.2)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="securekeyboard_key_text"
+          allowFontScaling={false}
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 34,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            }
+          }
+        >
+          6
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "20%",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="securekeyboard_key_7"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F7F9FC",
+            "borderRadius": 6,
+            "elevation": 2,
+            "flex": 1,
+            "margin": 6,
+            "opacity": 1,
+            "padding": 10,
+            "shadowColor": "rgba(0,0,0,0.2)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="securekeyboard_key_text"
+          allowFontScaling={false}
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 34,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            }
+          }
+        >
+          7
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "20%",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="securekeyboard_key_8"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F7F9FC",
+            "borderRadius": 6,
+            "elevation": 2,
+            "flex": 1,
+            "margin": 6,
+            "opacity": 1,
+            "padding": 10,
+            "shadowColor": "rgba(0,0,0,0.2)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="securekeyboard_key_text"
+          allowFontScaling={false}
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 34,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            }
+          }
+        >
+          8
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "20%",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="securekeyboard_key_9"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F7F9FC",
+            "borderRadius": 6,
+            "elevation": 2,
+            "flex": 1,
+            "margin": 6,
+            "opacity": 1,
+            "padding": 10,
+            "shadowColor": "rgba(0,0,0,0.2)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="securekeyboard_key_text"
+          allowFontScaling={false}
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 34,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            }
+          }
+        >
+          9
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "height": 68,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "width": "20%",
+          }
+        }
+      >
+        <View
+          accessibilityLabel="securekeyboard_removekey"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#F7F9FC",
+                "borderRadius": 6,
+                "flex": 1,
+                "margin": 6,
+                "padding": 10,
+              },
+              Object {
+                "elevation": 2,
+                "shadowColor": "rgba(0,0,0,0.2)",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 1,
+                "shadowRadius": 2,
+              },
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "justifyContent": "center",
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/backspace-icon.png",
+              }
+            }
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          accessibilityLabel="securekeyboard_hide"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#F7F9FC",
+                "borderRadius": 6,
+                "flex": 1,
+                "margin": 6,
+                "padding": 10,
+              },
+              Object {
+                "width": "96%",
+              },
+              Object {
+                "elevation": 2,
+                "shadowColor": "rgba(0,0,0,0.2)",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 1,
+                "shadowRadius": 2,
+              },
+              Object {
+                "backgroundColor": "#F28F00",
+                "flex": 1,
+                "justifyContent": "center",
+                "padding": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            accessibilityLabel="securekeyboard_hide_text"
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 34,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                  "textAlign": "center",
+                },
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Brevia",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "500",
+                },
+              ]
+            }
+          >
+            OCULTAR
+          </Text>
+        </View>
+        <View
+          accessibilityLabel="securekeyboard_next"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#F7F9FC",
+                "borderRadius": 6,
+                "flex": 1,
+                "margin": 6,
+                "padding": 10,
+              },
+              Object {
+                "width": "96%",
+              },
+              Object {
+                "elevation": 2,
+                "shadowColor": "rgba(0,0,0,0.2)",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 1,
+                "shadowRadius": 2,
+              },
+              Object {
+                "backgroundColor": "#71B74C",
+                "flex": 1,
+                "justifyContent": "center",
+                "padding": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            accessibilityLabel="securekeyboard_next_text"
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 34,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                  "textAlign": "center",
+                },
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Brevia",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "500",
+                },
+              ]
+            }
+          >
+            ACEPTAR
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

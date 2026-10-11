@@ -1,0 +1,169 @@
+{
+  "duration": 1308,
+  "request": {
+    "url": "https://zonaseguraqamovil.domibco.com.pe/api/execute/core.readTransaction",
+    "method": "POST",
+    "headers": {
+      "host": "ba5f677a.ngrok.io",
+      "content-type": "application/json",
+      "user-agent": "MibancoMovil/1 CFNetwork/974.2.1 Darwin/18.0.0",
+      "accept": "*/*",
+      "accept-language": "es-es",
+      "content-length": "52",
+      "accept-encoding": "br, gzip, deflate",
+      "authorization": "sample",
+      "x-forwarded-proto": "https",
+      "x-forwarded-for": "181.65.18.235"
+    },
+    "body": {
+      "idTransaction": "7ea039ed4221445d9614f064e89c00ac"
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "5073",
+      "date": "Fri, 30 Nov 2018 04:51:20 GMT",
+      "connection": "close"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "9347973a439e431ebab910cdaa8fea72",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "transaction": {
+          "idTransaction": "7ea039ed4221445d9614f064e89c00ac",
+          "idParentTransaction": null,
+          "creationDateTime": "2018-11-29T23:52:10.173-0500",
+          "submitDateTime": "2018-11-29T23:52:11.440-0500",
+          "valueDateTime": "2018-11-29T23:52:10.173-0500",
+          "idEnvironment": 4828,
+          "idTransactionStatus": "FINISHED",
+          "transactionStatusName": null,
+          "transactionData": null,
+          "data": {
+            "userEmail": "test@test.com",
+            "capital": "S/ 0.00",
+            "creditCurrency": "1",
+            "currency": "1",
+            "date": "03/12/2018 14:17:19",
+            "debitAccount": "12617360",
+            "debitAccountLabel": "Cuenta ahorro negocios (MN) 2174023203",
+            "debitAmount": "0.10",
+            "interest": "S/ 0.10",
+            "itf": "S/ 0.00",
+            "loanAmount": {
+             "currency": "1",
+             "quantity": 0.1
+            },
+            "loanLabel": "Préstamo LineaDeCredito 110313878",
+            "operationNumber": "1020591",
+            "originLabel": "Cuenta ahorro negocios (MN) 2174023203",
+            "otherAmount": "0.00",
+            "overdue": "S/ 0.00",
+            "targetLabel": "Préstamo LineaDeCredito 110313878",
+            "totalAmount": "0.10",
+            "creditAccountCurrency": 1,
+            "creditAccountHolder": "LOAYZA GARCIA EUFRACIO",
+            "creditAccountNumber": "6007644726",
+            "creditAmount": 20,
+            "debitAccountCurrency": "1",
+            "debitAccountHolder": "TORRES SALAZAR SUSY VANESSA",
+            "debitProductLabel": "Ahorro Fácil (MN) 6009361985",
+            "exchangeRate": "asd dasdasd asd S/ 12.23",
+            "exchange": 3.33
+          },
+          "idUserCreator": "af59a16310194926b9e5f6cf7e26cdfb",
+          "idActivity": "transfers.internal.send",
+          "activityName": "Transferencia entre mis cuentas en MiBanco",
+          "totalAmount": 368.84,
+          "products": [
+            {
+              "idActivity": "transfers.internal.send",
+              "idField": "originAccount",
+              "idPermission": "transfer.internal",
+              "idProduct": "12721806"
+            }
+          ],
+          "signatures": [
+            {
+              "idTransactionSignature": 9858,
+              "idTransaction": "7ea039ed4221445d9614f064e89c00ac",
+              "creationDateTime": "2018-11-29T23:52:10.173-0500",
+              "valid": true,
+              "idUser": "af59a16310194926b9e5f6cf7e26cdfb",
+              "userFirstName": "CECILIA  ",
+              "userLastName": "MESTAS",
+              "extendedData": "",
+              "signatureLevel": "A",
+              "channel": null,
+              "userAgent": null,
+              "ip": "181.65.18.235",
+              "signatureLocation": null,
+              "userFullName": "MESTAS, CECILIA  ",
+              "usernameLabel": "********0250"
+            }
+          ],
+          "channel": "phonegap",
+          "productsLabel": null,
+          "signatureGroupUsed": "A",
+          "modificationDateTime": "2018-11-29T23:52:10.173-0500",
+          "idUserEditor": "af59a16310194926b9e5f6cf7e26cdfb",
+          "idForm": 4,
+          "userCreatorFirstName": "CECILIA  ",
+          "userCreatorLastName": "MESTAS",
+          "userEditorFirstName": "CECILIA  ",
+          "userEditorLastName": "MESTAS",
+          "userCreatorIp": "181.65.18.235",
+          "userEditorIp": "181.65.18.235",
+          "userCreatorLocation": null,
+          "userEditorLocation": null,
+          "executingStartedAtDateTime": null,
+          "fullDescription": "<div class=\"datosTrans\"><ul class=\"firstLevel\"><li class=\"title firmas\">Historial y firmas</li><li class=\"firmas\"><ul class=\"firmantes\"><li class=\"firmado\"><span class=\"nombre_firmante\">MESTAS, CECILIA  </span><span class=\"usuario_firmante\">(********0250)</span><span class=\"separador_firmante\">-</span><span class=\"fecha_firma\">29/11/2018 23:52</span></li></ul></li></ul></div>",
+          "extendedData": "{\"amount\":{\"currency\":\"1\",\"quantity\":368.84},\"destinationAccount\":\"31725045\",\"originAccount\":\"12721806\",\"date\":\"29/11/2018 23:52:11\",\"codigoAutorizacion\":1023127,\"debitAmount\":368.84,\"ticketOnly\":\"value\",\"debitAccountLabel\":\"Cuenta ahorro negocios (MN) 902843903\",\"destinationAccountLabel\":\"Mi Chequera (MN) 5000003869\",\"debitCurrency\":\"1\",\"exchange\":1.0,\"userEmail\":\"rosamartinezsajami@gmail.com\"}",
+          "totalAmountAsString": "368,84",
+          "successfullyCompleted": true,
+          "valueDateAsString": "29/11/2018",
+          "creatorUsername": "7bacbe9adcf11a30336daa8cdaac3357623331a05ebd96f00bafa7f9f51ee0f7",
+          "creatorUsernameLabel": "********0250",
+          "editorUsernameLabel": "********0250",
+          "creationDateTimeAsString": "29/11/2018 23:52:10",
+          "fullCreationDateTimeAsString": "29/11/2018 23:52",
+          "submitDateTimeAsString": "29/11/2018 23:52:11",
+          "fullSubmitDateTimeAsString": "29/11/2018 23:52",
+          "shortDescriptionForMobile": "",
+          "transactionAmountDescription": "",
+          "statusLabel": "FINALIZADO",
+          "usersSigners": "CECILIA   MESTAS",
+          "shortDescription": "",
+          "final": true
+        },
+        "usedSignatures": [
+          {
+            "idTransactionSignature": 9858,
+            "idTransaction": "7ea039ed4221445d9614f064e89c00ac",
+            "creationDateTime": "2018-11-29T23:52:10.173-0500",
+            "valid": true,
+            "idUser": "af59a16310194926b9e5f6cf7e26cdfb",
+            "userFirstName": "CECILIA  ",
+            "userLastName": "MESTAS",
+            "extendedData": "",
+            "signatureLevel": "A",
+            "channel": null,
+            "userAgent": null,
+            "ip": "181.65.18.235",
+            "signatureLocation": null,
+            "userFullName": "MESTAS, CECILIA  ",
+            "usernameLabel": "********0250"
+          }
+        ],
+        "otherSignatures": []
+      }
+    }
+  }
+}

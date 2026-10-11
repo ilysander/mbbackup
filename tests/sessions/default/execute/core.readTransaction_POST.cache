@@ -1,0 +1,156 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/core.readTransaction",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {}
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "date": "Fri, 05 Oct 2018 17:18:46 GMT",
+      "connection": "close",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "cache-control": "no-store, no-cache",
+      "pragma": "no-cache"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "6d0450c3357a4165a14300afeea679ec",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "transaction": {
+          "idTransaction": "bc301fbaeff446bc84455738be809b7f",
+          "idParentTransaction": null,
+          "creationDateTime": "2018-10-05T12:18:42.677-0500",
+          "submitDateTime": "2018-10-05T12:18:44.847-0500",
+          "valueDateTime": "2018-10-05T12:18:42.677-0500",
+          "idEnvironment": 4840,
+          "idTransactionStatus": "FINISHED",
+          "transactionStatusName": null,
+          "transactionData": null,
+          "data": {
+            "debitAccount": "20940741",
+            "frequentContact": "",
+            "isFrequentContact": false,
+            "Amount": {
+              "currency": "1",
+              "quantity": 2
+            },
+            "valueDate": "",
+            "ToAccount": "MADUE#O SIVANA VICENTINA 6001816150, soles",
+            "aceptTermAndCondition": true,
+            "exchange": 3.215,
+            "exchangeRate": "El cambio a S/ es de S/ 3.215, el monto en $ es de $ 0,62",
+            "ticketOnly": "value",
+            "debitAccountHolder": "RAMOS EVANGELISTA ALCIDES",
+            "debitProductLabel": "Cuenta ahorro negocios (ME) 6002536275",
+            "debitAccountCurrency": "2",
+            "debitAmount": 0.62,
+            "creditAccountNumber": "6001816150",
+            "creditAccountCurrency": "1",
+            "creditAccountHolder": "MADUE#O SIVANA VICENTINA",
+            "codigoAutorizacion": 1027496,
+            "date": "05/10/2018 12:18:44",
+            "termsAndConditions": "<ol class=\"number\"><li><span>5Mibanco no asume responsabilidad por eventuales errores o demora en la tramitación de la transferencia que se deriven de la información consignada por el cliente.</span></li><li><span>Si el pago no llegara a realizarse por causas ajenas a Mibanco, en caso la operación hubiera originado un cobro de comisión o gasto, este no será reembolsado.</span></li><li><span>Los bancos de destino efectuarán la devolución o rechazo de las transferencias hasta en 72 horas por los motivos estipulados a continuación:<ol> <li style=\"list-style-type:lower-latin\"><span>identificación del beneficiario no conforme: N° de cuenta inexistente o inválida, sucursal u oficina errada, cuenta bloqueada, error de formato, moneda distinta a la de la cuenta a abonar, transacción duplicada, cuenta no permitida para tipo de transferencia</span></li></ol></span></li><li><span>Los bancos en el caso de transferencias con destinos a cuentas de abono, se basan en el CCI (código de cuenta interbancaria) especificado por el ordenante de la transferencia. Otros datos como es el caso del nombre del beneficiario, tipo N° del documento de identidad, son referenciales. Mibanco no asume responsabilidad alguna si por error del ordenante al proporcionar el CCI, los fondos se abonan a favor de otro beneficiario distinto.</span></li><li><span>De haber una devolución o rechazo de parte del banco de destino, su importe se abonará en el N° de cuenta indicado en su solicitud en el transcurso de las siguientes 72 horas hábiles (los días sábados, domingos y feriados no son considerados hábiles para este tipo de operaciones) desde su devolución. Si la devolución fuese en una moneda distinta a la señalada, el abono se efectuará aplicando el tipo de cambio compra o venta según sea el caso.</span></li><li><span>El Cliente es responsable de confirmar con el destinatario la conformidad de la transferencia así como de revisar los movimientos de su cuenta en el transcurso de las 72 horas para verificar la restitución de los fondos en caso de rechazo de la operación.</span></li></ol>",
+            "userEmail": "julio.paredes@avantica.net"
+          },
+          "idUserCreator": "d6f22e0bc9a3458580e8cd8d9a7c6a36",
+          "idActivity": "transfers.local.send",
+          "activityName": "Transferencia otras cuentas Mibanco",
+          "totalAmount": 2,
+          "products": [
+            {
+              "idActivity": "transfers.local.send",
+              "idField": "debitAccount",
+              "idPermission": "transfer.thirdParties",
+              "idProduct": "20940741"
+            }
+          ],
+          "signatures": [
+            {
+              "idTransactionSignature": 10435,
+              "idTransaction": "bc301fbaeff446bc84455738be809b7f",
+              "creationDateTime": "2018-10-05T12:18:42.677-0500",
+              "valid": true,
+              "idUser": "d6f22e0bc9a3458580e8cd8d9a7c6a36",
+              "userFirstName": "ALCIDES ",
+              "userLastName": "RAMOS",
+              "extendedData": "",
+              "signatureLevel": "A",
+              "channel": null,
+              "userAgent": null,
+              "ip": "200.60.21.201",
+              "signatureLocation": null,
+              "usernameLabel": "********6916",
+              "userFullName": "RAMOS, ALCIDES "
+            }
+          ],
+          "channel": "frontend",
+          "productsLabel": null,
+          "signatureGroupUsed": "A",
+          "modificationDateTime": "2018-10-05T12:18:42.677-0500",
+          "idUserEditor": "d6f22e0bc9a3458580e8cd8d9a7c6a36",
+          "idForm": 5,
+          "userCreatorFirstName": "ALCIDES ",
+          "userCreatorLastName": "RAMOS",
+          "userEditorFirstName": "ALCIDES ",
+          "userEditorLastName": "RAMOS",
+          "userCreatorIp": "200.60.21.201",
+          "userEditorIp": "200.60.21.201",
+          "userCreatorLocation": null,
+          "userEditorLocation": null,
+          "executingStartedAtDateTime": null,
+          "successfullyCompleted": true,
+          "creationDateTimeAsString": "05/10/2018 12:18:42",
+          "fullCreationDateTimeAsString": "05/10/2018 12:18",
+          "submitDateTimeAsString": "05/10/2018 12:18:44",
+          "fullSubmitDateTimeAsString": "05/10/2018 12:18",
+          "shortDescriptionForMobile": "",
+          "transactionAmountDescription": "",
+          "statusLabel": "FINALIZADO",
+          "usersSigners": "ALCIDES  RAMOS",
+          "extendedData": "{\"debitAccount\":\"20940741\",\"frequentContact\":\"\",\"isFrequentContact\":false,\"Amount\":{\"currency\":\"1\",\"quantity\":2.0},\"valueDate\":\"\",\"ToAccount\":\"MADUE#O SIVANA VICENTINA 6001816150, soles\",\"aceptTermAndCondition\":true,\"exchange\":3.215,\"exchangeRate\":\"El cambio a S/ es de S/ 3.215, el monto en $ es de $ 0,62\",\"ticketOnly\":\"value\",\"debitAccountHolder\":\"RAMOS EVANGELISTA ALCIDES\",\"debitProductLabel\":\"Cuenta ahorro negocios (ME) 6002536275\",\"debitAccountCurrency\":\"2\",\"debitAmount\":0.62,\"creditAccountNumber\":\"6001816150\",\"creditAccountCurrency\":\"1\",\"creditAccountHolder\":\"MADUE#O SIVANA VICENTINA\",\"codigoAutorizacion\":1027496,\"date\":\"05/10/2018 12:18:44\",\"termsAndConditions\":\"<ol class=\\\"number\\\"><li><span>5Mibanco no asume responsabilidad por eventuales errores o demora en la tramitación de la transferencia que se deriven de la información consignada por el cliente.</span></li><li><span>Si el pago no llegara a realizarse por causas ajenas a Mibanco, en caso la operación hubiera originado un cobro de comisión o gasto, este no será reembolsado.</span></li><li><span>Los bancos de destino efectuarán la devolución o rechazo de las transferencias hasta en 72 horas por los motivos estipulados a continuación:<ol> <li style=\\\"list-style-type:lower-latin\\\"><span>identificación del beneficiario no conforme: N° de cuenta inexistente o inválida, sucursal u oficina errada, cuenta bloqueada, error de formato, moneda distinta a la de la cuenta a abonar, transacción duplicada, cuenta no permitida para tipo de transferencia</span></li></ol></span></li><li><span>Los bancos en el caso de transferencias con destinos a cuentas de abono, se basan en el CCI (código de cuenta interbancaria) especificado por el ordenante de la transferencia. Otros datos como es el caso del nombre del beneficiario, tipo N° del documento de identidad, son referenciales. Mibanco no asume responsabilidad alguna si por error del ordenante al proporcionar el CCI, los fondos se abonan a favor de otro beneficiario distinto.</span></li><li><span>De haber una devolución o rechazo de parte del banco de destino, su importe se abonará en el N° de cuenta indicado en su solicitud en el transcurso de las siguientes 72 horas hábiles (los días sábados, domingos y feriados no son considerados hábiles para este tipo de operaciones) desde su devolución. Si la devolución fuese en una moneda distinta a la señalada, el abono se efectuará aplicando el tipo de cambio compra o venta según sea el caso.</span></li><li><span>El Cliente es responsable de confirmar con el destinatario la conformidad de la transferencia así como de revisar los movimientos de su cuenta en el transcurso de las 72 horas para verificar la restitución de los fondos en caso de rechazo de la operación.</span></li></ol>\",\"userEmail\":\"julio.paredes@avantica.net\"}",
+          "valueDateAsString": "05/10/2018",
+          "creatorUsername": "3e2328bf054d6abdfd24f3ac042dfb7c623331a05ebd96f00bafa7f9f51ee0f7",
+          "creatorUsernameLabel": "********6916",
+          "editorUsernameLabel": "********6916",
+          "fullDescription": "<div class=\"datosTrans\"><ul class=\"firstLevel\"><li class=\"title firmas\">Historial y firmas</li><li class=\"firmas\"><ul class=\"firmantes\"><li class=\"firmado\"><span class=\"nombre_firmante\">RAMOS, ALCIDES </span><span class=\"usuario_firmante\">(********6916)</span><span class=\"separador_firmante\">-</span><span class=\"fecha_firma\">05/10/2018 12:18</span></li></ul></li></ul></div>",
+          "totalAmountAsString": "2,00",
+          "shortDescription": "",
+          "final": true
+        },
+        "usedSignatures": [
+          {
+            "idTransactionSignature": 10435,
+            "idTransaction": "bc301fbaeff446bc84455738be809b7f",
+            "creationDateTime": "2018-10-05T12:18:42.677-0500",
+            "valid": true,
+            "idUser": "d6f22e0bc9a3458580e8cd8d9a7c6a36",
+            "userFirstName": "ALCIDES ",
+            "userLastName": "RAMOS",
+            "extendedData": "",
+            "signatureLevel": "A",
+            "channel": null,
+            "userAgent": null,
+            "ip": "200.60.21.201",
+            "signatureLocation": null,
+            "usernameLabel": "********6916",
+            "userFullName": "RAMOS, ALCIDES "
+          }
+        ],
+        "otherSignatures": []
+      }
+    }
+  }
+}

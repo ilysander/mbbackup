@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#F28F00",
+        "fontFamily": "Brevia",
+        "fontSize": 20,
+        "fontStyle": "normal",
+        "fontWeight": "500",
+      },
+      undefined,
+    ]
+  }
+>
+  •
+</Text>
+`;

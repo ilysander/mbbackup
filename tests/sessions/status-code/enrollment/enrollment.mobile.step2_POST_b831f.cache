@@ -1,0 +1,21 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/enrollment",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "channel": "phonegap",
+      "idActivity": "enrollment.mobile.step2",
+      "_debitcardNumber": "",
+      "_validationCode": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

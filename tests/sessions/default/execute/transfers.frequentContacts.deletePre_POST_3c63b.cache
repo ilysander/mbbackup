@@ -1,0 +1,53 @@
+{
+  "duration": 52,
+  "request": {
+    "url": "https://server/api/execute/transfers.frequentContacts.deletePre",
+    "method": "POST",
+    "headers": {
+      "accept": "application/json",
+      "authorization": "sample",
+      "content-type": "application/json",
+      "accept-charset": "UTF-8",
+      "content-length": "24",
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 8.1.0; Mi A2 Lite Build/OPM1.171019.019)",
+      "accept-encoding": "gzip"
+    },
+    "body": {
+      "idFrequentContact": ""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "575",
+      "date": "Wed, 31 Oct 2018 15:30:13 GMT",
+      "connection": "close"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "2aa9c1f323c94fff96c7450346bc98a5",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "frequentContact": {
+          "idFrequentContact": 43,
+          "idUser": "0e2e87dffa5541948a8da602d9f3bb5b",
+          "alias": "test2",
+          "type": "inter",
+          "accountNumber": "1541468304",
+          "bankName": "Mibanco",
+          "currency": 1,
+          "documentType": null,
+          "documentNumber": null,
+          "beneficiaryName": null,
+          "beneficiaryFirstSurname": null,
+          "beneficiarySecondSurname": null
+        }
+      }
+    }
+  }
+}

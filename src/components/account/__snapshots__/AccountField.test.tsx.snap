@@ -1,0 +1,488 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  activeOpacity={1}
+>
+  <View
+    accessibilityLabel="accountfield_container"
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "paddingVertical": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`render just views disabled without value 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  activeOpacity={1}
+  placeholder="Placeholder"
+  subtitle="a@a.com"
+>
+  <View
+    accessibilityLabel="accountfield_container"
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "paddingVertical": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "overflow": "hidden",
+        }
+      }
+    >
+      <Image
+        accessibilityLabel="accountfield_image_icon"
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/email-icon.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "alignSelf": "flex-start",
+              "height": 28,
+              "marginRight": 2,
+              "tintColor": "#3FB4E5",
+              "width": 28,
+            },
+            Object {
+              "alignSelf": "flex-start",
+              "tintColor": "#434A54",
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="accountfield_text_placeholder"
+          style={
+            Object {
+              "color": "#CCD1D9",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "top": -5,
+            }
+          }
+        >
+          Placeholder
+        </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="accountfield_text_subtitle"
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "600",
+              }
+            }
+          >
+            a@a.com
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`render just views enabled  1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  activeOpacity={0.2}
+  placeholder="Placeholder"
+>
+  <View
+    accessibilityLabel="accountfield_container"
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "paddingVertical": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "overflow": "hidden",
+        }
+      }
+    >
+      <Image
+        accessibilityLabel="accountfield_image_icon"
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/email-icon.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "alignSelf": "flex-start",
+              "height": 28,
+              "marginRight": 2,
+              "tintColor": "#3FB4E5",
+              "width": 28,
+            },
+            false,
+          ]
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="accountfield_text_name"
+          style={
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          Test value
+        </Text>
+        <Text
+          accessibilityLabel="accountfield_text_placeholder"
+          style={
+            Object {
+              "color": "#AAB2BD",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "italic",
+              "fontWeight": "500",
+            }
+          }
+        >
+          Placeholder
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityLabel="accountfield_touchable_edit"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "alignSelf": "center",
+          "flexDirection": "row",
+          "opacity": 1,
+          "padding": 6,
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="buttonlink_text"
+        style={
+          Array [
+            Object {
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            },
+            undefined,
+            Object {
+              "color": "#00964B",
+            },
+            Object {
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "600",
+            },
+          ]
+        }
+      >
+        Agregar
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`render just views enabled without value 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  activeOpacity={0.2}
+  placeholder="Placeholder"
+  subtitle="a@a.com"
+>
+  <View
+    accessibilityLabel="accountfield_container"
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "paddingVertical": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "overflow": "hidden",
+        }
+      }
+    >
+      <Image
+        accessibilityLabel="accountfield_image_icon"
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/email-icon.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "alignSelf": "flex-start",
+              "height": 28,
+              "marginRight": 2,
+              "tintColor": "#3FB4E5",
+              "width": 28,
+            },
+            false,
+          ]
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="accountfield_text_placeholder"
+          style={
+            Object {
+              "color": "#CCD1D9",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "top": -5,
+            }
+          }
+        >
+          Placeholder
+        </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="accountfield_text_subtitle"
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "600",
+              }
+            }
+          >
+            a@a.com
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      accessibilityLabel="accountfield_touchable_edit"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "alignSelf": "center",
+          "flexDirection": "row",
+          "opacity": 1,
+          "padding": 6,
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="buttonlink_text"
+        style={
+          Array [
+            Object {
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            },
+            undefined,
+            Object {
+              "color": "#00964B",
+            },
+            Object {
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "600",
+            },
+          ]
+        }
+      >
+        Agregar
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`render just views isLoading  1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  activeOpacity={0.2}
+>
+  <View
+    accessibilityLabel="accountfield_container"
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "paddingVertical": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            false,
+            false,
+            false,
+            undefined,
+          ]
+        }
+      >
+        <ActivityIndicator
+          color="#00964B"
+          size="small"
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

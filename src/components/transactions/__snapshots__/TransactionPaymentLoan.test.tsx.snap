@@ -1,0 +1,403 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  style={
+    Object {
+      "paddingHorizontal": 20,
+      "paddingVertical": 15,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactionpaymentservices_panelitem_amount"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              undefined,
+            ]
+          }
+        >
+          Monto pagado
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            undefined,
+          ]
+        }
+      >
+        S/ 1.00
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactionpaymentservices_panelitem_origin_account"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              undefined,
+            ]
+          }
+        >
+          Cuenta de origen
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            undefined,
+          ]
+        }
+      >
+        Préstamo LineaDeCredito 109689003
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactionpaymentloan_panelitem_frequent_contact"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              undefined,
+            ]
+          }
+        >
+          Mi contacto frecuente
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            undefined,
+          ]
+        }
+      >
+        Loayza Garcia Eufracio
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactionpaymentservices_panelitem_lending"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              undefined,
+            ]
+          }
+        >
+          Préstamo
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            undefined,
+          ]
+        }
+      >
+        Mi super prestamo 12345678
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactionpaymentservices_panelitem_operation_number"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              undefined,
+            ]
+          }
+        >
+          Número de operación
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactionpaymentloan_panelitem_date_hour"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              undefined,
+            ]
+          }
+        >
+          Fecha y hora de pago
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            undefined,
+          ]
+        }
+      >
+        Fecha inválida
+      </Text>
+    </View>
+    <View
+      accessibilityLabel="expandableview"
+    >
+      <View
+        collapsable={false}
+        style={
+          Object {
+            "minHeight": 0,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          accessibilityLabel="transactionpaymentloan_panelitem_expandableview"
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "opacity": 1,
+              "padding": 10,
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="expandableview_buttonlink_text_toggle_detail"
+            style={
+              Array [
+                Object {
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "600",
+                  "lineHeight": 15,
+                  "paddingRight": 6,
+                },
+                undefined,
+              ]
+            }
+          >
+            Más información
+          </Text>
+          <View
+            collapsable={false}
+            style={
+              Object {
+                "transform": Array [
+                  Object {
+                    "rotate": "0deg",
+                  },
+                ],
+              }
+            }
+          >
+            <Image
+              accessibilityLabel="accountselector_more_icon"
+              source={
+                Object {
+                  "testUri": "../../../src/assets/images/see-more-arrow.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 6,
+                  "tintColor": "#656D78",
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

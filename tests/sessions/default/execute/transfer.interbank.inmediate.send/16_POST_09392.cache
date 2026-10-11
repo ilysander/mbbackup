@@ -1,0 +1,31 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfer.interbank.inmediate.send/16",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Ocp-Apim-Subscription-Key": "sample",
+      "X-Bar-Si": "sample",
+      "authorization": "sample"
+    },
+    "body": {
+      "isFrequentContact": false,
+      "frequentContact": "",
+      "aceptTermAndCondition": "false",
+      "destinationAccount": "80510100000062319937",
+      "debitAccount": "12441143",
+      "amount": {
+        "quantity": "1",
+        "currency": "1"
+      },
+      "mail": "gerson.pardo@avantica.net",
+      "_otp": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

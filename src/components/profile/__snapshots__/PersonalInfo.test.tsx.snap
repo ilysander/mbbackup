@@ -1,0 +1,311 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+Array [
+  <View
+    accessibilityLabel="test"
+    style={
+      Array [
+        Object {
+          "overflow": "visible",
+        },
+        Object {
+          "marginBottom": 5,
+          "marginTop": 11,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+            "position": "relative",
+          },
+          false,
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="header_text_title"
+        style={
+          Array [
+            Object {
+              "color": "#00964B",
+              "fontFamily": "Brevia",
+              "fontSize": 22,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "lineHeight": 25,
+              "textAlign": "left",
+            },
+            undefined,
+            false,
+            Object {
+              "fontSize": 20,
+            },
+          ]
+        }
+      >
+        test
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+            "position": "relative",
+          },
+          false,
+          false,
+        ]
+      }
+    />
+  </View>,
+  <View
+    style={
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "borderColor": "#E6E9ED",
+        "borderRadius": 9,
+        "borderWidth": 0,
+        "elevation": 3,
+        "marginBottom": 30,
+        "overflow": "visible",
+        "shadowColor": "#434A54",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "shadowRadius": 16,
+      }
+    }
+  >
+    <View
+      accessibilityLabel="personalinfo_cardview_maincontainer"
+      removeClippedSubviews={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#E6E9ED",
+            "borderRadius": 12,
+            "borderWidth": 0,
+            "elevation": 3,
+            "overflow": "visible",
+            "shadowColor": "#434A54",
+            "shadowOffset": Object {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.1,
+            "shadowRadius": 16,
+          },
+          undefined,
+          Object {
+            "borderRadius": 8,
+            "paddingHorizontal": 20,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityLabel="personalinfo_accountfield_email"
+        activeOpacity={0.2}
+        placeholder="Ingresa tu correo electrónico"
+        styleSubtitle={
+          Object {
+            "fontFamily": "Brevia",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "600",
+          }
+        }
+        styleView={
+          Object {
+            "padding": 0,
+            "paddingBottom": 10,
+          }
+        }
+        subtitle="test"
+      >
+        <View
+          accessibilityLabel="accountfield_container"
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "paddingVertical": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "overflow": "hidden",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                accessibilityLabel="accountfield_text_name"
+                style={
+                  Object {
+                    "color": "#434A54",
+                    "fontFamily": "Brevia",
+                    "fontSize": 13,
+                    "fontStyle": "normal",
+                    "fontWeight": "400",
+                  }
+                }
+              >
+                Correo electrónico
+              </Text>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                  }
+                }
+              >
+                <Text
+                  accessibilityLabel="accountfield_text_subtitle"
+                  style={
+                    Object {
+                      "color": "#434A54",
+                      "fontFamily": "Brevia",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  test
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#E6E9ED",
+              "height": 1,
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        accessibilityLabel="personalinfo_accountfield_phone"
+        activeOpacity={0.2}
+        styleSubtitle={
+          Object {
+            "fontFamily": "Brevia",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "600",
+          }
+        }
+        styleView={
+          Object {
+            "padding": 0,
+            "paddingTop": 10,
+          }
+        }
+        subtitle="test"
+      >
+        <View
+          accessibilityLabel="accountfield_container"
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "paddingVertical": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "overflow": "hidden",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                accessibilityLabel="accountfield_text_name"
+                style={
+                  Object {
+                    "color": "#434A54",
+                    "fontFamily": "Brevia",
+                    "fontSize": 13,
+                    "fontStyle": "normal",
+                    "fontWeight": "400",
+                  }
+                }
+              >
+                Número de celular
+              </Text>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-start",
+                  }
+                }
+              >
+                <Text
+                  accessibilityLabel="accountfield_text_subtitle"
+                  style={
+                    Object {
+                      "color": "#434A54",
+                      "fontFamily": "Brevia",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  test
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <Modal
+      animationType="fade"
+      hardwareAccelerated={false}
+      onRequestClose={[Function]}
+      transparent={true}
+      visible={false}
+    />
+  </View>,
+]
+`;

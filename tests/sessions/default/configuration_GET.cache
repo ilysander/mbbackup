@@ -1,0 +1,88 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/configuration",
+    "method": "GET",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      
+    },
+    "body": {
+      "code": "COR000I",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "accounts.details.statementsPerPage": "10",
+        "administration.rowsPerPage": "10",
+        "administration.signatures.maxNeeded": "3",
+        "administration.users.invite.enrollmentUrl": "${BASE_URL}/enrollment/start",
+        "auth.login.credentialRequested": "pin",
+        "backend.webservices.dateFormat": "yyyy-MM-dd'T'HH:mm'Z'",
+        "backend.webservices.decimalFormat": "#0.00",
+        "backend.webservices.url": "http://man-nazca1.uy.manentiasoftware.com:8280//core-banking/",
+        "breadcrumb.accounts.url": "/accounts/index",
+        "breadcrumb.creditcards.url": "/creditcards/index",
+        "breadcrumb.deposits.url": "/deposits/index",
+        "breadcrumb.loans.url": "/loans/index",
+        "breadcrumb.payments.url": "/accounts/index",
+        "breadcrumb.transfers.url": "/accounts/index",
+        "client.emailValidationFormat": "^[a-zA-ZñÑ0-9._%+-]+@[a-zñÑA-Z0-9.-]+\\.(?:[a-zA-ZñÑ]{2}|com|org|net|ed u|gov|mil|biz|info|mobi|name|aero|asia|jobs|museum)$",
+        "communications.refreshRate": "30",
+        "core.auth.captcha.enabled": "true",
+        "core.auth.captcha.google.siteKey": "6LdEXwkTAAAAAE_XpwJFnfgI4Qjkfzeiy8UnRx1Q",
+        "core.auth.login.maxAttemptsBeforeCaptcha": "3",
+        "core.decimalFormat": "#,##0.00",
+        "defaultDecimal.maximum": "2",
+        "defaultDecimal.minimum": "2",
+        "desktop.widgets.nextExpirations.limit": "99",
+        "export.csv.dateFormat": "yyyy-MM-dd",
+        "files.allowedFileExtensions": "txt|doc|xls|ppt|docx|xlsx|pptx|jpg|bmp|gif|png|pdf",
+        "files.maxFileSize": "10485760",
+        "form.field.document.default.validationFormat": "^[0-9]{8}$",
+        "frequentActions.defaults.corporate": "1",
+        "frequentActions.defaults.retail": "1",
+        "frequentActions.limit": "3",
+        "frequentActions.maxToShow": "3",
+        "frontend.ajax.timeout": "30s",
+        "frontend.availabelFeatures.refresh.interval": "5m",
+        "frontend.availability": "[-|-,1,2,3,4,5,6,7]",
+        "frontend.channels.enabledFreqeuncies": "daily|monthly",
+        "frontend.channels.enabledFrequencies": "daily|monthly|transaction",
+        "frontend.configuration.refresh.interval": "5m",
+        "frontend.date.format": "dd/mm/yy",
+        "frontend.date.format.internal": "yy-mm-dd",
+        "frontend.datepicker.format": "d/m/Y",
+        "frontend.forms.refresh.interval": "1h",
+        "frontend.google.api.key": "AIzaSyDXzPrBIdIZ23cVPcB3qVN3FpyOjTYlXM0",
+        "frontend.i18n.default.lang": "es",
+        "frontend.i18n.languages": "es|en|pt",
+        "frontend.i18n.refresh.interval": "1h",
+        "frontend.mediumDateFormat": "dd/MM/yyyy HH:mm",
+        "frontend.mode": "development",
+        "frontend.offline": "false",
+        "frontend.session.headerEnvironments.maxToShow": "5",
+        "frontend.shortDateFormat": "dd/MM/yyyy",
+        "frontend.timeFormat": "HH:mm",
+        "global.displayMessageKeys": "true",
+        "invitation.permissions.roleList.backoffice": "administrator|transactions|readonly|login",
+        "invitation.permissions.roleList.frontend": "transactions|readonly|login",
+        "nextExpirations.threshold.error": "0",
+        "nextExpirations.threshold.warning": "7",
+        "product.list.maxBoxDisplay": "4",
+        "session.duration": "300m",
+        "session.timeBeforeTimeoutNotification": "30s",
+        "socialnetworks.facebook.appId": "392991817566019",
+        "username.maxLength": "50",
+        "username.minLength": "5",
+        "username.pattern": "[a-zA-Z0-9@_\\.-]*"
+      }
+    }
+  }
+}

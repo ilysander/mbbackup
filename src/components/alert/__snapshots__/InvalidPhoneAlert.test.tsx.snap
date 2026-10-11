@@ -1,0 +1,368 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  supportedOrientations={
+    Array [
+      "portrait",
+      "portrait-upside-down",
+      "landscape",
+      "landscape-left",
+      "landscape-right",
+    ]
+  }
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessibilityLabel="keyboardspacing"
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": "100%",
+        },
+        Array [
+          Object {
+            "bottom": 0,
+            "justifyContent": "center",
+            "left": 0,
+            "paddingHorizontal": 20,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          undefined,
+        ],
+        undefined,
+        false,
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="modal_overlay"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+    <View
+      accessibilityLabel="test"
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 6,
+            "marginHorizontal": 20,
+            "marginVertical": 40,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 30,
+          },
+          undefined,
+        ]
+      }
+    >
+      <RCTScrollView
+        bounces={false}
+        keyboardShouldPersistTaps="handled"
+      >
+        <View>
+          <View
+            accessibilityLabel="modal_body"
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "borderRadius": 6,
+                "overflow": "hidden",
+                "paddingBottom": 0,
+                "paddingHorizontal": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "marginBottom": 30,
+                  "marginHorizontal": 20,
+                  "marginTop": 0,
+                }
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#FFFFFF",
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "marginVertical": 10,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "paddingHorizontal": 8,
+                      "width": "90%",
+                    }
+                  }
+                >
+                  <Text
+                    accessibilityLabel="invalidphonealert_text_title"
+                    style={
+                      Object {
+                        "color": "#F28F00",
+                        "fontFamily": "Brevia",
+                        "fontSize": 22,
+                        "fontStyle": "normal",
+                        "fontWeight": "700",
+                        "marginBottom": 10,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    ¡Lo sentimos!
+                  </Text>
+                  <Text
+                    accessibilityLabel="invalidphonealert_text_description"
+                    style={
+                      Object {
+                        "color": "#656D78",
+                        "fontFamily": "Brevia",
+                        "fontSize": 15,
+                        "fontStyle": "normal",
+                        "fontWeight": "500",
+                        "lineHeight": 18,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Por el momento no podemos continuar con tu operación ya que no cuentas con un
+                     
+                    <Text
+                      style={
+                        Object {
+                          "fontFamily": "Brevia",
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                        }
+                      }
+                    >
+                      celular registrado en Mibanco.
+                    </Text>
+                  </Text>
+                  <View
+                    accessibilityLabel="invalidphonealert_text_description_footer"
+                    style={
+                      Object {
+                        "marginTop": 20,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        Object {
+                          "color": "#656D78",
+                          "fontFamily": "Brevia",
+                          "fontSize": 15,
+                          "fontStyle": "normal",
+                          "fontWeight": "500",
+                          "lineHeight": 18,
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      Ingresa estos datos en la sección de mi perfil.
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                accessibilityLabel="spacedview"
+                style={
+                  Array [
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    false,
+                    Object {
+                      "alignItems": "center",
+                      "marginTop": 20,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                      Object {
+                        "marginRight": 20,
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <View
+                    accessibilityLabel="invalidphonealert_button_close"
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#F28F00",
+                        "borderRadius": 25,
+                        "borderWidth": 1,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "margin": 0,
+                        "minHeight": 40,
+                        "opacity": 1,
+                        "paddingHorizontal": 12,
+                        "zIndex": 1,
+                      }
+                    }
+                  >
+                    <Text
+                      accessibilityLabel="button_text"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#FFFFFF",
+                            "fontFamily": "Brevia",
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "fontWeight": "600",
+                            "textAlign": "center",
+                          },
+                          undefined,
+                          Object {
+                            "color": "#F28F00",
+                          },
+                          Object {
+                            "fontSize": 16,
+                          },
+                        ]
+                      }
+                    >
+                      Cerrar
+                    </Text>
+                  </View>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                      Object {
+                        "marginRight": 20,
+                      },
+                      Object {
+                        "marginRight": 0,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    accessibilityLabel="invalidphonealert_button_action"
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#F28F00",
+                        "borderColor": "#F28F00",
+                        "borderRadius": 25,
+                        "borderWidth": 1,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "margin": 0,
+                        "minHeight": 40,
+                        "opacity": 1,
+                        "paddingHorizontal": 12,
+                        "zIndex": 1,
+                      }
+                    }
+                  >
+                    <Text
+                      accessibilityLabel="button_text"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#FFFFFF",
+                            "fontFamily": "Brevia",
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "fontWeight": "600",
+                            "textAlign": "center",
+                          },
+                          undefined,
+                          undefined,
+                          Object {
+                            "fontFamily": "Brevia",
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          },
+                        ]
+                      }
+                    >
+                      Ir a mi perfil
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</Modal>
+`;

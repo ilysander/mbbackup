@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="card"
+  removeClippedSubviews={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#E6E9ED",
+        "borderRadius": 12,
+        "borderWidth": 0,
+        "elevation": 3,
+        "overflow": "visible",
+        "shadowColor": "#434A54",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "shadowRadius": 16,
+      },
+      Object {
+        "padding": 20,
+      },
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "#F28F00",
+          "borderWidth": 1,
+          "flexDirection": "row",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  <Image
+    accessibilityLabel="callmessage_icon"
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/icon-headset.png",
+      }
+    }
+    style={
+      Object {
+        "height": 46,
+        "marginRight": 25,
+        "tintColor": "#F28F00",
+        "width": 46,
+      }
+    }
+  />
+  <Text
+    accessibilityLabel="callmessage_text"
+    style={
+      Object {
+        "color": "#F28F00",
+        "flex": 1,
+        "fontFamily": "Brevia",
+        "fontSize": 13,
+        "fontStyle": "normal",
+        "fontWeight": "500",
+        "lineHeight": 18,
+        "textAlign": "left",
+      }
+    }
+  >
+    En los siguientes días te llamaremos para coordinar el envío mensual de tu estado de cuenta.
+  </Text>
+</View>
+`;

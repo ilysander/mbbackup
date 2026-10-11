@@ -1,0 +1,48 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/service.payment.send/17",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "valueDate": "",
+      "isFrequentContact": "false",
+      "aceptTermAndCondition": "true",
+      "frequentPaymentAlias": "",
+      "_otp": "",
+      "totalAmount": "118.00",
+      "debitAccount": "Full ahorro (Soles) 6011383139",
+      "billSelector": {
+        "clientCode": "2505567",
+        "companyGroupCode": "1",
+        "companyCode": "90",
+        "companyName": null,
+        "serviceCode": "90",
+        "serviceName": null,
+        "added": "0",
+        "state": "0000",
+        "emissionDate": "2019-01-31T00:00:00.000-0500",
+        "expirationDate": "20/05/2019",
+        "debtAmount": "599.00",
+        "totalAmount": "599.00",
+        "clientName": "ADRIANO MATAMOROS  ROSA LUZ   ",
+        "ticketNumber": "201901050008557",
+        "supply": "2505567",
+        "traceConsulta": "110832"
+      }
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {},
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "507afa756dfa49909c2e81ee17064ca9",
+      "message": "Operación ejecutada con éxito",
+      "data": {}
+     }
+  }
+}

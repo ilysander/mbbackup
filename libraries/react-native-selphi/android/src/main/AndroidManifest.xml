@@ -1,0 +1,13 @@
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.reactlibrary.selphi">
+          
+          <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+          
+          <application>
+              <activity android:name="com.facephi.selphi.Widget"
+              android:screenOrientation="portrait" />
+          </application>   
+
+</manifest>
+  

@@ -1,0 +1,24 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/enrollment",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "channel": "phonegap",
+      "idActivity": "enrollment.mobile.step1",
+      "_debitcardNumber": "",
+      "_debitcardPin": "",
+      "mobileNumber": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {
+      "code": "COR020W"
+    }
+  }
+}

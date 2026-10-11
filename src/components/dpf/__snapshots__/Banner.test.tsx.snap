@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="banner"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#3FB4E5",
+      "borderColor": "#3FB4E5",
+      "borderRadius": 12,
+      "borderWidth": 0,
+      "elevation": 4,
+      "flexDirection": "row",
+      "marginTop": 25,
+      "overflow": "visible",
+      "shadowColor": "#AAB2BD",
+      "shadowOffset": Object {
+        "height": 3,
+        "width": 0,
+      },
+      "shadowOpacity": 0.5,
+      "shadowRadius": 8,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "padding": 15,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "maxWidth": 200,
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="banner_message"
+        style={
+          Object {
+            "color": "#F7F9FC",
+            "fontFamily": "Brevia",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+            "textAlign": "center",
+          }
+        }
+      >
+        ¿Quieres ganar dinero mientras ahorras?
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "justifyContent": "center",
+            "width": 22,
+          }
+        }
+      >
+        <Image
+          accessibilityLabel="banner_image_left"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/highlight-linear-left.png",
+            }
+          }
+          style={
+            Object {
+              "height": 28,
+              "tintColor": "#FFD100",
+              "width": 20,
+            }
+          }
+        />
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#F7F9FC",
+              "fontFamily": "Brevia",
+              "fontSize": 26,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        Abre un Plazo Fijo
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "justifyContent": "center",
+            "width": 22,
+          }
+        }
+      >
+        <Image
+          accessibilityLabel="banner_image_right"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/highlight-linear-right.png",
+            }
+          }
+          style={
+            Object {
+              "height": 28,
+              "tintColor": "#FFD100",
+              "width": 20,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#F7F9FC",
+            "fontFamily": "Brevia",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "textAlign": "center",
+          }
+        }
+      >
+        Deposita tu plata por un tiempo determinado y, al final de ese periodo
+      </Text>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#F7F9FC",
+          "fontFamily": "Brevia",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+        }
+      }
+    >
+      ¡Retira más dinero!
+    </Text>
+  </View>
+</View>
+`;

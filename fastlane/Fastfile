@@ -1,0 +1,3 @@
+import(File.expand_path("../ios/fastlane/Fastfile", __dir__))
+import(File.expand_path("../android/fastlane/Fastfile", __dir__))
+import(File.expand_path("../fastlane/PublishHuawei", __dir__))

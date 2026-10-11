@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#CCD1D9",
+        "borderWidth": 1,
+      },
+      Object {
+        "elevation": 3,
+        "shadowColor": "rgba(0,0,0,0.2)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 2,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 2,
+      },
+      undefined,
+    ]
+  }
+>
+  <RCTScrollView
+    accessibilityLabel="test"
+    data={Array []}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    initialNumToRender={5}
+    keyExtractor={[Function]}
+    keyboardShouldPersistTaps="handled"
+    nestedScrollEnabled={true}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    refreshing={false}
+    removeClippedSubviews={true}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "maxHeight": 210,
+      }
+    }
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View />
+  </RCTScrollView>
+</View>
+`;

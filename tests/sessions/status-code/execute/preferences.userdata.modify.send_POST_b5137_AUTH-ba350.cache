@@ -1,0 +1,30 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/preferences.userdata.modify.send",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "_securitySeal": 15,
+      "defaultEnvironment": 4881,
+      "mobilePhone": "",
+      "mobilePhoneCode": "",
+      "_atm": "",
+      "message": "MAIL",
+      "promos": null,
+      "userBlock": [
+        "MAIL",
+        "SMS"
+      ],
+      "loanExpiration": "MAIL"
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

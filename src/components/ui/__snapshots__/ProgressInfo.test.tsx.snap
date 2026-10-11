@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+  easing={[Function]}
+  easingDuration={700}
+  progress={0.5}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "rgba(242, 143, 0, 0.6)",
+        "borderRadius": 10,
+        "height": 50,
+        "overflow": "hidden",
+      },
+      undefined,
+      Object {
+        "width": 300,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityLabel="progressbar_seek"
+    collapsable={false}
+    style={
+      Object {
+        "backgroundColor": "#F28F00",
+        "borderRadius": 10,
+        "height": 50,
+        "width": 0,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 10,
+          "paddingTop": 4,
+          "width": 710,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "column",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "800",
+              "lineHeight": 15,
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "lineHeight": 14,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "800",
+              "lineHeight": 15,
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "lineHeight": 14,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`session render just views 1`] = `
+<View
+  accessibilityLabel="test"
+  removeClippedSubviews={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#E6E9ED",
+        "borderRadius": 12,
+        "borderWidth": 0,
+        "elevation": 3,
+        "overflow": "visible",
+        "shadowColor": "#434A54",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "shadowRadius": 16,
+      },
+      undefined,
+      Object {
+        "paddingHorizontal": 20,
+      },
+    ]
+  }
+>
+  <View>
+    <View
+      accessibilityLabel="transferstypes_item_to_other_accounts"
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "marginVertical": 12,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "height": 32,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="typesitem_text_name"
+            style={
+              Array [
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "600",
+                },
+                undefined,
+                Object {
+                  "color": "#CCD1D9",
+                },
+              ]
+            }
+          >
+            <Text>
+              A otras cuentas de 
+              <Text>
+                Mibanco
+              </Text>
+            </Text>
+          </Text>
+        </View>
+        <Image
+          accessibilityLabel="typesitem_image_more_icon"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/arrow-icon.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 12,
+                "marginLeft": 5,
+                "tintColor": "#AAB2BD",
+                "width": 6,
+              },
+              Object {
+                "tintColor": "#CCD1D9",
+              },
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#E6E9ED",
+              "height": 1,
+            },
+            Object {
+              "width": "100%",
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      accessibilityLabel="transferstypes_item_to_other_banks"
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "marginVertical": 12,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "height": 32,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="typesitem_text_name"
+            style={
+              Array [
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "600",
+                },
+                undefined,
+                Object {
+                  "color": "#CCD1D9",
+                },
+              ]
+            }
+          >
+            A otros bancos
+          </Text>
+        </View>
+        <Image
+          accessibilityLabel="typesitem_image_more_icon"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/arrow-icon.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 12,
+                "marginLeft": 5,
+                "tintColor": "#AAB2BD",
+                "width": 6,
+              },
+              Object {
+                "tintColor": "#CCD1D9",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

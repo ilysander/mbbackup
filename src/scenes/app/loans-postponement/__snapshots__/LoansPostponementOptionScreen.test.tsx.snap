@@ -1,0 +1,939 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`session render just views 1`] = `
+<View
+  accessibilityLabel="container"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 100,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#F7F9FC",
+          "height": 25,
+          "left": 0,
+          "overflow": "visible",
+          "position": "absolute",
+          "right": 0,
+          "top": -20,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFD100",
+              "borderBottomLeftRadius": 20,
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "right": 60,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      accessibilityLabel="formsteps"
+      style={
+        Object {
+          "alignSelf": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="formsteps_step_1"
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+            },
+            Object {
+              "zIndex": 4,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="formsteps_indicator"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 22,
+                "justifyContent": "center",
+                "paddingBottom": 4,
+                "position": "relative",
+                "width": 34,
+              },
+              Object {
+                "height": 30,
+                "paddingBottom": 0,
+                "width": 40,
+              },
+              undefined,
+            ]
+          }
+        >
+          <Image
+            resizeMode="stretch"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/step-flag.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 22,
+                  "left": 0,
+                  "position": "absolute",
+                  "tintColor": "#E6E9ED",
+                  "top": 0,
+                  "width": 34,
+                },
+                Object {
+                  "tintColor": "#FFD100",
+                },
+                Object {
+                  "height": 30,
+                  "width": 40,
+                },
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#AAB2BD",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                  "textAlign": "center",
+                },
+                Object {
+                  "color": "#434A54",
+                },
+                Object {
+                  "fontSize": 22,
+                  "top": -2,
+                },
+              ]
+            }
+          >
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="formsteps_step_2"
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+            },
+            Object {
+              "zIndex": 3,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="formsteps_split"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#E6E9ED",
+                "height": 5,
+                "marginHorizontal": -4,
+                "overflow": "hidden",
+                "width": 80,
+              },
+              undefined,
+              Object {
+                "width": 182.66666666666666,
+              },
+              false,
+            ]
+          }
+        />
+        <View
+          accessibilityLabel="formsteps_indicator"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 22,
+                "justifyContent": "center",
+                "paddingBottom": 4,
+                "position": "relative",
+                "width": 34,
+              },
+              false,
+              undefined,
+            ]
+          }
+        >
+          <Image
+            resizeMode="stretch"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/step-flag.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 22,
+                  "left": 0,
+                  "position": "absolute",
+                  "tintColor": "#E6E9ED",
+                  "top": 0,
+                  "width": 34,
+                },
+                false,
+                false,
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#AAB2BD",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                  "textAlign": "center",
+                },
+                false,
+                false,
+              ]
+            }
+          >
+            2
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="formsteps_step_3"
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+            },
+            Object {
+              "zIndex": 2,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="formsteps_split"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#E6E9ED",
+                "height": 5,
+                "marginHorizontal": -4,
+                "overflow": "hidden",
+                "width": 80,
+              },
+              undefined,
+              Object {
+                "width": 182.66666666666666,
+              },
+              false,
+            ]
+          }
+        />
+        <View
+          accessibilityLabel="formsteps_indicator"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 22,
+                "justifyContent": "center",
+                "paddingBottom": 4,
+                "position": "relative",
+                "width": 34,
+              },
+              false,
+              undefined,
+            ]
+          }
+        >
+          <Image
+            resizeMode="stretch"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/step-flag.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 22,
+                  "left": 0,
+                  "position": "absolute",
+                  "tintColor": "#E6E9ED",
+                  "top": 0,
+                  "width": 34,
+                },
+                false,
+                false,
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#AAB2BD",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                  "textAlign": "center",
+                },
+                false,
+                false,
+              ]
+            }
+          >
+            3
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="formsteps_step_4"
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+            },
+            Object {
+              "zIndex": 1,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="formsteps_split"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#E6E9ED",
+                "height": 5,
+                "marginHorizontal": -4,
+                "overflow": "hidden",
+                "width": 80,
+              },
+              undefined,
+              Object {
+                "width": 182.66666666666666,
+              },
+              false,
+            ]
+          }
+        />
+        <View
+          accessibilityLabel="formsteps_indicator"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 22,
+                "justifyContent": "center",
+                "paddingBottom": 4,
+                "position": "relative",
+                "width": 34,
+              },
+              false,
+              undefined,
+            ]
+          }
+        >
+          <Image
+            resizeMode="stretch"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/step-flag.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 22,
+                  "left": 0,
+                  "position": "absolute",
+                  "tintColor": "#E6E9ED",
+                  "top": 0,
+                  "width": 34,
+                },
+                false,
+                false,
+              ]
+            }
+          />
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/icon-check.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "bottom": -1,
+                  "height": 8,
+                  "tintColor": "#AAB2BD",
+                  "width": 14,
+                },
+                false,
+                false,
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="morecontainer"
+    style={
+      Object {
+        "flex": 1,
+        "position": "relative",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="keyboardavoidingview"
+      onChangeDimensions={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+            "width": "100%",
+          },
+          Object {
+            "flex": 1,
+            "position": "relative",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <RCTScrollView
+        accessibilityLabel="keyboardavoidingview_scrollview"
+        contentContainerStyle={
+          Array [
+            Object {
+              "minHeight": 1220,
+            },
+            Object {
+              "minHeight": 1220,
+            },
+          ]
+        }
+        keyboardShouldPersistTaps="handled"
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onScroll={[Function]}
+        scrollEventThrottle={100}
+      >
+        <View>
+          <RCTSafeAreaView
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                undefined,
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#3FB4E5",
+                  "borderBottomLeftRadius": 24,
+                  "borderBottomRightRadius": 24,
+                  "borderColor": "#F7F9FC",
+                  "borderWidth": 0,
+                  "elevation": 4,
+                  "overflow": "visible",
+                  "shadowColor": "#434A54",
+                  "shadowOffset": Object {
+                    "height": 4,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.1,
+                  "shadowRadius": 16,
+                }
+              }
+            >
+              <View
+                accessibilityLabel="resumeaccountreschedule_container"
+              >
+                <View
+                  accessibilityLabel="card"
+                  removeClippedSubviews={false}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#E6E9ED",
+                        "borderRadius": 12,
+                        "borderWidth": 0,
+                        "elevation": 3,
+                        "overflow": "visible",
+                        "shadowColor": "#434A54",
+                        "shadowOffset": Object {
+                          "height": 4,
+                          "width": 0,
+                        },
+                        "shadowOpacity": 0.1,
+                        "shadowRadius": 16,
+                      },
+                      undefined,
+                      Object {
+                        "borderBottomLeftRadius": 24,
+                        "borderBottomRightRadius": 24,
+                        "borderTopLeftRadius": 0,
+                        "borderTopRightRadius": 0,
+                        "flex": 1,
+                        "paddingBottom": 32,
+                        "paddingHorizontal": 40,
+                        "paddingTop": 50,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <Text
+                      accessibilityLabel="resumeaccountreschedule_product_name"
+                      style={
+                        Object {
+                          "color": "#434A54",
+                          "fontFamily": "Brevia",
+                          "fontSize": 16,
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      Préstamo ActivoFijo
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#71B74C",
+                          "fontFamily": "Brevia",
+                          "fontSize": 18,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                        }
+                      }
+                    >
+                      S/ 151,924.33
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                        "marginTop": 16,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          }
+                        }
+                      >
+                        Te falta pagar
+                         
+                        8
+                         
+                        cuotas
+                      </Text>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 13,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        <Text>
+                          Monto de cuota 
+                        </Text>
+                        S/ 0.00
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        Array [
+                          Object {
+                            "backgroundColor": "#E6E9ED",
+                            "width": 1,
+                          },
+                          Object {
+                            "backgroundColor": "#E6E9ED",
+                          },
+                        ]
+                      }
+                    />
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "width": "25%",
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 13,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        Vence
+                      </Text>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "fontWeight": "600",
+                          }
+                        }
+                      >
+                        25 jul
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                accessibilityLabel="loanrescheduleconfirmscreen_resume_info"
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "marginBottom": 5,
+                    "marginHorizontal": 40,
+                    "marginTop": 15,
+                  }
+                }
+              >
+                <Image
+                  accessibilityLabel="feeitem_checkbox_active"
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../src/assets/images/info-icon.png",
+                    }
+                  }
+                  style={
+                    Object {
+                      "alignSelf": "center",
+                      "height": 18,
+                      "marginRight": 6,
+                      "tintColor": "#FFFFFF",
+                      "width": 18,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                      "fontFamily": "Brevia",
+                      "fontSize": 16,
+                      "fontStyle": "normal",
+                      "fontWeight": "700",
+                      "lineHeight": 22,
+                    }
+                  }
+                >
+                  Recuerda ante todo
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 15,
+                    "marginLeft": 40,
+                    "marginRight": 36,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                      "fontFamily": "Brevia",
+                      "fontSize": 13,
+                      "fontStyle": "normal",
+                      "fontWeight": "500",
+                      "lineHeight": 15,
+                    }
+                  }
+                >
+                  Si puedes pagar normalmente, hazlo, así 
+                  <Text
+                    style={
+                      Object {
+                        "fontFamily": "Brevia",
+                        "fontStyle": "normal",
+                        "fontWeight": "700",
+                      }
+                    }
+                  >
+                    evitarás extender 
+                  </Text>
+                  tu préstamo y 
+                  <Text
+                    style={
+                      Object {
+                        "fontFamily": "Brevia",
+                        "fontStyle": "normal",
+                        "fontWeight": "700",
+                      }
+                    }
+                  >
+                    ayudarás 
+                  </Text>
+                  a que podamos hacer llegar este beneficio a los 
+                  <Text
+                    style={
+                      Object {
+                        "fontFamily": "Brevia",
+                        "fontStyle": "normal",
+                        "fontWeight": "700",
+                      }
+                    }
+                  >
+                    hogares que más lo necesitan.
+                  </Text>
+                </Text>
+              </View>
+            </View>
+            <View
+              accessibilityLabel="content"
+              style={
+                Array [
+                  Object {
+                    "paddingHorizontal": 20,
+                  },
+                  Object {
+                    "justifyContent": "center",
+                  },
+                  Object {
+                    "flex": 1,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                accessibilityLabel="loanpostponementoptionscreen_header"
+                style={
+                  Array [
+                    Object {
+                      "overflow": "visible",
+                    },
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "marginVertical": 20,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityLabel="header_text_title"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontSize": 22,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "lineHeight": 25,
+                          "textAlign": "left",
+                        },
+                        undefined,
+                        Object {
+                          "textAlign": "center",
+                        },
+                        Object {
+                          "textAlign": "center",
+                        },
+                      ]
+                    }
+                  >
+                    Elige el beneficio que
+más te conviene
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      false,
+                    ]
+                  }
+                />
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+      </RCTScrollView>
+      <View
+        accessibilityLabel="morecontainer_scrollmore"
+        collapsable={false}
+        style={
+          Object {
+            "bottom": -100,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "zIndex": 1000,
+          }
+        }
+      >
+        <View
+          accessibilityLabel="scrollmore_button"
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            accessibilityLabel="scrollmore_image"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+              }
+            }
+            style={
+              Object {
+                "height": 70,
+                "width": 70,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

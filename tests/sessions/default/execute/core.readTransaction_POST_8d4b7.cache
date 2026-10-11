@@ -1,0 +1,19 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/core.readTransaction",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "idTransaction": "7ea039ed4221445d9614f064e89c00ac"
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

@@ -1,0 +1,541 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`session render just views 1`] = `
+<View
+  accessibilityLabel="container"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="morecontainer"
+    style={
+      Object {
+        "flex": 1,
+        "position": "relative",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="keyboardavoidingview"
+      onChangeDimensions={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+            "width": "100%",
+          },
+          Object {
+            "flex": 1,
+            "position": "relative",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <RCTScrollView
+        accessibilityLabel="keyboardavoidingview_scrollview"
+        contentContainerStyle={
+          Array [
+            Object {
+              "minHeight": 1220,
+            },
+            false,
+          ]
+        }
+        keyboardShouldPersistTaps="handled"
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onScroll={[Function]}
+        scrollEventThrottle={100}
+      >
+        <View>
+          <RCTSafeAreaView
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                undefined,
+              ]
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#3FB4E5",
+                    "height": "100%",
+                    "paddingTop": 40,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "paddingHorizontal": 20,
+                    }
+                  }
+                >
+                  <Image
+                    source={
+                      Object {
+                        "testUri": "../../../src/assets/images/hand-money.png",
+                      }
+                    }
+                    style={
+                      Object {
+                        "height": 88,
+                        "width": 88,
+                      }
+                    }
+                  />
+                  <View
+                    style={
+                      Object {
+                        "paddingLeft": 30,
+                        "width": "60%",
+                      }
+                    }
+                  >
+                    <Text>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#FFFFFF",
+                            "fontFamily": "Brevia",
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          }
+                        }
+                      >
+                        Protege a tu familia y ahorra a la vez
+                      </Text>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#FFFFFF",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        , haz crecer tu dinero para disfrutarlo en vida desde 
+                      </Text>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#FFFFFF",
+                            "fontFamily": "Brevia",
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                          }
+                        }
+                      >
+                        S/ 39.00 (inc IGV) 
+                      </Text>
+                      <Text
+                        style={
+                          Object {
+                            "color": "#FFFFFF",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        al mes
+                      </Text>
+                    </Text>
+                  </View>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "marginTop": 38,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#E6E9ED",
+                        "borderTopLeftRadius": 40,
+                        "borderTopRightRadius": 40,
+                        "borderWidth": 1,
+                        "padding": 18,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "justifyContent": "center",
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#3FB4E5",
+                            "fontFamily": "Brevia",
+                            "fontSize": 13,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "textAlign": "center",
+                          }
+                        }
+                      >
+                        Con el respaldo de
+                      </Text>
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/pacifico-logo.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 18,
+                            "marginHorizontal": 8,
+                            "width": 83,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#3FB4E5",
+                            "fontFamily": "Brevia",
+                            "fontSize": 13,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "textAlign": "center",
+                          }
+                        }
+                      >
+                        seguros
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "paddingHorizontal": 15,
+                          "paddingVertical": 20,
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/family-icon.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 50,
+                            "width": 50,
+                          }
+                        }
+                      />
+                      <View
+                        style={
+                          Object {
+                            "paddingLeft": 6,
+                            "width": "80%",
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 14,
+                              "fontStyle": "normal",
+                              "fontWeight": "500",
+                            }
+                          }
+                        >
+                          Cobertura en 
+                          <Text
+                            style={
+                              Object {
+                                "color": "#434A54",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              }
+                            }
+                          >
+                            caso de fallecimiento
+                          </Text>
+                          , por el tiempo que elijas.
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "paddingHorizontal": 15,
+                          "paddingVertical": 20,
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/hand-coins.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 50,
+                            "width": 50,
+                          }
+                        }
+                      />
+                      <View
+                        style={
+                          Object {
+                            "paddingLeft": 6,
+                            "width": "80%",
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 14,
+                              "fontStyle": "normal",
+                              "fontWeight": "500",
+                            }
+                          }
+                        >
+                          Si no falleces, 
+                          <Text
+                            style={
+                              Object {
+                                "color": "#434A54",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              }
+                            }
+                          >
+                            se te devuelve todo lo pagado 
+                          </Text>
+                          al finalizar el tiempo elegido.
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "paddingHorizontal": 15,
+                          "paddingVertical": 20,
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/bag-money.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 50,
+                            "width": 50,
+                          }
+                        }
+                      />
+                      <View
+                        style={
+                          Object {
+                            "paddingLeft": 6,
+                            "width": "80%",
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 14,
+                              "fontStyle": "normal",
+                              "fontWeight": "500",
+                            }
+                          }
+                        >
+                          Te devolvemos lo pagado durante el periodo elegido y 
+                          <Text
+                            style={
+                              Object {
+                                "color": "#434A54",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              }
+                            }
+                          >
+                            hasta un 50% más.
+                          </Text>
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "marginBottom": 10,
+                        }
+                      }
+                    >
+                      <View
+                        accessibilityLabel="foryou_lifedevolution_button_buy"
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#00964B",
+                            "borderColor": "#00964B",
+                            "borderRadius": 25,
+                            "borderWidth": 1,
+                            "flexDirection": "row",
+                            "height": 50,
+                            "justifyContent": "center",
+                            "margin": 0,
+                            "minHeight": 40,
+                            "opacity": 1,
+                            "paddingHorizontal": 12,
+                            "zIndex": 1,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityLabel="button_text"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#FFFFFF",
+                                "fontFamily": "Brevia",
+                                "fontSize": 16,
+                                "fontStyle": "normal",
+                                "fontWeight": "600",
+                                "textAlign": "center",
+                              },
+                              undefined,
+                              undefined,
+                              undefined,
+                            ]
+                          }
+                        >
+                          Cómpralo aquí
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+      </RCTScrollView>
+      <View
+        accessibilityLabel="morecontainer_scrollmore"
+        collapsable={false}
+        style={
+          Object {
+            "bottom": -100,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "zIndex": 1000,
+          }
+        }
+      >
+        <View
+          accessibilityLabel="scrollmore_button"
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            accessibilityLabel="scrollmore_image"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+              }
+            }
+            style={
+              Object {
+                "height": 70,
+                "width": 70,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

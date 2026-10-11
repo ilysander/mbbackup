@@ -1,0 +1,41 @@
+{
+  "duration": 1483,
+  "request": {
+    "url": "https://server/api/session",
+    "method": "POST",
+    "headers": {
+      "content-type": "application/json",
+      "connection": "keep-alive",
+      "accept": "*/*",
+      "content-length": "264",
+      "accept-language": "en-us",
+      "accept-encoding": "br, gzip, deflate"
+    },
+    "body": {
+      "channel": "phonegap",
+      "idActivity": "session.recoverPin.mobile.finish",
+      "_debitcardNumber": "4334660300154580",
+      "_newPin": "121212",
+      "_newPinConfirmation": "121212",
+      "_exchangeToken": "sample"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "145",
+      "date": "Wed, 19 Sep 2018 20:02:16 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "f871bb07eb994b50b4d8ea7c859d905a",
+      "message": "Operación ejecutada con éxito",
+      "data": {}
+    }
+  }
+}

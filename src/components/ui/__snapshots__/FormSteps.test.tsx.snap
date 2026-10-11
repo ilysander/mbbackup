@@ -1,0 +1,426 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 100,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "height": 25,
+        "left": 0,
+        "overflow": "visible",
+        "position": "absolute",
+        "right": 0,
+        "top": -20,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFD100",
+            "borderBottomLeftRadius": 20,
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "right": 60,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    accessibilityLabel="formsteps"
+    style={
+      Object {
+        "alignSelf": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="formsteps_step_1"
+      style={
+        Array [
+          Object {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+          },
+          Object {
+            "zIndex": 4,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityLabel="formsteps_indicator"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "height": 22,
+              "justifyContent": "center",
+              "paddingBottom": 4,
+              "position": "relative",
+              "width": 34,
+            },
+            Object {
+              "height": 30,
+              "paddingBottom": 0,
+              "width": 40,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Image
+          resizeMode="stretch"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/step-flag.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 22,
+                "left": 0,
+                "position": "absolute",
+                "tintColor": "#E6E9ED",
+                "top": 0,
+                "width": 34,
+              },
+              Object {
+                "tintColor": "#FFD100",
+              },
+              Object {
+                "height": 30,
+                "width": 40,
+              },
+            ]
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#AAB2BD",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+              Object {
+                "color": "#434A54",
+              },
+              Object {
+                "fontSize": 22,
+                "top": -2,
+              },
+            ]
+          }
+        >
+          1
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityLabel="formsteps_step_2"
+      style={
+        Array [
+          Object {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+          },
+          Object {
+            "zIndex": 3,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityLabel="formsteps_split"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#E6E9ED",
+              "height": 5,
+              "marginHorizontal": -4,
+              "overflow": "hidden",
+              "width": 80,
+            },
+            undefined,
+            Object {
+              "width": 182.66666666666666,
+            },
+            false,
+          ]
+        }
+      />
+      <View
+        accessibilityLabel="formsteps_indicator"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "height": 22,
+              "justifyContent": "center",
+              "paddingBottom": 4,
+              "position": "relative",
+              "width": 34,
+            },
+            false,
+            undefined,
+          ]
+        }
+      >
+        <Image
+          resizeMode="stretch"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/step-flag.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 22,
+                "left": 0,
+                "position": "absolute",
+                "tintColor": "#E6E9ED",
+                "top": 0,
+                "width": 34,
+              },
+              false,
+              false,
+            ]
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#AAB2BD",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+              false,
+              false,
+            ]
+          }
+        >
+          2
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityLabel="formsteps_step_3"
+      style={
+        Array [
+          Object {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+          },
+          Object {
+            "zIndex": 2,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityLabel="formsteps_split"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#E6E9ED",
+              "height": 5,
+              "marginHorizontal": -4,
+              "overflow": "hidden",
+              "width": 80,
+            },
+            undefined,
+            Object {
+              "width": 182.66666666666666,
+            },
+            false,
+          ]
+        }
+      />
+      <View
+        accessibilityLabel="formsteps_indicator"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "height": 22,
+              "justifyContent": "center",
+              "paddingBottom": 4,
+              "position": "relative",
+              "width": 34,
+            },
+            false,
+            undefined,
+          ]
+        }
+      >
+        <Image
+          resizeMode="stretch"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/step-flag.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 22,
+                "left": 0,
+                "position": "absolute",
+                "tintColor": "#E6E9ED",
+                "top": 0,
+                "width": 34,
+              },
+              false,
+              false,
+            ]
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#AAB2BD",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+              false,
+              false,
+            ]
+          }
+        >
+          3
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityLabel="formsteps_step_4"
+      style={
+        Array [
+          Object {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+          },
+          Object {
+            "zIndex": 1,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityLabel="formsteps_split"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#E6E9ED",
+              "height": 5,
+              "marginHorizontal": -4,
+              "overflow": "hidden",
+              "width": 80,
+            },
+            undefined,
+            Object {
+              "width": 182.66666666666666,
+            },
+            false,
+          ]
+        }
+      />
+      <View
+        accessibilityLabel="formsteps_indicator"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "height": 22,
+              "justifyContent": "center",
+              "paddingBottom": 4,
+              "position": "relative",
+              "width": 34,
+            },
+            false,
+            undefined,
+          ]
+        }
+      >
+        <Image
+          resizeMode="stretch"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/step-flag.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 22,
+                "left": 0,
+                "position": "absolute",
+                "tintColor": "#E6E9ED",
+                "top": 0,
+                "width": 34,
+              },
+              false,
+              false,
+            ]
+          }
+        />
+        <Image
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/icon-check.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "bottom": -1,
+                "height": 8,
+                "tintColor": "#AAB2BD",
+                "width": 14,
+              },
+              false,
+              false,
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

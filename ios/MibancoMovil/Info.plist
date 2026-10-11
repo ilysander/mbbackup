@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>$(DISPLAY_NAME)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.13.8</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1000370</string>
+  <key>FacebookAppID</key>
+  <string>$(FB_APPID)</string>
+  <key>FacebookClientToken</key>
+  <string>$(FB_CLIENT_TOKEN)</string>
+  <key>FacebookDisplayName</key>
+  <string>$(FB_APPNAME)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+  <key>NSLocationAlwaysUsageDescription</key>
+  <string>se requiere conocer la ubicación para poder mostrarle las sucursales cercanas siempre</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>se requiere conocer la ubicación para poder mostrarle las sucursales cercanas</string>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>se requiere poder usar el microfono para enviar sugerencias de voz</string>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>se requiere poder acceder a las imágenes para enviar sugerencias</string>
+  <key>NSCameraUsageDescription</key>
+  <string>se requiere para autenticarte biométricamente y de esta manera poder registrarte</string>
+  <key>NSPhotoLibraryAddUsageDescription</key>
+  <string>se requiere poder agregar fotos de la biblioteca</string>
+  <key>UIAppFonts</key>
+  <array>
+    <string>Brevia-Black.otf</string>
+    <string>Brevia-BlackItalic.otf</string>
+    <string>Brevia-Bold.otf</string>
+    <string>Brevia-BoldItalic.otf</string>
+    <string>Brevia-ExtraBlack.otf</string>
+    <string>Brevia-ExtraBlackItalic.otf</string>
+    <string>Brevia-Light.otf</string>
+    <string>Brevia-LightItalic.otf</string>
+    <string>Brevia-Medium.otf</string>
+    <string>Brevia-MediumItalic.otf</string>
+    <string>Brevia-Regular.otf</string>
+    <string>Brevia-RegularItalic.otf</string>
+    <string>Brevia-SemiBold.otf</string>
+    <string>Brevia-SemiBoldItalic.otf</string>
+    <string>Roboto-Black.ttf</string>
+    <string>Roboto-Bold.ttf</string>
+    <string>Roboto-Medium.ttf</string>
+    <string>Roboto-Regular.ttf</string>
+  </array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+  <key>UIStatusBarStyle</key>
+  <string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+  <key>ITSAppUsesNonExemptEncryption</key>
+  <false/>
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>tagmanager.c.com.mibanco.bancamovil</string>
+        <string>$(FB_URLSC)</string>
+      </array>
+      <key>CFBundleURLName</key>
+      <string>com.mibanco.bancamovil</string>
+    </dict>
+  </array>
+</dict>
+</plist>

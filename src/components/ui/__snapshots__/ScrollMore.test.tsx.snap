@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="scrollmore"
+  collapsable={false}
+  style={
+    Object {
+      "position": "absolute",
+      "right": 0,
+      "zIndex": 1000,
+    }
+  }
+>
+  <View
+    accessibilityLabel="scrollmore_button"
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      accessibilityLabel="scrollmore_image"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+        }
+      }
+      style={
+        Object {
+          "height": 70,
+          "width": 70,
+        }
+      }
+    />
+  </View>
+</View>
+`;

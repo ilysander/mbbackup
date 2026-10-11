@@ -1,0 +1,51 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfers.local.preview/5",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "debitAccount": "31725128",
+      "Amount": {
+        "quantity": "60",
+        "currency": "2"
+      },
+      "ToAccount": "1231231231"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "642",
+      "date": "Tue, 25 Sep 2018 21:57:32 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "7886bab08bbf4894bf819fc4cf3c9104",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "transferData": {
+          "debitAmount": 100,
+          "creditAmount": 342.31,
+          "exchangeRate": 3.4231,
+          "debitAccountHolder": "CARRILLO ALIAGA JUAN DE DIOS RODOLFO",
+          "creditAccountHolder": "LOAYZA GARCIA EUFRACIO",
+          "creditAccountCurrency": 1,
+          "operationNumber": 1021950,
+          "debitProductLabel": "Cuenta ahorro negocios (ME) 6009812324",
+          "debitAccountCurrency": "2",
+          "creditAccountNumber": "6007644726"
+        },
+        "mustUpdateMobile": true
+      }
+    }
+  }
+}

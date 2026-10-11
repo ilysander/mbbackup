@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#3FB4E5",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginBottom": -2.2,
+          "paddingHorizontal": 10,
+          "paddingVertical": 14,
+        },
+        Object {
+          "elevation": 2,
+          "shadowColor": "rgba(0,0,0,0.2)",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 2,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#3FB4E5",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "500",
+            },
+          ]
+        }
+      >
+        test
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "elevation": 2,
+          "shadowColor": "rgba(0,0,0,0.2)",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 2,
+        },
+      ]
+    }
+  >
+    <RNSVGSvgView
+      bbHeight="16"
+      bbWidth="100%"
+      focusable={false}
+      height="16"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "flex": 0,
+            "height": 16,
+            "width": "100%",
+          },
+        ]
+      }
+      width="100%"
+    >
+      <RNSVGGroup
+        fill={
+          Object {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M15 1 41 1 27.5 16z"
+          fill={
+            Object {
+              "payload": 4282365157,
+              "type": 0,
+            }
+          }
+          propList={
+            Array [
+              "fill",
+              "strokeWidth",
+            ]
+          }
+          strokeWidth="0"
+        />
+        <RNSVGPath
+          d="M16 0 40 0 27.5 14z"
+          fill={
+            Object {
+              "payload": 4294967295,
+              "type": 0,
+            }
+          }
+          propList={
+            Array [
+              "fill",
+              "strokeWidth",
+            ]
+          }
+          strokeWidth="0"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</View>
+`;

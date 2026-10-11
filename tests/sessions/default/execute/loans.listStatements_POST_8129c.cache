@@ -1,0 +1,109 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/loans.listStatements",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "currency": "1"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "1960",
+      "date": "Wed, 19 Sep 2018 20:07:31 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "541d8981fe07499aa829291701d833da",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "moreStatements": false,
+        "pageNumber": 1,
+        "statements": [
+          {
+            "id": -756354208,
+            "note": null,
+            "comment": "TR HB 6007456520 a 6009812537",
+            "check": 0,
+            "amount": 30,
+            "type": "C",
+            "date": "2018-09-18T00:00:00.000-0500",
+            "reference": 1023829
+          },
+          {
+            "id": 203962071,
+            "note": null,
+            "comment": "TR HB 6009812537 a 6007456520",
+            "check": 0,
+            "amount": 31.15,
+            "type": "D",
+            "date": "2018-09-18T00:00:00.000-0500",
+            "reference": 1021974
+          },
+          {
+            "id": -469364180,
+            "note": null,
+            "comment": "Dep.Cta.Ah.Cte:6009812537",
+            "check": 0,
+            "amount": 320,
+            "type": "C",
+            "date": "2018-09-18T00:00:00.000-0500",
+            "reference": 1010091
+          },
+          {
+            "id": -1899212778,
+            "note": null,
+            "comment": "Dep.Cta.Ah.Cte:6009812537",
+            "check": 0,
+            "amount": 450,
+            "type": "C",
+            "date": "2018-09-18T00:00:00.000-0500",
+            "reference": 1010089
+          },
+          {
+            "id": 965905920,
+            "note": null,
+            "comment": "Dep.Cta.Ah.Cte:6009812537",
+            "check": 0,
+            "amount": 500,
+            "type": "C",
+            "date": "2018-09-18T00:00:00.000-0500",
+            "reference": 1010087
+          },
+          {
+            "id": -1893791276,
+            "note": null,
+            "comment": "Dep.Cta.Ah.Cte:6009812537",
+            "check": 0,
+            "amount": 700,
+            "type": "C",
+            "date": "2018-09-18T00:00:00.000-0500",
+            "reference": 1010083
+          },
+          {
+            "id": -1178866977,
+            "note": null,
+            "comment": "Dep.Cta.Ah.Cte:6009812537",
+            "check": 0,
+            "amount": 990,
+            "type": "C",
+            "date": "2018-09-18T00:00:00.000-0500",
+            "reference": 1010084
+          }
+        ],
+        "currency": "2",
+        "movementsPerPage": 20
+      }
+    }
+  }
+}

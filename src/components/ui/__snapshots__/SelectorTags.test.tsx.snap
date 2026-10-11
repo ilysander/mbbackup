@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+  onSelectIndex={[MockFunction]}
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "position": "relative",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="selectortag_item"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "marginBottom": 10,
+        "marginRight": 20,
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      accessibilityLabel="selectortag_tag"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#E6E9ED",
+            "borderRadius": 15,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "height": 30,
+            "paddingHorizontal": 10,
+          },
+          undefined,
+          false,
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="tag_title"
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        sample1
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="selectortag_item"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "marginBottom": 10,
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      accessibilityLabel="selectortag_tag"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#E6E9ED",
+            "borderRadius": 15,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "height": 30,
+            "paddingHorizontal": 10,
+          },
+          undefined,
+          false,
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="tag_title"
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        sample2
+      </Text>
+    </View>
+  </View>
+</View>
+`;

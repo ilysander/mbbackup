@@ -1,0 +1,433 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`session render just views 1`] = `
+<View
+  accessibilityLabel="container"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="morecontainer"
+    style={
+      Object {
+        "flex": 1,
+        "position": "relative",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="keyboardavoidingview"
+      onChangeDimensions={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+            "width": "100%",
+          },
+          Object {
+            "flex": 1,
+            "position": "relative",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <RCTScrollView
+        accessibilityLabel="keyboardavoidingview_scrollview"
+        contentContainerStyle={
+          Array [
+            Object {
+              "minHeight": 1220,
+            },
+            Object {
+              "minHeight": 1220,
+            },
+          ]
+        }
+        keyboardShouldPersistTaps="handled"
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onScroll={[Function]}
+        scrollEventThrottle={100}
+      >
+        <View>
+          <RCTSafeAreaView
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                undefined,
+              ]
+            }
+          >
+            <View
+              accessibilityLabel="content"
+              style={
+                Array [
+                  Object {
+                    "paddingHorizontal": 20,
+                  },
+                  Object {
+                    "justifyContent": "center",
+                  },
+                  Object {
+                    "flex": 1,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                accessibilityLabel="changeprofilesucessscreen_header"
+                style={
+                  Array [
+                    Object {
+                      "overflow": "visible",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityLabel="header_text_title"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontSize": 22,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "lineHeight": 25,
+                          "textAlign": "left",
+                        },
+                        undefined,
+                        Object {
+                          "textAlign": "center",
+                        },
+                        Object {
+                          "color": "#3FB4E5",
+                        },
+                      ]
+                    }
+                  >
+                    ¡Tu actualización fue exitosa!
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "marginTop": 2,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityLabel="header_text_subtitle"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#434A54",
+                          "fontFamily": "Brevia",
+                          "fontSize": 13,
+                          "fontStyle": "normal",
+                          "fontWeight": "400",
+                          "lineHeight": 15,
+                          "textAlign": "left",
+                        },
+                        Object {
+                          "textAlign": "center",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Has actualizado con éxito tu correo electrónico.
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 10,
+                    "marginHorizontal": 20,
+                    "marginTop": 60,
+                  }
+                }
+              >
+                <View
+                  accessibilityLabel="changeprofilesucessscreen_button_profile"
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#00964B",
+                      "borderColor": "#00964B",
+                      "borderRadius": 25,
+                      "borderWidth": 1,
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "margin": 0,
+                      "minHeight": 40,
+                      "opacity": 1,
+                      "paddingHorizontal": 12,
+                      "zIndex": 1,
+                    }
+                  }
+                >
+                  <Text
+                    accessibilityLabel="button_text"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "Brevia",
+                          "fontSize": 16,
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                          "textAlign": "center",
+                        },
+                        undefined,
+                        undefined,
+                        undefined,
+                      ]
+                    }
+                  >
+                    Ir a Mi perfil
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              accessibilityLabel="content"
+              style={
+                Array [
+                  Object {
+                    "paddingHorizontal": 20,
+                  },
+                  false,
+                  false,
+                  undefined,
+                ]
+              }
+            >
+              <View
+                accessibilityLabel="changeprofilesucessscreen_infocontact"
+                navigate={[MockFunction]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "marginBottom": 10,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <Text
+                  accessibilityLabel="infocontact_text_title"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#656D78",
+                        "fontFamily": "Brevia",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "400",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  ¿Dudas o consultas?
+                </Text>
+                <View
+                  accessibilityLabel="infocontact_note"
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    accessibilityLabel="infocontact_text"
+                    style={
+                      Object {
+                        "color": "#00964B",
+                        "fontFamily": "Brevia",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "600",
+                      }
+                    }
+                  >
+                    Comunícate con nosotros al
+                     
+                  </Text>
+                  <View
+                    accessibilityLabel="infocontact_buttonlink"
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    hitSlop={
+                      Object {
+                        "bottom": 10,
+                        "left": 10,
+                        "right": 10,
+                        "top": 10,
+                      }
+                    }
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "alignContent": "center",
+                        "alignItems": "center",
+                        "alignSelf": "center",
+                        "flexDirection": "row",
+                        "opacity": 1,
+                        "padding": 0,
+                      }
+                    }
+                  >
+                    <Text
+                      accessibilityLabel="buttonlink_text"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 13,
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                            "textAlign": "center",
+                          },
+                          undefined,
+                          Object {
+                            "color": "#00964B",
+                          },
+                          Array [
+                            Object {
+                              "color": "#00964B",
+                              "fontFamily": "Brevia",
+                              "fontSize": 14,
+                              "fontStyle": "normal",
+                              "fontWeight": "600",
+                            },
+                            undefined,
+                          ],
+                        ]
+                      }
+                    >
+                      (01) 319-9999
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+      </RCTScrollView>
+      <View
+        accessibilityLabel="morecontainer_scrollmore"
+        collapsable={false}
+        style={
+          Object {
+            "bottom": -100,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "zIndex": 1000,
+          }
+        }
+      >
+        <View
+          accessibilityLabel="scrollmore_button"
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            accessibilityLabel="scrollmore_image"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+              }
+            }
+            style={
+              Object {
+                "height": 70,
+                "width": 70,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

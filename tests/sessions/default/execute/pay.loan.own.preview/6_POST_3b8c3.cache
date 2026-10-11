@@ -1,0 +1,70 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/pay.loan.own.preview/6",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "loan": "16115071",
+      "loanAmount": {
+        "amount": {
+          "currency": "1",
+          "quantity": "0"
+        },
+        "otherAmountQuantity": "",
+        "pendingPayment": {
+          "amount": "0",
+          "selected": "false"
+        },
+        "oldPayments": {
+          "amount": "0",
+          "fees": "0",
+          "selected": "false"
+        },
+        "lastLoanId": "16115071",
+        "lastDueDate": ""
+      },
+      "debitAccount": "31725128",
+      "valueDate": ""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "690",
+      "date": "Wed, 12 Dec 2018 23:35:53 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "76c02a6b3fca42e89b40d0e8c8153930",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "exchangeRate": "El cambio a $ es de S/ 3.330, el monto en S/ es de S/ 33.30",
+        "loanAmount": {
+          "currency": "2",
+          "quantity": 10
+        },
+        "totalAmount": "10.00",
+        "creditCurrency": "1",
+        "capital": "0.00",
+        "exchange": 3.33,
+        "debitAccount": "12508001",
+        "debitAccountLabel": "Cuenta ahorro negocios (MN) 747285402",
+        "loan": "13010917",
+        "loanLabel": "Préstamo ActivoFijo 113004696467000",
+        "interest": "1.60",
+        "overdue": "0.00",
+        "itf": "0.00",
+        "otherAmount": "8.40"
+      }
+    }
+  }
+}

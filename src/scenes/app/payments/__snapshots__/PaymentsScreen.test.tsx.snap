@@ -1,0 +1,559 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`session render just views 1`] = `
+<View
+  accessibilityLabel="container"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="morecontainer"
+    style={
+      Object {
+        "flex": 1,
+        "position": "relative",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="keyboardavoidingview"
+      onChangeDimensions={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+            "width": "100%",
+          },
+          Object {
+            "flex": 1,
+            "position": "relative",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <RCTScrollView
+        accessibilityLabel="keyboardavoidingview_scrollview"
+        contentContainerStyle={
+          Array [
+            Object {
+              "minHeight": 1220,
+            },
+            false,
+          ]
+        }
+        keyboardShouldPersistTaps="handled"
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onScroll={[Function]}
+        scrollEventThrottle={100}
+      >
+        <View>
+          <RCTSafeAreaView
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                undefined,
+              ]
+            }
+          >
+            <View
+              accessibilityLabel="content"
+              style={
+                Array [
+                  Object {
+                    "paddingHorizontal": 20,
+                  },
+                  false,
+                  Object {
+                    "flex": 1,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                accessibilityLabel="panel"
+              >
+                <View
+                  accessibilityLabel="panel_header"
+                  style={
+                    Array [
+                      Object {
+                        "paddingBottom": 5,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityLabel="panelheader_title"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontSize": 20,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "lineHeight": 25,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Préstamos
+                  </Text>
+                </View>
+                <View
+                  accessibilityLabel="paymentsscreen_panel_my_loans"
+                  removeClippedSubviews={false}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#E6E9ED",
+                        "borderRadius": 12,
+                        "borderWidth": 0,
+                        "elevation": 3,
+                        "overflow": "visible",
+                        "shadowColor": "#434A54",
+                        "shadowOffset": Object {
+                          "height": 4,
+                          "width": 0,
+                        },
+                        "shadowOpacity": 0.1,
+                        "shadowRadius": 16,
+                      },
+                      undefined,
+                      Array [
+                        Object {
+                          "marginBottom": 20,
+                        },
+                        undefined,
+                      ],
+                    ]
+                  }
+                >
+                  <View
+                    accessibilityLabel="paymentsscreen_paymentstypes"
+                    style={
+                      Object {
+                        "paddingHorizontal": 20,
+                      }
+                    }
+                  >
+                    <View
+                      accessibilityLabel="paymentstypes_item_own_loans"
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "column",
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "flex": 1,
+                            "flexDirection": "row",
+                            "marginVertical": 12,
+                            "overflow": "hidden",
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "height": 32,
+                            }
+                          }
+                        />
+                        <View
+                          style={
+                            Object {
+                              "flex": 1,
+                              "flexDirection": "row",
+                              "flexWrap": "wrap",
+                              "justifyContent": "flex-start",
+                            }
+                          }
+                        >
+                          <Text
+                            accessibilityLabel="typesitem_text_name"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#434A54",
+                                  "fontFamily": "Brevia",
+                                  "fontSize": 14,
+                                  "fontStyle": "normal",
+                                  "fontWeight": "600",
+                                },
+                                undefined,
+                                Object {
+                                  "color": "#CCD1D9",
+                                },
+                              ]
+                            }
+                          >
+                            Pagar mis préstamos
+                          </Text>
+                        </View>
+                        <Image
+                          accessibilityLabel="typesitem_image_more_icon"
+                          source={
+                            Object {
+                              "testUri": "../../../src/assets/images/arrow-icon.png",
+                            }
+                          }
+                          style={
+                            Array [
+                              Object {
+                                "height": 12,
+                                "marginLeft": 5,
+                                "tintColor": "#AAB2BD",
+                                "width": 6,
+                              },
+                              Object {
+                                "tintColor": "#CCD1D9",
+                              },
+                            ]
+                          }
+                        />
+                      </View>
+                      <View
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "#E6E9ED",
+                              "height": 1,
+                            },
+                            Object {
+                              "width": "100%",
+                            },
+                          ]
+                        }
+                      />
+                    </View>
+                    <View
+                      accessibilityLabel="paymentstypes_item_other_loans_go_to_web"
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "column",
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "flex": 1,
+                            "flexDirection": "row",
+                            "marginVertical": 12,
+                            "overflow": "hidden",
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "height": 32,
+                            }
+                          }
+                        />
+                        <View
+                          style={
+                            Object {
+                              "flex": 1,
+                              "flexDirection": "row",
+                              "flexWrap": "wrap",
+                              "justifyContent": "flex-start",
+                            }
+                          }
+                        >
+                          <Text
+                            accessibilityLabel="typesitem_text_name"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#434A54",
+                                  "fontFamily": "Brevia",
+                                  "fontSize": 14,
+                                  "fontStyle": "normal",
+                                  "fontWeight": "600",
+                                },
+                                undefined,
+                                Object {
+                                  "color": "#CCD1D9",
+                                },
+                              ]
+                            }
+                          >
+                            Pagar préstamos de terceros
+                          </Text>
+                        </View>
+                        <View />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                accessibilityLabel="panel"
+              >
+                <View
+                  accessibilityLabel="panel_header"
+                  style={
+                    Array [
+                      Object {
+                        "paddingBottom": 5,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityLabel="panelheader_title"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontSize": 20,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "lineHeight": 25,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Otros pagos
+                  </Text>
+                </View>
+                <View
+                  accessibilityLabel="paymentsscreen_panel_other_payments"
+                  removeClippedSubviews={false}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#E6E9ED",
+                        "borderRadius": 12,
+                        "borderWidth": 0,
+                        "elevation": 3,
+                        "overflow": "visible",
+                        "shadowColor": "#434A54",
+                        "shadowOffset": Object {
+                          "height": 4,
+                          "width": 0,
+                        },
+                        "shadowOpacity": 0.1,
+                        "shadowRadius": 16,
+                      },
+                      undefined,
+                      Array [
+                        Object {
+                          "marginBottom": 20,
+                        },
+                        undefined,
+                      ],
+                    ]
+                  }
+                >
+                  <View
+                    accessibilityLabel="paymentstypes_typesitem_go_to_pay_my_services"
+                    style={
+                      Object {
+                        "paddingHorizontal": 20,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flex": 1,
+                          "flexDirection": "row",
+                          "marginVertical": 12,
+                          "overflow": "hidden",
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "height": 32,
+                          }
+                        }
+                      />
+                      <View
+                        style={
+                          Object {
+                            "flex": 1,
+                            "flexDirection": "row",
+                            "flexWrap": "wrap",
+                            "justifyContent": "flex-start",
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityLabel="typesitem_text_name"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#434A54",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "600",
+                              },
+                              undefined,
+                              Object {
+                                "color": "#CCD1D9",
+                              },
+                            ]
+                          }
+                        >
+                          Pagar servicios
+                        </Text>
+                      </View>
+                      <View
+                        accessibilityLabel="paymentstypes_typesitem_go_to_pay_my_services_go_to_web"
+                        activeOpacity={1}
+                        analyticsParams="Ir a la web"
+                        style={
+                          Array [
+                            Object {
+                              "alignItems": "center",
+                              "borderRadius": 25,
+                              "borderWidth": 1,
+                              "flexDirection": "row",
+                              "justifyContent": "center",
+                              "margin": 0,
+                              "minHeight": 40,
+                              "paddingHorizontal": 12,
+                              "zIndex": 1,
+                            },
+                            Array [
+                              Object {
+                                "backgroundColor": "#00964B",
+                                "borderColor": "#00964B",
+                              },
+                              Object {
+                                "backgroundColor": "#CCD1D9",
+                                "borderColor": "#CCD1D9",
+                              },
+                              Object {
+                                "minHeight": 30,
+                                "paddingHorizontal": 12,
+                              },
+                            ],
+                            Object {
+                              "backgroundColor": "#CCD1D9",
+                              "borderColor": "#CCD1D9",
+                            },
+                            undefined,
+                            undefined,
+                            false,
+                          ]
+                        }
+                      >
+                        <Text
+                          accessibilityLabel="button_text"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#FFFFFF",
+                                "fontFamily": "Brevia",
+                                "fontSize": 16,
+                                "fontStyle": "normal",
+                                "fontWeight": "600",
+                                "textAlign": "center",
+                              },
+                              Object {
+                                "fontSize": 14,
+                              },
+                              undefined,
+                              undefined,
+                            ]
+                          }
+                        >
+                          Ir a la web
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+      </RCTScrollView>
+      <View
+        accessibilityLabel="morecontainer_scrollmore"
+        collapsable={false}
+        style={
+          Object {
+            "bottom": -100,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "zIndex": 1000,
+          }
+        }
+      >
+        <View
+          accessibilityLabel="scrollmore_button"
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            accessibilityLabel="scrollmore_image"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+              }
+            }
+            style={
+              Object {
+                "height": 70,
+                "width": 70,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

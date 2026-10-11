@@ -1,0 +1,152 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/core.readTransaction",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "idTransaction": "0"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "date": "Tue, 13 Nov 2018 22:30:42 GMT",
+      "connection": "close"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "e1b2e529069946c7a5f38c6f4e16bbc7",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "transaction": {
+          "idTransaction": "feb1885200fb49c0b0c55072873ba90e",
+          "idParentTransaction": null,
+          "creationDateTime": "2018-11-13T17:30:36.777-0500",
+          "submitDateTime": "2018-11-13T17:30:41.897-0500",
+          "valueDateTime": "2018-11-13T17:30:36.777-0500",
+          "idEnvironment": 4902,
+          "idTransactionStatus": "FINISHED",
+          "transactionStatusName": null,
+          "transactionData": null,
+          "data": {
+            "debitAccount": "12543533",
+            "frequentContact": "",
+            "isFrequentContact": false,
+            "Amount": {
+              "currency": "2",
+              "quantity": 1
+            },
+            "valueDate": "",
+            "ToAccount": "LUCANA CONDORI JUAN 6002416377, dólares",
+            "aceptTermAndCondition": true,
+            "exchange": 1,
+            "ticketOnly": "value",
+            "debitAccountHolder": "FARI#A VON BUCHWALD MARTIN SALVADOR",
+            "debitProductLabel": "Mi Chequera (ME) 1909222301",
+            "debitAccountCurrency": "2",
+            "debitAmount": 1,
+            "creditAccountNumber": "6002416377",
+            "creditAccountCurrency": "2",
+            "creditAccountHolder": "LUCANA CONDORI JUAN",
+            "codigoAutorizacion": 1021025,
+            "date": "13/11/2018 17:30:41",
+            "termsAndConditions": "<ol class=\"number\"><li><span>5Mibanco no asume responsabilidad por eventuales errores o demora en la tramitación de la transferencia que se deriven de la información consignada por el cliente.</span></li><li><span>Si el pago no llegara a realizarse por causas ajenas a Mibanco, en caso la operación hubiera originado un cobro de comisión o gasto, este no será reembolsado.</span></li><li><span>Los bancos de destino efectuarán la devolución o rechazo de las transferencias hasta en 72 horas por los motivos estipulados a continuación:<ol> <li style=\"list-style-type:lower-latin\"><span>identificación del beneficiario no conforme: N° de cuenta inexistente o inválida, sucursal u oficina errada, cuenta bloqueada, error de formato, moneda distinta a la de la cuenta a abonar, transacción duplicada, cuenta no permitida para tipo de transferencia</span></li></ol></span></li><li><span>Los bancos en el caso de transferencias con destinos a cuentas de abono, se basan en el CCI (código de cuenta interbancaria) especificado por el ordenante de la transferencia. Otros datos como es el caso del nombre del beneficiario, tipo N° del documento de identidad, son referenciales. Mibanco no asume responsabilidad alguna si por error del ordenante al proporcionar el CCI, los fondos se abonan a favor de otro beneficiario distinto.</span></li><li><span>De haber una devolución o rechazo de parte del banco de destino, su importe se abonará en el N° de cuenta indicado en su solicitud en el transcurso de las siguientes 72 horas hábiles (los días sábados, domingos y feriados no son considerados hábiles para este tipo de operaciones) desde su devolución. Si la devolución fuese en una moneda distinta a la señalada, el abono se efectuará aplicando el tipo de cambio compra o venta según sea el caso.</span></li><li><span>El Cliente es responsable de confirmar con el destinatario la conformidad de la transferencia así como de revisar los movimientos de su cuenta en el transcurso de las 72 horas para verificar la restitución de los fondos en caso de rechazo de la operación.</span></li></ol>"
+          },
+          "idUserCreator": "8dcc5c2d5a4f4a72928f7cc503026f71",
+          "idActivity": "transfers.local.send",
+          "activityName": "Transferencia otras cuentas Mibanco",
+          "totalAmount": 1,
+          "products": [
+            {
+              "idActivity": "transfers.local.send",
+              "idField": "debitAccount",
+              "idPermission": "transfer.thirdParties",
+              "idProduct": "12543533"
+            }
+          ],
+          "signatures": [
+            {
+              "idTransactionSignature": 9522,
+              "idTransaction": "feb1885200fb49c0b0c55072873ba90e",
+              "creationDateTime": "2018-11-13T17:30:36.777-0500",
+              "valid": true,
+              "idUser": "8dcc5c2d5a4f4a72928f7cc503026f71",
+              "userFirstName": "MARTIN SALVADOR  ",
+              "userLastName": "FARI#A",
+              "extendedData": "",
+              "signatureLevel": "A",
+              "channel": null,
+              "userAgent": null,
+              "ip": "2800:4b0:4400:28a3:d6b:115a:215d:7034",
+              "signatureLocation": null,
+              "userFullName": "FARI#A, MARTIN SALVADOR  ",
+              "usernameLabel": "********1304"
+            }
+          ],
+          "channel": "phonegap",
+          "productsLabel": null,
+          "signatureGroupUsed": "A",
+          "modificationDateTime": "2018-11-13T17:30:36.777-0500",
+          "idUserEditor": "8dcc5c2d5a4f4a72928f7cc503026f71",
+          "idForm": 5,
+          "userCreatorFirstName": "MARTIN SALVADOR  ",
+          "userCreatorLastName": "FARI#A",
+          "userEditorFirstName": "MARTIN SALVADOR  ",
+          "userEditorLastName": "FARI#A",
+          "userCreatorIp": "2800:4b0:4400:28a3:d6b:115a:215d:7034",
+          "userEditorIp": "2800:4b0:4400:28a3:d6b:115a:215d:7034",
+          "userCreatorLocation": null,
+          "userEditorLocation": null,
+          "executingStartedAtDateTime": null,
+          "fullDescription": "<div class=\"datosTrans\"><ul class=\"firstLevel\"><li class=\"title firmas\">Historial y firmas</li><li class=\"firmas\"><ul class=\"firmantes\"><li class=\"firmado\"><span class=\"nombre_firmante\">FARI#A, MARTIN SALVADOR  </span><span class=\"usuario_firmante\">(********1304)</span><span class=\"separador_firmante\">-</span><span class=\"fecha_firma\">13/11/2018 17:30</span></li></ul></li></ul></div>",
+          "extendedData": "{\"debitAccount\":\"12543533\",\"frequentContact\":\"\",\"isFrequentContact\":false,\"Amount\":{\"currency\":\"2\",\"quantity\":1.0},\"valueDate\":\"\",\"ToAccount\":\"LUCANA CONDORI JUAN 6002416377, dólares\",\"aceptTermAndCondition\":true,\"exchange\":1.0,\"ticketOnly\":\"value\",\"debitAccountHolder\":\"FARI#A VON BUCHWALD MARTIN SALVADOR\",\"debitProductLabel\":\"Mi Chequera (ME) 1909222301\",\"debitAccountCurrency\":\"2\",\"debitAmount\":1.0,\"creditAccountNumber\":\"6002416377\",\"creditAccountCurrency\":\"2\",\"creditAccountHolder\":\"LUCANA CONDORI JUAN\",\"codigoAutorizacion\":1021025,\"date\":\"13/11/2018 17:30:41\",\"termsAndConditions\":\"<ol class=\\\"number\\\"><li><span>5Mibanco no asume responsabilidad por eventuales errores o demora en la tramitación de la transferencia que se deriven de la información consignada por el cliente.</span></li><li><span>Si el pago no llegara a realizarse por causas ajenas a Mibanco, en caso la operación hubiera originado un cobro de comisión o gasto, este no será reembolsado.</span></li><li><span>Los bancos de destino efectuarán la devolución o rechazo de las transferencias hasta en 72 horas por los motivos estipulados a continuación:<ol> <li style=\\\"list-style-type:lower-latin\\\"><span>identificación del beneficiario no conforme: N° de cuenta inexistente o inválida, sucursal u oficina errada, cuenta bloqueada, error de formato, moneda distinta a la de la cuenta a abonar, transacción duplicada, cuenta no permitida para tipo de transferencia</span></li></ol></span></li><li><span>Los bancos en el caso de transferencias con destinos a cuentas de abono, se basan en el CCI (código de cuenta interbancaria) especificado por el ordenante de la transferencia. Otros datos como es el caso del nombre del beneficiario, tipo N° del documento de identidad, son referenciales. Mibanco no asume responsabilidad alguna si por error del ordenante al proporcionar el CCI, los fondos se abonan a favor de otro beneficiario distinto.</span></li><li><span>De haber una devolución o rechazo de parte del banco de destino, su importe se abonará en el N° de cuenta indicado en su solicitud en el transcurso de las siguientes 72 horas hábiles (los días sábados, domingos y feriados no son considerados hábiles para este tipo de operaciones) desde su devolución. Si la devolución fuese en una moneda distinta a la señalada, el abono se efectuará aplicando el tipo de cambio compra o venta según sea el caso.</span></li><li><span>El Cliente es responsable de confirmar con el destinatario la conformidad de la transferencia así como de revisar los movimientos de su cuenta en el transcurso de las 72 horas para verificar la restitución de los fondos en caso de rechazo de la operación.</span></li></ol>\"}",
+          "totalAmountAsString": "1,00",
+          "shortDescription": "",
+          "successfullyCompleted": true,
+          "creationDateTimeAsString": "13/11/2018 17:30:36",
+          "fullCreationDateTimeAsString": "13/11/2018 17:30",
+          "submitDateTimeAsString": "13/11/2018 17:30:41",
+          "fullSubmitDateTimeAsString": "13/11/2018 17:30",
+          "shortDescriptionForMobile": "",
+          "transactionAmountDescription": "",
+          "statusLabel": "FINALIZADO",
+          "usersSigners": "MARTIN SALVADOR   FARI#A",
+          "valueDateAsString": "13/11/2018",
+          "creatorUsername": "b7193e6efce0f85f11299a90f854ca1c623331a05ebd96f00bafa7f9f51ee0f7",
+          "creatorUsernameLabel": "********1304",
+          "editorUsernameLabel": "********1304",
+          "final": true
+        },
+        "usedSignatures": [
+          {
+            "idTransactionSignature": 9522,
+            "idTransaction": "feb1885200fb49c0b0c55072873ba90e",
+            "creationDateTime": "2018-11-13T17:30:36.777-0500",
+            "valid": true,
+            "idUser": "8dcc5c2d5a4f4a72928f7cc503026f71",
+            "userFirstName": "MARTIN SALVADOR  ",
+            "userLastName": "FARI#A",
+            "extendedData": "",
+            "signatureLevel": "A",
+            "channel": null,
+            "userAgent": null,
+            "ip": "2800:4b0:4400:28a3:d6b:115a:215d:7034",
+            "signatureLocation": null,
+            "userFullName": "FARI#A, MARTIN SALVADOR  ",
+            "usernameLabel": "********1304"
+          }
+        ],
+        "otherSignatures": []
+      }
+    }
+  }
+}

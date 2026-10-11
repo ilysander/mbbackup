@@ -1,0 +1,23 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/notes.editStatementNote",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "idProduct": "31240209",
+      "idStatement": "290907792",
+      "note": "test"
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {
+      "code": "COR020W"
+    }
+  }
+}

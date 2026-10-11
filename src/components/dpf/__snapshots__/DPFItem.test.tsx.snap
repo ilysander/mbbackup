@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+>
+  <View
+    accessibilityLabel="dpfitem_detail"
+    removeClippedSubviews={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#E6E9ED",
+          "borderRadius": 12,
+          "borderWidth": 0,
+          "elevation": 3,
+          "overflow": "visible",
+          "shadowColor": "#434A54",
+          "shadowOffset": Object {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.1,
+          "shadowRadius": 16,
+        },
+        undefined,
+        Array [
+          Object {
+            "padding": 20,
+          },
+          undefined,
+        ],
+      ]
+    }
+  >
+    <Text
+      accessibilityLabel="dpfitem_text_amount"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "#3FB4E5",
+          "fontFamily": "Brevia",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "800",
+        }
+      }
+      textBreakStrategy="simple"
+    >
+      Invirtiendo
+       
+      S/ 1,000.00
+    </Text>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="dpfitem_text_term"
+          style={
+            Object {
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+          textBreakStrategy="simple"
+        >
+          a
+           
+          721
+           
+          días recibirás
+          :
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="dpfitem_text_amount"
+          style={
+            Object {
+              "color": "#3FB4E5",
+              "fontFamily": "Brevia",
+              "fontSize": 20,
+              "fontStyle": "normal",
+              "fontWeight": "800",
+              "lineHeight": 22,
+            }
+          }
+        >
+          S/ 1,100.55
+        </Text>
+        <Text
+          accessibilityLabel="dpfitem_text_trea"
+          style={
+            Object {
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "500",
+              "lineHeight": 15,
+            }
+          }
+        >
+          TREA
+           
+          4.90
+          %
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignSelf": "flex-end",
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="dpfitem_text_trea_description"
+        style={
+          Object {
+            "color": "#656D78",
+            "fontFamily": "Brevia",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+            "lineHeight": 14,
+          }
+        }
+      >
+        (Tasa de rendimiento efectiva anual)
+      </Text>
+    </View>
+  </View>
+</View>
+`;

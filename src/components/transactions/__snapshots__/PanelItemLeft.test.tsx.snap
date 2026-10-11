@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#434A54",
+          "fontFamily": "Brevia",
+          "fontSize": 13,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        },
+        undefined,
+      ]
+    }
+  >
+    Mi préstamo
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#434A54",
+        "fontFamily": "Brevia",
+        "fontSize": 13,
+        "fontStyle": "normal",
+        "fontWeight": "400",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#434A54",
+            "fontFamily": "Brevia",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+          },
+          undefined,
+        ]
+      }
+    >
+      Préstamo Vivienda - 108624815
+    </Text>
+  </Text>
+</View>
+`;

@@ -1,0 +1,22 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/accounts.listStatementDetails",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "idAccount": "31240209",
+      "idStatement": "290907792"
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {
+      "code": "COR020W"
+    }
+  }
+}

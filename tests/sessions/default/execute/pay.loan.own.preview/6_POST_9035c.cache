@@ -1,0 +1,39 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/pay.loan.own.preview/6",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "loan": "",
+      "loanAmount": {
+        "amount": {
+          "currency": "1",
+          "quantity": "422.6"
+        },
+        "otherAmountQuantity": "",
+        "pendingPayment": {
+          "dueDate": "05/06/2018",
+          "selected": "true"
+        },
+        "oldPayments": {
+          "amount": "0",
+          "fees": "0",
+          "selected": "false"
+        },
+        "lastDueDate": "08/05/2018",
+        "lastLoanId": "29064842"
+      },
+      "debitAccount": "",
+      "valueDate": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

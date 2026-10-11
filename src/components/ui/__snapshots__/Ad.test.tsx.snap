@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+Array [
+  <View
+    accessibilityLabel="ad_close"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    forwardedRef={[Function]}
+    hitSlop={
+      Object {
+        "bottom": 20,
+        "left": 20,
+        "right": 20,
+        "top": 20,
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#F28F00",
+        "borderTopLeftRadius": 30,
+        "borderTopRightRadius": 30,
+        "height": 24,
+        "left": 0,
+        "opacity": 1,
+        "position": "absolute",
+        "top": -20,
+        "width": 34,
+        "zIndex": 1,
+      }
+    }
+  >
+    <Image
+      accessibilityLabel="buttonimage_image"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/icon-close.png",
+        }
+      }
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 10,
+          "tintColor": "#FFFFFF",
+          "top": 10,
+          "width": 10,
+        }
+      }
+    />
+  </View>,
+  <View
+    accessibilityLabel="modal_overlay"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F28F00",
+        "borderTopRightRadius": 16,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "overflow": "visible",
+        "paddingVertical": 4,
+        "position": "relative",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "marginLeft": 15,
+          "marginVertical": 4,
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="ad_message"
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Brevia",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+          }
+        }
+      >
+        test
+      </Text>
+    </View>
+    <View
+      accessibilityLabel="ad_arrow"
+      hitSlop={
+        Object {
+          "bottom": 20,
+          "left": 20,
+          "right": 20,
+          "top": 20,
+        }
+      }
+      style={
+        Object {
+          "marginRight": 15,
+        }
+      }
+    >
+      <Image
+        accessibilityLabel="buttonimage_image"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/arrow-icon.png",
+          }
+        }
+        style={
+          Object {
+            "height": 12,
+            "tintColor": "#FFFFFF",
+            "width": 6,
+          }
+        }
+      />
+    </View>
+  </View>,
+]
+`;

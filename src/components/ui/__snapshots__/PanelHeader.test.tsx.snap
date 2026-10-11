@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+  style={
+    Array [
+      Object {
+        "paddingBottom": 5,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    accessibilityLabel="panelheader_title"
+    style={
+      Array [
+        Object {
+          "color": "#00964B",
+          "fontFamily": "Brevia",
+          "fontSize": 20,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "lineHeight": 25,
+        },
+        undefined,
+      ]
+    }
+  >
+    Descripción
+  </Text>
+  <Text
+    accessibilityLabel="panelheader_subtitle"
+    style={
+      Array [
+        Object {
+          "color": "#656D78",
+          "fontFamily": "Brevia",
+          "fontSize": 13,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        },
+        undefined,
+      ]
+    }
+  >
+    TransferDescription
+  </Text>
+</View>
+`;

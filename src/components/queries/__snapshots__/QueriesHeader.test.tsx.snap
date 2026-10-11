@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="queriesheader_hello"
+      allowFontScaling={false}
+      style={
+        Object {
+          "color": "#434A54",
+          "fontFamily": "Brevia",
+          "fontSize": 20,
+          "fontStyle": "normal",
+          "fontWeight": "600",
+        }
+      }
+    >
+      ¡
+      Hola
+       
+      <Text
+        accessibilityLabel="queriesheader_hello_name"
+      >
+        Pedro
+      </Text>
+      !
+    </Text>
+  </View>
+</View>
+`;

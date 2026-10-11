@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "padding": 20,
+      },
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "paddingRight": 3,
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="selectaccountitem_name"
+        style={
+          Object {
+            "color": "#434A54",
+            "fontFamily": "Brevia",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          }
+        }
+      />
+      <Text
+        accessibilityLabel="selectaccountitem_date"
+        numberOfLines={1}
+        style={
+          Object {
+            "color": "#656D78",
+            "fontFamily": "Brevia",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="selectaccountitem_amount"
+      style={
+        Object {
+          "color": "#434A54",
+          "fontFamily": "Brevia",
+          "fontSize": 16,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        }
+      }
+    >
+      undefined 0.00
+    </Text>
+    <Text
+      accessibilityLabel="selectaccountitem_reference"
+      style={
+        Object {
+          "color": "#656D78",
+          "fontFamily": "Brevia",
+          "fontSize": 13,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        }
+      }
+    >
+      Saldo disponible
+    </Text>
+  </View>
+</View>
+`;

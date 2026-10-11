@@ -1,0 +1,29 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfer.interbank.inmediate.preview/16",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Ocp-Apim-Subscription-Key": "sample",
+      "Ocp-Apim-Trace": true,
+      "X-Build-Id": "1234",
+      "X-Manufacturer": "abcde",
+      "X-Model": "abcde",
+      "authorization": "sample"
+    },
+    "body": {
+      "debitAccount": "31239124",
+      "amount": {
+        "currency": "1"
+      },
+      "transferReason": "",
+      "_mail": "sample@mail.com"
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

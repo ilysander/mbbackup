@@ -1,0 +1,1306 @@
+# Pipeline Base
+# Estrategias de ramas Modelo 1 - Ramas por ambiente
+# Ramas principales:
+# - master (sin uso)
+# - staging (considerada como "master")
+# - qa
+# - dev
+# - demo
+# Ramas segundarias:
+# - features/*
+# - hotfix/*
+# - pipelines/* ->  Ramas pipelines se utilizan para mantenimiento
+
+trigger:
+- master
+- staging
+- qa
+- dev
+- demo
+- features/*
+- hotfix/*
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: DevOps/devops-scripts
+
+#Definition Global Variables
+variables:
+- group: APP.IC.Common
+- ${{ if notIn(variables['Build.SourceBranchName'], 'master', 'staging', 'qa', 'dev', 'demo') }}:
+  - group: APP.IC.Demo
+- ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+  - group: APP.IC.Produccion
+- ${{ if eq(variables['Build.SourceBranchName'], 'staging') }}:
+  - group: APP.IC.Produccion
+- ${{ if eq(variables['Build.SourceBranchName'], 'qa') }}:
+  - group: APP.IC.Calidad
+- ${{ if eq(variables['Build.SourceBranchName'], 'dev') }}:
+  - group: APP.IC.Desarrollo
+- ${{ if eq(variables['Build.SourceBranchName'], 'demo') }}:
+  - group: APP.IC.Demo    
+- ${{ if eq(variables['Build.SourceBranchName'], 'merge') }}:
+  - group: APP.IC.Desarrollo
+- ${{ if eq(variables['Build.SourceBranchName'], 'security-app-qa-fortify-test') }}:
+  - group: APP.IC.Calidad
+- ${{ if eq(variables['Build.SourceBranchName'], 'update-qa-pipeline-profile') }}:
+  - group: APP.IC.Calidad
+
+#'fix-security-report'
+
+###########################################################################################
+######### STAGE Security_Check
+###########################################################################################
+stages:
+- stage: stage_security_check
+  dependsOn: []
+  jobs:
+  #============================================================================
+  #JOB:  IDC SCAN
+  #============================================================================
+  # Utilizado por IDC
+  - template: azure-devops/pipelines/jobs/analisis-kiuwan.yml@templates
+    parameters:
+     ramaPrincipal: staging
+
+  #============================================================================
+  #JOB:  SAST ANALYSIS
+  #============================================================================
+  #job_config
+  #job_build_android_ios
+  - job: job_sast_analysis
+    timeoutInMinutes: 190
+    pool:
+      name: Agent-Pool-Calidad
+      demands:
+      - Agent.Name -equals bmesrvc871
+    dependsOn: []
+    steps:
+    #SCAN-SAST: Tarea - Análisis Fortify Sast    
+    - task: CmdLine@2
+      name: analizar
+      displayName: 'Analisis Fortify SAST'
+      inputs:        
+        script: |
+          cd $(System.DefaultWorkingDirectory)
+          mkdir $(Build.DefinitionName)
+          mv * $(Build.DefinitionName)
+          cd $(Build.DefinitionName)
+          scancentral arguments -o -sargs "-Xms24G -Xmx24G -build-label Build.DefinitionName -project-root ./work" -targs "-project-root ."
+          result=`scancentral -sscurl https://ssc.domibco.com.pe/ssc -ssctoken $(common.ssc.token) start -bt none -upload  -uptoken $(common.ssc.token) -application "APP" -version "app-mibancomovil"`
+          echo $result
+          TOKENFORTIFY=`echo $result | grep "Submitted job and received token" | tail -1 | rev | cut -d ' ' -f 1 | rev`
+          echo "##vso[task.setvariable variable=TOKENFORTIFY;isOutput=true]$TOKENFORTIFY"
+          mv * ../.
+      condition: succeeded()
+
+  #============================================================================
+  #JOB:  SAST REPORT
+  #============================================================================
+  - job: job_sast_report
+    pool:
+      name: Agent-Pool-Reporte-Seguridad
+    dependsOn: job_sast_analysis
+    condition: succeeded()
+    variables:
+      TOKENFORTIFY: $[ dependencies.job_sast_analysis.outputs['analizar.TOKENFORTIFY'] ]
+
+    #SCAN-REPORT: Tarea - Obtener FPR
+    steps:
+    - checkout: none
+    - task: CmdLine@2
+      displayName: 'Obteniendo FPR'
+      inputs:
+        script: |
+          mkdir -p $(Build.ArtifactStagingDirectory)/sca_artifacts/
+          scancentral -url http://BMESRVC870:8080/scancentral-ctrl retrieve -token "${TOKENFORTIFY}" -block -f $(Build.ArtifactStagingDirectory)/sca_artifacts/$(Build.DefinitionName)-$(Build.BuildNumber).fpr
+
+    #SCAN-REPORT: Tarea - Generación Reporte Resumen
+    - task: CmdLine@2
+      displayName: 'Creando Reporte Resumen'
+      inputs:
+        script: |
+          BIRTReportGenerator -template "OWASP Mobile Top 10" -source $(Build.ArtifactStagingDirectory)/sca_artifacts/$(Build.DefinitionName)-$(Build.BuildNumber).fpr -format html -showSuppressed --Version "OWASP Mobile Top 10 2014" --UseFortifyPriorityOrder -output $(Build.ArtifactStagingDirectory)/OWASP_Mobile_Top10_Report-$(Build.DefinitionName)-$(Build.BuildNumber).html
+          BIRTReportGenerator -template "OWASP Mobile Top 10" -source $(Build.ArtifactStagingDirectory)/sca_artifacts/$(Build.DefinitionName)-$(Build.BuildNumber).fpr -format PDF -showSuppressed --Version "OWASP Mobile Top 10 2014" --UseFortifyPriorityOrder -output $(Build.ArtifactStagingDirectory)/OWASP_Mobile_Top10_Report-$(Build.DefinitionName)-$(Build.BuildNumber).pdf
+
+    #SCAN-REPORT: Tarea - Modelo de Aprobacion
+    - task: CmdLine@2
+      displayName: 'SAST - Modelo de Aprobación'
+      continueOnError: true
+      inputs:
+        script: |
+          CANTIDAD_HIGH=$(cat $(Build.ArtifactStagingDirectory)/OWASP_Mobile_Top10_Report-$(Build.DefinitionName)-$(Build.BuildNumber).html | grep -B 1 -m 1 ">High<" | grep -o '<div>.*</div>' | sed 's/\(<div>\|<\/div>\)//g')
+          CANTIDAD_CRITICAL=$(cat $(Build.ArtifactStagingDirectory)/OWASP_Mobile_Top10_Report-$(Build.DefinitionName)-$(Build.BuildNumber).html | grep -B 1 -m 1 ">Critical<" | grep -o '<div>.*</div>' | sed 's/\(<div>\|<\/div>\)//g')
+          echo CANTIDAD_HIGH=$CANTIDAD_HIGH, CANTIDAD_CRITICAL=$CANTIDAD_CRITICAL
+          if [ $CANTIDAD_CRITICAL == 0 ] && [ $CANTIDAD_HIGH == 0 ]; then
+              echo "OK";
+          else
+              echo "##[error]NO OK - Aplicativo tiene vulnerabilidades criticas"
+              exit 1;
+          fi
+
+    #SCAN-REPORT: Tarea - Generacion Reporte Detallado
+    - task: CmdLine@2
+      displayName: 'Creando Reporte Detallado'
+      inputs:
+        script: 'BIRTReportGenerator -template "Developer Workbook" -source $(Build.ArtifactStagingDirectory)/sca_artifacts/$(Build.DefinitionName)-$(Build.BuildNumber).fpr -format PDF -showSuppressed -output $(Build.ArtifactStagingDirectory)/Developer_Workbook_Report-$(Build.DefinitionName)-$(Build.BuildNumber).pdf'
+
+    #SCAN-REPORT: Tarea - Publicar HTML Reporte Resumen
+    - task: publishHtml@1
+      displayName: 'Publicando Reporte Resumen'
+      inputs:
+        artifactName: 'OWASP_Mobile_Top10_Report-$(Build.DefinitionName)'
+        htmlFilePath: '$(Build.ArtifactStagingDirectory)/OWASP_Mobile_Top10_Report-$(Build.DefinitionName)-$(Build.BuildNumber).html'
+
+    #SCAN-REPORT: Tarea - Publicar Reporte
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'SAST'
+        publishLocation: 'Container'
+      condition: succeededOrFailed()
+
+  #============================================================================
+  #JOB:  GET VULNERABILITIES
+  #============================================================================
+  - job: job_check_security
+    pool:
+      name: Agent-Pool-Calidad
+    dependsOn: job_sast_report
+    steps:
+    - checkout: templates
+
+    - task: VaultReadKV@4
+      inputs:
+        strUrl: '$(common.devops.vault.url)'
+        ignoreCertificateChecks: $(common.vault.ignore.certificate)
+        useProxy: 'none'
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(common.devops.vault.roleid)'
+        strSecretID: '$(common.devops.vault.secretid)'
+        strKVEnginePath: '$(common.devops.vault.engine_path)'
+        kvVersion: $(common.vault.kv.version)
+        strSecretPath: '$(common.scc.vault.path)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'SSC'
+        replaceCR: false
+      displayName: 'Obtiene credenciales Fortify SSC'
+
+    - task: CmdLine@2
+      displayName: 'SCC - Get token'
+      inputs:
+        script: |        
+          #Variables de entorno que utiliza:
+          #SSCPASS
+          #SSCUSER
+          #SSCTOKEN (opcional)
+          export SSCPASS=$(SSC_password)
+          export SSCUSER=$(SSC_usuario)
+          pwd
+          ls -ltr
+          ## Setea la variable de azure devops SSCTOKEN con token
+          ls -lt fortify/ssc/
+          python fortify/ssc/get-results.py --application "" --version "" --onlyGetToken
+
+    - task: CmdLine@2
+      displayName: 'Obtener Aplicacion (Fortify)'
+      name: obtener_app
+      inputs:
+        script: |
+          fortifyclient -url $(common.ssc.url) -authtoken $(common.ssc.token) listApplicationVersions > .listProjects
+          cat .listProjects
+          cat .listProjects | while IFS=' ' read -r p1
+            do
+              echo $p1 | awk '{print $3}' > .repositories
+              repos=`cat .repositories`
+              if [ "app-mibancomovil" == "$repos" ]; then
+                echo $p1 > .mathchproject
+              fi
+            done
+          cat .mathchproject | awk '{print $2}' > .project
+          application=`cat .project`
+          if [ -z "$application" ]; then
+            echo '##vso[task.logissue type=error] NO SE ENCONTRÓ VERSIÓN REGISTRADA EN FORTIFY SSC CON EL NOMBRE "app-mibancomovil"';
+            exit 1
+          else
+            echo 'Application: '$application
+            echo "##vso[task.setvariable variable=application]$application"
+          fi
+
+    - task: CmdLine@2
+      displayName: 'SCC - check-result'
+      name: task_check_security
+      inputs:
+        script: |        
+          echo $(SSCTOKEN)
+          #Variables de entorno que utiliza:
+          #SSCPASS
+          #SSCUSER
+          #SSCTOKEN (opcional)
+          export SSCTOKEN=$(SSCTOKEN)
+          export SSCPASS=$(SSC_password)
+          export SSCUSER=$(SSC_usuario)
+
+          echo "APLICATIVO= $(application) "
+          echo "COMPONENTES= app-mibancomovil"
+          componentes="app-mibancomovil"
+          IFS=';' tCOMPONENTES=($componentes)
+          #echo ${tCOMPONENTES[*]}
+          
+          pwd
+          ls -ltr -R
+          echo "------step-----------"
+          ls -ltr fortify
+
+          for componente in "${tCOMPONENTES[@]}"
+          do
+              #echo "Componente: $componente"
+              echo "COMANDO: python fortify/ssc/check-security.py --application $(application) --version "app-mibancomovil" --debug --audit"
+              respuesta=`python fortify/ssc/check-security.py --application $(application) --version "app-mibancomovil" --debug --audit`
+              echo "$respuesta"
+          done
+
+  - job: job_get_security_result
+    pool: Agent-Pool-Calidad
+    dependsOn: job_check_security
+    variables:
+      - name: issue_it
+        value: $[ dependencies.job_check_security.outputs['task_check_security.issueCount'] ]
+    steps:
+    - checkout: none
+    - task: CmdLine@2
+      displayName: 'check_limit_vulnerability'
+      name: task_get_result
+      inputs:
+        script: |
+          if [ $(issue_it) -eq $(common.scc.limit.vulnerability) ] || [ $(common.scc.limit.vulnerability) -gt $(issue_it) ]
+          then
+            echo "Se mantiene en el limite permitdo por seguridad"
+            echo "##vso[task.setvariable variable=limitVuleneravility;isOutput=true]OK"
+            echo '##vso[task.logissue type=warning] SE MANTIENE EN EL LIMITE DE VULNERABILIDADES PERMITIDAS POR SEGURIDAD EN EL COMPONENTE "app-mibancomovil"';
+            exit 0
+          else
+            echo "Aumento las vulnerabilidades al limite establecido"
+            echo "##vso[task.setvariable variable=limitVuleneravility;isOutput=true]ERROR"
+            echo '##vso[task.logissue type=error] SUPERO EL LIMITE DE VULNERABILIDADES PERMITIDAS POR SEGURIDAD EN EL COMPONENTE "app-mibancomovil"';
+            exit 1
+          fi   
+          echo $(issue_it)
+
+###########################################################################################
+######### STAGE BUILD
+###########################################################################################
+- stage: stage_build
+  dependsOn: stage_security_check
+  jobs:
+  #============================================================================
+  #JOB DE PREPARACIÓN DE REQUERIMIENTOS
+  #============================================================================
+  - job: job_config
+    pool: Agent-Pool-AKS
+    steps:
+    - checkout: none
+
+    #BUILD: Tarea - Establecer Variable jscrambler_switch
+    - task: CmdLine@2
+      inputs:
+        script: |
+          if [[ '$(flag_jscrambler)' = 'true' || '$(flag_jscrambler)' = 'false' ]]
+          then
+            echo "##vso[task.setvariable variable=jscrambler_switch;isOutput=true]$(flag_jscrambler)"
+          else
+            echo "##vso[task.setvariable variable=jscrambler_switch;isOutput=true]$(jscrambler)"
+          fi
+      name: setJscrambler
+      condition: or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios'))
+      displayName: 'Establecer Variable jscrambler_switch'
+
+    #BUILD: Tarea - Visualizar steps_switch
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "steps_switch: $(steps_switch)"
+      name: showStepsSwitch
+      displayName: 'Visualizar steps_switch'
+
+    #BUILD: Tarea - Visualizar Variables de Configuración
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "lane_name: $(lane_name)"
+          echo "android.strKVEnginePath: $(android.strKVEnginePath)"
+          echo "ios.strKVEnginePath: $(ios.strKVEnginePath)"
+          echo "config.strKVEnginePath: $(config.strKVEnginePath)"
+          echo "ofuscamiento.strKVEnginePath: $(ofuscamiento.strKVEnginePath)"
+      name: showConfigBase
+      condition: or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Visualizar Variables de Configuración'
+
+    #BUILD: Tarea - VAULT Recuperar Certificado Android
+    - task: VaultReadKV@2
+      name: VaultAndroidCert       
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(android.build_role_id)'
+        strSecretID: '$(android.build_secret_id)'
+        strKVEnginePath: '$(android.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(android.secretPath_certificate)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'AC'
+        replaceCR: true
+        strCRPrefix: '|'
+      condition: and(succeeded(),contains( variables['steps_switch'], 'build_android' ))        
+      displayName: 'Recuperar Certificado Android' 
+
+    #BUILD: Tarea - Establecer Certificado Android
+    - task: CmdLine@2
+      inputs:
+        script: echo "##vso[task.setvariable variable=VaultCertAndroid;isOutput=true;issecret=true]$(AC_file)"
+      name: SetAndroidCert
+      condition: and(succeeded(),contains( variables['steps_switch'], 'build_android' ))
+      displayName: 'Establecer Certificado Android'
+
+    #BUILD: Tarea - VAULT Recuperar Contraseña Certificado Android
+    - task: VaultReadKV@2
+      name: VaultEnvStorePass       
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(android.build_role_id)'
+        strSecretID: '$(android.build_secret_id)'
+        strKVEnginePath: '$(android.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(android.secretPath_password)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'AES'
+        replaceCR: true
+        strCRPrefix: '|'
+      condition: and(succeeded(),contains( variables['steps_switch'], 'build_android' ))
+      displayName: 'Recuperar Contraseña Certificado Android' 
+
+    #BUILD: Tarea - Establecer Contraseña Certificado Android
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "##vso[task.setvariable variable=VaultEnvStorePass;isOutput=true;issecret=true]$(echo '$(AES_env-store-password)' | sed "s/\\$/\\\$/g")"
+          echo "##vso[task.setvariable variable=VaultEnvGuardsquarePass;isOutput=true;issecret=true]$(echo '$(AES_env-guardsquare-password)' | sed "s/\\$/\\\$/g")"
+      name: SetEnvStorePass
+      condition: and(succeeded(),contains( variables['steps_switch'], 'build_android' ))
+      displayName: 'Establecer Contraseña Certificado Android'
+
+    #BUILD: Tarea - VAULT Recuperar Certificado iOS
+    - task: VaultReadKV@2
+      name: VaultIosCert          
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(ios.build_role_id)'
+        strSecretID: '$(ios.build_secret_id)'
+        strKVEnginePath: '$(ios.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(ios.secretPath_certificate)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'RK'
+        replaceCR: true
+        strCRPrefix: '|'
+      condition: and(succeeded(),contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Recuperar Certificado iOS' 
+
+    #BUILD: Tarea - Establecer Contraseña y Certificado iOS
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "##vso[task.setvariable variable=VaultCertFile;isOutput=true;issecret=true]$(RK_file)"
+          echo "##vso[task.setvariable variable=VaultCertPass;isOutput=true;issecret=true]$(RK_passphrase)"
+      name: SetIosCert
+      condition: and(succeeded(),contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Establecer Certificado iOS'
+
+    #BUILD: Tarea - VAULT Recuperar Provisioning Profile
+    - task: VaultReadKV@2
+      name: Vaultprofile
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(ios.build_role_id)'
+        strSecretID: '$(ios.build_secret_id)'
+        strKVEnginePath: '$(ios.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(ios.secretPath_profile)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'PR'
+        replaceCR: true
+        strCRPrefix: '|'
+      condition: and(succeeded(),contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Recuperar Provisioning Profile' 
+
+    #BUILD: Tarea - Establecer Provisioning Profile
+    - task: CmdLine@2        
+      inputs: 
+        script:  |
+          echo "##vso[task.setvariable variable=VaultProfileAdHoc;isOutput=true;issecret=true]$(PR_fileadhoc)"
+          echo "##vso[task.setvariable variable=VaultProfile;isOutput=true;issecret=true]$(PR_file)"
+      name: SetIosProfile
+      condition: and(succeeded(),contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Establecer Provisioning Profile'
+    #BUILD: Tarea - VAULT Recuperar Licencias GuardSquare
+    - task: VaultReadKV@2
+      name: Vault
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(ofuscamiento.build_role_id)'
+        strSecretID: '$(ofuscamiento.build_secret_id)'
+        strKVEnginePath: '$(ofuscamiento.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(ofuscamiento.secretPath_licences)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'HV'
+        replaceCR: true
+        strCRPrefix: '|' 
+      condition: and(succeeded(),or(eq( variables['dexguard_switch'], 'true' ),eq( variables['ixguard_switch'], 'true' )), or(contains( variables['steps_switch'], 'build_android' ),contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Recuperar Licencias GuardSquare'
+
+    #BUILD: Tarea - Establecer Licencia Dexguard
+    - task: CmdLine@2
+      inputs:
+        script: echo "##vso[task.setvariable variable=VaultDexguard;isOutput=true;issecret=true]$(HV_dexguard-license)"
+      name: SetDexguard
+      condition: and(succeeded(), eq( variables['dexguard_switch'], 'true' ), contains( variables['steps_switch'], 'build_android' ))
+      displayName: 'Establecer Licencia Dexguard'
+
+    #BUILD: Tarea - Establecer Licencia Ixguard
+    - task: CmdLine@2
+      inputs:
+        script: echo "##vso[task.setvariable variable=VaultIxguard;isOutput=true;issecret=true]$(HV_ixguard-license)"
+      name: SetIxguard
+      condition: and(succeeded(), eq( variables['ixguard_switch'], 'true' ), contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Establecer Licencia Ixguard'
+
+    #SCAN-SAST-SCA: Tarea - VAULT Recuperar Licencia Fortify
+    - task: VaultReadKV@2
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(config.role_id)'
+        strSecretID: '$(config.secret_id)'
+        strKVEnginePath: '$(config.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(config.secretPath_fortify)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'LF'
+        replaceCR: true
+        strCRPrefix: '|'
+      condition: succeeded()
+      displayName: 'Recuperación Licencia Fortify'
+
+    #SCAN-SAST-SCA: Tarea - Establecer Licencia Fortify
+    - task: CmdLine@2
+      inputs:
+        script: echo "##vso[task.setvariable variable=VaultLicenseFortify;isOutput=true;issecret=true]$(LF_scanning-license)"
+      name: SetLicenseFortify 
+      condition: succeeded()
+      displayName: 'Establecer Licencia Fortify'
+
+    #SCAN-SCA: Tarea - VAULT Recuperar Token Sonatype
+    - task: VaultReadKV@2
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(config.role_id)'
+        strSecretID: '$(config.secret_id)'
+        strKVEnginePath: '$(config.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(config.secretPath_sonatype)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'TKS'
+        replaceCR: true
+        strCRPrefix: '|'
+      condition: succeeded()
+      displayName: 'Recuperar Token Sonatype' 
+
+    #SCAN-SCA: Tarea - Establecer Token Sonatype
+    - task: CmdLine@2
+      inputs:
+        script: echo "##vso[task.setvariable variable=VaultTokenSonatype;isOutput=true;issecret=true]$(TKS_token)"
+      name: SetTokenSonatype
+      condition: succeeded()
+      displayName: 'Establecer Token Sonatype'
+
+    #BUILD: Release - Tarea - VAULT Recuperar rsa
+    - task: VaultReadKV@2
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(android.build_role_id)'
+        strSecretID: '$(android.build_secret_id)'
+        strKVEnginePath: '$(android.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(configRelese.secretPath_rsa)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'RSA'
+        replaceCR: true
+        strCRPrefix: '|'
+      condition: and(succeeded(), eq(variables['lane_name'], 'release'), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Recuperar RSA' 
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "##vso[task.setvariable variable=VaultRsaFile;isOutput=true;issecret=true]$(RSA_file)"
+      name: SetRsa
+      condition: and(succeeded(), eq(variables['lane_name'], 'release'), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Establecer RSA'
+    #BUILD: Release - Tarea - VAULT Recuperar mutual-auth
+    - task: VaultReadKV@2
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(android.build_role_id)'
+        strSecretID: '$(android.build_secret_id)'
+        strKVEnginePath: '$(android.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(configRelese.secretPath_mutualAuth)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'MA'
+        replaceCR: true
+        strCRPrefix: '|'
+      condition: and(succeeded(), eq(variables['lane_name'], 'release'), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Recuperar mutual-auth' 
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "##vso[task.setvariable variable=VaultMutualFile;isOutput=true;issecret=true]$(MA_file)"
+      name: SetMutual
+      condition: and(succeeded(), eq(variables['lane_name'], 'release'), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Establecer mutual-auth'
+    #BUILD: Release - Tarea - VAULT Recuperar sslPinning
+    - task: VaultReadKV@2
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(android.build_role_id)'
+        strSecretID: '$(android.build_secret_id)'
+        strKVEnginePath: '$(android.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(configRelese.secretPath_sslPinning)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'SSLP'
+        replaceCR: true
+        strCRPrefix: '|'
+      condition: and(succeeded(), eq(variables['lane_name'], 'release'), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Recuperar sslPinning' 
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "##vso[task.setvariable variable=VaultSslPinningFile;isOutput=true;issecret=true]$(SSLP_file)"
+      name: SetSslPinning
+      condition: and(succeeded(), eq(variables['lane_name'], 'release'), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Establecer SslPinning'
+    #BUILD: Release - Tarea - VAULT Recuperar google-service key
+    - task: VaultReadKV@2
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(android.build_role_id)'
+        strSecretID: '$(android.build_secret_id)'
+        strKVEnginePath: '$(android.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(configRelese.secretPath_googleServiceKey)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'GS'
+        replaceCR: true
+        strCRPrefix: '|'
+      condition: and(succeeded(), eq(variables['lane_name'], 'release'), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Recuperar google-service key' 
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "##vso[task.setvariable variable=VaultKey;isOutput=true;issecret=true]$(GS_androidDeviceVerification)"
+      name: SetKeyGoogleService
+      condition: and(succeeded(), eq(variables['lane_name'], 'release'), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Establecer google-service key'  
+    - task: VaultReadKV@2
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(android.build_role_id)'
+        strSecretID: '$(android.build_secret_id)'
+        strKVEnginePath: '$(android.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(configRelese.secretPath_facephiAndroidLicence)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'FAL'
+        replaceCR: true
+        strCRPrefix: '|'
+      condition: and(succeeded(), eq(variables['lane_name'], 'release'), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Recuperar Facephi Android Licence' 
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "##vso[task.setvariable variable=VaultAndroidLicence;isOutput=true;issecret=true]$(FAL_file)"
+      name: SetFacephiAndroidLicence
+      condition: and(succeeded(), eq(variables['lane_name'], 'release'), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Establecer Facephi Android Licence'
+    - task: VaultReadKV@2
+      inputs:
+        strUrl: '$(vault_url)'
+        ignoreCertificateChecks: true
+        strAuthType: 'approle'
+        strAuthPath: 'approle'
+        strRoleID: '$(android.build_role_id)'
+        strSecretID: '$(android.build_secret_id)'
+        strKVEnginePath: '$(android.strKVEnginePath)'
+        kvVersion: 'v2'
+        strSecretPath: '$(configRelese.secretPath_facephiIosLicence)'
+        strPrefixType: 'custom'
+        strVariablePrefix: 'FIL'
+        replaceCR: true
+        strCRPrefix: '|'
+      condition: and(succeeded(), eq(variables['lane_name'], 'release'), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Recuperar Facephi Ios Licence'
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "##vso[task.setvariable variable=VaultIosLicence;isOutput=true;issecret=true]$(FIL_file)"
+      name: SetFacephiIosLicence
+      condition: and(succeeded(), eq(variables['lane_name'], 'release'), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Establecer Facephi Ios Licence'
+
+  #============================================================================
+  #JOB:  BUILD ANDROID - iOS 
+  #============================================================================
+  #job_config
+  #job_get_security_result
+  - job: job_build_android_ios
+    pool:
+      vmImage: 'macOS-12'
+    dependsOn: job_config
+    timeoutInMinutes: 135
+    condition: and(succeeded(), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+    variables:
+      dexguardFromVault: $[ dependencies.job_config.outputs['SetDexguard.VaultDexguard'] ]
+      ixguardFromVault: $[ dependencies.job_config.outputs['SetIxguard.VaultIxguard'] ]
+      iOsprofileFromVault: $[ dependencies.job_config.outputs['SetIosProfile.VaultProfile'] ]
+      iOsprofileadhocFromVault: $[ dependencies.job_config.outputs['SetIosProfile.VaultProfileAdHoc'] ]
+      iOsCertFileFromVault: $[ dependencies.job_config.outputs['SetIosCert.VaultCertFile'] ]
+      iOsCertKeyFromVault: $[ dependencies.job_config.outputs['SetIosCert.VaultCertPass'] ]
+      androidCertFromVault: $[ dependencies.job_config.outputs['SetAndroidCert.VaultCertAndroid'] ]
+      envStorePassFromVault: $[ dependencies.job_config.outputs['SetEnvStorePass.VaultEnvStorePass'] ]
+      envGuardsquarePassFromVault: $[ dependencies.job_config.outputs['SetEnvStorePass.VaultEnvGuardsquarePass'] ]
+      jscrambler_switch: $[ dependencies.job_config.outputs['setJscrambler.jscrambler_switch'] ]
+      rsaFileFromVault: $[ dependencies.job_config.outputs['SetRsa.VaultRsaFile'] ]
+      mutualFileFromVault: $[ dependencies.job_config.outputs['SetMutual.VaultMutualFile'] ]
+      sslpinningFileFromVault: $[ dependencies.job_config.outputs['SetSslPinning.VaultSslPinningFile'] ]
+      keyGoogleServiceFromVault: $[ dependencies.job_config.outputs['SetKeyGoogleService.VaultKey'] ]
+      facephiAndroidLicenceFromVault: $[ dependencies.job_config.outputs['SetFacephiAndroidLicence.VaultAndroidLicence'] ]
+      facephiIosLicenceFromVault: $[ dependencies.job_config.outputs['SetFacephiIosLicence.VaultIosLicence'] ]  
+      DECODE_PERCENTS: true
+    steps:
+    #BUILD: Tarea - Visualizar Variables de Configuración de Build
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "lane_name: $(lane_name)"
+          echo "dexguard_switch: $(dexguard_switch)"
+          echo "ixguard_switch: $(ixguard_switch)"
+          echo "jscrambler_switch: $(jscrambler_switch)"
+          echo "steps_switch: $(steps_switch)"
+      name: verConfigBase
+      displayName: 'Visualizar Variables de Configuración Build'
+
+    #Especificar version de XCODE
+    - task: CmdLine@2
+      inputs:
+        script: |
+          xcodebuild -version
+          echo "Set Default Xcode version"
+          sudo xcode-select --switch /Applications/Xcode_14.2.app
+          xcodebuild -version
+      displayName: 'Preparing for Build'
+
+    #BUILD: Tarea - Mostrar IP Agente
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo ------------------------------------------------------------
+          myip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
+          echo ------------------------------------------------------------
+          echo "My WAN/Public IP address: ${myip}"
+          echo ------------------------------------------------------------
+      condition: succeeded()
+      displayName: 'Mostrar IP del agente'
+
+    #BUILD: Tarea - Descargar librerías licencia Dexguard
+    - task: UniversalPackages@0
+      inputs:
+        command: 'download'
+        downloadDirectory: '$(System.DefaultWorkingDirectory)/android/dexguard'
+        feedsToUse: 'internal'
+        vstsFeed: '2350c86d-8131-4c2f-8b24-2d770358cf59/ed66161d-0ea4-45f8-9254-0872bf66165b'
+        vstsFeedPackage: 'a490fe94-e9fe-4c7c-ae02-01da9851db17'
+        vstsPackageVersion: '*.*'
+      condition: and(succeeded(), eq( variables['dexguard_switch'], 'true' ), contains( variables['steps_switch'], 'build_android' ))
+      displayName: 'Descargar librerías licencia Dexguard'
+
+    - task: UniversalPackages@0
+      inputs:
+        command: 'download'
+        downloadDirectory: '$(System.DefaultWorkingDirectory)/ios/ixguard'
+        feedsToUse: 'internal'
+        vstsFeed: '2350c86d-8131-4c2f-8b24-2d770358cf59/ed66161d-0ea4-45f8-9254-0872bf66165b'
+        vstsFeedPackage: '2bac9e35-a625-449c-878f-bec06cd9e5da'
+        vstsPackageVersion: '*.*'
+      condition: and(succeeded(), eq( variables['ixguard_switch'], 'true' ), contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Descargar librerías licencia Ixguard'
+
+    - task: CmdLine@2
+      inputs:
+        script: |
+          ls $(System.DefaultWorkingDirectory)/ios/ixguard
+          chmod u+x $(System.DefaultWorkingDirectory)/ios/ixguard/iXGuard.pkg
+          cd $(System.DefaultWorkingDirectory)/ios/ixguard
+          sudo installer -verbose -pkg iXGuard.pkg -target /
+          ixguard -v
+      condition: and(succeeded(), eq( variables['ixguard_switch'], 'true' ), contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Instalar Ixguard'
+      
+    #BUILD: Tarea - Generar dexguard-license.txt
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "$(dexguardFromVault)" > $(System.DefaultWorkingDirectory)/dexguard-license.encoded
+          sed -i -e $'s/|/\\\n/g' $(System.DefaultWorkingDirectory)/dexguard-license.encoded
+          base64 --decode dexguard-license.encoded > dexguard-license.txt
+      condition: and(succeeded(), eq( variables['dexguard_switch'], 'true' ), contains( variables['steps_switch'], 'build_android' ))
+      displayName: 'Generar dexguard-license.txt'
+    
+    #BUILD: Tarea - Generar ixguard-license.txt
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "$(ixguardFromVault)" > $(System.DefaultWorkingDirectory)/ixguard-license.encoded
+          sed -i -e $'s/|/\\\n/g' $(System.DefaultWorkingDirectory)/ixguard-license.encoded
+          base64 --decode ixguard-license.encoded > ixguard-license.txt
+      condition: and(succeeded(), eq( variables['ixguard_switch'], 'true' ), contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Generar ixguard-license.txt'
+
+    #BUILD: Tarea - Generar Certificado Android
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "$(androidCertFromVault)" > keystore.encoded
+          sed -i -e $'s/|/\\\n/g' keystore.encoded
+          base64 --decode keystore.encoded > $(android.nombre_certificado)
+      condition: and(succeeded(), contains( variables['steps_switch'], 'build_android' ))
+      displayName: 'Generar Certificado Android'
+
+    #BUILD: Tarea - Configurar Env y Config
+    - task: CmdLine@2
+      inputs:
+        script: |
+          cp .env-dist .env
+
+          sed -i -e "s|ENV_RELEASE_STORE_FILE|$(System.DefaultWorkingDirectory)/$(android.nombre_certificado)|g" .env        
+          
+          sed -i -e "s/ENV_RELEASE_KEY_ALIAS/$(android.release_key_alias)/g" .env 
+          sed -i -e "s/ENV_RELEASE_STORE_PASSWORD/'$(envStorePassFromVault)'/g" .env
+          sed -i -e "s/ENV_RELEASE_KEY_PASSWORD/'$(envStorePassFromVault)'/g" .env
+
+          sed -i -e "s/ENV_DEXGUARD_ENABLE/$(dexguard_switch)/g" .env
+          sed -i -e "s|ENV_DEXGUARD_LIBS|$(System.DefaultWorkingDirectory)/android/dexguard/lib|g" .env
+          sed -i -e "s|ENV_DEXGUARD_LICENSE|$(System.DefaultWorkingDirectory)/dexguard-license.txt|g" .env
+          sed -i -e "s|ENV_DEXGUARD_DIR|$(System.DefaultWorkingDirectory)/android/dexguard|g" .env
+
+          sed -i -e "s/ENV_GUARDSQUARE_KEY/'$(envGuardsquarePassFromVault)'/g" .env
+
+          sed -i -e "s/ENV_IXGUARD_ENABLE/$(ixguard_switch)/g" .env
+          sed -i -e "s|ENV_IXGUARD_LICENSE|$(System.DefaultWorkingDirectory)/ixguard-license.txt|g" .env
+          
+          sed -i -e "s/ENV_JSCRAMBLER_ENABLE/$(jscrambler_switch)/g" .env
+
+          sed -i -e "s|ENV_ARTIFACT_DIR|$(build.artifactStagingDirectory)/APP/Android-iOS|g" .env
+          sed -i -e "s/SLACK_URL=ENV_SLACK_URL//g" .env
+
+          if [[ '$(lane_name)' = 'qa' ]]
+          then
+            sed -i -e "s|ENV_IXGUARD_EXPORT_PROVISIONING_FILE|$(System.DefaultWorkingDirectory)/$(ios.nombre_profile_adhoc)|g" .env
+            grep IXGUARD_EXPORT_PROVISIONING_FILE .env
+          else
+             echo  "##adhoc solo disponible en $(lane_name)"
+          fi
+
+          grep BUILD_ID .env
+          grep RELEASE_KEY_ALIAS .env
+          grep DEXGUARD_ENABLE .env
+          grep DEXGUARD_LIBS .env
+          grep DEXGUARD_DIR .env
+          grep IXGUARD_ENABLE .env
+          grep ARTIFACT_DIR .env
+         
+          
+      condition: and(succeeded(), or(contains( variables['steps_switch'], 'build_android' ),contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Definir .env'
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "$(rsaFileFromVault)" > $(System.DefaultWorkingDirectory)/rsaFileFromVault.encoded
+          sed -i -e $'s/|/\\\n/g' $(System.DefaultWorkingDirectory)/rsaFileFromVault.encoded
+          base64 --decode rsaFileFromVault.encoded > rsaFileFromVault.js
+      condition: and(succeeded(), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Generar rsaFileFromVault.txt'
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "$(mutualFileFromVault)" > $(System.DefaultWorkingDirectory)/mutualFileFromVault.encoded
+          sed -i -e $'s/|/\\\n/g' $(System.DefaultWorkingDirectory)/mutualFileFromVault.encoded
+          base64 --decode mutualFileFromVault.encoded > mutualFileFromVault.js
+      condition: and(succeeded(), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Generar mutualFileFromVault.txt'
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "$(sslpinningFileFromVault)" > $(System.DefaultWorkingDirectory)/sslpinningFileFromVault.encoded
+          sed -i -e $'s/|/\\\n/g' $(System.DefaultWorkingDirectory)/sslpinningFileFromVault.encoded
+          base64 --decode sslpinningFileFromVault.encoded > sslpinningFileFromVault.js
+      condition: and(succeeded(), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Generar sslpinningFileFromVault.txt'
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "$(facephiAndroidLicenceFromVault)" > $(System.DefaultWorkingDirectory)/facephiAndroidLicenceFromVault.encoded
+          sed -i -e $'s/|/\\\n/g' $(System.DefaultWorkingDirectory)/facephiAndroidLicenceFromVault.encoded
+          base64 --decode facephiAndroidLicenceFromVault.encoded > facephiAndroidLicenceFromVault.js
+      condition: and(succeeded(), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Generar facephiAndroidLicenceFromVault.txt'
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "$(facephiIosLicenceFromVault)" > $(System.DefaultWorkingDirectory)/facephiIosLicenceFromVault.encoded
+          sed -i -e $'s/|/\\\n/g' $(System.DefaultWorkingDirectory)/facephiIosLicenceFromVault.encoded
+          base64 --decode facephiIosLicenceFromVault.encoded > facephiIosLicenceFromVault.js
+      condition: and(succeeded(), or(contains( variables['steps_switch'], 'build_android' ), contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Generar facephiIosLicenceFromVault.txt'
+    - task: CmdLine@2
+      inputs:
+        script: |
+            sed -i -e "s|androidDeviceVerification:''|androidDeviceVerification: 'key_androidDeviceVerification'|g" src/Config.tsx-empty
+            sed -i -e "s|key_androidDeviceVerification|$(keyGoogleServiceFromVault)|g" src/Config.tsx-empty
+            sed -i -e '/mutualAuth: {}/r mutualFileFromVault.js' src/Config.tsx-empty
+            # sed -i -e '/mutualAuth: {}/d' src/Config.tsx-empty
+            sed -i -e '/rsa: {}/r rsaFileFromVault.js' src/Config.tsx-empty
+            # sed -i -e '/rsa: {}/d' src/Config.tsx-empty
+            sed -i -e '/sslPinning: {}/r sslpinningFileFromVault.js' src/Config.tsx-empty
+            # sed -i -e '/sslPinning: {}/d' src/Config.tsx-empty
+            sed -i -e '/facephiAndroidLicence: {}/r facephiAndroidLicenceFromVault.js'  src/Config.tsx-empty
+            sed -i -e '/facephiAndroidLicence: {}/d' src/Config.tsx-empty
+            sed -i -e '/facephiIosLicence: {}/r facephiIosLicenceFromVault.js' src/Config.tsx-empty
+            sed -i -e '/facephiIosLicence: {}/d' src/Config.tsx-empty
+
+            sed -i -e '1,/rsa: {},/ s/rsa: {},/rsa: /' src/Config.tsx-empty
+            sed -i -e '1,/sslPinning: {},/ s/sslPinning: {},/, sslPinning: /' src/Config.tsx-empty
+            sed -i -e '1,/mutualAuth: {},/ s/mutualAuth: {},/, mutualAuth: /' src/Config.tsx-empty
+            sed -i -e '1,/server: {/ s/server: {/, server: {/' src/Config.tsx-empty
+            sed -i -e '1,/facephiIosLicence: {/ s/facephiIosLicence: {/}, facephiIosLicence: {/' src/Config.tsx-empty
+      condition: and(succeeded(),  eq(variables['lane_name'], 'release'),or(contains( variables['steps_switch'], 'build_android' ),contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Definir Config'
+
+   #BUILD: Tarea - Generar Certificado iOS
+    - task: CmdLine@2
+      inputs:
+        script: |
+          chmod +x fastlane/android-bundle.sh
+      condition: and(succeeded(), contains( variables['steps_switch'], 'build_android' ))
+      displayName: 'Asignar permisos para android-bundle'
+
+   #BUILD: Tarea - Generar Certificado iOS
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "$(iOsCertFileFromVault)" > iOsCertFileFromVault.encoded
+          sed -i -e $'s/|/\\\n/g' iOsCertFileFromVault.encoded
+          base64 --decode iOsCertFileFromVault.encoded > $(ios.nombre_certificado)
+      condition: and(succeeded(), contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Generar Certificado iOS'
+
+    #BUILD: Tarea - Instalar Certificado iOS
+    - task: CmdLine@2
+      inputs:
+        script: |
+          security create-keychain -p $(iOsCertKeyFromVault) $(Agent.TempDirectory)/ios_signing_temp.keychain
+          security set-keychain-settings -lut 21600 $(Agent.TempDirectory)/ios_signing_temp.keychain
+          security unlock-keychain -p $(iOsCertKeyFromVault) $(Agent.TempDirectory)/ios_signing_temp.keychain
+          security import $(ios.nombre_certificado) -P $(iOsCertKeyFromVault) -A -t cert -f pkcs12 -k $(Agent.TempDirectory)/ios_signing_temp.keychain
+          security list-keychain -d user
+          security list-keychain -d user -s $(Agent.TempDirectory)/ios_signing_temp.keychain /Users/runner/Library/Keychains/login.keychain-db
+           security list-keychain -d user
+      condition: and(succeeded(), contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Instalar Certificado iOS'
+    
+    #BUILD: Tarea - Generar Provisioning Profile    
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "$(iOsprofileFromVault)" > mobileprovision.encoded
+          sed -i -e $'s/|/\\\n/g' mobileprovision.encoded
+          base64 --decode mobileprovision.encoded > $(ios.nombre_profile)
+      condition: and(succeeded(), contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Generar Provisioning Profile' 
+
+    #BUILD: Tarea - Instalar Provisioning Profile  
+    - task: InstallAppleProvisioningProfile@1
+      inputs:
+        provisioningProfileLocation: 'sourceRepository'
+        provProfileSourceRepository: '$(ios.nombre_profile)'
+      condition: and(succeeded(), contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Instalar Provisioning Profile'
+
+    #BUILD: Tarea - Generar Provisioning Profile Ad Hoc   
+    - task: CmdLine@2
+      inputs:
+        script: |
+          if [[ '$(lane_name)' = 'qa' ]]
+          then
+            echo "$(iOsprofileadhocFromVault)" > mobileprovisionadhoc.encoded
+            sed -i -e $'s/|/\\\n/g' mobileprovisionadhoc.encoded
+            base64 --decode mobileprovisionadhoc.encoded > $(ios.nombre_profile_adhoc)
+          else
+            echo  "##adhoc solo disponible en $(lane_name)"
+          fi
+      condition: and(succeeded(), contains( variables['steps_switch'], 'build_ios' ))
+      displayName: 'Generar Provisioning Profile Ad Hoc'
+
+    #BUILD: Tarea - Instalar Provisioning Profile Ad Hoc
+    - task: InstallAppleProvisioningProfile@1
+      inputs: 
+        provisioningProfileLocation: 'sourceRepository'
+        provProfileSourceRepository: '$(ios.nombre_profile_adhoc)'
+      condition: and(succeeded(), contains( variables['steps_switch'], 'build_ios' ), eq(variables['lane_name'], 'qa'))
+      displayName: 'Instalar Provisioning Profile Ad Hoc'
+
+    #BUILD: Tarea - Mostrar IP Agente
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo ------------------------------------------------------------
+          myip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
+          echo ------------------------------------------------------------
+          echo "My WAN/Public IP address: ${myip}"
+          echo ------------------------------------------------------------
+      condition: and(succeeded(), eq( variables['jscrambler_switch'], 'true' ))
+      displayName: 'Mostrar IP del agente'
+      
+    #BUILD: Tarea - Generar Espera....
+    - task: CmdLine@2
+      inputs:
+        script: |
+          ipJscrambler=$(grep 'host' .jscramblerrc | grep -oE '[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}')
+          portJscrambler=$(grep 'port' .jscramblerrc | grep -oE '[0-9]{4}')
+          result=1
+          try=1
+          time=$(($(wait_time_minutes)*60))
+          while [[ $result > 0 && $try -le 3 ]]; do
+                  echo "Try $try ...."
+                  try=$(($try+1))
+                  sleep "$time"
+                  curl -I http://$ipJscrambler:$portJscrambler
+                  result=$?
+          done
+
+          if [[ $result -eq 0 ]]
+          then
+            echo "##[command]Se estabeció conexión con JScrmabler"
+          else
+            echo "##[error]No se puedo estabecer conexión con JScrmabler"
+            exit 1;
+          fi
+
+          curl -vs http://$ipJscrambler:8080 2>&1
+          telnet $ipJscrambler $portJscrambler || echo "telnet doens't installed"
+          traceroute $ipJscrambler || echo "traceroute doens't installed"
+      condition: and(succeeded(), eq( variables['jscrambler_switch'], 'true' ))
+      displayName: 'Esperando habiliten firewall ...'
+
+    #BUILD: Tarea - Instalar Node y Dependencias ReactNative
+    - task: UseNode@1
+      condition: and(succeeded(), or(contains( variables['steps_switch'], 'build_android' ),contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Instalar Node'
+      
+    - task: CmdLine@2
+      inputs:
+        script: |
+          npm install
+          npm install -g react-native-cli
+          react-native --version
+      condition: and(succeeded(), or(contains( variables['steps_switch'], 'build_android' ),contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Instalar React Native'
+
+    # - task: CmdLine@2
+    #   inputs:
+    #     script: |
+    #       yarn install --pure-lockfile
+    #       yarn jetify
+    #       yarn add jsc-android
+    #   condition: and(succeeded(), or(contains( variables['steps_switch'], 'build_android' ),contains( variables['steps_switch'], 'build_ios' )))
+    #   displayName: 'Instalar libs'
+
+    #BUILD: Tarea - Actualizar cocoapods - Dependency Manager
+    - task: CmdLine@2
+      inputs:
+        script: |
+          cd ios
+          pod install
+          pod cache clean —all
+          pod repo update
+          gem install cocoapods
+          pod repo update
+          pod update
+      condition: and(succeeded(), contains( variables['steps_switch'], 'build_ios'))
+      displayName: 'Actualizar cocoapods - Dependency Manager'
+    
+    #BUILD: Tarea - Instalar fastlane
+    - task: CmdLine@2
+      inputs:
+        script: 'bundle update --bundler && bundle update fastlane'
+      condition: and(succeeded(), or(contains( variables['steps_switch'], 'build_android' ),contains( variables['steps_switch'], 'build_ios' )))
+      displayName: 'Actualizar gemas y fastlane'
+
+    #BUILD: Tarea - Build Android
+    - task: CmdLine@2
+      inputs:
+        script: |
+          bundle exec fastlane android build_$(lane_name)
+          result=$?
+          if [[  $result -eq 0 ]]
+          then
+            echo "##vso[task.setvariable variable=build_android_status]OK"
+          else
+            echo "##vso[task.setvariable variable=build_android_status]NO-OK"
+            exit 1;
+          fi 
+      condition: and(succeeded(), contains( variables['steps_switch'], 'build_android' ))
+      displayName: 'Build Android $(lane_name)'
+
+    - task: CmdLine@2
+      inputs:
+        script: |
+          mkdir $(Build.ArtifactStagingDirectory)/android
+          mkdir $(Build.ArtifactStagingDirectory)/android/build
+          find $(Build.ArtifactStagingDirectory) -name "*.apk" -exec cp {} $(Build.ArtifactStagingDirectory)/android/build \;
+      condition: and(contains( variables['steps_switch'], 'build_android' ), eq(variables['build_android_status'], 'OK'), in(variables['Build.SourceBranchName'], 'qa', 'demo'))
+      displayName: 'SetUp to publish Build Android $(lane_name)'
+    - task: UniversalPackages@0
+      inputs:
+        command: 'publish'
+        publishDirectory: '$(Build.ArtifactStagingDirectory)/android/build'
+        feedsToUsePublish: 'internal'
+        vstsFeedPublish: '2350c86d-8131-4c2f-8b24-2d770358cf59/ed66161d-0ea4-45f8-9254-0872bf66165b'
+        vstsFeedPackagePublish: 'app-$(lane_name)-build-android'
+        versionOption: 'patch'
+        packagePublishDescription: 'Actualización del aplicativo App MiBanco Móvil Android'
+        publishedPackageVar: 'datos_publish_android'
+      condition: and(contains( variables['steps_switch'], 'build_android' ), eq(variables['build_android_status'], 'OK'), in(variables['Build.SourceBranchName'], 'qa', 'demo'))
+      displayName: 'Publish Build Android $(lane_name)'
+    - task: CmdLine@2
+      inputs:
+        script: |
+          rm -R $(Build.ArtifactStagingDirectory)/android
+      condition: and(contains( variables['steps_switch'], 'build_android' ), eq(variables['build_android_status'], 'OK'), in(variables['Build.SourceBranchName'], 'qa', 'demo'))
+      displayName: 'TearDown to publish Build Android $(lane_name) '
+
+    #BUILD: Tarea - Generar el APK Universal
+    - task: CmdLine@2
+      inputs:
+        script: 'brew install bundletool'
+      condition: and(contains( variables['steps_switch'], 'build_android' ), eq(variables['build_android_status'], 'OK'), eq(variables['lane_name'], 'release'))
+      displayName: 'Instalar bundletool'
+    - task: CmdLine@2
+      inputs:
+        script: |
+          cd $(Build.ArtifactStagingDirectory)/APP/Android-iOS 
+          key=$(echo '$(envStorePassFromVault)' | tr -d '\\')
+          aab=$(find . -name *.aab)
+          cd $(dirname $aab)
+          bundletool build-apks --bundle=$(basename $aab) --output=mibancomovil_universal_apk.apks --mode=universal --ks=$(System.DefaultWorkingDirectory)/$(android.nombre_certificado) --ks-pass=pass:$key --ks-key-alias=$(android.release_key_alias) --key-pass=pass:$key 
+          mv mibancomovil_universal_apk.apks  mibancomovil_universal_apk.zip
+      condition: and(contains( variables['steps_switch'], 'build_android' ), eq(variables['build_android_status'], 'OK'), eq(variables['lane_name'], 'release'))
+      displayName: 'Generar APK Universal Android'
+
+    #BUILD: Tarea - Build iOS
+    - task: CmdLine@2
+      inputs:
+        script: |
+          cd ios
+          fastlane ios build_$(lane_name)
+          #bundle exec fastlane ios build_$(lane_name)
+          result=$?
+          if [[  $result -eq 0 ]]
+          then
+            echo "##vso[task.setvariable variable=build_iOS_status]OK"
+          else      
+            echo "##vso[task.setvariable variable=build_iOS_status]NO-OK"
+            exit 1;
+          fi 
+      condition: and(succeededOrFailed(), contains(variables['steps_switch'], 'build_ios'))
+      displayName: 'Build iOS $(lane_name)'
+    - task: CmdLine@2
+      inputs:
+        script: |
+          mkdir $(Build.ArtifactStagingDirectory)/ios
+          mkdir $(Build.ArtifactStagingDirectory)/ios/build
+          find $(Build.ArtifactStagingDirectory) -name "*.ipa" -exec cp {} $(Build.ArtifactStagingDirectory)/ios/build \;
+      condition: and(contains( variables['steps_switch'], 'build_ios' ), eq(variables['build_iOS_status'], 'OK'), in(variables['Build.SourceBranchName'], 'qa', 'demo'))
+      displayName: 'SetUp to Publish Build iOS $(lane_name)'
+    - task: UniversalPackages@0
+      inputs:
+        command: 'publish'
+        publishDirectory: '$(Build.ArtifactStagingDirectory)/ios/build'
+        feedsToUsePublish: 'internal'
+        vstsFeedPublish: '2350c86d-8131-4c2f-8b24-2d770358cf59/ed66161d-0ea4-45f8-9254-0872bf66165b'
+        vstsFeedPackagePublish: 'app-$(lane_name)-build-ios'
+        versionOption: 'patch'
+        packagePublishDescription: 'Actualización del aplicativo App MiBanco Móvil iOS'
+        publishedPackageVar: 'datos_publish_ios'
+      condition: and(contains( variables['steps_switch'], 'build_ios' ), eq(variables['build_iOS_status'], 'OK'), in(variables['Build.SourceBranchName'], 'qa', 'demo'))
+      displayName: 'Publish Build iOS $(lane_name)'
+    - task: CmdLine@2
+      inputs:
+        script: |
+          rm -R $(Build.ArtifactStagingDirectory)/ios
+      condition: and(contains( variables['steps_switch'], 'build_ios' ), eq(variables['build_iOS_status'], 'OK'), in(variables['Build.SourceBranchName'], 'qa', 'demo'))
+      displayName: 'TearDown to Publish para publicar Build iOS $(lane_name)'
+   
+    #BUILD: AAB HUAWEII
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "##[command]--------------------------------------------------------------------"
+          echo "##[command] Actualizar Dexguard-Project"     
+          echo "##[command]--------------------------------------------------------------------"
+          echo "#HUAWEII" >> $(System.DefaultWorkingDirectory)/android/app/dexguard-project.txt 
+          echo "-keepresourcexmlattributenames manifest/**" >> $(System.DefaultWorkingDirectory)/android/app/dexguard-project.txt  
+          echo "##[command]--------------------------------------------------------------------"
+          echo "##[command] Cambiar ubicación de AAB para Huawei "     
+          echo "##[command]--------------------------------------------------------------------"
+          sed -i -e "s|Android-iOS|Huawei|g" .env
+          grep ARTIFACT_DIR .env
+      condition: and( eq( variables['lane_name'], 'release' ), contains( variables['steps_switch'], 'build_android' ), eq(variables['build_android_status'], 'OK'))
+      displayName: 'Definir .env y actualizar dexguard-project'
+    - script: |
+        bundle exec fastlane android build_$(lane_name)
+      condition: and( eq( variables['lane_name'], 'release' ), contains( variables['steps_switch'], 'build_android' ), eq(variables['build_android_status'], 'OK'))
+      displayName: 'Build to Huawei $(lane_name)'
+    - task: CmdLine@2
+      inputs:
+        script: |
+          cd $(Build.ArtifactStagingDirectory)/APP/Huawei 
+          key=$(echo '$(envStorePassFromVault)' | tr -d '\\')
+          aab=$(find . -name *.aab)
+          cd $(dirname $aab)
+          bundletool build-apks --bundle=$(basename $aab) --output=mibancomovil_universal_apk.apks --mode=universal --ks=$(System.DefaultWorkingDirectory)/$(android.nombre_certificado) --ks-pass=pass:$key --ks-key-alias=$(android.release_key_alias) --key-pass=pass:$key 
+          mv mibancomovil_universal_apk.apks  mibancomovil_universal_apk.zip
+      condition: and(contains( variables['steps_switch'], 'build_android' ), eq(variables['build_android_status'], 'OK'), eq(variables['lane_name'], 'release'))
+      displayName: 'Generar APK Universal Huawei'
+
+    #BUILD: Tarea - Publicar AAB, APK y/o IPA
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)/APP/'
+        ArtifactName: 'APP'
+        publishLocation: 'Container'
+      condition: or(	and(contains( variables['steps_switch'], 'build_android' ), eq(variables['build_android_status'], 'OK')	),	and(contains( variables['steps_switch'], 'build_ios' ),eq(variables['build_iOS_status'], 'OK')))
+      displayName: 'Publish Build Artifacts APK y/o IPA'
+        
+    #BUILD: Tarea - Publicar Release Notes
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: '$(System.DefaultWorkingDirectory)'
+        Contents: 'release-notes-**.txt'
+        TargetFolder: '$(Build.ArtifactStagingDirectory)/RELEASE-NOTES'
+      condition: always()
+      displayName: 'Disponer Release Notes'
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)/RELEASE-NOTES/'
+        ArtifactName: 'RELEASE-NOTES'
+        publishLocation: 'Container'
+      condition: or(	and(contains( variables['steps_switch'], 'build_android' ), eq(variables['build_android_status'], 'OK')	),	and(contains( variables['steps_switch'], 'build_ios' ),eq(variables['build_iOS_status'], 'OK')))
+      displayName: 'Publish Release Notes'
+
+    #BUILD: Tarea - Publicar Docs
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: '$(System.DefaultWorkingDirectory)/docs/'
+        Contents: '**'
+        TargetFolder: '$(Build.ArtifactStagingDirectory)/DOCS'
+      condition: or(	and(contains( variables['steps_switch'], 'build_android' ), eq(variables['build_android_status'], 'OK')	),	and(contains( variables['steps_switch'], 'build_ios' ),eq(variables['build_iOS_status'], 'OK')))
+      displayName: 'Disponer DOCS'
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)/DOCS/'
+        ArtifactName: 'DOCS'
+        publishLocation: 'Container'
+      condition: or(	and(contains( variables['steps_switch'], 'build_android' ), eq(variables['build_android_status'], 'OK')	),	and(contains( variables['steps_switch'], 'build_ios' ),eq(variables['build_iOS_status'], 'OK')))
+      displayName: 'Publish DOCS'
+
+    #BUILD: Tarea - Publicar xcarchive
+    - task: CmdLine@2
+      inputs:
+        script: |
+          cd /Users/runner/Library/Developer/Xcode/Archives/
+          mkdir $(Build.ArtifactStagingDirectory)/xcarchive
+          cp -R * $(Build.ArtifactStagingDirectory)/xcarchive
+      condition: and(contains( variables['steps_switch'], 'build_ios' ), eq(variables['build_iOS_status'], 'OK'))
+      displayName: 'Disponer xcarchive'
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)/xcarchive/'
+        ArtifactName: 'xcarchive'
+        publishLocation: 'Container'
+      condition: and(contains( variables['steps_switch'], 'build_ios' ), eq(variables['build_iOS_status'], 'OK'))
+      displayName: 'Publish xcarchive'
+
+###########################################################################################
+######### STAGE DEPLOY
+###########################################################################################
+- stage: stage_deploy
+  dependsOn: stage_build
+  jobs:
+  - job: job_deploy
+    pool: 
+      vmImage: 'macOS-12'
+    steps:
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo "Proximamente se habilitara"
+      name: testdeploy
+      displayName: 'coming soon'

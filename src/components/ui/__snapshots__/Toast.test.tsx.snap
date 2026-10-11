@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert with onPress 1`] = `
+<View
+  accessibilityLabel="toast"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#656D78",
+        "borderRadius": 5,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "padding": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="toast_content"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="toast_text_message"
+      style={
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Brevia",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "500",
+        }
+      }
+    >
+      example
+    </Text>
+  </View>
+  <View />
+</View>
+`;
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="toast"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#656D78",
+        "borderRadius": 5,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "padding": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="toast_content"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="toast_text_message"
+      style={
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Brevia",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "500",
+        }
+      }
+    >
+      example
+    </Text>
+  </View>
+  <View />
+</View>
+`;

@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  supportedOrientations={
+    Array [
+      "portrait",
+      "portrait-upside-down",
+      "landscape",
+      "landscape-left",
+      "landscape-right",
+    ]
+  }
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessibilityLabel="keyboardspacing"
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": "100%",
+        },
+        Array [
+          Object {
+            "bottom": 0,
+            "justifyContent": "center",
+            "left": 0,
+            "paddingHorizontal": 20,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          undefined,
+        ],
+        undefined,
+        false,
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="modal_overlay"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+    <View
+      accessibilityLabel="confirmmodal"
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 6,
+            "marginHorizontal": 20,
+            "marginVertical": 40,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 30,
+          },
+          undefined,
+        ]
+      }
+    >
+      <RCTScrollView
+        bounces={false}
+        keyboardShouldPersistTaps="handled"
+      >
+        <View>
+          <View
+            accessibilityLabel="modal_body"
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "borderRadius": 6,
+                "overflow": "hidden",
+                "paddingBottom": 0,
+                "paddingHorizontal": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "marginBottom": 30,
+                  "marginHorizontal": 20,
+                  "marginTop": 0,
+                }
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#FFFFFF",
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                    }
+                  }
+                />
+              </View>
+              <View
+                accessibilityLabel="spacedview"
+                style={
+                  Array [
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    false,
+                    Object {
+                      "alignItems": "center",
+                      "marginTop": 20,
+                    },
+                  ]
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</Modal>
+`;

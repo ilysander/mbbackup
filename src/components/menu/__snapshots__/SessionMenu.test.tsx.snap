@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="sessionmenu_actionmenu_dots"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  forwardedRef={[Function]}
+  onClick={[Function]}
+  onLayout={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "height": 50,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 56,
+    }
+  }
+>
+  <Image
+    accessibilityLabel="buttonimage_image"
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/action-bar-dots-icon.png",
+      }
+    }
+    style={
+      Object {
+        "height": 24,
+        "tintColor": "#AAB2BD",
+        "width": 24,
+      }
+    }
+  />
+</View>
+`;

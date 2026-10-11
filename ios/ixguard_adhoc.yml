@@ -1,0 +1,48 @@
+license:
+  - "ENV_IXGUARD_LICENSE"
+export:
+  provisioning:
+    - "ENV_IXGUARD_EXPORT_PROVISIONING_FILE"
+  embed-bitcode: true
+  signing: true
+  distribution-target: appstore
+frameworks:
+  - Instabug
+  #- FPBExtractoriOS # genera lentitud al escanear documento
+  #- Microblink # genera lentitud al escanear documento
+javascript:
+  enabled: false
+protection:
+  enabled: true
+  names:
+    enabled: true
+    obfuscate-metadata: false  # genera crash en true
+    strict-framework-exclusion: false
+    obfuscate-symbols: false  # genera crash en true
+    hide-symbols: false  # genera crash en true
+    hide-swift-reflectionmd: false # genera crash en true
+  arithmetic-operations:
+    enabled: true
+  control-flow:
+    enabled: true
+    logic:
+      enabled: false # genera crash en true
+  data:
+    enabled: true
+  code-integrity:
+    enabled: true
+    functions:
+      enabled: true
+      prologues: false # genera crash en true
+      symbol-table: false  # genera crash en true
+      continue-on-callback: false
+      aggressiveness: max
+    objc-calls:
+      enabled: false # genera crash en true
+  environment-integrity:
+    enabled: true
+    jailbreak:
+      enabled: false # genera crash a veces en true
+      aggressiveness: min
+  resources:
+    enabled: false

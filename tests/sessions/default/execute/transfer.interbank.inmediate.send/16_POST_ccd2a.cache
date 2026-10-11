@@ -1,0 +1,44 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfer.interbank.inmediate.send/16",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "isFrequentContact": true,
+      "frequentContact": "Felix",
+      "aceptTermAndCondition": true,
+      "destinationAccount": "00219211130294201232",
+      "debitAccount": "12497644",
+      "amount": {
+        "quantity": "1",
+        "currency": "1"
+      },
+      "mail": "fiorela.contreras@avantica.net",
+      "_otp": "87110"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "209",
+      "date": "Thu, 27 Dec 2018 16:58:00 GMT"
+    },
+    "body": {
+      "code": "COR020W",
+      "idTransaction": "dd31562bfdd44a24b0f60226560ac1eb",
+      "message": "Error de validación",
+      "data": {
+        "aceptTermAndCondition": "Debe aceptar los términos y condiciones"
+      }
+    }
+  }
+}

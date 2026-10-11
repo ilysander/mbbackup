@@ -1,0 +1,52 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfer.interbank.inmediate.preview/16",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "debitAccount": "12640939",
+      "amount": {
+        "quantity": "1",
+        "currency": "1"
+      },
+      "transferReason": "custom",
+      "destinationAccount": "00219211130294201232",
+      "mail": "a@a.com"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "595",
+      "date": "Wed, 09 Jan 2019 14:07:22 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "1c6e91b619524ccc9490dc8706f36cdb",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "requestedAmount": 1,
+        "amountCurrency": "1",
+        "debitAccountLabel": "Cuenta ahorro negocios (MN) 3232229102",
+        "totalAmount": 1.8,
+        "itf": 0,
+        "mibancoComission": 0,
+        "interbankComission": 0.8,
+        "debitAccountID": "12640939",
+        "creditAccountCCI": "00219211130294201232",
+        "bankName": "Banco de Credito del Peru",
+        "beneficiaryName": "PEREZ PAREDES PEPE",
+        "transferReason": "custom",
+        "mail": "a@a.com"
+      }
+    }
+  }
+}

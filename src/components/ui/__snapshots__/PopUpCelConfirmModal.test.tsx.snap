@@ -1,0 +1,327 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  supportedOrientations={
+    Array [
+      "portrait",
+      "portrait-upside-down",
+      "landscape",
+      "landscape-left",
+      "landscape-right",
+    ]
+  }
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessibilityLabel="keyboardspacing"
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": "100%",
+        },
+        Array [
+          Object {
+            "bottom": 0,
+            "justifyContent": "center",
+            "left": 0,
+            "paddingHorizontal": 20,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "height": "110%",
+            "justifyContent": "flex-end",
+            "paddingHorizontal": 0,
+          },
+        ],
+        undefined,
+        false,
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="modal_overlay"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+    <View
+      accessibilityLabel="popupcelconfirmmodal_modal"
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 6,
+            "marginHorizontal": 20,
+            "marginVertical": 40,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 30,
+          },
+          Object {
+            "borderRadius": 20,
+          },
+        ]
+      }
+    >
+      <RCTScrollView
+        bounces={false}
+        keyboardShouldPersistTaps="handled"
+      >
+        <View>
+          <View
+            accessibilityLabel="modal_body"
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "elevation": 3,
+                  "justifyContent": "center",
+                  "paddingBottom": 30,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              <Image
+                accessibilityLabel="popupcelconfirmmodal_header_icon"
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/images/adn-man-adv.png",
+                  }
+                }
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "height": 80,
+                    "width": 80,
+                  }
+                }
+              />
+              <View
+                accessibilityLabel="popupcelconfirmmodal_header"
+                style={
+                  Array [
+                    Object {
+                      "overflow": "visible",
+                    },
+                    Object {
+                      "marginBottom": 5,
+                      "marginTop": 10,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityLabel="header_text_title"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontSize": 22,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "lineHeight": 25,
+                          "textAlign": "left",
+                        },
+                        undefined,
+                        false,
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontSize": 20,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "textAlign": "center",
+                        },
+                      ]
+                    }
+                  >
+                    Hola 
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      false,
+                      false,
+                    ]
+                  }
+                />
+              </View>
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "paddingHorizontal": 30,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#434A54",
+                        "fontFamily": "Brevia",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "400",
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  ¿Tu número de celular es?
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#434A54",
+                        "fontFamily": "Brevia",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "400",
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "Brevia",
+                          "fontSize": 14,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "textAlign": "center",
+                        },
+                      ]
+                    }
+                  >
+                    Si ya no es tu número, 
+                  </Text>
+                  acércate a una de nuestras agencias y actualízalo de lo contrario no podrás realizar algunas operaciones en la App.
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": "10%",
+                  }
+                }
+              >
+                <View
+                  accessibilityLabel="popupcelconfirmmodal_button_accept"
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#00964B",
+                      "borderColor": "#FFFFFF",
+                      "borderRadius": 25,
+                      "borderWidth": 0,
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "margin": 0,
+                      "marginTop": 20,
+                      "minHeight": 41,
+                      "minWidth": 280,
+                      "opacity": 1,
+                      "paddingHorizontal": 12,
+                      "zIndex": 1,
+                    }
+                  }
+                >
+                  <Text
+                    accessibilityLabel="button_text"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "Brevia",
+                          "fontSize": 16,
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                          "textAlign": "center",
+                        },
+                        undefined,
+                        undefined,
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "Brevia",
+                          "fontSize": 16,
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                        },
+                      ]
+                    }
+                  >
+                    Entiendo
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</Modal>
+`;

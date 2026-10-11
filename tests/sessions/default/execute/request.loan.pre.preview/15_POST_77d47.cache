@@ -1,0 +1,36 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/request.loan.pre.preview/15",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Ocp-Apim-Subscription-Key": "sample",
+      "X-Build-Id": "1234",
+      "X-Manufacturer": "abcde",
+      "X-Model": "abcde",
+      "authorization": "sample"
+    },
+    "body": {
+      "valueDate": "",
+      "debitAccount": "-999999",
+      "mail": "abc@gmail.com",
+      "creditLine": "1428653",
+      "payDay": "12",
+      "currency": "1",
+      "amount": "500",
+      "typeOfOffer": "request",
+      "requestnumber": "19279138",
+      "requestType": "2045",
+      "insurances": {
+        "ids": "",
+        "selecteds": ""
+      }
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

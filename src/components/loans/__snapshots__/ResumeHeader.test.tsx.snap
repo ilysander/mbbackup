@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="resumeheader_text_name"
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "600",
+            },
+            undefined,
+          ]
+        }
+        textBreakStrategy="simple"
+      >
+        test
+      </Text>
+      <Text
+        accessibilityLabel="resumeheader_text_amount"
+        style={
+          Array [
+            Object {
+              "color": "#71B74C",
+              "fontFamily": "Brevia",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            undefined,
+          ]
+        }
+      >
+        test
+      </Text>
+    </View>
+  </View>
+</View>
+`;

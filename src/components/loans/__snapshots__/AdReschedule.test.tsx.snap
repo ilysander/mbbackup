@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`session render just views 1`] = `
+<View
+  accessibilityLabel="ad_open"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#3FB4E5",
+      "borderBottomLeftRadius": 12,
+      "borderBottomRightRadius": 12,
+      "borderTopLeftRadius": 0,
+      "borderTopRightRadius": 0,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "opacity": 1,
+      "overflow": "visible",
+      "paddingVertical": 4,
+      "position": "relative",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "marginLeft": 15,
+        "marginVertical": 4,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "color": "#FFFFFF",
+            "flex": 1,
+            "fontFamily": "Brevia",
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Brevia",
+            "fontSize": 15,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "lineHeight": 21,
+          }
+        }
+      >
+        ¡Juntos saldremos adelante!
+      </Text>
+      <Text
+        allowFontScaling={false}
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Brevia",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+            "lineHeight": 21,
+          }
+        }
+      >
+        Posterga el pago de tus préstamos aquí
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="ad_arrow"
+    hitSlop={
+      Object {
+        "bottom": 20,
+        "left": 20,
+        "right": 20,
+        "top": 20,
+      }
+    }
+    style={
+      Object {
+        "marginRight": 15,
+      }
+    }
+  >
+    <Image
+      accessibilityLabel="buttonimage_image"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/arrow-icon.png",
+        }
+      }
+      style={
+        Object {
+          "height": 12,
+          "tintColor": "#FFFFFF",
+          "width": 6,
+        }
+      }
+    />
+  </View>
+</View>
+`;

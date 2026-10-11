@@ -1,0 +1,50 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfers.local.preview/5",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "debitAccount": "31725128",
+      "Amount": {
+        "quantity": "60",
+        "currency": "2"
+      },
+      "ToAccount": "1231231231"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "592",
+      "date": "Fri, 19 Oct 2018 20:27:36 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "4f098db9278d48cb910f478519e8b467",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "transferData": {
+          "debitAmount": 0.1,
+          "creditAmount": 0.1,
+          "exchangeRate": 1,
+          "debitAccountHolder": "YANGE QUICA#O JORGE LUIS",
+          "creditAccountHolder": "MADUE#O SIVANA VICENTINA",
+          "creditAccountCurrency": 1,
+          "operationNumber": 1025894,
+          "debitProductLabel": "Cuenta ahorro negocios (MN) 570094903",
+          "debitAccountCurrency": "1",
+          "creditAccountNumber": "6001816150"
+        }
+      }
+    }
+  }
+}

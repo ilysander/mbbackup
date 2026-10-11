@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="accountfield_touchable_edit"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#00964B",
+      "borderColor": "#00964B",
+      "borderRadius": 25,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "margin": 0,
+      "minHeight": 30,
+      "minWidth": 100,
+      "opacity": 1,
+      "paddingHorizontal": 12,
+      "zIndex": 1,
+    }
+  }
+>
+  <Text
+    accessibilityLabel="button_text"
+    style={
+      Array [
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Brevia",
+          "fontSize": 16,
+          "fontStyle": "normal",
+          "fontWeight": "600",
+          "textAlign": "center",
+        },
+        Object {
+          "fontSize": 14,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  >
+    Pagar
+  </Text>
+</View>
+`;

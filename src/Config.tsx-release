@@ -1,0 +1,347 @@
+let Config = {
+  rsa: {
+    passphrase: '',
+    p12: '',
+  },
+  mutualAuth: {},
+  sslPinning: {
+    certs: [
+`MIIG8zCCBdugAwIBAgIQBR5vZepTQGURlhUhOe0KbzANBgkqhkiG9w0BAQsFADBh
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdHZW9UcnVzdCBFViBSU0EgQ0EgMjAx
+ODAeFw0xOTA3MzAwMDAwMDBaFw0yMDA3MjkxMjAwMDBaMIH+MR0wGwYDVQQPDBRQ
+cml2YXRlIE9yZ2FuaXphdGlvbjETMBEGCysGAQQBgjc8AgEDEwJQRTEUMBIGA1UE
+BRMLMjAzODIwMzY2NTUxCzAJBgNVBAYTAlBFMQ0wCwYDVQQIEwRMaW1hMQ0wCwYD
+VQQHEwRMaW1hMTAwLgYDVQQKEydNaWJhbmNvIC0gYmFuY28gZGUgbGEgbWljcm9l
+bXByZXNhIHMuYS4xMDAuBgNVBAsTJ01JQkFOQ08gLSBCQU5DTyBERSBMQSBNSUNS
+T0VNUFJFU0EgUy5BLjEjMCEGA1UEAxMaYXBpYXBwbW92aWwubWliYW5jby5jb20u
+cGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCY+UsOTM+3ZK4dEoqk
+x+w5r+ALTQJUO/waXtOtEOEboLRrmWLkvZM6QxIDStYm/5CwjhzGfpvLhPMQ68lI
+2+cr9Xhqt/okb65gXApPch6QvyD8/Q9Mr3BF612DzzMjXVeH5/p/KhB6Nc1iaEJB
+HGz9Rrcdy8rlzuoAc7eB/SCV//sY8zsO6Vk6z8woYvbhMlsngByTfh+PJ0EPWrGX
+bTmcJQxFJhkwqXPPzm29tib4H/fKvDLOJvliEEk6waf51y3sOKfQNmY+6ssPrV4S
+d9HyaPWrzTVJ9ud7GLKacluf2NmQGFcUhHATUIEua7Jjei9TIljGvL7jiwDycjzK
+SWEFAgMBAAGjggMHMIIDAzAfBgNVHSMEGDAWgBTKkmdSYd6u/LoiK38ch0wl+2+Z
+WDAdBgNVHQ4EFgQUowq+Hf1ovwos2r1Bl7/3EcokKCMweQYDVR0RBHIwcIIaYXBp
+YXBwbW92aWwubWliYW5jby5jb20ucGWCEDIubWliYW5jby5jb20ucGWCEDEubWli
+YW5jby5jb20ucGWCEDMubWliYW5jby5jb20ucGWCHGFwaXFhYXBwbW92aWwubWli
+YW5jby5jb20ucGUwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMB
+BggrBgEFBQcDAjBABgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY2RwLmdlb3RydXN0
+LmNvbS9HZW9UcnVzdEVWUlNBQ0EyMDE4LmNybDBLBgNVHSAERDBCMDcGCWCGSAGG
+/WwCATAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3dy5kaWdpY2VydC5jb20vQ1BT
+MAcGBWeBDAEBMHcGCCsGAQUFBwEBBGswaTAmBggrBgEFBQcwAYYaaHR0cDovL3N0
+YXR1cy5nZW90cnVzdC5jb20wPwYIKwYBBQUHMAKGM2h0dHA6Ly9jYWNlcnRzLmdl
+b3RydXN0LmNvbS9HZW9UcnVzdEVWUlNBQ0EyMDE4LmNydDAJBgNVHRMEAjAAMIIB
+AgYKKwYBBAHWeQIEAgSB8wSB8ADuAHUApLkJkLQYWBSHuxOizGdwCjw1mAT5G9+4
+43fNDsgN3BAAAAFsQ7vN2AAABAMARjBEAiBL+FLy30X18mwiCoRbcCC+Ymf7G2cg
+fzpz6LL6ojdq1QIgNQCOrJ+4A7FRH7ua1rAuTX8JyYbjxUjjBq4nRT4Q2ZIAdQBW
+FAaaL9fC7NP14b1Esj7HRna5vJkRXMDvlJhV1onQ3QAAAWxDu847AAAEAwBGMEQC
+IHc7GU7ivlqmZn3fXQ/0FquYlqCn47BE1liRi/c43ly9AiBOT0cjOe0bXhbGEdQT
+n9gRIErombtLhOdJZR0OAZqe4DANBgkqhkiG9w0BAQsFAAOCAQEANtW/FzBzB57d
+VpZsw6IUDtjR9MNO8F3MiIS8IojZzMh3277Yw9n4wSILfi5BMFWAz9Y8xr/EPZua
+Y4MTCFiI22zORGHHNWN/7a4SkTP4JluLsFaF3iPCXphhQ6NFGRXWYwVUt3KbW3c0
+8kHHVvZ62IYNcYl+XXqYyBwS33/jyVy/sd8W/GQnFX6VQRkNJ8QIUc1q9ZL0gKCm
+eK9Dpk1Nla56JSFjkdMSrUZDMZPtusGSKuZbQRWQQhbb2c3/x8c94PCiLJev+Med
+ijv8Fmc1c5O+gK6RHu0tnNEtn4XIR5FNubkZAc84act2HTcS1AHCFLQ6JOTYAr3d
+QhNzo4pNUA==`.replace(/\r?\n|\r|\s/g, ''),
+`MIIEojCCA4qgAwIBAgIQA/7vG7W2SDSaIJUPi8aXUzANBgkqhkiG9w0BAQsFADBs
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSswKQYDVQQDEyJEaWdpQ2VydCBIaWdoIEFzc3VyYW5j
+ZSBFViBSb290IENBMB4XDTE3MTEwNjEyMjI0NloXDTI3MTEwNjEyMjI0NlowYTEL
+MAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3
+LmRpZ2ljZXJ0LmNvbTEgMB4GA1UEAxMXR2VvVHJ1c3QgRVYgUlNBIENBIDIwMTgw
+ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDMHEZtLyqMmwFteOLrh+fy
+Nso8PDp2wa60VzzJU50Xnh5u0J3enXoseXERhyu+M+twXDMu33luqy4AJO7yLO+y
+iQw83xGGHmct7nifbf7xGOpC8NLP2Pz4bq/JfW+BWHVUS2j2mfOrVUSOaFuzjr9m
+08eHh0UgdvmhUgwvov6E7E8Db4+5Mf3yF2KUaNHHCSOQPmN6rw7v79PrqaSI9usc
+1tbjE6aIIcDbR2ORhMIubidx+4pj4uMaf/btEeX/ykfsdgqJYfL+Kk4OmwL9vJ6W
+pWe93YMu0E/xCA8rgK8KU5D9RZEpzejTVhVRGI+fuddQA8U4aV6P2sCrRoS2kZxR
+AgMBAAGjggFJMIIBRTAdBgNVHQ4EFgQUypJnUmHervy6Iit/HIdMJftvmVgwHwYD
+VR0jBBgwFoAUsT7DaQP4v0cB1JgmGggC72NkK8MwDgYDVR0PAQH/BAQDAgGGMB0G
+A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjASBgNVHRMBAf8ECDAGAQH/AgEA
+MDQGCCsGAQUFBwEBBCgwJjAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGlnaWNl
+cnQuY29tMEsGA1UdHwREMEIwQKA+oDyGOmh0dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNv
+bS9EaWdpQ2VydEhpZ2hBc3N1cmFuY2VFVlJvb3RDQS5jcmwwPQYDVR0gBDYwNDAy
+BgRVHSAAMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9D
+UFMwDQYJKoZIhvcNAQELBQADggEBAMKOez279PqxlaLhDi4xvQj5BrpidHx0sBBZ
+DWtCnvvAbTOsZNORGjtLkQR4IFoZZt8QiJRjPsLdwzjx5Q9xjt+Xy8YiXo8JCWqB
+v7eeGzmb9Vn3wMf7eH22K/M2PcpDG/AgNjzL9nbJZhpI+OHbk4ohiD/oovX9hyFG
+2Ns0y80qGctffopsBzfTMxHC5TwNGWybPg6UAHgvQviitOpPlMkdPEcutSqsvEFc
+L2x9f7ZbFIP2Ie0EcuVNgX6jFj7EKfKFHn8apJdtGhUJZq4mablNm+3ixPkdVr5f
+71aaFFvfKi824S12PbLs+k5iSr7uE3taQB2yE1umOs9OJ4X9Yvk=`.replace(
+  /\r?\n|\r|\s/g,
+  ''
+),
+`MIIDxTCCAq2gAwIBAgIQAqxcJmoLQJuPC3nyrkYldzANBgkqhkiG9w0BAQUFADBs
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSswKQYDVQQDEyJEaWdpQ2VydCBIaWdoIEFzc3VyYW5j
+ZSBFViBSb290IENBMB4XDTA2MTExMDAwMDAwMFoXDTMxMTExMDAwMDAwMFowbDEL
+MAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3
+LmRpZ2ljZXJ0LmNvbTErMCkGA1UEAxMiRGlnaUNlcnQgSGlnaCBBc3N1cmFuY2Ug
+RVYgUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMbM5XPm
++9S75S0tMqbf5YE/yc0lSbZxKsPVlDRnogocsF9ppkCxxLeyj9CYpKlBWTrT3JTW
+PNt0OKRKzE0lgvdKpVMSOO7zSW1xkX5jtqumX8OkhPhPYlG++MXs2ziS4wblCJEM
+xChBVfvLWokVfnHoNb9Ncgk9vjo4UFt3MRuNs8ckRZqnrG0AFFoEt7oT61EKmEFB
+Ik5lYYeBQVCmeVyJ3hlKV9Uu5l0cUyx+mM0aBhakaHPQNAQTXKFx01p8VdteZOE3
+hzBWBOURtCmAEvF5OYiiAhF8J2a3iLd48soKqDirCmTCv2ZdlYTBoSUeh10aUAsg
+EsxBu24LUTi4S8sCAwEAAaNjMGEwDgYDVR0PAQH/BAQDAgGGMA8GA1UdEwEB/wQF
+MAMBAf8wHQYDVR0OBBYEFLE+w2kD+L9HAdSYJhoIAu9jZCvDMB8GA1UdIwQYMBaA
+FLE+w2kD+L9HAdSYJhoIAu9jZCvDMA0GCSqGSIb3DQEBBQUAA4IBAQAcGgaX3Nec
+nzyIZgYIVyHbIUf4KmeqvxgydkAQV8GK83rZEWWONfqe/EW1ntlMMUu4kehDLI6z
+eM7b41N5cdblIZQB2lWHmiRk9opmzN6cN82oNLFpmyPInngiK3BD41VHMWEZ71jF
+hS9OMPagMRYjyOfiZRYzy78aG6A9+MpeizGLYAiJLQwGXFK3xPkKmNEVX58Svnw2
+Yzi9RKR/5CYrCsSXaQ3pjOLAEFe4yHYSkVXySGnYvCoCWw9E1CAx2/S6cCZdkGCe
+vEsXCS+0yx5DaMkHJ8HSXPfqIbloEpw8nL+e/IBcm2PN7EeqJSdnoDfzAIJ9VNep
++OkuE6N36B9K`.replace(/\r?\n|\r|\s/g, ''),
+    ],
+  },
+  server: {
+    url: 'https://apiappmovil.mibanco.com.pe/integracion-hbk-app/v1',
+    // subscriptionKey: 'KEY_HERE',
+  },
+  features: {
+    ForYouMbAsesora: false,
+    SignIn: true,
+    SignInRemember: true,
+    ExchangeRate: true,
+    SignUp: true,
+    SignUpWeb: false,
+    ForgotPassword: false,
+    ForgotPasswordWeb: true,
+    Foryou:true,
+    Location: true,
+    Contact: true,
+    Feedback: true,
+    Profile: true,
+    ChangePhone: false,
+    ChangeEmail: false,
+    TransfersMyAccounts: true,
+    TransfersOtherAccounts: true,
+    TransfersOtherBanks: true,
+    TransfersOtherBanksWeb: false,
+    FrequentList: true,
+    ChangeContact: true,
+    PaymentsLoans: true,
+    PaymentsOwnLoans: true,
+    PaymentsOwnLoansWeb: true,
+    PaymentsOtherLoans: false,
+    PaymentsOtherLoansWeb: true,
+    PaymentsServices: false,
+    PaymentsServicesWeb: true,
+    DPFOpen: true,
+    Captcha: false,
+    KeyboardByApi: false,
+    UpdateTokenUrlActive:false,
+    LoansPostponement: true,
+    LoansPostponementReschedule: true,
+    LoansPostponementFreezing: false,
+    AllChannelsReady: false,
+    ChangeDestinyMailEECC: false,
+    LoginWithDniConventional: false,
+    LoginWithDniBiometric: false,
+    EnrollmentProcess: false,
+    HeaderTraceEnabled: false,
+    NewAccount:true,
+    EnableNewRequestKeyFour: false,
+    EnableTransferCTS:false,
+    EnableAutomaticUnblock:false,
+    EnableInstaCashFast: false,
+    isRevision: true,
+  },
+  settings: {
+    minVersion: '3.0',
+    version: '',
+    playStoreId: 'com.mibanco.bancamovil',
+    appStoreId: '1437814246',
+    playStoreLink: 'market://details?id=com.mibanco.bancamovil',
+    appStoreLink:
+'itms-apps://itunes.apple.com/us/app/apple-store/id1437814246?mt=8',
+    appGalleryLink: 'appmarket://details?id=com.mibanco.bancamovil',
+    sessionIncreaseSeconds: 180,
+    requestTimeout: 0,
+    timeoutSplash: 3 * 1000,
+    timeoutSignUpSuccess: 10 * 1000,
+    forgotPasswordUrl: 'https://zonasegura.mibanco.com.pe/frontend/recoverpin/',
+    enrollmentUrl: 'https://zonasegura.mibanco.com.pe/frontend/enrollment/',
+    dpfInfoUrl:
+'https://www.mibanco.com.pe/repositorioaps/data/1/1/1/jer/tarifario-y-documentos-contractuales-dpf-online/files/DPF%20Online%20V001%20-%20Final.pdf',
+    frontendUrl: 'https://zonasegura.mibanco.com.pe/frontend',
+    dpfListUrl: 'https://zonasegura.mibanco.com.pe/frontend/deposits/index',
+    transfersUrl: 'https://zonasegura.mibanco.com.pe/frontend/transfers/index',
+    loanListUrl:
+'https://zonasegura.mibanco.com.pe/frontend/loanpayments/index',
+    locationUrl: 'https://www.mibanco.com.pe/ubicanos',
+    contactUrl: 'https://www.mibanco.com.pe/categoria/atencion-al-usuario',
+    servicePaymentsUrl:
+'https://zonasegura.mibanco.com.pe/frontend/servicepayments/index',
+    loanInfoUrlNewAccount: 'https://www.mibanco.com.pe/categoria/ahorro-negocios',
+    loanPaymentsUrl:
+'https://zonasegura.mibanco.com.pe/frontend/loanpayments/index',
+    loanInfoUrl: 'https://www.mibanco.com.pe',
+    firebaseFunctionsUrl: 'https://us-central1-hbmovil-f1be5.cloudfunctions.net',
+    updateTokenUrl: 'https://apiappmovil.mibanco.com.pe/notifications/v1/notifi2cationservice',
+    contactPhone: '013199999',
+    contactPhoneShow: '(01) 319-9999',
+    maxSecurityImages: 12,
+    instabugAPIKey: '7cbf66b16b8a0b4298c6e717037a6aa2',
+    limitMinTransfersMyAccountsUSD: 1,
+    limitMinTransfersMyAccountsPEN: 1,
+    limitMinTransfersOtherAccountsUSD: 1,
+    limitMinTransfersOtherAccountsPEN: 1,
+    limitMinTransfersOtherBanksUSD: 1,
+    limitMinTransfersOtherBanksPEN: 1,
+    limitTransfersOtherAccountsUSD: 1500,
+    limitTransfersOtherAccountsPEN: 5000,
+    limitTransfersOtherBanksUSD: 1500,
+    limitTransfersOtherBanksPEN: 5000,
+    limitMinPaymentsAccountsPEN: 1,
+    limitMinPaymentsAccountsUSD: 1,
+    limitMinDPFOpenPEN: 350,
+    limitMinDPFOpenUSD: 100,
+    timeoutExpirationSignUp: 1000 * 60 * 2,
+    timeoutMinimalSignUp: 1000 * 15,
+    timeoutSignUpSMS: 1000 * 60 * 3,
+    timeoutTokenExpirationSignUp: 1000 * 60 * 5,
+    timeoutExpirationForgotPassword: 1000 * 60 * 2,
+    timeoutMinimalForgotPassword: 1000 * 15,
+    timeoutForgotPasswordSMS: 1000 * 60 * 5,
+    timeoutMinimalEnrollment: 1000 * 15,
+    timeoutEnrollmentSMS: 1000 * 60 * 3,
+    timeoutTokenExpirationForgotPassword: 1000 * 60 * 5,
+    timeoutClearDPFOpenForm: 1000 * 30,
+    timeoutResetAd: 1,
+    numberDaysEmailPopupUpdate:7,
+    numberDaysEmailPopupAdd:1,
+    allowedSender: '88800',
+    widthReceipt: 360,
+    maxLengthFrequentContact: 50,
+    startTimeDPFOpening: '05:00:00',
+    endTimeDPFOpening: '21:00:00',
+    startTimeInterbanksOperations: '06:00:00',
+    endTimeInterbanksOperations: '20:30:00',
+    startTimePayments: '06:00:00',
+    endTimePayments: '20:30:00',
+    startTimePaymentsServices: '09:00:00',
+    endTimePaymentsServices: '21:00:00',
+    countryTimezone: '-05:00',
+    defaultTasksTime: '08:00:00',
+    decimals: 2,
+    emailTransfersImmediate: '',
+    maintenanceMode: false,
+    instantCashSuperRate: false,
+    maintenanceStatus: 2,
+    maintenanceSchedule: [
+      {
+        init: '10:00',
+        end: '13:00'
+      },
+      {
+        init: '15:00',
+        end: '17:00'
+      }
+    ],
+    transfersAdCommission: false,
+    instantCashShortProfilingAmount: 5000,
+    numberDaysReminderLPDP:7,
+    revisionVersion: '3.13.8',
+    docDemo: '71756524',
+    kDemo: '121212',
+    foryou: {
+      soat: {
+        url: 'https://web.pacifico.com.pe/seguros/soat/compraonline/soatmibanco?utm_source=appmibanco&utm_medium=referral&utm_campaign=app-mibanco_soat_per&utm_content=btnparati',
+        active: true
+      },
+      flexHome: {
+        url: 'https://ventasonline.pacifico.com.pe/hogar/mibanco/inicio?utm_source=appmibanco&utm_medium=referral&utm_campaign=app-mibanco_hogar_per&utm_content=btnparati',
+        active: true
+      },
+      LifeDevolution: {
+        url: 'https://ventasonline.pacifico.com.pe/vida/seguros/devoluciontotalsoles/compras/mibanco/principal?utm_source=appmibanco&utm_medium=referral&utm_campaign=app-mibanco_viddev_per&utm_content=btnparati',
+        active: true
+      },
+      protectedSale: {
+        url: 'https://www.pacifico.com.pe/venta-del-dia-protegida-generico',
+        active: true
+      },
+      oncological: {
+        url: '',
+        active: false
+      },
+      culqi: {
+        url: 'https://www.mibanco.com.pe/noticia/pos-culqi-incrementa-ventas',
+        active: true
+      },
+      yape: {
+        url: 'https://www.mibanco.com.pe/noticia/nos-unimos-a-yape',
+        iosUrl: 'https://apps.apple.com/pe/app/yape/id1147249919',
+        androidUrl: 'https://play.google.com/store/apps/details?id=com.bcp.innovacxion.yapeapp',
+        active: true
+      },
+      yevo: {
+        url: 'https://www.yevo.pe',
+        active: true
+      },
+      mbTeAsesora: {
+        url: 'https://www.nopodranpararnos.pe',
+        active: true
+      },
+    },
+    amountNotAllowedForEat: 1000,
+  },
+  debug: {
+    disableRemoteConfig: false,
+    allowRoot: false,
+    allowAllLoanPayments: false,
+    showRecordTransfer: false,
+    captchaNotRequired: false,
+    allowEmulator: false,
+  },
+  defaults: {
+    cardNumber: '',
+    password: '',
+    document: ''
+  },
+  recaptcha: {
+    siteKey: '6LdX8BETAAAAADcCsa86gsZ-ng3Cf5r3aiorAHHO',
+    site: 'https://zonasegura.mibanco.com.pe',
+  },
+  facephiAndroidLicence: {
+    customer: '',
+    documentType: '',
+    license: {
+      comments: '',
+      dateEnd: '',
+      extraData:
+        '',
+      licenseDocument: true,
+      licenseFacial: false,
+      licenseTokenDocument: true,
+      logging: false,
+      os: 'Android',
+      packageName: 'com.mibanco.bancamovil',
+      product: 'SelphID',
+      version: '1.0',
+    },
+    provider: 'FacePhi',
+  },
+  facephiIosLicence: {
+    customer: '',
+    documentType: '',
+    license: {
+      comments: '',
+      dateEnd: '',
+      extraData:
+        '',
+      licenseDocument: true,
+      licenseFacial: false,
+      licenseTokenDocument: true,
+      logging: false,
+      os: 'iOS',
+      packageName: 'com.mibanco.bancamovil',
+      product: 'SelphID',
+      version: '1.0',
+    },
+    provider: 'FacePhi',
+  },
+};
+export default Config

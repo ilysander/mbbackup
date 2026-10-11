@@ -1,0 +1,28 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/serviceavalability",
+    "method": "GET",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "0f359885ebea423f9a626e0513357149",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "message": "El sistema se encuentra habilitado",
+        "enable": true
+      }
+    }
+  }
+}

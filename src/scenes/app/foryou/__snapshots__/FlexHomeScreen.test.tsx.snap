@@ -1,0 +1,513 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`session render just views 1`] = `
+<View
+  accessibilityLabel="container"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="morecontainer"
+    style={
+      Object {
+        "flex": 1,
+        "position": "relative",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="keyboardavoidingview"
+      onChangeDimensions={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+            "width": "100%",
+          },
+          Object {
+            "flex": 1,
+            "position": "relative",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <RCTScrollView
+        accessibilityLabel="keyboardavoidingview_scrollview"
+        contentContainerStyle={
+          Array [
+            Object {
+              "minHeight": 1220,
+            },
+            false,
+          ]
+        }
+        keyboardShouldPersistTaps="handled"
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onScroll={[Function]}
+        scrollEventThrottle={100}
+      >
+        <View>
+          <RCTSafeAreaView
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                undefined,
+              ]
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#3FB4E5",
+                    "height": "100%",
+                    "paddingTop": 40,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "paddingHorizontal": 20,
+                    }
+                  }
+                >
+                  <Image
+                    source={
+                      Object {
+                        "testUri": "../../../src/assets/images/flex-home.png",
+                      }
+                    }
+                    style={
+                      Object {
+                        "height": 69,
+                        "width": 88,
+                      }
+                    }
+                  />
+                  <View
+                    style={
+                      Object {
+                        "paddingLeft": 30,
+                        "width": "60%",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "Brevia",
+                          "fontSize": 16,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                        }
+                      }
+                    >
+                      Protege y asegura
+                      <Text
+                        style={
+                          Object {
+                            "color": "#FFFFFF",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                         tu casa, tus cosas o ambas desde 
+                      </Text>
+                      S/ 15.20  (inc IGV)
+                      <Text
+                        style={
+                          Object {
+                            "color": "#FFFFFF",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                         al mes
+                      </Text>
+                    </Text>
+                  </View>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "marginTop": 38,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#E6E9ED",
+                        "borderTopLeftRadius": 40,
+                        "borderTopRightRadius": 40,
+                        "borderWidth": 1,
+                        "padding": 18,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "justifyContent": "center",
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#3FB4E5",
+                            "fontFamily": "Brevia",
+                            "fontSize": 13,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "textAlign": "center",
+                          }
+                        }
+                      >
+                        Con el respaldo de
+                      </Text>
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/pacifico-logo.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 18,
+                            "marginHorizontal": 8,
+                            "width": 83,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#3FB4E5",
+                            "fontFamily": "Brevia",
+                            "fontSize": 13,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "textAlign": "center",
+                          }
+                        }
+                      >
+                        seguros
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "paddingHorizontal": 15,
+                          "paddingVertical": 20,
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/home-icon.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 50,
+                            "width": 50,
+                          }
+                        }
+                      />
+                      <View
+                        style={
+                          Object {
+                            "paddingLeft": 6,
+                            "width": "80%",
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 14,
+                              "fontStyle": "normal",
+                              "fontWeight": "500",
+                            }
+                          }
+                        >
+                          Si alquilas tu casa a un tercero puedes
+                          <Text
+                            style={
+                              Object {
+                                "color": "#434A54",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              }
+                            }
+                          >
+                             proteger solo la propiedad 
+                          </Text>
+                          y no su contenido.
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "paddingHorizontal": 15,
+                          "paddingVertical": 20,
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/couch-icon.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 50,
+                            "width": 50,
+                          }
+                        }
+                      />
+                      <View
+                        style={
+                          Object {
+                            "paddingLeft": 6,
+                            "width": "80%",
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 14,
+                              "fontStyle": "normal",
+                              "fontWeight": "500",
+                            }
+                          }
+                        >
+                          Si alquilas, puedes asegurar solo tus cosas y no el inmueble.
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "paddingHorizontal": 15,
+                          "paddingVertical": 20,
+                        }
+                      }
+                    >
+                      <Image
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/home-couch-icon.png",
+                          }
+                        }
+                        style={
+                          Object {
+                            "height": 50,
+                            "width": 50,
+                          }
+                        }
+                      />
+                      <View
+                        style={
+                          Object {
+                            "paddingLeft": 6,
+                            "width": "80%",
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            Object {
+                              "color": "#434A54",
+                              "fontFamily": "Brevia",
+                              "fontSize": 14,
+                              "fontStyle": "normal",
+                              "fontWeight": "500",
+                            }
+                          }
+                        >
+                          Si es tu casa y contiene tus cosas, 
+                          <Text
+                            style={
+                              Object {
+                                "color": "#434A54",
+                                "fontFamily": "Brevia",
+                                "fontSize": 14,
+                                "fontStyle": "normal",
+                                "fontWeight": "700",
+                              }
+                            }
+                          >
+                            puedes proteger ambas.
+                          </Text>
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "marginBottom": 10,
+                        }
+                      }
+                    >
+                      <View
+                        accessibilityLabel="foryou_flexhome_button_buy"
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#00964B",
+                            "borderColor": "#00964B",
+                            "borderRadius": 25,
+                            "borderWidth": 1,
+                            "flexDirection": "row",
+                            "height": 50,
+                            "justifyContent": "center",
+                            "margin": 0,
+                            "minHeight": 40,
+                            "opacity": 1,
+                            "paddingHorizontal": 12,
+                            "zIndex": 1,
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityLabel="button_text"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#FFFFFF",
+                                "fontFamily": "Brevia",
+                                "fontSize": 16,
+                                "fontStyle": "normal",
+                                "fontWeight": "600",
+                                "textAlign": "center",
+                              },
+                              undefined,
+                              undefined,
+                              undefined,
+                            ]
+                          }
+                        >
+                          Cómpralo aquí
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+      </RCTScrollView>
+      <View
+        accessibilityLabel="morecontainer_scrollmore"
+        collapsable={false}
+        style={
+          Object {
+            "bottom": -100,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "zIndex": 1000,
+          }
+        }
+      >
+        <View
+          accessibilityLabel="scrollmore_button"
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            accessibilityLabel="scrollmore_image"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+              }
+            }
+            style={
+              Object {
+                "height": 70,
+                "width": 70,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

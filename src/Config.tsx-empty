@@ -1,0 +1,352 @@
+let Config = {
+  rsa: {},
+  mutualAuth: {},
+  sslPinning: {},
+  server: {},
+  features: {
+    ForYouMbAsesora: false,
+    SignIn: true,
+    SignInRemember: true,
+    ExchangeRate: true,
+    SignUp: true,
+    SignUpWeb: false,
+    ForgotPassword: false,
+    ForgotPasswordWeb: true,
+    Foryou: true,
+    Location: true,
+    Contact: true,
+    Feedback: true,
+    Profile: true,
+    ChangePhone: false,
+    ChangeEmail: false,
+    TransfersMyAccounts: true,
+    TransfersOtherAccounts: true,
+    TransfersOtherBanks: true,
+    TransfersOtherBanksWeb: false,
+    FrequentList: true,
+    ChangeContact: true,
+    PaymentsLoans: true,
+    PaymentsOwnLoans: true,
+    PaymentsOwnLoansWeb: true,
+    PaymentsOtherLoans: false,
+    PaymentsOtherLoansWeb: true,
+    PaymentsServices: false,
+    PaymentsServicesWeb: true,
+    DPFOpen: true,
+    Captcha: false,
+    KeyboardByApi: true,
+    UpdateTokenUrlActive: true,
+    LoansPostponement: true,
+    LoansPostponementReschedule: true,
+    LoansPostponementFreezing: false,
+    AllChannelsReady: false,
+    ChangeDestinyMailEECC: false,
+    LoginWithDniConventional: false,
+    LoginWithDniBiometric: false,
+    EnrollmentProcess: false,
+    HeaderTraceEnabled: false,
+    NewAccount: true,
+    EnableNewRequestKeyFour: false,
+    EnableTransferCTS: false,
+    EnableAutomaticUnblock: false,
+    EnableInstaCashFast: false,
+    isRevision: true,
+  },
+  settings: {
+    minVersion: '3.0',
+    version: '',
+    playStoreId: 'com.mibanco.bancamovil',
+    appStoreId: '1437814246',
+    playStoreLink: 'market://details?id=com.mibanco.bancamovil',
+    appStoreLink:
+      'itms-apps://itunes.apple.com/us/app/apple-store/id1437814246?mt=8',
+    appGalleryLink: 'appmarket://details?id=com.mibanco.bancamovil',
+    sessionIncreaseSeconds: 180,
+    requestTimeout: 0,
+    timeoutSplash: 3 * 1000,
+    timeoutSignUpSuccess: 10 * 1000,
+    forgotPasswordUrl: 'https://zonasegura.mibanco.com.pe/frontend/recoverpin/',
+    enrollmentUrl: 'https://zonasegura.mibanco.com.pe/frontend/enrollment/',
+    dpfInfoUrl:
+      'https://www.mibanco.com.pe/repositorioaps/data/1/1/1/jer/tarifario-y-documentos-contractuales-dpf-online/files/DPF%20Online%20V001%20-%20Final.pdf',
+    frontendUrl: 'https://zonasegura.mibanco.com.pe/frontend',
+    dpfListUrl: 'https://zonasegura.mibanco.com.pe/frontend/deposits/index',
+    transfersUrl: 'https://zonasegura.mibanco.com.pe/frontend/transfers/index',
+    loanListUrl:
+      'https://zonasegura.mibanco.com.pe/frontend/loanpayments/index',
+    locationUrl: 'https://www.mibanco.com.pe/ubicanos',
+    contactUrl: 'https://www.mibanco.com.pe/categoria/atencion-al-usuario',
+    loanInfoUrlNewAccount:
+      'https://www.mibanco.com.pe/categoria/ahorro-negocios',
+    servicePaymentsUrl:
+      'https://zonasegura.mibanco.com.pe/frontend/servicepayments/index',
+    loanPaymentsUrl:
+      'https://zonasegura.mibanco.com.pe/frontend/loanpayments/index',
+    loanInfoUrl: 'https://www.mibanco.com.pe',
+    firebaseFunctionsUrl:
+      'https://us-central1-hbmovil-f1be5.cloudfunctions.net',
+    updateTokenUrl:
+      'https://apiappmovil.mibanco.com.pe/notifications/v1/notificationservice',
+    contactPhone: '013199999',
+    contactPhoneShow: '(01) 319-9999',
+    maxSecurityImages: 12,
+    instabugAPIKey: '7cbf66b16b8a0b4298c6e717037a6aa2',
+    limitMinTransfersMyAccountsUSD: 1,
+    limitMinTransfersMyAccountsPEN: 1,
+    limitMinTransfersOtherAccountsUSD: 1,
+    limitMinTransfersOtherAccountsPEN: 1,
+    limitMinTransfersOtherBanksUSD: 1,
+    limitMinTransfersOtherBanksPEN: 1,
+    limitTransfersOtherAccountsUSD: 1500,
+    limitTransfersOtherAccountsPEN: 5000,
+    limitMinPaymentsAccountsPEN: 1,
+    limitMinPaymentsAccountsUSD: 1,
+    limitTransfersOtherBanksUSD: 1500,
+    limitTransfersOtherBanksPEN: 5000,
+    limitMinDPFOpenPEN: 350,
+    limitMinDPFOpenUSD: 100,
+    timeoutExpirationSignUp: 1000 * 60 * 2,
+    timeoutMinimalSignUp: 1000 * 15,
+    timeoutSignUpSMS: 1000 * 60 * 3,
+    timeoutTokenExpirationSignUp: 1000 * 60 * 5,
+    timeoutExpirationForgotPassword: 1000 * 60 * 2,
+    timeoutMinimalForgotPassword: 1000 * 15,
+    timeoutForgotPasswordSMS: 1000 * 60 * 3,
+    timeoutMinimalEnrollment: 1000 * 15,
+    timeoutEnrollmentSMS: 1000 * 60 * 3,
+    timeoutTokenExpirationForgotPassword: 1000 * 60 * 5,
+    timeoutClearDPFOpenForm: 1000 * 30,
+    timeoutResetAd: 1,
+    numberDaysEmailPopupUpdate: 7,
+    numberDaysEmailPopupAdd: 6,
+    allowedSender: '88800',
+    widthReceipt: 360,
+    maxLengthFrequentContact: 50,
+    startTimeDPFOpening: '05:00:00',
+    endTimeDPFOpening: '21:00:00',
+    startTimeInterbanksOperations: '06:00:00',
+    endTimeInterbanksOperations: '20:30:00',
+    startTimePayments: '06:00:00',
+    endTimePayments: '20:30:00',
+    startTimePaymentsServices: '09:00:00',
+    endTimePaymentsServices: '21:00:00',
+    countryTimezone: '-05:00',
+    defaultTasksTime: '08:00:00',
+    decimals: 2,
+    emailTransfersImmediate: '',
+    maintenanceMode: false,
+    instantCashSuperRate: false,
+    maintenanceStatus: 0,
+    maintenanceSchedule: [],
+    transfersAdCommission: false,
+    instantCashShortProfilingAmount: 5000,
+    numberDaysReminderLPDP:7,
+    revisionVersion: '3.13.8',
+    docDemo: '71756524',
+    kDemo: '121212',
+    foryou: {
+      soat: {
+        url:
+          'https://web.pacifico.com.pe/seguros/soat/compraonline/soatmibanco?utm_source=appmibanco&utm_medium=referral&utm_campaign=app-mibanco_soat_per&utm_content=btnparati',
+        active: true,
+      },
+      flexHome: {
+        url:
+          'https://ventasonline.pacifico.com.pe/hogar/mibanco/inicio?utm_source=appmibanco&utm_medium=referral&utm_campaign=app-mibanco_hogar_per&utm_content=btnparati',
+        active: true,
+      },
+      LifeDevolution: {
+        url:
+          'https://ventasonline.pacifico.com.pe/vida/seguros/devoluciontotalsoles/compras/mibanco/principal?utm_source=appmibanco&utm_medium=referral&utm_campaign=app-mibanco_viddev_per&utm_content=btnparati',
+        active: true,
+      },
+      protectedSale: {
+        url: 'https://www.pacifico.com.pe/venta-del-dia-protegida-generico',
+        active: true
+      },
+      oncological: {
+        url: '',
+        active: false,
+      },
+      culqi: {
+        url: 'https://www.mibanco.com.pe/noticia/pos-culqi-incrementa-ventas',
+        active: true,
+      },
+      yape: {
+        url: 'https://www.mibanco.com.pe/noticia/nos-unimos-a-yape',
+        iosUrl: 'https://apps.apple.com/pe/app/yape/id1147249919',
+        androidUrl:
+          'https://play.google.com/store/apps/details?id=com.bcp.innovacxion.yapeapp',
+        active: true,
+      },
+      yevo: {
+        url: 'https://www.yevo.pe',
+        active: true,
+      },
+      mbTeAsesora: {
+        url: 'https://www.nopodranpararnos.pe',
+        active: true,
+      },
+    },
+    amountNotAllowedForEat: 1000,
+  },
+  debug: {},
+  defaults: {},
+  recaptcha: {},
+  facephiAndroidLicence: {},
+  facephiIosLicence: {},
+} as {
+  googleService: any,
+  rsa: any;
+  mutualAuth: any;
+  sslPinning: any;
+  server: {
+    url?: string;
+    subscriptionKey?: string;
+    enrollmentUrl?: string,
+    enrollmentSubscriptionKey?: string,
+    Envid?: string
+  };
+  features: {
+    ForYouMbAsesora: boolean;
+    SignIn: boolean;
+    SignInRemember: boolean;
+    ExchangeRate: boolean;
+    SignUp: boolean;
+    SignUpWeb: boolean;
+    ForgotPassword: boolean;
+    ForgotPasswordWeb: boolean;
+    Location: boolean;
+    Contact: boolean;
+    Feedback: boolean;
+    Profile: boolean;
+    ChangePhone: boolean;
+    ChangeEmail: boolean;
+    TransfersMyAccounts: boolean;
+    TransfersOtherAccounts: boolean;
+    TransfersOtherBanks: boolean;
+    TransfersOtherBanksWeb: boolean;
+    FrequentList: boolean;
+    ChangeContact: boolean;
+    PaymentsLoans: boolean;
+    PaymentsOwnLoans: boolean;
+    PaymentsOwnLoansWeb: boolean;
+    PaymentsOtherLoans: boolean;
+    PaymentsOtherLoansWeb: boolean;
+    PaymentsServices: boolean;
+    PaymentsServicesWeb: boolean;
+    DPFOpen: boolean;
+    Captcha: boolean;
+    KeyboardByApi: boolean;
+    UpdateTokenUrlActive: boolean;
+    LoansPostponement: boolean;
+    LoansPostponementReschedule: boolean;
+    LoansPostponementFreezing: boolean;
+    AllChannelsReady: boolean;
+    ChangeDestinyMailEECC: boolean;
+    LoginWithDniConventional: boolean;
+    LoginWithDniBiometric: boolean;
+    EnrollmentProcess: boolean;
+    HeaderTraceEnabled: boolean;
+    NewAccount: boolean;
+    EnableNewRequestKeyFour: boolean;
+    EnableTransferCTS: boolean;
+    EnableAutomaticUnblock: boolean;
+    EnableInstaCashFast: boolean;
+    isRevision: boolean;
+  };
+  settings: {
+    minVersion: string;
+    version: string;
+    playStoreId: string;
+    appStoreId: string;
+    playStoreLink: string;
+    appStoreLink: string;
+    sessionIncreaseSeconds: number;
+    requestTimeout: number;
+    timeoutSplash: number;
+    timeoutSignUpSuccess: number;
+    forgotPasswordUrl: string;
+    enrollmentUrl: string;
+    dpfInfoUrl: string;
+    frontendUrl: string;
+    loanInfoUrlNewAccount: string;
+    dpfListUrl: string;
+    transfersUrl: string;
+    loanListUrl: string;
+    loanInfoUrl: string;
+    locationUrl: string;
+    contactUrl: string;
+    servicePaymentsUrl: string;
+    loanPaymentsUrl: string;
+    firebaseFunctionsUrl: string;
+    updateTokenUrl: string;
+    contactPhone: string;
+    contactPhoneShow: string;
+    maxSecurityImages: number;
+    instabugAPIKey: string;
+    limitMinTransfersMyAccountsUSD: number;
+    limitMinTransfersMyAccountsPEN: number;
+    limitMinTransfersOtherAccountsUSD: number;
+    limitMinTransfersOtherAccountsPEN: number;
+    limitMinTransfersOtherBanksUSD: number;
+    limitMinTransfersOtherBanksPEN: number;
+    limitTransfersOtherAccountsUSD: number;
+    limitTransfersOtherAccountsPEN: number;
+    limitTransfersOtherBanksUSD: number;
+    limitTransfersOtherBanksPEN: number;
+    limitMinDPFOpenPEN: number;
+    limitMinDPFOpenUSD: number;
+    timeoutExpirationSignUp: number;
+    timeoutMinimalSignUp: number;
+    timeoutSignUpSMS: number;
+    timeoutTokenExpirationSignUp: number;
+    timeoutExpirationForgotPassword: number;
+    timeoutMinimalForgotPassword: number;
+    timeoutForgotPasswordSMS: number;
+    timeoutMinimalEnrollment: number;
+    timeoutEnrollmentSMS: number;
+    timeoutTokenExpirationForgotPassword: number;
+    timeoutClearDPFOpenForm: number;
+    timeoutResetAd: number;
+    numberDaysEmailPopupUpdate: number;
+    numberDaysEmailPopupAdd: number;
+    allowedSender: string;
+    widthReceipt: number;
+    maxLengthFrequentContact: number;
+    startTimeDPFOpening: string;
+    endTimeDPFOpening: string;
+    startTimeInterbanksOperations: string;
+    endTimeInterbanksOperations: string;
+    startTimePayments: string;
+    endTimePayments: string;
+    startTimePaymentsServices: string;
+    endTimePaymentsServices: string;
+    countryTimezone: string;
+    defaultTasksTime: string;
+    decimals: number;
+    emailTransfersImmediate: string;
+    maintenanceMode: boolean;
+    instantCashSuperRate: boolean;
+    maintenanceStatus: number;
+    maintenanceSchedule: any;
+    transfersAdCommission: boolean;
+    revisionVersion: string;
+    docDemo: string;
+    kDemo: string;
+    foryou: any;
+  };
+  debug: {
+    disableRemoteConfig?: boolean;
+    allowRoot?: boolean;
+    allowAllLoanPayments?: boolean;
+    showRecordTransfer?: boolean;
+    captchaNotRequired?: boolean;
+    allowEmulator?: boolean;
+  };
+  defaults: any;
+  recaptcha: any;
+  facephiAndroidLicence: any,
+  facephiIosLicence: any,
+};
+export default Config

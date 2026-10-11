@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  activeOpacity={0.95}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F28F00",
+        "borderRadius": 16,
+        "overflow": "hidden",
+        "position": "relative",
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    resizeMode="repeat"
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/bg-confite.png",
+      }
+    }
+    style={
+      Object {
+        "bottom": 0,
+        "height": "100%",
+        "left": 0,
+        "opacity": 0.2,
+        "position": "absolute",
+        "right": 0,
+        "tintColor": "#FFD100",
+        "top": 0,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    accessibilityLabel="adlarge_close"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    forwardedRef={[Function]}
+    hitSlop={
+      Object {
+        "bottom": 20,
+        "left": 20,
+        "right": 20,
+        "top": 20,
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+        "position": "absolute",
+        "right": 20,
+        "top": 20,
+      }
+    }
+  >
+    <Image
+      accessibilityLabel="buttonimage_image"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/icon-collapse-big.png",
+        }
+      }
+      style={
+        Object {
+          "height": 10,
+          "tintColor": "#FFFFFF",
+          "width": 17.5,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 36,
+        "padding": 20,
+        "paddingBottom": 15,
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="adlarge_message"
+      style={
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Brevia",
+          "fontSize": 15,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+        }
+      }
+    >
+      test
+    </Text>
+  </View>
+  <View
+    accessibilityLabel="adlarge_buttonexternal_loan"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "#00964B",
+        "borderRadius": 20,
+        "flexDirection": "row",
+        "marginBottom": 60,
+        "opacity": 1,
+        "padding": 10,
+        "paddingHorizontal": 24,
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="buttonexternal_text"
+      style={
+        Array [
+          Object {
+            "fontFamily": "Brevia",
+            "fontStyle": "normal",
+            "fontWeight": "700",
+          },
+          Object {
+            "color": "#656D78",
+            "fontSize": 13,
+          },
+          false,
+          Object {
+            "marginRight": 6,
+          },
+          undefined,
+          undefined,
+          Object {
+            "color": "#F7F9FC",
+            "fontSize": 16,
+          },
+        ]
+      }
+    >
+      Hazlo aquí
+    </Text>
+    <Image
+      accessibilityLabel="buttonexternal_image"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/arrow-icon.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 16,
+            "tintColor": "#434A54",
+            "width": 16,
+          },
+          Object {
+            "height": 12,
+            "tintColor": "#F7F9FC",
+            "width": 6,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

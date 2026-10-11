@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="sample"
+  collapsable={false}
+  style={
+    Object {
+      "backgroundColor": "#F7F9FC",
+      "elevation": 4,
+      "marginBottom": 0,
+      "shadowColor": "rgba(0,0,0,0.2)",
+      "shadowOffset": Object {
+        "height": -2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.5,
+      "shadowRadius": 2,
+    }
+  }
+>
+  <View
+    onLayout={[Function]}
+  >
+    <View />
+  </View>
+</View>
+`;

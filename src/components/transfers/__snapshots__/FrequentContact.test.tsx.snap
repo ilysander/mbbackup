@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="frequentcontact"
+  style={
+    Array [
+      Object {
+        "flexDirection": "column",
+        "position": "relative",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="frequentcontact_panel_title"
+    >
+      <Text
+        accessibilityLabel="sectionheader_text"
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "600",
+              "textAlign": "left",
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        Cuenta de destino
+      </Text>
+    </View>
+    <View
+      accessibilityLabel="modal_overlay"
+      activeOpacity={1}
+      editable={true}
+      frequentContact={
+        Object {
+          "accountNumber": "123456789",
+          "currency": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F7F9FC",
+            "borderColor": "#E6E9ED",
+            "borderRadius": 12,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginTop": 5,
+            "padding": 10,
+            "paddingLeft": 0,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Image
+            accessibilityLabel="frequentcontact_image_icon"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/frequent-icon-active.png",
+              }
+            }
+            style={
+              Object {
+                "alignSelf": "flex-start",
+                "height": 25,
+                "marginHorizontal": 5,
+                "marginTop": 5,
+                "tintColor": "#FFD100",
+                "width": 25,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "paddingLeft": 5,
+              }
+            }
+          >
+            <Text
+              accessibilityLabel="frequentcontact_text_alias"
+              style={
+                Object {
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                }
+              }
+            />
+            <View>
+              <Text
+                accessibilityLabel="frequentcontact_text_description"
+                style={
+                  Object {
+                    "color": "#656D78",
+                    "fontFamily": "Brevia",
+                    "fontSize": 12,
+                    "fontStyle": "normal",
+                    "fontWeight": "400",
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`with style 1`] = `
+<View
+  accessibilityLabel="frequentcontact"
+  style={
+    Array [
+      Object {
+        "flexDirection": "column",
+        "position": "relative",
+      },
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="frequentcontact_panel_title"
+    >
+      <Text
+        accessibilityLabel="sectionheader_text"
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "600",
+              "textAlign": "left",
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        Cuenta de destino
+      </Text>
+    </View>
+    <View
+      accessibilityLabel="modal_overlay"
+      activeOpacity={1}
+      editable={true}
+      frequentContact={
+        Object {
+          "accountNumber": "123456789",
+          "currency": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F7F9FC",
+            "borderColor": "#E6E9ED",
+            "borderRadius": 12,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginTop": 5,
+            "padding": 10,
+            "paddingLeft": 0,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Image
+            accessibilityLabel="frequentcontact_image_icon"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/frequent-icon-active.png",
+              }
+            }
+            style={
+              Object {
+                "alignSelf": "flex-start",
+                "height": 25,
+                "marginHorizontal": 5,
+                "marginTop": 5,
+                "tintColor": "#FFD100",
+                "width": 25,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "paddingLeft": 5,
+              }
+            }
+          >
+            <Text
+              accessibilityLabel="frequentcontact_text_alias"
+              style={
+                Object {
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                }
+              }
+            />
+            <View>
+              <Text
+                accessibilityLabel="frequentcontact_text_description"
+                style={
+                  Object {
+                    "color": "#656D78",
+                    "fontFamily": "Brevia",
+                    "fontSize": 12,
+                    "fontStyle": "normal",
+                    "fontWeight": "400",
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

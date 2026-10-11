@@ -1,0 +1,721 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <View
+    accessibilityLabel="transactionpaymentservices_panelitem_amount"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                undefined,
+              ]
+            }
+          >
+            Monto pagado
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#434A54",
+                    "fontFamily": "Brevia",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "700",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              S/ 778.50
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactionpaymentservices_panelitem_origin_account"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                undefined,
+              ]
+            }
+          >
+            Cuenta de origen
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#434A54",
+                    "fontFamily": "Brevia",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "700",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              Ahorro por un sueño (MN) - 6009363244
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactionpaymentservices_panelitem_bill_owner"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                undefined,
+              ]
+            }
+          >
+            Titular del recibo
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#434A54",
+                    "fontFamily": "Brevia",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "700",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              AGAPITO REYNAGA  JULIO JULIAN
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactionpaymentservices_panelitem_company"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                undefined,
+              ]
+            }
+          >
+            Empresa o servicio
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#434A54",
+                    "fontFamily": "Brevia",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "700",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              CABLE PERU COMAS E-COBROS
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactionpaymentservices_panelitem_client_code"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                undefined,
+              ]
+            }
+          >
+            Número de undefined
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#434A54",
+                    "fontFamily": "Brevia",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "700",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              1198933
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactionpaymentservices_panelitem_ticket_number"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                undefined,
+              ]
+            }
+          >
+            Número de recibo
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#434A54",
+                    "fontFamily": "Brevia",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "700",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              201901050003738
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactionpaymentservices_panelitem_date"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                undefined,
+              ]
+            }
+          >
+            Fecha y hora de pago
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#434A54",
+                    "fontFamily": "Brevia",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "700",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              Fecha inválida
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactionpaymentservices_panelitem_transaction_number_company"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                undefined,
+              ]
+            }
+          >
+            Número de operación de Cable Peru Comas E-cobros
+          </Text>
+          <View />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactionpaymentservices_panelitem_transaction_number_bank"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                undefined,
+              ]
+            }
+          >
+            Número de operación de Mibanco
+          </Text>
+          <View />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

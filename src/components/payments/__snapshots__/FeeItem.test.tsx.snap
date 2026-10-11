@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="focus_inactive"
+  duration={300}
+  isFocused={true}
+  style={
+    Array [
+      Object {
+        "marginLeft": -20,
+        "marginRight": -20,
+        "paddingLeft": 20,
+        "paddingRight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      accessibilityLabel="modal_overlay"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "opacity": 1,
+          "padding": 20,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="feeitem_quota"
+          style={
+            Object {
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          Cuota
+           
+        </Text>
+        <Text
+          accessibilityLabel="feeitem_amount"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 16,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+                "lineHeight": 19,
+              },
+              false,
+            ]
+          }
+        >
+          S/ 0.00
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="feeitem_due"
+          style={
+            Object {
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          Vence
+           
+          1 ene
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="focus_toggle"
+    activeOpacity={1}
+    style={
+      Object {
+        "bottom": 0,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 100,
+      }
+    }
+  />
+</View>
+`;

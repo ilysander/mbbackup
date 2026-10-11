@@ -1,0 +1,25 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/getlpdp",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Ocp-Apim-Subscription-Key": "sample",
+      "Ocp-Apim-Trace": true,
+      "X-Build-Id": "1234",
+      "X-Manufacturer": "abcde",
+      "X-Mobile-Service": "hms",
+      "X-Model": "abcde"
+    },
+    "body": {
+      "documentType": "1",
+      "documentNumber": "12345678"
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

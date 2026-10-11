@@ -1,0 +1,42 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/session",
+    "method": "GET",
+    "headers": {
+      "Content-Type": "application/json",
+      "Authorization": "sample"
+    },
+    "body": {}
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "550",
+      "date": "Wed, 19 Sep 2018 20:07:04 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "user": "88d1c2273e464117bfe805433f9c7ea3",
+        "loginCredentials": "SecondFactor-Password",
+        "environment": 299,
+        "createdAt": "2018-09-19T15:07:04.013-0500",
+        "modifiedAt": "2018-09-19T15:07:04.013-0500",
+        "expiresAt": "2019-09-19T15:12:04.013-0500",
+        "expired": false,
+        "status": "ACTIVE",
+        "lang": "es",
+        "ip": "200.60.21.201",
+        "channel": "frontend",
+        "userAgent": "ddb67d1eaf1cdbc328cc8d04f2cb8053ec7cd4c3"
+      }
+    }
+  }
+}

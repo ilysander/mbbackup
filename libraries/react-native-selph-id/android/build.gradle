@@ -1,0 +1,76 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.3'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        maven {
+            name = "PRO"
+            url = uri("https://facephicorp.jfrog.io/artifactory/maven-pro-fphi")
+            /*credentials {
+                username = System.getenv("USERNAME_ARTIFACTORY")
+                password = System.getenv("TOKEN_ARTIFACTORY")
+            }*/
+        }
+    }
+}
+
+/*repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'src/main/libs'
+    }
+}*/
+
+/*
+NOTE:
+If you're getting this error:
+Execution failed for task ':library_module:bundleDebugAar'.
+> Direct local .aar file dependencies are not supported when building an AAR. 
+
+THIS MUST BE ADDED IN THE build.gradle(android)
+allprojects {
+    repositories {
+        flatDir { dirs "$rootDir/../node_modules/react-native-selphid-plugin/android/src/main/libs" }
+    }
+}
+*/
+
+dependencies {
+    implementation 'com.facebook.react:react-native:+'
+    //implementation files('src/main/libs/fphi-selphid-core-android.aar')
+    //implementation files('src/main/libs/fphi-selphid-drawer-android.aar')
+    //implementation files('src/main/libs/fphi-selphid-extractor.aar')
+    implementation 'com.facephi.selphid.android:widget-ml:1.19.2' //ML
+    //implementation 'com.facephi.selphid.android:widget:1.19.2' // NOML
+    //implementation 'com.google.mlkit:text-recognition:16.0.0-beta6'
+    //implementation 'com.google.mlkit:text-recognition-japanese:16.0.0-beta6' //ADD THIS, ONLY IF YOU WORK WITH THIS SPECIFIC LANGUAGE
+    //implementation 'com.google.mlkit:text-recognition-korean:16.0.0-beta6' //ADD THIS, ONLY IF YOU WORK WITH THIS SPECIFIC LANGUAGE
+}

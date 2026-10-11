@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "450277272298",
+    "firebase_url": "https://hbmovil-40334.firebaseio.com",
+    "project_id": "hbmovil-40334",
+    "storage_bucket": "hbmovil-40334.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450277272298:android:b6aadaece4410230",
+        "android_client_info": {
+          "package_name": "com.mibanco.bancamovil.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450277272298-8dun4fuuavell3amhh5jl31aml512ll4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvxt37lgAPaEYdqYynhXe_SvZkcsJtK5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450277272298-8dun4fuuavell3amhh5jl31aml512ll4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "450277272298-o3veubimg92l17sqq2gmqmt0gv2n3b8a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mibanco.bancamovil.qa"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

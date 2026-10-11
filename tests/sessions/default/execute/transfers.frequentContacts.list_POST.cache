@@ -1,0 +1,47 @@
+{
+  "duration": 62,
+  "request": {
+    "url": "https://server/api/execute/transfers.frequentContacts.list",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {}
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "591",
+      "date": "Fri, 19 Oct 2018 22:39:35 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "5c8172d976034e859e1093fdade55a9b",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "frequentContactList": [
+          {
+            "idFrequentContact": 34,
+            "idUser": "3525a93459aa41619cd9034dee12968e",
+            "alias": "Felix chapaza",
+            "type": "inter",
+            "accountNumber": "6001816150",
+            "bankName": "Mibanco",
+            "currency": 1,
+            "documentType": null,
+            "documentNumber": null,
+            "beneficiaryName": null,
+            "beneficiaryFirstSurname": null,
+            "beneficiarySecondSurname": null
+          }
+        ]
+      }
+    }
+  }
+}

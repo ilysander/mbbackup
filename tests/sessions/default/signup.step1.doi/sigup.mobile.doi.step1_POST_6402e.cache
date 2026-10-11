@@ -1,0 +1,32 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/signup.step1.doi",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Ocp-Apim-Subscription-Key": "sample",
+      "X-Foo-To": "",
+      "X-Bar-Si": "sample",
+      "X-Build-Id": "1234",
+      "X-Manufacturer": "abcde",
+      "X-Model": "abcde"
+    },
+    "body": {
+      "channel": "phonegap",
+      "idActivity": "sigup.mobile.doi.step1",
+      "_documentNumber": "",
+      "_captcha": "",
+      "_selfie": "",
+      "_selfieTemplate": "",
+      "_doiOCRTokenFront": "",
+      "_doiOCRTokenBack": "",
+      "_doiFaceToken": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

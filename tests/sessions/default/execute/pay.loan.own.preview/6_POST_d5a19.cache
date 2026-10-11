@@ -1,0 +1,59 @@
+{
+  "duration": 1730,
+  "request": {
+    "url": "https://server/api/execute/pay.loan.own.preview/6",
+    "method": "POST",
+    "headers": {
+      "host": "qa.jerson.me:9443",
+      "content-type": "application/json",
+      "user-agent": "MibancoMovil/1 CFNetwork/975.0.3 Darwin/18.2.0",
+      "connection": "keep-alive",
+      "accept": "*/*",
+      "accept-language": "es-es",
+      "content-length": "307",
+      "accept-encoding": "br, gzip, deflate",
+      "authorization": "sample"
+    },
+    "body": {
+      "loan": "",
+      "loanAmount": "",
+      "debitAccount": "",
+      "valueDate": ""
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "603",
+      "date": "Tue, 11 Dec 2018 22:42:58 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "721b6dbf0a7e442aa70b3f9304095358",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "loanAmount": {
+          "currency": "2",
+          "quantity": 100
+        },
+        "totalAmount": "100.00",
+        "creditCurrency": "2",
+        "capital": "0.00",
+        "exchange": 1,
+        "debitAccount": "12550756",
+        "debitAccountLabel": "Cuenta ahorro negocios (ME) 217794304",
+        "loan": "31634365",
+        "loanLabel": "Préstamo ActivoFijo 110740091",
+        "interest": "100.00",
+        "overdue": "0.00",
+        "itf": "0.00",
+        "otherAmount": "0.00"
+      }
+    }
+  }
+}

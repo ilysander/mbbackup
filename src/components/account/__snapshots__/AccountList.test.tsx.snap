@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`session render just views 1`] = `
+<View
+  accessibilityLabel="test"
+>
+  <View
+    style={
+      Array [
+        false,
+        false,
+        Object {
+          "padding": 20,
+        },
+        undefined,
+      ]
+    }
+  >
+    <ActivityIndicator
+      color="#00964B"
+      size="large"
+    />
+  </View>
+</View>
+`;

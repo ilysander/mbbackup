@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay_container"
+  style={
+    Array [
+      Object {
+        "flexDirection": "column",
+        "marginBottom": 20,
+        "marginTop": 10,
+        "position": "relative",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="textinput_label_container"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "paddingBottom": 4,
+        },
+        false,
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+        undefined,
+      ]
+    }
+  >
+    <TextInput
+      accessibilityLabel="modal_overlay"
+      editable={true}
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onEmptyState={[Function]}
+      onError={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="#AAB2BD"
+      selectionColor="#3FB4E5"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F7F9FC",
+            "borderColor": "#E6E9ED",
+            "borderRadius": 12,
+            "borderWidth": 1,
+            "color": "#434A54",
+            "fontFamily": "Brevia",
+            "fontSize": 15,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 8,
+            "paddingTop": 10,
+            "textDecorationLine": "none",
+          },
+          false,
+          false,
+          false,
+          Object {
+            "paddingRight": 30,
+          },
+          undefined,
+        ]
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "position": "absolute",
+            "right": -30,
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
+</View>
+`;

@@ -1,0 +1,49 @@
+
+buildscript {
+    repositories {
+        jcenter()
+	maven {
+		url 'https://maven.google.com/'
+		name 'Google'
+	}
+    flatDir {
+            dirs 'src/main/libs'
+        }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.4'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'src/main/libs'
+    }
+}
+
+dependencies {
+    implementation 'com.facebook.react:react-native:+'
+    // implementation files('src/main/libs/fphi-core-widget-android.aar')
+    // implementation files('src/main/libs/fphi-selphi-widget-android.aar')
+    implementation "com.facephi.selphi.android:core:5.10.0"
+    implementation "com.facephi.selphi.android:widget:5.10.0"
+}

@@ -1,0 +1,59 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/deposit.create.preview/9",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "valueDate": "",
+      "depositDetails": {
+        "amount": "1000",
+        "rate": "2.9",
+        "generatedAmount": "1058.93",
+        "currency": "1",
+        "term": "721"
+      },
+      "debitAccount": "12640939",
+      "frequency": "0",
+      "renewDeposit": "",
+      "creditAccount": "12640939",
+      "mail": "Gerson.pardo@avantica.net"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "607",
+      "date": "Thu, 31 Jan 2019 21:50:05 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "f665979ecc0147f19bbbe566a5fdcba1",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "renewDeposit": false,
+        "depositCurrency": "1",
+        "amount": 1000,
+        "exchange": 1,
+        "debitAccount": "12640939",
+        "debitAccountLabel": "Cuenta ahorro negocios (MN) 3232229102",
+        "debitAccountCurrency": "1",
+        "creditAccount": "12640939",
+        "creditAccountLabel": "Cuenta ahorro negocios (MN) 3232229102",
+        "trea": "2.90",
+        "term": 721,
+        "interest": "58.93",
+        "returnDate": "21/01/2021",
+        "frequency": "0"
+      }
+    }
+  }
+}

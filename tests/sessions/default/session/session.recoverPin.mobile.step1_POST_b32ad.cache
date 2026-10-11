@@ -1,0 +1,21 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/session",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "channel": "phonegap",
+      "idActivity": "session.recoverPin.mobile.step1",
+      "_debitcardNumber": "",
+      "_debitcardPin": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

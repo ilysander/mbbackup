@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="detailrow"
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="detailrow_label"
+      style={
+        Array [
+          Object {
+            "color": "#656D78",
+            "fontFamily": "Brevia",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          },
+          undefined,
+        ]
+      }
+    >
+      Depósito
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="detailrow_value"
+      style={
+        Array [
+          Object {
+            "alignItems": "flex-end",
+            "color": "#656D78",
+            "fontFamily": "Brevia",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          },
+          undefined,
+        ]
+      }
+    >
+      Préstamo Vivienda - 108624815
+    </Text>
+  </View>
+</View>
+`;

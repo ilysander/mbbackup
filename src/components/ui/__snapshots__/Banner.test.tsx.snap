@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="accountfield_touchable_edit"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F28F00",
+        "borderColor": "#F28F00",
+        "borderWidth": 0,
+        "paddingBottom": 0,
+      },
+      Object {
+        "borderRadius": 12,
+        "elevation": 4,
+        "overflow": "visible",
+        "shadowColor": "#AAB2BD",
+        "shadowOffset": Object {
+          "height": 3,
+          "width": 0,
+        },
+        "shadowOpacity": 0.5,
+        "shadowRadius": 8,
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/bg-confite-large.png",
+      }
+    }
+    style={
+      Object {
+        "bottom": 0,
+        "height": "100%",
+        "left": 0,
+        "opacity": 0.09,
+        "position": "absolute",
+        "right": 0,
+        "tintColor": "#FFFFFF",
+        "top": 0,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "paddingVertical": 15,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "paddingHorizontal": 20,
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="banner_message"
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Brevia",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+            "textAlign": "left",
+          }
+        }
+      >
+        test
+      </Text>
+      <View
+        accessibilityLabel="loanresume_buttonlink_loan"
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "alignContent": "center",
+              "alignItems": "center",
+              "alignSelf": "center",
+              "flexDirection": "row",
+              "padding": 6,
+            },
+            Object {
+              "justifyContent": "flex-start",
+              "paddingLeft": 0,
+              "paddingVertical": 15,
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <Image
+          accessibilityLabel="buttonexternal_image"
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/arrow-icon.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 12,
+                "marginLeft": 3,
+                "tintColor": "#00964B",
+                "width": 12,
+              },
+              Object {
+                "tintColor": "#3FB4E5",
+              },
+              Object {
+                "tintColor": "#FFFFFF",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

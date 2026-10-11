@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  supportedOrientations={
+    Array [
+      "portrait",
+      "portrait-upside-down",
+      "landscape",
+      "landscape-left",
+      "landscape-right",
+    ]
+  }
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessibilityLabel="keyboardspacing"
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": "100%",
+        },
+        Array [
+          Object {
+            "bottom": 0,
+            "justifyContent": "center",
+            "left": 0,
+            "paddingHorizontal": 20,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          undefined,
+        ],
+        undefined,
+        false,
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="modal_overlay"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+    <View
+      accessibilityLabel="modal_content"
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 6,
+            "marginHorizontal": 20,
+            "marginVertical": 40,
+            "width": "100%",
+          },
+          Object {
+            "paddingTop": 30,
+          },
+          undefined,
+        ]
+      }
+    >
+      <RCTScrollView
+        bounces={false}
+        keyboardShouldPersistTaps="handled"
+      >
+        <View>
+          <View
+            accessibilityLabel="modal_body"
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "borderRadius": 6,
+                "overflow": "hidden",
+                "paddingBottom": 0,
+                "paddingHorizontal": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "marginBottom": 30,
+                  "marginHorizontal": 20,
+                  "marginTop": 0,
+                }
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#FFFFFF",
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  accessibilityLabel="alertmessage_content"
+                  style={
+                    Object {
+                      "alignItems": "center",
+                    }
+                  }
+                >
+                  <Image
+                    resizeMode="stretch"
+                    source={
+                      Object {
+                        "testUri": "../../../src/assets/images/adn-alerta.png",
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "height": 70,
+                          "width": 70,
+                        },
+                        Object {
+                          "height": 80,
+                          "width": 80,
+                        },
+                      ]
+                    }
+                  />
+                  <Text
+                    accessibilityLabel="alertmessage_text_title"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#F28F00",
+                          "fontFamily": "Brevia",
+                          "fontSize": 18,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "paddingVertical": 20,
+                          "textAlign": "center",
+                        },
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontSize": 20,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "lineHeight": 25,
+                          "marginVertical": 10,
+                          "paddingVertical": 0,
+                        },
+                      ]
+                    }
+                  >
+                    string
+                  </Text>
+                  <Text
+                    accessibilityLabel="alertmessage_text_message"
+                    style={
+                      Object {
+                        "color": "#434A54",
+                        "fontFamily": "Brevia",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "400",
+                        "marginBottom": 30,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    string
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <View
+                  accessibilityLabel="loginincorrectinfomodal_btn_ok"
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#00964B",
+                      "borderColor": "#00964B",
+                      "borderRadius": 25,
+                      "borderWidth": 1,
+                      "flexDirection": "row",
+                      "height": 40,
+                      "justifyContent": "center",
+                      "margin": 0,
+                      "minHeight": 40,
+                      "opacity": 1,
+                      "paddingHorizontal": 12,
+                      "paddingVertical": 9,
+                      "width": "100%",
+                      "zIndex": 1,
+                    }
+                  }
+                >
+                  <Text
+                    accessibilityLabel="button_text"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "Brevia",
+                          "fontSize": 16,
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                          "textAlign": "center",
+                        },
+                        undefined,
+                        undefined,
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "Brevia",
+                          "fontSize": 16,
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                        },
+                      ]
+                    }
+                  >
+                    Entiendo
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</Modal>
+`;

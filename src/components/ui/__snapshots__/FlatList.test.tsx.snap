@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="morecontainer"
+  style={
+    Object {
+      "flex": 1,
+      "position": "relative",
+    }
+  }
+>
+  <RCTScrollView
+    accessibilityLabel="flatlist"
+    data={Array []}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={100}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View />
+  </RCTScrollView>
+  <View
+    accessibilityLabel="morecontainer_scrollmore"
+    collapsable={false}
+    style={
+      Object {
+        "bottom": -100,
+        "opacity": 0,
+        "position": "absolute",
+        "right": 0,
+        "zIndex": 1000,
+      }
+    }
+  >
+    <View
+      accessibilityLabel="scrollmore_button"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        accessibilityLabel="scrollmore_image"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+          }
+        }
+        style={
+          Object {
+            "height": 70,
+            "width": 70,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

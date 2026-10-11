@@ -1,0 +1,53 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfers.internal.preview/4",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "amount": {
+        "quantity": "60",
+        "currency": "1"
+      },
+      "originAccount": "31725125",
+      "destinationAccount": "31725126"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "414",
+      "date": "Wed, 03 Oct 2018 14:39:13 GMT",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "cache-control": "no-store, no-cache",
+      "pragma": "no-cache",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "d925e8263bb54e259f3debe7927dcc6c",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "amount": {
+          "currency": "2",
+          "quantity": 20
+        },
+        "originAccount": "Grupo Solidario (MN) 6009363228",
+        "destinationAccount": "Full ahorro (ME) 6009363210",
+        "debitAmount": 66.7,
+        "exchangeRate": 3.335,
+        "currencyLabel": "1"
+      }
+    }
+  }
+
+}

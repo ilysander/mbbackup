@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "paddingHorizontal": 4,
+        "paddingVertical": 16,
+        "width": "100%",
+      },
+      undefined,
+      undefined,
+    ]
+  }
+/>
+`;

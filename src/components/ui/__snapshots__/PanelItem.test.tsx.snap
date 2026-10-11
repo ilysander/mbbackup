@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="transactionpaymentloan_panelitem_transaction_type"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "justifyContent": "center",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#CCD1D9",
+            "fontFamily": "Brevia",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          }
+        }
+      >
+        Descripción
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignSelf": "flex-end",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#656D78",
+            "fontFamily": "Brevia",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          }
+        }
+      >
+        TransferDescription
+      </Text>
+    </View>
+  </View>
+</View>
+`;

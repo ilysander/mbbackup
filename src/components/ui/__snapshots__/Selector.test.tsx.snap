@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+  onSelectIndex={[MockFunction]}
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
+  <View>
+    <View
+      accessibilityLabel="selector_item"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "opacity": 1,
+          "padding": 20,
+        }
+      }
+    >
+      <Image
+        accessibilityLabel="item_image"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/radio-button-unselected.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 24,
+              "marginRight": 10,
+              "marginVertical": -4,
+              "tintColor": "#656D78",
+              "width": 24,
+            },
+            false,
+          ]
+        }
+      />
+      <View
+        style={Object {}}
+      >
+        <Text
+          accessibilityLabel="item_label"
+          style={
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          sample1
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#E6E9ED",
+            "height": 1,
+          },
+          Object {
+            "marginHorizontal": 20,
+          },
+        ]
+      }
+    />
+  </View>
+  <View>
+    <View
+      accessibilityLabel="selector_item"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "opacity": 1,
+          "padding": 20,
+        }
+      }
+    >
+      <Image
+        accessibilityLabel="item_image"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/radio-button-unselected.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 24,
+              "marginRight": 10,
+              "marginVertical": -4,
+              "tintColor": "#656D78",
+              "width": 24,
+            },
+            false,
+          ]
+        }
+      />
+      <View
+        style={Object {}}
+      >
+        <Text
+          accessibilityLabel="item_label"
+          style={
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          sample2
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

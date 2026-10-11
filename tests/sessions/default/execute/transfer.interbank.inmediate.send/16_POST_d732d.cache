@@ -1,0 +1,25 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfer.interbank.inmediate.send/16",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "isFrequentContact": false,
+      "frequentContact": "",
+      "aceptTermAndCondition": "",
+      "destinationAccount": "",
+      "debitAccount": "",
+      "amount": "",
+      "mail": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

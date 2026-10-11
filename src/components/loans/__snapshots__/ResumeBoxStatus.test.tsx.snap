@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "marginLeft": 10,
+      },
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/arrow-icon.png",
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": 16,
+        "resizeMode": "contain",
+        "tintColor": "#71B74C",
+        "width": 16,
+      }
+    }
+  />
+  <Text
+    accessibilityLabel="resumeboxstatus_text_messagestatus"
+    style={
+      Array [
+        Object {
+          "color": "#434A54",
+          "fontFamily": "Brevia",
+          "fontSize": 16,
+          "fontStyle": "normal",
+          "fontWeight": "600",
+          "marginTop": 3,
+        },
+      ]
+    }
+  >
+    test
+  </Text>
+</View>
+`;

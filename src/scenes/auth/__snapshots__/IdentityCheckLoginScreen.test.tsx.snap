@@ -1,0 +1,820 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="container"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="morecontainer"
+    style={
+      Object {
+        "flex": 1,
+        "position": "relative",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="keyboardavoidingview"
+      onChangeDimensions={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+            "width": "100%",
+          },
+          Object {
+            "flex": 1,
+            "position": "relative",
+          },
+          false,
+          false,
+        ]
+      }
+    >
+      <RCTScrollView
+        accessibilityLabel="keyboardavoidingview_scrollview"
+        contentContainerStyle={
+          Array [
+            Object {
+              "minHeight": 1250,
+            },
+            false,
+          ]
+        }
+        keyboardShouldPersistTaps="handled"
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onScroll={[Function]}
+        scrollEventThrottle={100}
+      >
+        <View>
+          <RCTSafeAreaView
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                undefined,
+              ]
+            }
+          >
+            <View
+              accessibilityLabel="content"
+              style={
+                Array [
+                  Object {
+                    "paddingHorizontal": 20,
+                  },
+                  Object {
+                    "justifyContent": "center",
+                  },
+                  Object {
+                    "flex": 1,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                accessibilityLabel="identitycheckloginscreen_header"
+                style={
+                  Array [
+                    Object {
+                      "overflow": "visible",
+                    },
+                    Object {
+                      "marginBottom": 20,
+                      "marginTop": 30,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityLabel="header_text_title"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontSize": 22,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "lineHeight": 25,
+                          "textAlign": "left",
+                        },
+                        undefined,
+                        Object {
+                          "textAlign": "center",
+                        },
+                        Object {
+                          "fontFamily": "Brevia",
+                          "fontSize": 28,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "lineHeight": 38,
+                        },
+                      ]
+                    }
+                  >
+                    Antes de ingresar
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "marginTop": 2,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityLabel="header_text_subtitle"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#434A54",
+                          "fontFamily": "Brevia",
+                          "fontSize": 13,
+                          "fontStyle": "normal",
+                          "fontWeight": "400",
+                          "lineHeight": 15,
+                          "textAlign": "left",
+                        },
+                        Object {
+                          "textAlign": "center",
+                        },
+                        Object {
+                          "fontFamily": "Brevia",
+                          "fontSize": 14,
+                          "fontStyle": "normal",
+                          "fontWeight": "400",
+                          "lineHeight": 18,
+                          "marginTop": 10,
+                        },
+                      ]
+                    }
+                  >
+                    Por tu seguridad, validaremos tus datos
+con una foto de tu DNI y una selfie.
+                  </Text>
+                </View>
+              </View>
+              <View
+                accessibilityLabel="card"
+                removeClippedSubviews={false}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderColor": "#E6E9ED",
+                      "borderRadius": 12,
+                      "borderWidth": 0,
+                      "elevation": 3,
+                      "overflow": "visible",
+                      "shadowColor": "#434A54",
+                      "shadowOffset": Object {
+                        "height": 4,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.1,
+                      "shadowRadius": 16,
+                    },
+                    Object {
+                      "padding": 20,
+                    },
+                    Object {
+                      "borderRadius": 8,
+                      "marginBottom": 20,
+                    },
+                  ]
+                }
+              >
+                <View
+                  accessibilityLabel="validation_dni_front"
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    accessibilityLabel="facephibutton_sectionheader_title"
+                    style={
+                      Object {
+                        "flex": 0.7,
+                      }
+                    }
+                  >
+                    <Text
+                      accessibilityLabel="sectionheader_text"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "600",
+                            "textAlign": "left",
+                          },
+                          undefined,
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "textAlign": "left",
+                          },
+                        ]
+                      }
+                    >
+                      Toma una foto a tu
+                    </Text>
+                    <Text
+                      accessibilityLabel="sectionheader_text_subtitle"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 13,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "textAlign": "left",
+                          },
+                          undefined,
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "600",
+                            "textAlign": "left",
+                          },
+                        ]
+                      }
+                    >
+                      DNI por adelante
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flex": 0.19,
+                        "justifyContent": "flex-end",
+                      }
+                    }
+                  >
+                    <Image
+                      resizeMode="contain"
+                      source={
+                        Object {
+                          "testUri": "../../../src/assets/images/dni-front-icon.png",
+                        }
+                      }
+                      style={
+                        Object {
+                          "height": 36,
+                          "resizeMode": "contain",
+                          "tintColor": "#71B74C",
+                          "width": 48,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flex": 0.11,
+                        "flexDirection": "row",
+                        "justifyContent": "flex-start",
+                      }
+                    }
+                  >
+                    <View>
+                      <Image
+                        accessibilityLabel="facephibutton_image_arrow"
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/arrow-icon.png",
+                          }
+                        }
+                        style={
+                          Array [
+                            Object {
+                              "height": 12,
+                              "marginLeft": 16,
+                              "resizeMode": "contain",
+                              "tintColor": "#AAB2BD",
+                              "width": 6,
+                            },
+                          ]
+                        }
+                      />
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                accessibilityLabel="card"
+                removeClippedSubviews={false}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderColor": "#E6E9ED",
+                      "borderRadius": 12,
+                      "borderWidth": 0,
+                      "elevation": 3,
+                      "overflow": "visible",
+                      "shadowColor": "#434A54",
+                      "shadowOffset": Object {
+                        "height": 4,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.1,
+                      "shadowRadius": 16,
+                    },
+                    Object {
+                      "padding": 20,
+                    },
+                    Object {
+                      "borderRadius": 8,
+                      "marginBottom": 20,
+                    },
+                  ]
+                }
+              >
+                <View
+                  accessibilityLabel="validation_dni_back"
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    accessibilityLabel="facephibutton_sectionheader_title"
+                    style={
+                      Object {
+                        "flex": 0.7,
+                      }
+                    }
+                  >
+                    <Text
+                      accessibilityLabel="sectionheader_text"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "600",
+                            "textAlign": "left",
+                          },
+                          undefined,
+                          Object {
+                            "color": "#CCD1D9",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "textAlign": "left",
+                          },
+                        ]
+                      }
+                    >
+                      Toma una foto a tu
+                    </Text>
+                    <Text
+                      accessibilityLabel="sectionheader_text_subtitle"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 13,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "textAlign": "left",
+                          },
+                          undefined,
+                          Object {
+                            "color": "#CCD1D9",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "600",
+                            "textAlign": "left",
+                          },
+                        ]
+                      }
+                    >
+                      DNI por atrás
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flex": 0.19,
+                        "justifyContent": "flex-end",
+                      }
+                    }
+                  >
+                    <Image
+                      resizeMode="contain"
+                      source={
+                        Object {
+                          "testUri": "../../../src/assets/images/dni-back-icon.png",
+                        }
+                      }
+                      style={
+                        Object {
+                          "height": 36,
+                          "resizeMode": "contain",
+                          "tintColor": "#CCD1D9",
+                          "width": 48,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flex": 0.11,
+                        "flexDirection": "row",
+                        "justifyContent": "flex-start",
+                      }
+                    }
+                  >
+                    <View>
+                      <Image
+                        accessibilityLabel="facephibutton_image_arrow"
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/arrow-icon.png",
+                          }
+                        }
+                        style={
+                          Array [
+                            Object {
+                              "height": 12,
+                              "marginLeft": 16,
+                              "resizeMode": "contain",
+                              "tintColor": "#AAB2BD",
+                              "width": 6,
+                            },
+                          ]
+                        }
+                      />
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                accessibilityLabel="card"
+                removeClippedSubviews={false}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderColor": "#E6E9ED",
+                      "borderRadius": 12,
+                      "borderWidth": 0,
+                      "elevation": 3,
+                      "overflow": "visible",
+                      "shadowColor": "#434A54",
+                      "shadowOffset": Object {
+                        "height": 4,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.1,
+                      "shadowRadius": 16,
+                    },
+                    Object {
+                      "padding": 20,
+                    },
+                    Object {
+                      "borderRadius": 8,
+                      "marginBottom": 20,
+                    },
+                  ]
+                }
+              >
+                <View
+                  accessibilityLabel="validation_live"
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    accessibilityLabel="facephibutton_sectionheader_title"
+                    style={
+                      Object {
+                        "flex": 0.7,
+                      }
+                    }
+                  >
+                    <Text
+                      accessibilityLabel="sectionheader_text"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "600",
+                            "textAlign": "left",
+                          },
+                          undefined,
+                          Object {
+                            "color": "#CCD1D9",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "textAlign": "left",
+                          },
+                        ]
+                      }
+                    >
+                      Tómate una
+                    </Text>
+                    <Text
+                      accessibilityLabel="sectionheader_text_subtitle"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#656D78",
+                            "fontFamily": "Brevia",
+                            "fontSize": 13,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "textAlign": "left",
+                          },
+                          undefined,
+                          Object {
+                            "color": "#CCD1D9",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "600",
+                            "textAlign": "left",
+                          },
+                        ]
+                      }
+                    >
+                      Selfie
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flex": 0.19,
+                        "justifyContent": "flex-end",
+                      }
+                    }
+                  >
+                    <Image
+                      resizeMode="contain"
+                      source={
+                        Object {
+                          "testUri": "../../../src/assets/images/selfie-icon.png",
+                        }
+                      }
+                      style={
+                        Object {
+                          "height": 36,
+                          "resizeMode": "contain",
+                          "tintColor": "#CCD1D9",
+                          "width": 48,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flex": 0.11,
+                        "flexDirection": "row",
+                        "justifyContent": "flex-start",
+                      }
+                    }
+                  >
+                    <View>
+                      <Image
+                        accessibilityLabel="facephibutton_image_arrow"
+                        source={
+                          Object {
+                            "testUri": "../../../src/assets/images/arrow-icon.png",
+                          }
+                        }
+                        style={
+                          Array [
+                            Object {
+                              "height": 12,
+                              "marginLeft": 16,
+                              "resizeMode": "contain",
+                              "tintColor": "#AAB2BD",
+                              "width": 6,
+                            },
+                          ]
+                        }
+                      />
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                accessibilityLabel="identitycheckloginscreen_button_continue"
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#CCD1D9",
+                    "borderColor": "#CCD1D9",
+                    "borderRadius": 25,
+                    "borderWidth": 1,
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "margin": 0,
+                    "marginBottom": 40,
+                    "marginTop": 20,
+                    "minHeight": 40,
+                    "opacity": 1,
+                    "paddingHorizontal": 12,
+                    "zIndex": 1,
+                  }
+                }
+              >
+                <Text
+                  accessibilityLabel="button_text"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#FFFFFF",
+                        "fontFamily": "Brevia",
+                        "fontSize": 16,
+                        "fontStyle": "normal",
+                        "fontWeight": "600",
+                        "textAlign": "center",
+                      },
+                      undefined,
+                      undefined,
+                      Object {
+                        "fontSize": 16,
+                      },
+                    ]
+                  }
+                >
+                  Validar e ingresar
+                </Text>
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+      </RCTScrollView>
+      <View
+        accessibilityLabel="morecontainer_scrollmore"
+        collapsable={false}
+        style={
+          Object {
+            "bottom": -100,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "zIndex": 1000,
+          }
+        }
+      >
+        <View
+          accessibilityLabel="scrollmore_button"
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            accessibilityLabel="scrollmore_image"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+              }
+            }
+            style={
+              Object {
+                "height": 70,
+                "width": 70,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

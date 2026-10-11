@@ -1,0 +1,22 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfers.local.preview/5",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "debitAccount": "31239124",
+      "Amount": {
+        "currency": "1"
+      }
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

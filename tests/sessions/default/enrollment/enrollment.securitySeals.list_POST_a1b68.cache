@@ -1,0 +1,21 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://bmesrvd755.domibco.com.pe:8443/api/enrollment",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "channel": "phonegap",
+      "idActivity": "enrollment.securitySeals.list",
+      "_exchangeToken": "",
+      "inLogin": "false"
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

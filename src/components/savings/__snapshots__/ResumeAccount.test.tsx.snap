@@ -1,0 +1,975 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#71B74C",
+        "borderBottomLeftRadius": 24,
+        "borderBottomRightRadius": 24,
+        "borderColor": "#F7F9FC",
+        "borderWidth": 0,
+        "elevation": 4,
+        "overflow": "visible",
+        "shadowColor": "#434A54",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "shadowRadius": 16,
+      }
+    }
+  >
+    <View
+      accessibilityLabel="card"
+      removeClippedSubviews={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#E6E9ED",
+            "borderRadius": 12,
+            "borderWidth": 0,
+            "elevation": 3,
+            "overflow": "visible",
+            "shadowColor": "#434A54",
+            "shadowOffset": Object {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.1,
+            "shadowRadius": 16,
+          },
+          undefined,
+          Array [
+            Object {
+              "borderBottomLeftRadius": 24,
+              "borderBottomRightRadius": 24,
+              "borderTopLeftRadius": 0,
+              "borderTopRightRadius": 0,
+              "flex": 1,
+              "paddingBottom": 30,
+              "paddingHorizontal": 40,
+              "paddingTop": 30,
+            },
+          ],
+        ]
+      }
+    >
+      <View
+        accessibilityLabel="resumeaccount_renameaccount"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "flexDirection": "row",
+            },
+            Object {
+              "marginBottom": 10,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+                "lineHeight": 25,
+                "paddingTop": 2,
+              }
+            }
+          >
+            Ahorro por un sueño (MN)
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginLeft": 10,
+              "marginTop": 4,
+              "minWidth": 26,
+            }
+          }
+        >
+          <View
+            accessibilityLabel="renameaccount_button_edit"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#00964B",
+                "borderRadius": 25,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "margin": 0,
+                "minHeight": 30,
+                "opacity": 1,
+                "paddingHorizontal": 10,
+                "zIndex": 1,
+              }
+            }
+          >
+            <Image
+              accessibilityLabel="button_image"
+              source={
+                Object {
+                  "testUri": "../../../src/assets/images/icon-edit.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontSize": 14,
+                    "marginRight": 4,
+                  },
+                  Object {
+                    "color": "#00964B",
+                    "height": 16,
+                    "tintColor": "#00964B",
+                    "width": 15,
+                  },
+                ]
+              }
+            />
+            <Text
+              accessibilityLabel="button_text"
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Brevia",
+                    "fontSize": 16,
+                    "fontStyle": "normal",
+                    "fontWeight": "600",
+                    "textAlign": "center",
+                  },
+                  Object {
+                    "fontSize": 14,
+                  },
+                  Object {
+                    "color": "#00964B",
+                  },
+                  Object {
+                    "color": "#00964B",
+                    "fontFamily": "Brevia",
+                    "fontSize": 13,
+                    "fontStyle": "normal",
+                    "fontWeight": "600",
+                  },
+                ]
+              }
+            >
+              Editar
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="resumeaccount_text_available_balance"
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": 2,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="detailrow_label"
+            style={
+              Array [
+                Object {
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#71B74C",
+                  "fontFamily": "Brevia",
+                  "fontSize": 18,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                },
+              ]
+            }
+          >
+            Saldo disponible
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="detailrow_value"
+            style={
+              Array [
+                Object {
+                  "alignItems": "flex-end",
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#71B74C",
+                  "fontFamily": "Brevia",
+                  "fontSize": 18,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                },
+              ]
+            }
+          >
+            S/ 5,409.26
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="resumeaccount_text_account_balance"
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": 2,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="detailrow_label"
+            style={
+              Array [
+                Object {
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+              ]
+            }
+          >
+            Saldo contable
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="detailrow_value"
+            style={
+              Array [
+                Object {
+                  "alignItems": "flex-end",
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+              ]
+            }
+          >
+            S/ 5,409.26
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="card"
+    removeClippedSubviews={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#E6E9ED",
+          "borderRadius": 12,
+          "borderWidth": 0,
+          "elevation": 3,
+          "overflow": "visible",
+          "shadowColor": "#434A54",
+          "shadowOffset": Object {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.1,
+          "shadowRadius": 16,
+        },
+        undefined,
+        Object {
+          "marginHorizontal": 20,
+          "marginTop": 30,
+          "padding": 20,
+        },
+      ]
+    }
+  >
+    <Text
+      accessibilityLabel="resumeaccount_text_accountnumber_label"
+      selectable={true}
+      style={
+        Object {
+          "color": "#656D78",
+          "fontFamily": "Brevia",
+          "fontSize": 13,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        }
+      }
+    >
+      N° de cuenta
+      :
+    </Text>
+    <Text
+      accessibilityLabel="resumeaccount_text_accountnumber"
+      selectable={true}
+      style={
+        Object {
+          "color": "#434A54",
+          "fontFamily": "Brevia",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "600",
+          "paddingBottom": 5,
+        }
+      }
+    >
+      6009363244
+    </Text>
+    <Text
+      accessibilityLabel="resumeaccount_text_cci_label"
+      style={
+        Object {
+          "color": "#656D78",
+          "fontFamily": "Brevia",
+          "fontSize": 13,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        }
+      }
+    >
+      N° de cuenta interbancario (CCI)
+      :
+    </Text>
+    <Text
+      accessibilityLabel="resumeaccount_text_cci"
+      selectable={true}
+      style={
+        Object {
+          "color": "#434A54",
+          "fontFamily": "Brevia",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "600",
+        }
+      }
+    >
+      04901200600936324480
+    </Text>
+    <View
+      accessibilityLabel="resumeaccount_button_share"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "height": 24,
+          "opacity": 1,
+          "position": "absolute",
+          "right": 20,
+          "top": "60%",
+          "width": 23,
+        }
+      }
+    >
+      <Image
+        accessibilityLabel="accountitem_icon"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/share-icon.png",
+          }
+        }
+        style={
+          Object {
+            "height": 24,
+            "tintColor": "#00964B",
+            "width": 23,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`render just views 2`] = `
+<View
+  accessibilityLabel="test"
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#71B74C",
+        "borderBottomLeftRadius": 24,
+        "borderBottomRightRadius": 24,
+        "borderColor": "#F7F9FC",
+        "borderWidth": 0,
+        "elevation": 4,
+        "overflow": "visible",
+        "shadowColor": "#434A54",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "shadowRadius": 16,
+      }
+    }
+  >
+    <View
+      accessibilityLabel="card"
+      removeClippedSubviews={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#E6E9ED",
+            "borderRadius": 12,
+            "borderWidth": 0,
+            "elevation": 3,
+            "overflow": "visible",
+            "shadowColor": "#434A54",
+            "shadowOffset": Object {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.1,
+            "shadowRadius": 16,
+          },
+          undefined,
+          Array [
+            Object {
+              "borderBottomLeftRadius": 24,
+              "borderBottomRightRadius": 24,
+              "borderTopLeftRadius": 0,
+              "borderTopRightRadius": 0,
+              "flex": 1,
+              "paddingBottom": 30,
+              "paddingHorizontal": 40,
+              "paddingTop": 30,
+            },
+          ],
+        ]
+      }
+    >
+      <View
+        accessibilityLabel="resumeaccount_renameaccount"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "flexDirection": "row",
+            },
+            Object {
+              "marginBottom": 10,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+                "lineHeight": 25,
+                "paddingTop": 2,
+              }
+            }
+          >
+            Ahorro por un sueño (MN)
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginLeft": 10,
+              "marginTop": 4,
+              "minWidth": 26,
+            }
+          }
+        >
+          <View
+            accessibilityLabel="renameaccount_button_edit"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#00964B",
+                "borderRadius": 25,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "margin": 0,
+                "minHeight": 30,
+                "opacity": 1,
+                "paddingHorizontal": 10,
+                "zIndex": 1,
+              }
+            }
+          >
+            <Image
+              accessibilityLabel="button_image"
+              source={
+                Object {
+                  "testUri": "../../../src/assets/images/icon-edit.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontSize": 14,
+                    "marginRight": 4,
+                  },
+                  Object {
+                    "color": "#00964B",
+                    "height": 16,
+                    "tintColor": "#00964B",
+                    "width": 15,
+                  },
+                ]
+              }
+            />
+            <Text
+              accessibilityLabel="button_text"
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Brevia",
+                    "fontSize": 16,
+                    "fontStyle": "normal",
+                    "fontWeight": "600",
+                    "textAlign": "center",
+                  },
+                  Object {
+                    "fontSize": 14,
+                  },
+                  Object {
+                    "color": "#00964B",
+                  },
+                  Object {
+                    "color": "#00964B",
+                    "fontFamily": "Brevia",
+                    "fontSize": 13,
+                    "fontStyle": "normal",
+                    "fontWeight": "600",
+                  },
+                ]
+              }
+            >
+              Editar
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="resumeaccount_text_available_balance"
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": 2,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="detailrow_label"
+            style={
+              Array [
+                Object {
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#71B74C",
+                  "fontFamily": "Brevia",
+                  "fontSize": 18,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                },
+              ]
+            }
+          >
+            Saldo disponible
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="detailrow_value"
+            style={
+              Array [
+                Object {
+                  "alignItems": "flex-end",
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#71B74C",
+                  "fontFamily": "Brevia",
+                  "fontSize": 18,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                },
+              ]
+            }
+          >
+            S/ 0.00
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="resumeaccount_text_account_balance"
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": 2,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="detailrow_label"
+            style={
+              Array [
+                Object {
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+              ]
+            }
+          >
+            Saldo contable
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="detailrow_value"
+            style={
+              Array [
+                Object {
+                  "alignItems": "flex-end",
+                  "color": "#656D78",
+                  "fontFamily": "Brevia",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#434A54",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                },
+              ]
+            }
+          >
+            S/ 0.00
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="card"
+    removeClippedSubviews={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#E6E9ED",
+          "borderRadius": 12,
+          "borderWidth": 0,
+          "elevation": 3,
+          "overflow": "visible",
+          "shadowColor": "#434A54",
+          "shadowOffset": Object {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.1,
+          "shadowRadius": 16,
+        },
+        undefined,
+        Object {
+          "marginHorizontal": 20,
+          "marginTop": 30,
+          "padding": 20,
+        },
+      ]
+    }
+  >
+    <Text
+      accessibilityLabel="resumeaccount_text_accountnumber_label"
+      selectable={true}
+      style={
+        Object {
+          "color": "#656D78",
+          "fontFamily": "Brevia",
+          "fontSize": 13,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        }
+      }
+    >
+      N° de cuenta
+      :
+    </Text>
+    <Text
+      accessibilityLabel="resumeaccount_text_accountnumber"
+      selectable={true}
+      style={
+        Object {
+          "color": "#434A54",
+          "fontFamily": "Brevia",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "600",
+          "paddingBottom": 5,
+        }
+      }
+    >
+      6009363244
+    </Text>
+    <Text
+      accessibilityLabel="resumeaccount_text_cci_label"
+      style={
+        Object {
+          "color": "#656D78",
+          "fontFamily": "Brevia",
+          "fontSize": 13,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        }
+      }
+    >
+      N° de cuenta interbancario (CCI)
+      :
+    </Text>
+    <Text
+      accessibilityLabel="resumeaccount_text_cci"
+      selectable={true}
+      style={
+        Object {
+          "color": "#434A54",
+          "fontFamily": "Brevia",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "600",
+        }
+      }
+    >
+      04901200600936324480
+    </Text>
+    <View
+      accessibilityLabel="resumeaccount_button_share"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "height": 24,
+          "opacity": 1,
+          "position": "absolute",
+          "right": 20,
+          "top": "60%",
+          "width": 23,
+        }
+      }
+    >
+      <Image
+        accessibilityLabel="accountitem_icon"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/share-icon.png",
+          }
+        }
+        style={
+          Object {
+            "height": 24,
+            "tintColor": "#00964B",
+            "width": 23,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

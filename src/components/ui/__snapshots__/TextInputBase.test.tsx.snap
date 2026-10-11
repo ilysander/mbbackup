@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<TextInput
+  accessibilityLabel="modal_overlay"
+  onBlur={[Function]}
+  onChangeText={[Function]}
+  onFocus={[Function]}
+  placeholderTextColor="#AAB2BD"
+  underlineColorAndroid="transparent"
+  value=""
+/>
+`;

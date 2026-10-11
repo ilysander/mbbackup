@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  supportedOrientations={
+    Array [
+      "portrait",
+      "portrait-upside-down",
+      "landscape",
+      "landscape-left",
+      "landscape-right",
+    ]
+  }
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessibilityLabel="keyboardspacing"
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": "100%",
+        },
+        Array [
+          Object {
+            "bottom": 0,
+            "justifyContent": "center",
+            "left": 0,
+            "paddingHorizontal": 20,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          undefined,
+        ],
+        undefined,
+        false,
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="modal_overlay"
+      activeOpacity={1}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+    <View
+      accessibilityLabel="itemselectormodal"
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 6,
+            "marginHorizontal": 20,
+            "marginVertical": 40,
+            "width": "100%",
+          },
+          false,
+          undefined,
+        ]
+      }
+    >
+      <RCTScrollView
+        bounces={false}
+        keyboardShouldPersistTaps="handled"
+      >
+        <View>
+          <View
+            accessibilityLabel="modal_header"
+            style={
+              Array [
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 20,
+                  "paddingTop": 20,
+                },
+                false,
+                undefined,
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                accessibilityLabel="modal_text_title"
+                style={
+                  Array [
+                    Object {
+                      "color": "#00964B",
+                      "fontFamily": "Brevia",
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "700",
+                      "lineHeight": 22,
+                    },
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                Selecciona
+              </Text>
+            </View>
+            <View
+              accessibilityLabel="modal_buttonimage_close"
+              hitSlop={
+                Object {
+                  "bottom": 10,
+                  "left": 10,
+                  "right": 10,
+                  "top": 10,
+                }
+              }
+            >
+              <Image
+                accessibilityLabel="buttonimage_image"
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/images/icon-close.png",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 20,
+                    "tintColor": "#AAB2BD",
+                    "width": 20,
+                  }
+                }
+              />
+            </View>
+          </View>
+          <View
+            accessibilityLabel="modal_body"
+            style={
+              Object {
+                "maxHeight": 400,
+              }
+            }
+          >
+            <RCTScrollView
+              ItemSeparatorComponent={[Function]}
+              data={Array []}
+              getItem={[Function]}
+              getItemCount={[Function]}
+              initialNumToRender={5}
+              keyExtractor={[Function]}
+              onContentSizeChange={[Function]}
+              onLayout={[Function]}
+              onMomentumScrollBegin={[Function]}
+              onMomentumScrollEnd={[Function]}
+              onScroll={[Function]}
+              onScrollBeginDrag={[Function]}
+              onScrollEndDrag={[Function]}
+              refreshing={false}
+              removeClippedSubviews={true}
+              renderItem={[Function]}
+              scrollEventThrottle={50}
+              stickyHeaderIndices={Array []}
+              style={
+                Object {
+                  "borderRadius": 6,
+                  "overflow": "hidden",
+                }
+              }
+              viewabilityConfigCallbackPairs={Array []}
+            >
+              <View />
+            </RCTScrollView>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</Modal>
+`;

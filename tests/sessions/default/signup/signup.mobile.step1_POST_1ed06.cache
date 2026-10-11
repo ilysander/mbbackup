@@ -1,0 +1,23 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/signup",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Ocp-Apim-Subscription-Key": "sample"
+    },
+    "body": {
+      "channel": "phonegap",
+      "idActivity": "signup.mobile.step1",
+      "_debitcardNumber": "",
+      "_documentNumber": "",
+      "captcha": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

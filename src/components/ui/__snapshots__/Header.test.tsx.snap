@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+  style={
+    Array [
+      Object {
+        "overflow": "visible",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "position": "relative",
+        },
+        false,
+      ]
+    }
+  >
+    <Text
+      accessibilityLabel="header_text_title"
+      style={
+        Array [
+          Object {
+            "color": "#00964B",
+            "fontFamily": "Brevia",
+            "fontSize": 22,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+            "lineHeight": 25,
+            "textAlign": "left",
+          },
+          undefined,
+          false,
+          undefined,
+        ]
+      }
+    >
+      Prueba
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "position": "relative",
+        },
+        false,
+        false,
+      ]
+    }
+  />
+</View>
+`;

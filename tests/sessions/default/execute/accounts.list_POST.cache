@@ -1,0 +1,108 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/accounts.list",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {}
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "2351",
+      "date": "Wed, 19 Sep 2018 20:07:42 GMT"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "de3b52ac69874522b84337ba4d0e4d17",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "accounts": [
+          {
+            "idEnvironment": 0,
+            "idProduct": "28978535",
+            "productType": "CA",
+            "productTypeLabel": null,
+            "productTypeShortLabel": null,
+            "description": null,
+            "productAlias": null,
+            "smsAlias": null,
+            "label": "",
+            "shortLabel": "Full ahorro (MN) 6007456520",
+            "extraInfo": "3|1416|458|1|6007456520|0|0|8|3",
+            "currency": "1",
+            "number": "6007456520",
+            "consolidatedAmount": 0,
+            "position": 6199.95,
+            "canRead": false,
+            "permissions": null,
+            "cci": "04945800600745652035",
+            "availableBalance": 6199.95,
+            "balance": 6199.95,
+            "rate": 0,
+            "category": "faSoles",
+            "family": "8"
+          },
+          {
+            "idEnvironment": 0,
+            "idProduct": "31725164",
+            "productType": "CA",
+            "productTypeLabel": null,
+            "productTypeShortLabel": null,
+            "description": null,
+            "productAlias": null,
+            "smsAlias": null,
+            "label": "",
+            "shortLabel": "Cuenta ahorro negocios (ME) 6009812537",
+            "extraInfo": "3|1415|496|2|6009812537|0|0|8|3",
+            "currency": "2",
+            "number": "6009812537",
+            "consolidatedAmount": 0,
+            "position": 2958.85,
+            "canRead": false,
+            "permissions": null,
+            "cci": "04949600600981253734",
+            "availableBalance": 2958.85,
+            "balance": 2958.85,
+            "rate": 0,
+            "category": "anDolares",
+            "family": "8"
+          },
+          {
+            "idEnvironment": 0,
+            "idProduct": "31725167",
+            "productType": "CC",
+            "productTypeLabel": null,
+            "productTypeShortLabel": null,
+            "description": null,
+            "productAlias": null,
+            "smsAlias": null,
+            "label": "",
+            "shortLabel": "Cuenta corriente empresarial (MN) 5000004059",
+            "extraInfo": "2|1409|496|1|5000004059|0|0|10|2",
+            "currency": "1",
+            "number": "5000004059",
+            "consolidatedAmount": 0,
+            "position": 3010,
+            "canRead": false,
+            "permissions": null,
+            "cci": "04949600500000405937",
+            "availableBalance": 3010,
+            "balance": 3010,
+            "rate": 0,
+            "category": "cceSoles",
+            "family": "10"
+          }
+        ]
+      }
+    }
+  }
+}

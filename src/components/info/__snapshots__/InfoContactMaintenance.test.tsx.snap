@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+  navigate={[MockFunction]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "paddingBottom": 15,
+        "paddingTop": 15,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    accessibilityLabel="infocontactmaintenance_text"
+    style={
+      Object {
+        "alignItems": "center",
+        "fontFamily": "Brevia",
+        "fontStyle": "normal",
+        "fontWeight": "400",
+        "justifyContent": "center",
+        "padding": 10,
+        "textAlign": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#434A54",
+        }
+      }
+    >
+      Para conocer más detalle o absolver tus dudas por favor, comunícate con nosotros al
+       
+    </Text>
+    <Text
+      accessibilityLabel="infocontactmaintenance_phonenumber"
+      onLongPress={[Function]}
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "#656D78",
+            "fontFamily": "Brevia",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+          },
+          Object {
+            "fontFamily": "Brevia",
+            "fontStyle": "normal",
+            "fontWeight": "700",
+          },
+          Object {
+            "color": "#F28F00",
+          },
+          Object {
+            "color": "#434A54",
+          },
+        ]
+      }
+    >
+      (01) 319-9999
+    </Text>
+  </Text>
+</View>
+`;

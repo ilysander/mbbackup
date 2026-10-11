@@ -1,0 +1,19 @@
+import * as React from 'react';
+import * as renderer from 'react-test-renderer';
+import Touchable, { TouchableProps } from './Touchable';
+
+const props: TouchableProps = {
+  accessibilityLabel: 'modal_overlay',
+  onPress: jest.fn(),
+  onLongPress: jest.fn(),
+};
+
+it('renders without crashing', () => {
+  const snapshot = renderer.create(<Touchable {...props} />).toJSON();
+  expect(snapshot).toBeTruthy();
+});
+
+it('render just views', () => {
+  const snapshot = renderer.create(<Touchable {...props} />).toJSON();
+  expect(snapshot).toMatchSnapshot();
+});

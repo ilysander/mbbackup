@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+  disabled={false}
+  isFocused={false}
+  onPress={[MockFunction]}
+  readOnly={false}
+  style={Object {}}
+>
+  <View>
+    <View
+      accessibilityLabel="selectaccountmodal_item"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "opacity": 1,
+          "padding": 20,
+        }
+      }
+    >
+      <Image
+        accessibilityLabel="item_image"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/radio-button-unselected.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 24,
+              "marginRight": 10,
+              "tintColor": "#CCD1D9",
+              "width": 24,
+            },
+            false,
+          ]
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="selectaccountitem_name"
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "600",
+                "lineHeight": 15,
+              }
+            }
+          >
+            Mi DPF
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "lineHeight": 15,
+              }
+            }
+          >
+            123
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "marginLeft": 5,
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="selectaccountitem_amount"
+            style={
+              Object {
+                "alignSelf": "flex-end",
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 16,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+                "textAlign": "right",
+              }
+            }
+          >
+            S/ 123.00
+          </Text>
+          <Text
+            accessibilityLabel="selectaccountitem_reference"
+            style={
+              Object {
+                "alignSelf": "flex-end",
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "lineHeight": 15,
+                "textAlign": "right",
+              }
+            }
+          >
+            Saldo disponible
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

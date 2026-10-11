@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="frequentitem"
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    accessibilityLabel="modal_overlay"
+    navigation={
+      Object {
+        "addListener": [MockFunction],
+        "goBack": [MockFunction],
+        "navigate": [MockFunction],
+        "state": Object {},
+      }
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "paddingLeft": 20,
+        "paddingVertical": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View>
+        <Text
+          accessibilityLabel="frequentitem_text_name"
+          numberOfLines={1}
+          style={
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 15,
+              "fontStyle": "normal",
+              "fontWeight": "600",
+            }
+          }
+        >
+          Felix chapaza
+        </Text>
+      </View>
+      <View>
+        <Text
+          accessibilityLabel="frequentitem_text_name"
+          style={
+            Object {
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          N° de cuenta: 
+          6001816150
+        </Text>
+      </View>
+      <View>
+        <Text
+          accessibilityLabel="frequentitem_text_name"
+          style={
+            Object {
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          Mibanco (soles)
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessibilityLabel="frequentitem_touchable_edit"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "alignSelf": "center",
+          "flexDirection": "row",
+          "fontFamily": "Brevia",
+          "fontStyle": "normal",
+          "fontWeight": "600",
+          "opacity": 1,
+          "padding": 20,
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="buttonlink_text"
+        style={
+          Array [
+            Object {
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "textAlign": "center",
+            },
+            undefined,
+            Object {
+              "color": "#00964B",
+            },
+            undefined,
+          ]
+        }
+      >
+        Editar
+      </Text>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "flexDirection": "row",
+      "opacity": 1,
+      "paddingHorizontal": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "marginLeft": 4,
+          "width": 4,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#CCD1D9",
+          "borderRadius": 6,
+          "height": 12,
+          "width": 12,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "marginLeft": 4,
+          "width": 4,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingLeft": 10,
+          "paddingVertical": 20,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "overflow": "hidden",
+            "paddingRight": 30,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="movementitem_date"
+          numberOfLines={1}
+          style={
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          14 Mar 2018
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="movementitem_amount"
+          style={
+            Array [
+              Object {
+                "color": "#F6323E",
+                "fontFamily": "Brevia",
+                "fontSize": 15,
+                "fontStyle": "normal",
+                "fontWeight": "600",
+              },
+              undefined,
+            ]
+          }
+        >
+          S/ -133.00
+        </Text>
+        <Text
+          accessibilityLabel="movementitem_name"
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "textAlign": "right",
+            }
+          }
+        />
+      </View>
+      <Image
+        accessibilityLabel="accountitem_more_icon"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/arrow-icon.png",
+          }
+        }
+        style={
+          Object {
+            "height": 12,
+            "marginLeft": 17,
+            "tintColor": "#AAB2BD",
+            "width": 6,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`render just views 2`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "flexDirection": "row",
+      "opacity": 1,
+      "paddingHorizontal": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "marginLeft": 4,
+          "width": 4,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#CCD1D9",
+          "borderRadius": 6,
+          "height": 12,
+          "width": 12,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "marginLeft": 4,
+          "width": 4,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingLeft": 10,
+          "paddingVertical": 20,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "overflow": "hidden",
+            "paddingRight": 30,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="movementitem_date"
+          numberOfLines={1}
+          style={
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          14 Mar 2018
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="movementitem_amount"
+          style={
+            Array [
+              Object {
+                "color": "#00964B",
+                "fontFamily": "Brevia",
+                "fontSize": 15,
+                "fontStyle": "normal",
+                "fontWeight": "600",
+              },
+              undefined,
+            ]
+          }
+        >
+          S/ 0.00
+        </Text>
+        <Text
+          accessibilityLabel="movementitem_name"
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "textAlign": "right",
+            }
+          }
+        />
+      </View>
+      <Image
+        accessibilityLabel="accountitem_more_icon"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/arrow-icon.png",
+          }
+        }
+        style={
+          Object {
+            "height": 12,
+            "marginLeft": 17,
+            "tintColor": "#AAB2BD",
+            "width": 6,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

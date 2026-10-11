@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "marginBottom": 15,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#F6323E",
+        "fontFamily": "Brevia",
+        "fontSize": 13,
+        "fontStyle": "normal",
+        "fontWeight": "600",
+      }
+    }
+  >
+    (*) Tienes
+     
+    1
+     
+    cuota vencida
+     
+    <Text
+      style={
+        Object {
+          "color": "#F6323E",
+          "fontFamily": "Brevia",
+          "fontSize": 13,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+        }
+      }
+    >
+      xS/
+      100
+    </Text>
+  </Text>
+</View>
+`;

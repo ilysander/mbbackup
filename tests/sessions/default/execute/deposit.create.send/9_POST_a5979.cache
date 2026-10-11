@@ -1,0 +1,29 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/deposit.create.send/9",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "idTransaction": "",
+      "valueDate": "",
+      "isFrequentContact": "",
+      "aceptTermAndCondition": "",
+      "_otp": "",
+      "depositDetails": "",
+      "debitAccount": "",
+      "frequency": "",
+      "renewDeposit": "",
+      "creditAccount": "",
+      "mail": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

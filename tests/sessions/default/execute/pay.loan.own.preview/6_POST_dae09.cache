@@ -1,0 +1,38 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/pay.loan.own.preview/6",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "loan": "16115071",
+      "loanAmount": {
+        "amount": {
+          "currency": "1",
+          "quantity": "0"
+        },
+        "otherAmountQuantity": "",
+        "pendingPayment": {
+          "amount": "0",
+          "selected": "false"
+        },
+        "oldPayments": {
+          "amount": "0",
+          "fees": "0",
+          "selected": "false"
+        },
+        "lastLoanId": "16115071",
+        "lastDueDate": ""
+      },
+      "valueDate": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

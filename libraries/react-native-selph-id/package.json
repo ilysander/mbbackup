@@ -1,0 +1,23 @@
+{
+    "name": "react-native-selph-id",
+    "title": "React Native Selphid Plugin",
+    "version": "1.3.27",
+    "description": "TODO",
+    "main": "index.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "react-native"
+    ],
+    "author": {
+        "name": "facephi",
+        "email": "developer@facephi.com"
+    },
+    "license": "MIT",
+    "licenseFilename": "LICENSE",
+    "readmeFilename": "README.md",
+    "peerDependencies": {
+        "react-native": ">=0.59.0-rc.0 <1.0.x"
+    }
+}

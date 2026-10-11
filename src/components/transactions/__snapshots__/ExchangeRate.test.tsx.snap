@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="transfers_exchangerate"
+  style={
+    Object {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View>
+    <Text
+      accessibilityLabel="transfers_exchangerate_purchase"
+      style={
+        Array [
+          Object {
+            "color": "#FAB500",
+            "fontFamily": "Brevia",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+            "margin": 0,
+            "paddingHorizontal": 1,
+            "textAlign": "left",
+          },
+          undefined,
+        ]
+      }
+    >
+      Tipo de cambio
+      : 
+      S/ 2.000
+    </Text>
+    <Text
+      accessibilityLabel="transfers_exchangerate_sale"
+      style={
+        Array [
+          Object {
+            "color": "#FAB500",
+            "fontFamily": "Brevia",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+            "margin": 0,
+            "paddingHorizontal": 1,
+            "textAlign": "left",
+          },
+          undefined,
+        ]
+      }
+    >
+      Monto al cambio
+      : 
+      undefined 22.00
+    </Text>
+  </View>
+</View>
+`;

@@ -1,0 +1,51 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/servicepayments.pre",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {}
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+     "date": "Thu, 27 Dec 2018 20:37:51 GMT"
+    },
+    "body": {
+     "code": "COR000I",
+     "idTransaction": "e48a4068e5624ea2886bd1953bbabc75",
+     "message": "Operación ejecutada con éxito",
+     "data": {
+      "serviceCategories": [
+       {
+        "code": "2",
+        "name": "AGUA"
+       },
+       {
+        "code": "4",
+        "name": "CABLE"
+       },
+       {
+        "code": "5",
+        "name": "FINANCIERA"
+       },
+       {
+        "code": "7",
+        "name": "GLOBOKAS"
+       },
+       {
+        "code": "1",
+        "name": "LUZ"
+       },
+       {
+        "code": "3",
+        "name": "TELEFONIA"
+       }
+      ]
+     }
+    }
+   }
+}

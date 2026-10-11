@@ -1,0 +1,73 @@
+#RASP
+#Habilitar en pruebas de automatización
+#-raspchecks hook, emulator
+#-raspcontinueon !hook, !emulator
+
+#Deshabilitar root porque no permite pruebas de automatización
+#-raspchecks hook, root, emulator
+#-raspcontinueon !hook,!root,!emulator
+
+-raspchecks emulator, debug, hook, root, virtualenvironment
+-raspcontinueon !emulator, !debug, !hook, !root, !virtualenvironment
+#-raspclassfilter class !cn.reactnative.**
+-raspclassfilter class !cn.reactnative.customkeyboard
+#-raspclassfilter class !com.facebook.**
+#-raspclassfilter class !com.facebook.react
+
+# Android
+-multidex
+-dalvik
+-flattenpackagehierarchy 'a'
+-repackageclasses 'b'
+-allowaccessmodification
+
+# Huawei
+-ignorewarnings
+-keep class com.huawei.agconnect.** {*;} 
+-keepresourcexmlelements ** 
+-keepresources */*
+
+# Assets
+-keepresources */*
+-keepresourcefiles lib/*/*.so
+# genera un error al abrir la app
+#-encryptnativelibraries lib/*/*.so
+
+# genera un error al abrir la app
+#-encryptassetfiles assets/index.android.bundle
+
+# App
+-encryptclasses com.mibanco.bancamovil.**
+-encryptstrings class com.mibanco.bancamovil.**
+-obfuscatecode,high class com.mibanco.bancamovil.**
+
+# Pinch SSL Pinning
+-encryptclasses com.localz.**
+-encryptstrings com.localz.**
+-obfuscatecode,high class com.localz.**
+
+# JailMonkey
+-encryptclasses com.gantix.**
+-encryptstrings com.gantix.**
+-obfuscatecode,high class com.gantix.**
+
+# RootBeer
+-encryptclasses com.scottyab.rootbeer.**
+-encryptstrings com.scottyab.rootbeer.**
+-obfuscatecode,high class com.scottyab.rootbeer.**
+
+# Version checker android
+-encryptclasses com.masteratul.**
+-encryptstrings com.masteratul.**
+-obfuscatecode,high class com.masteratul.**
+
+# Device Info
+-encryptclasses com.learnium.RNDeviceInfo.**
+-encryptstrings com.learnium.RNDeviceInfo.**
+# genera un error al abrir la app
+#-obfuscatecode,high class com.learnium.RNDeviceInfo.**
+
+# Warnings
+-dontwarn io.invertase.**
+-dontwarn com.instabug.**
+-dontwarn com.facebook.**

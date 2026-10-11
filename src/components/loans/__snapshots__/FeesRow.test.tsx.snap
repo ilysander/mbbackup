@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="accountfield_touchable_edit"
+  analyticsParams="4 cuotas"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "padding": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <View>
+    <Image
+      accessibilityLabel="feesrow_checkbox_active"
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/radio-button-unselected.png",
+        }
+      }
+      style={
+        Object {
+          "height": 24,
+          "marginRight": 10,
+          "tintColor": "#CCD1D9",
+          "width": 24,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="feesrow_quota_text"
+      style={
+        Object {
+          "color": "#656D78",
+          "fontFamily": "Brevia",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "lineHeight": 16,
+        }
+      }
+    >
+      4
+       
+      cuotas
+    </Text>
+    <Text
+      accessibilityLabel="feesrow_rate_text"
+      style={
+        Object {
+          "color": "#656D78",
+          "fontFamily": "Brevia",
+          "fontSize": 13,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        }
+      }
+    >
+      TCEA
+       
+      66.68
+       
+      %
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="feesrow_rate_text"
+      style={
+        Object {
+          "color": "#00964B",
+          "fontFamily": "Brevia",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+        }
+      }
+    >
+      S/ 101.00
+    </Text>
+    <Text
+      accessibilityLabel="feesrow_due_text"
+      style={
+        Object {
+          "color": "#656D78",
+          "fontFamily": "Brevia",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "lineHeight": 16,
+        }
+      }
+    >
+      al mes
+    </Text>
+  </View>
+</View>
+`;

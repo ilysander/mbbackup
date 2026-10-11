@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#434A54",
+          "fontFamily": "Brevia",
+          "fontSize": 22,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "lineHeight": 25,
+          "paddingTop": 2,
+        }
+      }
+    >
+      Ahorro por un sueño (MN)
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "marginLeft": 10,
+        "marginTop": 4,
+        "minWidth": 26,
+      }
+    }
+  >
+    <View
+      accessibilityLabel="renameaccount_button_edit"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#00964B",
+          "borderRadius": 25,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "margin": 0,
+          "minHeight": 30,
+          "opacity": 1,
+          "paddingHorizontal": 10,
+          "zIndex": 1,
+        }
+      }
+    >
+      <Image
+        accessibilityLabel="button_image"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/icon-edit.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 14,
+              "marginRight": 4,
+            },
+            Object {
+              "color": "#00964B",
+              "height": 16,
+              "tintColor": "#00964B",
+              "width": 15,
+            },
+          ]
+        }
+      />
+      <Text
+        accessibilityLabel="button_text"
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Brevia",
+              "fontSize": 16,
+              "fontStyle": "normal",
+              "fontWeight": "600",
+              "textAlign": "center",
+            },
+            Object {
+              "fontSize": 14,
+            },
+            Object {
+              "color": "#00964B",
+            },
+            Object {
+              "color": "#00964B",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "600",
+            },
+          ]
+        }
+      >
+        Editar
+      </Text>
+    </View>
+  </View>
+</View>
+`;

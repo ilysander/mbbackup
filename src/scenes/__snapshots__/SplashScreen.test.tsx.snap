@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="splashscreen_container"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#00964B",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Image
+    accessibilityLabel="splashscreen_animation"
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/splash.gif",
+      }
+    }
+    style={
+      Object {
+        "height": 155,
+        "width": 280,
+      }
+    }
+  />
+</View>
+`;

@@ -1,0 +1,24 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/start-request",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Ocp-Apim-Subscription-Key": "sample",
+      "Ocp-Apim-Trace": true,
+      "X-Build-Id": "1234",
+      "X-Manufacturer": "abcde",
+      "X-Mobile-Service": "hms",
+      "X-Model": "abcde"
+    },
+    "body": {
+      "request": "sample"
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/signup",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Ocp-Apim-Subscription-Key": "sample",
+      "Ocp-Apim-Trace": true,
+      "X-Foo-To": "",
+      "X-Build-Id": "1234",
+      "X-Manufacturer": "Apple",
+      "X-Mobile-Service": "gms"
+    },
+    "body": {
+      "channel": "phonegap",
+      "idActivity": "signup.mobile.finish",
+      "_debitcardNumber": "",
+      "_acceptConditions": false,
+      "_positionsNewPin": "",
+      "_positionsNewPinConfirmation": "",
+      "_exchangeToken": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/messages",
+    "method": "GET",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      
+    },
+    "body": {
+      "code": "COR000I",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "es": {
+          "accounts.details.balance": "Saldo disponible",
+          "accounts.details.cci": "Número CCI:",
+          "accounts.details.downloadStatements": "Descargar movimientos",
+          "accounts.details.export.csvFormat": "Archivo separado por comas (csv)",
+          "accounts.details.export.excelFormat": "Planilla Excel (xls)",
+          "accounts.details.export.idAccount": "Cuenta",
+          "accounts.details.export.pdfFormat": "Adobe Acrobat (pdf)",
+          "accounts.details.export.selectExportFormat": "Seleccione el formato en el cual desea exportar",
+          "accounts.details.export.title": "Listado de movimientos",
+          "accounts.details.filter.currentMonth": "Mes actual",
+          "accounts.details.filter.currentWeek": "Semana actual",
+          "accounts.details.filter.last10": "Últimos 10",
+          "accounts.details.filter.last6Months": "Últimos 6 meses",
+          "accounts.details.filter.lastMonth": "Mes anterior",
+          "accounts.details.filter.more": "Ver más filtros",
+          "accounts.details.filter.more.amount": "Monto",
+          "accounts.details.filter.more.amount.from": "Desde"
+        },
+        "en": {
+          "enrollment.selectLang.button": "English",
+          "test-auditoria-crear": " "
+        },
+        "pt": {
+          "enrollment.selectLang.button": "Português",
+          "test-auditoria-crear": " "
+        }
+      }
+    }
+  }
+}

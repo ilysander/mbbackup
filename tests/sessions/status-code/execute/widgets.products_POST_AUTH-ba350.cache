@@ -1,0 +1,17 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/widgets.products",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {}
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

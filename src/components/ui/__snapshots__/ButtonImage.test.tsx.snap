@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  forwardedRef={[Function]}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "height": 30,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 30,
+    }
+  }
+>
+  <Image
+    accessibilityLabel="buttonimage_image"
+    source={5}
+    style={
+      Object {
+        "height": 20,
+        "width": 20,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`render just views when it has been loaded 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  forwardedRef={[Function]}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "height": 30,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 30,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        false,
+        false,
+        false,
+        undefined,
+      ]
+    }
+  >
+    <ActivityIndicator
+      accessibilityLabel="buttonimage_loading"
+      color="#00964B"
+      size="small"
+    />
+  </View>
+</View>
+`;
+
+exports[`render just views when loaded is hidden 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  forwardedRef={[Function]}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "height": 30,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 30,
+    }
+  }
+>
+  <Image
+    accessibilityLabel="buttonimage_image"
+    source={5}
+    style={
+      Object {
+        "height": 20,
+        "width": 20,
+      }
+    }
+  />
+</View>
+`;

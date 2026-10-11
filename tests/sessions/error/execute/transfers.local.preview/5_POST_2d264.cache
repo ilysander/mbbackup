@@ -1,0 +1,40 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfers.local.preview/5",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "debitAccount": "31725128",
+      "Amount": {
+        "quantity": "60",
+        "currency": "2"
+      },
+      "ToAccount": "1231231231"
+    }
+  },
+   "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "235",
+      "date": "Tue, 25 Sep 2018 20:48:05 GMT"
+    },
+    "body": {
+      "code": "COR020W",
+      "idTransaction": "7974328c1d624e4caf892710b51dbf5d",
+      "message": "Error de validación",
+      "data": {
+        "Amount": "Ingrese el monto a transferir.",
+        "ToAccount": "Ingrese una cuenta de destino"
+      }
+    }
+  }
+}

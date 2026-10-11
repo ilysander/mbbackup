@@ -1,0 +1,1402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00097F9818854E24B599036B /* Brevia-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0BF8DF21C6043599DBC4601 /* Brevia-Medium.otf */; };
+		00E356F31AD99517003FC87E /* MibancoMovilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MibancoMovilTests.m */; };
+		060ED4C229E3A14200E8EA58 /* img_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4A329E3A14200E8EA58 /* img_10.png */; };
+		060ED4C329E3A14200E8EA58 /* img_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4A429E3A14200E8EA58 /* img_1.png */; };
+		060ED4C429E3A14200E8EA58 /* img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4A529E3A14200E8EA58 /* img_0.png */; };
+		060ED4C529E3A14200E8EA58 /* img_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4A629E3A14200E8EA58 /* img_11.png */; };
+		060ED4C629E3A14200E8EA58 /* img_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4A729E3A14200E8EA58 /* img_13.png */; };
+		060ED4C729E3A14200E8EA58 /* img_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4A829E3A14200E8EA58 /* img_2.png */; };
+		060ED4C829E3A14200E8EA58 /* img_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4A929E3A14200E8EA58 /* img_3.png */; };
+		060ED4C929E3A14200E8EA58 /* img_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4AA29E3A14200E8EA58 /* img_12.png */; };
+		060ED4CA29E3A14200E8EA58 /* img_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4AB29E3A14200E8EA58 /* img_16.png */; };
+		060ED4CB29E3A14200E8EA58 /* img_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4AC29E3A14200E8EA58 /* img_7.png */; };
+		060ED4CC29E3A14200E8EA58 /* img_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4AD29E3A14200E8EA58 /* img_6.png */; };
+		060ED4CD29E3A14200E8EA58 /* img_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4AE29E3A14200E8EA58 /* img_17.png */; };
+		060ED4CE29E3A14200E8EA58 /* img_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4AF29E3A14200E8EA58 /* img_29.png */; };
+		060ED4CF29E3A14200E8EA58 /* img_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4B029E3A14200E8EA58 /* img_15.png */; };
+		060ED4D029E3A14200E8EA58 /* img_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4B129E3A14200E8EA58 /* img_4.png */; };
+		060ED4D129E3A14200E8EA58 /* img_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4B229E3A14200E8EA58 /* img_5.png */; };
+		060ED4D229E3A14200E8EA58 /* img_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4B329E3A14200E8EA58 /* img_14.png */; };
+		060ED4D329E3A14200E8EA58 /* img_28.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4B429E3A14200E8EA58 /* img_28.png */; };
+		060ED4D429E3A14200E8EA58 /* img_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4B529E3A14200E8EA58 /* img_25.png */; };
+		060ED4D529E3A14200E8EA58 /* img_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4B629E3A14200E8EA58 /* img_19.png */; };
+		060ED4D629E3A14200E8EA58 /* img_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4B729E3A14200E8EA58 /* img_8.png */; };
+		060ED4D729E3A14200E8EA58 /* img_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4B829E3A14200E8EA58 /* img_9.png */; };
+		060ED4D829E3A14200E8EA58 /* img_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4B929E3A14200E8EA58 /* img_18.png */; };
+		060ED4D929E3A14200E8EA58 /* img_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4BA29E3A14200E8EA58 /* img_30.png */; };
+		060ED4DA29E3A14200E8EA58 /* img_24.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4BB29E3A14200E8EA58 /* img_24.png */; };
+		060ED4DB29E3A14200E8EA58 /* img_26.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4BC29E3A14200E8EA58 /* img_26.png */; };
+		060ED4DC29E3A14200E8EA58 /* img_27.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4BD29E3A14200E8EA58 /* img_27.png */; };
+		060ED4DD29E3A14200E8EA58 /* img_23.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4BE29E3A14200E8EA58 /* img_23.png */; };
+		060ED4DE29E3A14200E8EA58 /* img_22.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4BF29E3A14200E8EA58 /* img_22.png */; };
+		060ED4DF29E3A14200E8EA58 /* img_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4C029E3A14200E8EA58 /* img_20.png */; };
+		060ED4E029E3A14200E8EA58 /* img_21.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4C129E3A14200E8EA58 /* img_21.png */; };
+		060ED4E929E3A15000E8EA58 /* anim_loading_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4E229E3A15000E8EA58 /* anim_loading_5.png */; };
+		060ED4EA29E3A15000E8EA58 /* anim_loading_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4E329E3A15000E8EA58 /* anim_loading_4.png */; };
+		060ED4EB29E3A15000E8EA58 /* anim_loading_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4E429E3A15000E8EA58 /* anim_loading_6.png */; };
+		060ED4EC29E3A15000E8EA58 /* anim_loading_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4E529E3A15000E8EA58 /* anim_loading_3.png */; };
+		060ED4ED29E3A15000E8EA58 /* anim_loading_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4E629E3A15000E8EA58 /* anim_loading_2.png */; };
+		060ED4EE29E3A15000E8EA58 /* anim_loading_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4E729E3A15000E8EA58 /* anim_loading_0.png */; };
+		060ED4EF29E3A15000E8EA58 /* anim_loading_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 060ED4E829E3A15000E8EA58 /* anim_loading_1.png */; };
+		0671A8E129DDEC1000CB537C /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671A8E029DDEC1000CB537C /* Sample.swift */; };
+		0671A8E329DDECDB00CB537C /* Firebase in Resources */ = {isa = PBXBuildFile; fileRef = 0671A8E229DDECDB00CB537C /* Firebase */; };
+		0C80B921A6F3F58F76C31292 /* libPods-MibancoMovil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-MibancoMovil.a */; };
+		0F80357C313C4BB6A2B11C30 /* Brevia-ExtraBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7310FA9442A74198B34C9AD4 /* Brevia-ExtraBlack.otf */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2028035818074E1B87F2FE49 /* Brevia-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1EED2D2B4DDA4EB9A5AAAD8D /* Brevia-BoldItalic.otf */; };
+		2923AB8F2DCC483F88EA484F /* Brevia-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 127B615B0E9F48E4952F5793 /* Brevia-BlackItalic.otf */; };
+		29721C2D55AB47D28398C292 /* Brevia-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F8D119DB2B34342A8B3438B /* Brevia-SemiBold.otf */; };
+		3612FB8D030C4CA6837AC9EB /* Brevia-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FE18A8597C04287AE744C3E /* Brevia-MediumItalic.otf */; };
+		3BFC062BA4D8440B986E20F0 /* Brevia-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 036E5360AB414865A594690B /* Brevia-Light.otf */; };
+		3F24B483371B489E94FADE18 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C0435E5E2364FCF86D9C5CF /* Roboto-Medium.ttf */; };
+		44E17D0D937F4067B5868E6B /* Brevia-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 914EB66356214348AD086E96 /* Brevia-SemiBoldItalic.otf */; };
+		4E7748EFDF2B411D806BEF84 /* Brevia-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30272ED7A5F74BF48EB430C4 /* Brevia-RegularItalic.otf */; };
+		57049EFBAFA74DCEB50CDC87 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEAA706697E64C7BB53DB74C /* Roboto-Regular.ttf */; };
+		6718B30554864DEAA7410B65 /* Brevia-ExtraBlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 80DD8DDB817D4A589A189E47 /* Brevia-ExtraBlackItalic.otf */; };
+		6CE6C7A8AE11461288CDD7E1 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1474C179792C4F6C9E8207E8 /* Roboto-Bold.ttf */; };
+		75A54201E0734021A1777789 /* Brevia-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A40A99C7379B4D92BCD2D9B5 /* Brevia-Black.otf */; };
+		7699B88040F8A987B510C191 /* libPods-MibancoMovil-MibancoMovilTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-MibancoMovil-MibancoMovilTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A3B5FE03A0FD43BAB4658147 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 655B9D6717184B74AB5EE0A6 /* Roboto-Black.ttf */; };
+		B809429C07DD4E75AFA6DF84 /* Brevia-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C20C8E8E1C5A47CBAFECD89D /* Brevia-Regular.otf */; };
+		D2C13C38EB88479FA0C5B9D9 /* Brevia-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5919F7562B8343C0A787C5FF /* Brevia-LightItalic.otf */; };
+		E1A653E0313345ABB1D88403 /* Brevia-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 478472CED9EE4DCCAC65AD85 /* Brevia-Bold.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = MibancoMovil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* MibancoMovilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MibancoMovilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* MibancoMovilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MibancoMovilTests.m; sourceTree = "<group>"; };
+		036E5360AB414865A594690B /* Brevia-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-Light.otf"; path = "../src/assets/fonts/Brevia-Light.otf"; sourceTree = "<group>"; };
+		060ED4A329E3A14200E8EA58 /* img_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_10.png; sourceTree = "<group>"; };
+		060ED4A429E3A14200E8EA58 /* img_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_1.png; sourceTree = "<group>"; };
+		060ED4A529E3A14200E8EA58 /* img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_0.png; sourceTree = "<group>"; };
+		060ED4A629E3A14200E8EA58 /* img_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_11.png; sourceTree = "<group>"; };
+		060ED4A729E3A14200E8EA58 /* img_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_13.png; sourceTree = "<group>"; };
+		060ED4A829E3A14200E8EA58 /* img_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_2.png; sourceTree = "<group>"; };
+		060ED4A929E3A14200E8EA58 /* img_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_3.png; sourceTree = "<group>"; };
+		060ED4AA29E3A14200E8EA58 /* img_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_12.png; sourceTree = "<group>"; };
+		060ED4AB29E3A14200E8EA58 /* img_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_16.png; sourceTree = "<group>"; };
+		060ED4AC29E3A14200E8EA58 /* img_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_7.png; sourceTree = "<group>"; };
+		060ED4AD29E3A14200E8EA58 /* img_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_6.png; sourceTree = "<group>"; };
+		060ED4AE29E3A14200E8EA58 /* img_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_17.png; sourceTree = "<group>"; };
+		060ED4AF29E3A14200E8EA58 /* img_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_29.png; sourceTree = "<group>"; };
+		060ED4B029E3A14200E8EA58 /* img_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_15.png; sourceTree = "<group>"; };
+		060ED4B129E3A14200E8EA58 /* img_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_4.png; sourceTree = "<group>"; };
+		060ED4B229E3A14200E8EA58 /* img_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_5.png; sourceTree = "<group>"; };
+		060ED4B329E3A14200E8EA58 /* img_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_14.png; sourceTree = "<group>"; };
+		060ED4B429E3A14200E8EA58 /* img_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_28.png; sourceTree = "<group>"; };
+		060ED4B529E3A14200E8EA58 /* img_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_25.png; sourceTree = "<group>"; };
+		060ED4B629E3A14200E8EA58 /* img_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_19.png; sourceTree = "<group>"; };
+		060ED4B729E3A14200E8EA58 /* img_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_8.png; sourceTree = "<group>"; };
+		060ED4B829E3A14200E8EA58 /* img_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_9.png; sourceTree = "<group>"; };
+		060ED4B929E3A14200E8EA58 /* img_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_18.png; sourceTree = "<group>"; };
+		060ED4BA29E3A14200E8EA58 /* img_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_30.png; sourceTree = "<group>"; };
+		060ED4BB29E3A14200E8EA58 /* img_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_24.png; sourceTree = "<group>"; };
+		060ED4BC29E3A14200E8EA58 /* img_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_26.png; sourceTree = "<group>"; };
+		060ED4BD29E3A14200E8EA58 /* img_27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_27.png; sourceTree = "<group>"; };
+		060ED4BE29E3A14200E8EA58 /* img_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_23.png; sourceTree = "<group>"; };
+		060ED4BF29E3A14200E8EA58 /* img_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_22.png; sourceTree = "<group>"; };
+		060ED4C029E3A14200E8EA58 /* img_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_20.png; sourceTree = "<group>"; };
+		060ED4C129E3A14200E8EA58 /* img_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_21.png; sourceTree = "<group>"; };
+		060ED4E229E3A15000E8EA58 /* anim_loading_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anim_loading_5.png; sourceTree = "<group>"; };
+		060ED4E329E3A15000E8EA58 /* anim_loading_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anim_loading_4.png; sourceTree = "<group>"; };
+		060ED4E429E3A15000E8EA58 /* anim_loading_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anim_loading_6.png; sourceTree = "<group>"; };
+		060ED4E529E3A15000E8EA58 /* anim_loading_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anim_loading_3.png; sourceTree = "<group>"; };
+		060ED4E629E3A15000E8EA58 /* anim_loading_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anim_loading_2.png; sourceTree = "<group>"; };
+		060ED4E729E3A15000E8EA58 /* anim_loading_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anim_loading_0.png; sourceTree = "<group>"; };
+		060ED4E829E3A15000E8EA58 /* anim_loading_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anim_loading_1.png; sourceTree = "<group>"; };
+		0671A8DF29DDEC1000CB537C /* MibancoMovil-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MibancoMovil-Bridging-Header.h"; sourceTree = "<group>"; };
+		0671A8E029DDEC1000CB537C /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		0671A8E229DDECDB00CB537C /* Firebase */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Firebase; path = MibancoMovil/Firebase; sourceTree = "<group>"; };
+		06AC48B529E9BE9C00989841 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		06D4895029E9A45B00FCAE7C /* MibancoMovil.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MibancoMovil.entitlements; path = MibancoMovil/MibancoMovil.entitlements; sourceTree = "<group>"; };
+		127B615B0E9F48E4952F5793 /* Brevia-BlackItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-BlackItalic.otf"; path = "../src/assets/fonts/Brevia-BlackItalic.otf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* MibancoMovil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MibancoMovil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MibancoMovil/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = MibancoMovil/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MibancoMovil/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MibancoMovil/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MibancoMovil/main.m; sourceTree = "<group>"; };
+		1474C179792C4F6C9E8207E8 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-MibancoMovil-MibancoMovilTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MibancoMovil-MibancoMovilTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EED2D2B4DDA4EB9A5AAAD8D /* Brevia-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-BoldItalic.otf"; path = "../src/assets/fonts/Brevia-BoldItalic.otf"; sourceTree = "<group>"; };
+		1FE18A8597C04287AE744C3E /* Brevia-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-MediumItalic.otf"; path = "../src/assets/fonts/Brevia-MediumItalic.otf"; sourceTree = "<group>"; };
+		30272ED7A5F74BF48EB430C4 /* Brevia-RegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-RegularItalic.otf"; path = "../src/assets/fonts/Brevia-RegularItalic.otf"; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-MibancoMovil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MibancoMovil.debug.xcconfig"; path = "Target Support Files/Pods-MibancoMovil/Pods-MibancoMovil.debug.xcconfig"; sourceTree = "<group>"; };
+		3D5E209F2EC3CB03F793F227 /* Pods-MibancoMovil.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MibancoMovil.qa.xcconfig"; path = "Target Support Files/Pods-MibancoMovil/Pods-MibancoMovil.qa.xcconfig"; sourceTree = "<group>"; };
+		478472CED9EE4DCCAC65AD85 /* Brevia-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-Bold.otf"; path = "../src/assets/fonts/Brevia-Bold.otf"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-MibancoMovil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MibancoMovil.release.xcconfig"; path = "Target Support Files/Pods-MibancoMovil/Pods-MibancoMovil.release.xcconfig"; sourceTree = "<group>"; };
+		5919F7562B8343C0A787C5FF /* Brevia-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-LightItalic.otf"; path = "../src/assets/fonts/Brevia-LightItalic.otf"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-MibancoMovil-MibancoMovilTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MibancoMovil-MibancoMovilTests.debug.xcconfig"; path = "Target Support Files/Pods-MibancoMovil-MibancoMovilTests/Pods-MibancoMovil-MibancoMovilTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-MibancoMovil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MibancoMovil.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		655B9D6717184B74AB5EE0A6 /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../src/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		671635F649547AB45D86DA6E /* Pods-MibancoMovil.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MibancoMovil.dev.xcconfig"; path = "Target Support Files/Pods-MibancoMovil/Pods-MibancoMovil.dev.xcconfig"; sourceTree = "<group>"; };
+		7310FA9442A74198B34C9AD4 /* Brevia-ExtraBlack.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-ExtraBlack.otf"; path = "../src/assets/fonts/Brevia-ExtraBlack.otf"; sourceTree = "<group>"; };
+		7C0435E5E2364FCF86D9C5CF /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		80DD8DDB817D4A589A189E47 /* Brevia-ExtraBlackItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-ExtraBlackItalic.otf"; path = "../src/assets/fonts/Brevia-ExtraBlackItalic.otf"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MibancoMovil/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-MibancoMovil-MibancoMovilTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MibancoMovil-MibancoMovilTests.release.xcconfig"; path = "Target Support Files/Pods-MibancoMovil-MibancoMovilTests/Pods-MibancoMovil-MibancoMovilTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F8D119DB2B34342A8B3438B /* Brevia-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-SemiBold.otf"; path = "../src/assets/fonts/Brevia-SemiBold.otf"; sourceTree = "<group>"; };
+		914EB66356214348AD086E96 /* Brevia-SemiBoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-SemiBoldItalic.otf"; path = "../src/assets/fonts/Brevia-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		A40A99C7379B4D92BCD2D9B5 /* Brevia-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-Black.otf"; path = "../src/assets/fonts/Brevia-Black.otf"; sourceTree = "<group>"; };
+		AEAA706697E64C7BB53DB74C /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		C20C8E8E1C5A47CBAFECD89D /* Brevia-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-Regular.otf"; path = "../src/assets/fonts/Brevia-Regular.otf"; sourceTree = "<group>"; };
+		E28C7BA24B1D5F248BF03F85 /* Pods-MibancoMovil-MibancoMovilTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MibancoMovil-MibancoMovilTests.dev.xcconfig"; path = "Target Support Files/Pods-MibancoMovil-MibancoMovilTests/Pods-MibancoMovil-MibancoMovilTests.dev.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE19BF3EB1E4F297E5214D8E /* Pods-MibancoMovil-MibancoMovilTests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MibancoMovil-MibancoMovilTests.qa.xcconfig"; path = "Target Support Files/Pods-MibancoMovil-MibancoMovilTests/Pods-MibancoMovil-MibancoMovilTests.qa.xcconfig"; sourceTree = "<group>"; };
+		F0BF8DF21C6043599DBC4601 /* Brevia-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Brevia-Medium.otf"; path = "../src/assets/fonts/Brevia-Medium.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-MibancoMovil-MibancoMovilTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-MibancoMovil.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* MibancoMovilTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* MibancoMovilTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = MibancoMovilTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		060ED4A129E3A12C00E8EA58 /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				060ED4E129E3A15000E8EA58 /* loading */,
+				060ED4A229E3A14200E8EA58 /* happy */,
+			);
+			path = lottie;
+			sourceTree = "<group>";
+		};
+		060ED4A229E3A14200E8EA58 /* happy */ = {
+			isa = PBXGroup;
+			children = (
+				060ED4A329E3A14200E8EA58 /* img_10.png */,
+				060ED4A429E3A14200E8EA58 /* img_1.png */,
+				060ED4A529E3A14200E8EA58 /* img_0.png */,
+				060ED4A629E3A14200E8EA58 /* img_11.png */,
+				060ED4A729E3A14200E8EA58 /* img_13.png */,
+				060ED4A829E3A14200E8EA58 /* img_2.png */,
+				060ED4A929E3A14200E8EA58 /* img_3.png */,
+				060ED4AA29E3A14200E8EA58 /* img_12.png */,
+				060ED4AB29E3A14200E8EA58 /* img_16.png */,
+				060ED4AC29E3A14200E8EA58 /* img_7.png */,
+				060ED4AD29E3A14200E8EA58 /* img_6.png */,
+				060ED4AE29E3A14200E8EA58 /* img_17.png */,
+				060ED4AF29E3A14200E8EA58 /* img_29.png */,
+				060ED4B029E3A14200E8EA58 /* img_15.png */,
+				060ED4B129E3A14200E8EA58 /* img_4.png */,
+				060ED4B229E3A14200E8EA58 /* img_5.png */,
+				060ED4B329E3A14200E8EA58 /* img_14.png */,
+				060ED4B429E3A14200E8EA58 /* img_28.png */,
+				060ED4B529E3A14200E8EA58 /* img_25.png */,
+				060ED4B629E3A14200E8EA58 /* img_19.png */,
+				060ED4B729E3A14200E8EA58 /* img_8.png */,
+				060ED4B829E3A14200E8EA58 /* img_9.png */,
+				060ED4B929E3A14200E8EA58 /* img_18.png */,
+				060ED4BA29E3A14200E8EA58 /* img_30.png */,
+				060ED4BB29E3A14200E8EA58 /* img_24.png */,
+				060ED4BC29E3A14200E8EA58 /* img_26.png */,
+				060ED4BD29E3A14200E8EA58 /* img_27.png */,
+				060ED4BE29E3A14200E8EA58 /* img_23.png */,
+				060ED4BF29E3A14200E8EA58 /* img_22.png */,
+				060ED4C029E3A14200E8EA58 /* img_20.png */,
+				060ED4C129E3A14200E8EA58 /* img_21.png */,
+			);
+			path = happy;
+			sourceTree = "<group>";
+		};
+		060ED4E129E3A15000E8EA58 /* loading */ = {
+			isa = PBXGroup;
+			children = (
+				060ED4E229E3A15000E8EA58 /* anim_loading_5.png */,
+				060ED4E329E3A15000E8EA58 /* anim_loading_4.png */,
+				060ED4E429E3A15000E8EA58 /* anim_loading_6.png */,
+				060ED4E529E3A15000E8EA58 /* anim_loading_3.png */,
+				060ED4E629E3A15000E8EA58 /* anim_loading_2.png */,
+				060ED4E729E3A15000E8EA58 /* anim_loading_0.png */,
+				060ED4E829E3A15000E8EA58 /* anim_loading_1.png */,
+			);
+			path = loading;
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* MibancoMovil */ = {
+			isa = PBXGroup;
+			children = (
+				06AC48B529E9BE9C00989841 /* main.jsbundle */,
+				06D4895029E9A45B00FCAE7C /* MibancoMovil.entitlements */,
+				0671A8E229DDECDB00CB537C /* Firebase */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				0671A8E029DDEC1000CB537C /* Sample.swift */,
+				0671A8DF29DDEC1000CB537C /* MibancoMovil-Bridging-Header.h */,
+			);
+			name = MibancoMovil;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-MibancoMovil.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-MibancoMovil-MibancoMovilTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* MibancoMovil */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* MibancoMovilTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				B59DE9BC202B4A61AD3F29B8 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* MibancoMovil.app */,
+				00E356EE1AD99517003FC87E /* MibancoMovilTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B59DE9BC202B4A61AD3F29B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				060ED4A129E3A12C00E8EA58 /* lottie */,
+				A40A99C7379B4D92BCD2D9B5 /* Brevia-Black.otf */,
+				127B615B0E9F48E4952F5793 /* Brevia-BlackItalic.otf */,
+				478472CED9EE4DCCAC65AD85 /* Brevia-Bold.otf */,
+				1EED2D2B4DDA4EB9A5AAAD8D /* Brevia-BoldItalic.otf */,
+				7310FA9442A74198B34C9AD4 /* Brevia-ExtraBlack.otf */,
+				80DD8DDB817D4A589A189E47 /* Brevia-ExtraBlackItalic.otf */,
+				036E5360AB414865A594690B /* Brevia-Light.otf */,
+				5919F7562B8343C0A787C5FF /* Brevia-LightItalic.otf */,
+				F0BF8DF21C6043599DBC4601 /* Brevia-Medium.otf */,
+				1FE18A8597C04287AE744C3E /* Brevia-MediumItalic.otf */,
+				C20C8E8E1C5A47CBAFECD89D /* Brevia-Regular.otf */,
+				30272ED7A5F74BF48EB430C4 /* Brevia-RegularItalic.otf */,
+				8F8D119DB2B34342A8B3438B /* Brevia-SemiBold.otf */,
+				914EB66356214348AD086E96 /* Brevia-SemiBoldItalic.otf */,
+				655B9D6717184B74AB5EE0A6 /* Roboto-Black.ttf */,
+				1474C179792C4F6C9E8207E8 /* Roboto-Bold.ttf */,
+				7C0435E5E2364FCF86D9C5CF /* Roboto-Medium.ttf */,
+				AEAA706697E64C7BB53DB74C /* Roboto-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-MibancoMovil.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-MibancoMovil.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-MibancoMovil-MibancoMovilTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-MibancoMovil-MibancoMovilTests.release.xcconfig */,
+				3D5E209F2EC3CB03F793F227 /* Pods-MibancoMovil.qa.xcconfig */,
+				671635F649547AB45D86DA6E /* Pods-MibancoMovil.dev.xcconfig */,
+				EE19BF3EB1E4F297E5214D8E /* Pods-MibancoMovil-MibancoMovilTests.qa.xcconfig */,
+				E28C7BA24B1D5F248BF03F85 /* Pods-MibancoMovil-MibancoMovilTests.dev.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* MibancoMovilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MibancoMovilTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = MibancoMovilTests;
+			productName = MibancoMovilTests;
+			productReference = 00E356EE1AD99517003FC87E /* MibancoMovilTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* MibancoMovil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MibancoMovil" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				0671A8E429DDED1100CB537C /* Setup Firebase Enviroment */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				9B6896F0E525A47321F5E1FB /* [CP-User] [RNFB] Core Configuration */,
+				19000F7313AF461823D123CB /* [CP-User] [RNFB] Crashlytics Configuration */,
+				B4AFB3E71CF695C89EA57646 /* [CP-User] [instabug-reactnative] Upload Sourcemap */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MibancoMovil;
+			productName = MibancoMovil;
+			productReference = 13B07F961A680F5B00A75B9A /* MibancoMovil.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1320;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MibancoMovil" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* MibancoMovil */,
+				00E356ED1AD99517003FC87E /* MibancoMovilTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				060ED4CF29E3A14200E8EA58 /* img_15.png in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				0671A8E329DDECDB00CB537C /* Firebase in Resources */,
+				75A54201E0734021A1777789 /* Brevia-Black.otf in Resources */,
+				2923AB8F2DCC483F88EA484F /* Brevia-BlackItalic.otf in Resources */,
+				060ED4D729E3A14200E8EA58 /* img_9.png in Resources */,
+				E1A653E0313345ABB1D88403 /* Brevia-Bold.otf in Resources */,
+				060ED4CA29E3A14200E8EA58 /* img_16.png in Resources */,
+				060ED4D029E3A14200E8EA58 /* img_4.png in Resources */,
+				060ED4D529E3A14200E8EA58 /* img_19.png in Resources */,
+				060ED4DB29E3A14200E8EA58 /* img_26.png in Resources */,
+				060ED4EB29E3A15000E8EA58 /* anim_loading_6.png in Resources */,
+				2028035818074E1B87F2FE49 /* Brevia-BoldItalic.otf in Resources */,
+				060ED4CD29E3A14200E8EA58 /* img_17.png in Resources */,
+				060ED4D329E3A14200E8EA58 /* img_28.png in Resources */,
+				060ED4D829E3A14200E8EA58 /* img_18.png in Resources */,
+				060ED4EA29E3A15000E8EA58 /* anim_loading_4.png in Resources */,
+				0F80357C313C4BB6A2B11C30 /* Brevia-ExtraBlack.otf in Resources */,
+				060ED4D629E3A14200E8EA58 /* img_8.png in Resources */,
+				060ED4DC29E3A14200E8EA58 /* img_27.png in Resources */,
+				060ED4EF29E3A15000E8EA58 /* anim_loading_1.png in Resources */,
+				060ED4DA29E3A14200E8EA58 /* img_24.png in Resources */,
+				060ED4C429E3A14200E8EA58 /* img_0.png in Resources */,
+				060ED4C329E3A14200E8EA58 /* img_1.png in Resources */,
+				060ED4ED29E3A15000E8EA58 /* anim_loading_2.png in Resources */,
+				6718B30554864DEAA7410B65 /* Brevia-ExtraBlackItalic.otf in Resources */,
+				060ED4D429E3A14200E8EA58 /* img_25.png in Resources */,
+				3BFC062BA4D8440B986E20F0 /* Brevia-Light.otf in Resources */,
+				060ED4C229E3A14200E8EA58 /* img_10.png in Resources */,
+				060ED4CC29E3A14200E8EA58 /* img_6.png in Resources */,
+				060ED4D229E3A14200E8EA58 /* img_14.png in Resources */,
+				D2C13C38EB88479FA0C5B9D9 /* Brevia-LightItalic.otf in Resources */,
+				060ED4D929E3A14200E8EA58 /* img_30.png in Resources */,
+				00097F9818854E24B599036B /* Brevia-Medium.otf in Resources */,
+				060ED4EC29E3A15000E8EA58 /* anim_loading_3.png in Resources */,
+				060ED4DF29E3A14200E8EA58 /* img_20.png in Resources */,
+				060ED4C829E3A14200E8EA58 /* img_3.png in Resources */,
+				3612FB8D030C4CA6837AC9EB /* Brevia-MediumItalic.otf in Resources */,
+				060ED4CE29E3A14200E8EA58 /* img_29.png in Resources */,
+				060ED4C529E3A14200E8EA58 /* img_11.png in Resources */,
+				060ED4C929E3A14200E8EA58 /* img_12.png in Resources */,
+				060ED4C729E3A14200E8EA58 /* img_2.png in Resources */,
+				060ED4EE29E3A15000E8EA58 /* anim_loading_0.png in Resources */,
+				B809429C07DD4E75AFA6DF84 /* Brevia-Regular.otf in Resources */,
+				4E7748EFDF2B411D806BEF84 /* Brevia-RegularItalic.otf in Resources */,
+				060ED4E929E3A15000E8EA58 /* anim_loading_5.png in Resources */,
+				060ED4E029E3A14200E8EA58 /* img_21.png in Resources */,
+				29721C2D55AB47D28398C292 /* Brevia-SemiBold.otf in Resources */,
+				44E17D0D937F4067B5868E6B /* Brevia-SemiBoldItalic.otf in Resources */,
+				060ED4DE29E3A14200E8EA58 /* img_22.png in Resources */,
+				060ED4D129E3A14200E8EA58 /* img_5.png in Resources */,
+				A3B5FE03A0FD43BAB4658147 /* Roboto-Black.ttf in Resources */,
+				6CE6C7A8AE11461288CDD7E1 /* Roboto-Bold.ttf in Resources */,
+				060ED4C629E3A14200E8EA58 /* img_13.png in Resources */,
+				3F24B483371B489E94FADE18 /* Roboto-Medium.ttf in Resources */,
+				060ED4CB29E3A14200E8EA58 /* img_7.png in Resources */,
+				060ED4DD29E3A14200E8EA58 /* img_23.png in Resources */,
+				57049EFBAFA74DCEB50CDC87 /* Roboto-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MibancoMovil/Pods-MibancoMovil-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MibancoMovil/Pods-MibancoMovil-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MibancoMovil/Pods-MibancoMovil-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0671A8E429DDED1100CB537C /* Setup Firebase Enviroment */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Setup Firebase Enviroment";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Name of the resource we're selectively copying\nGOOGLESERVICE_INFO_PLIST=GoogleService-Info.plist\n\n# Get references to dev and prod versions of the GoogleService-Info.plist\n# NOTE: These should only live on the file system and should NOT be part of the target (since we'll be adding them to the target manually)\nGOOGLESERVICE_INFO_DEV=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Dev/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_RELEASE=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Release/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_QA=${PROJECT_DIR}/${TARGET_NAME}/Firebase/QA/${GOOGLESERVICE_INFO_PLIST}\n\necho \"[RNCONFIG] CONF IS ${CONFIGURATION}\"\n\n# Make sure the dev version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_DEV}\"\nif [ ! -f $GOOGLESERVICE_INFO_DEV ]\nthen\necho \"No Dev GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Make sure the prod version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_QA}\"\nif [ ! -f $GOOGLESERVICE_INFO_QA ]\nthen\necho \"No QA GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Make sure the prod version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_RELEASE}\"\nif [ ! -f $GOOGLESERVICE_INFO_RELEASE ]\nthen\necho \"No Release GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Get a reference to the destination location for the GoogleService-Info.plist\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Will copy ${GOOGLESERVICE_INFO_PLIST} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy over the prod GoogleService-Info.plist for Release builds\nif [ \"${CONFIGURATION}\" == \"QA\" ]\nthen\necho \"Using ${GOOGLESERVICE_INFO_QA}\"\ncp \"${GOOGLESERVICE_INFO_QA}\" \"${PLIST_DESTINATION}\"\nexit 0\nfi\n\nif [ \"${CONFIGURATION}\" == \"Debug\" ]\nthen\necho \"Using ${GOOGLESERVICE_INFO_DEV}\"\ncp \"${GOOGLESERVICE_INFO_DEV}\" \"${PLIST_DESTINATION}\"\nexit 0\nfi\n\nif [ \"${CONFIGURATION}\" == \"DEV\" ]\nthen\necho \"Using ${GOOGLESERVICE_INFO_DEV}\"\ncp \"${GOOGLESERVICE_INFO_DEV}\" \"${PLIST_DESTINATION}\"\nexit 0\nfi\n\nif [ \"${CONFIGURATION}\" == \"Release\" ]\nthen\necho \"Using ${GOOGLESERVICE_INFO_RELEASE}\"\ncp \"${GOOGLESERVICE_INFO_RELEASE}\" \"${PLIST_DESTINATION}\"\nexit 0\nfi\n";
+		};
+		19000F7313AF461823D123CB /* [CP-User] [RNFB] Crashlytics Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Crashlytics Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\nif [[ ${PODS_ROOT} ]]; then\n  echo \"info: Exec FirebaseCrashlytics Run from Pods\"\n  \"${PODS_ROOT}/FirebaseCrashlytics/run\"\nelse\n  echo \"info: Exec FirebaseCrashlytics Run from framework\"\n  \"${PROJECT_DIR}/FirebaseCrashlytics.framework/run\"\nfi\n";
+		};
+		9B6896F0E525A47321F5E1FB /* [CP-User] [RNFB] Core Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Core Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | /usr/bin/head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    if ! python3 --version >/dev/null 2>&1; then echo \"python3 not found, firebase.json file processing error.\" && exit 1; fi\n    _JSON_OUTPUT_BASE64=$(python3 -c 'import json,sys,base64;print(base64.b64encode(bytes(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"', '\"'rb'\"').read())['${_JSON_ROOT}']), '\"'utf-8'\"')).decode())' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.google_analytics_automatic_screen_reporting_enabled\n  _ANALYTICS_AUTO_SCREEN_REPORTING=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_automatic_screen_reporting_enabled\")\n  if [[ $_ANALYTICS_AUTO_SCREEN_REPORTING ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAutomaticScreenReportingEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_SCREEN_REPORTING\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MibancoMovil-MibancoMovilTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4AFB3E71CF695C89EA57646 /* [CP-User] [instabug-reactnative] Upload Sourcemap */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] [instabug-reactnative] Upload Sourcemap";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"../node_modules/instabug-reactnative/ios/upload_sourcemap.sh\"";
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MibancoMovil-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MibancoMovil-MibancoMovilTests/Pods-MibancoMovil-MibancoMovilTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MibancoMovil-MibancoMovilTests/Pods-MibancoMovil-MibancoMovilTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MibancoMovil-MibancoMovilTests/Pods-MibancoMovil-MibancoMovilTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MibancoMovil/Pods-MibancoMovil-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MibancoMovil/Pods-MibancoMovil-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MibancoMovil/Pods-MibancoMovil-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MibancoMovil-MibancoMovilTests/Pods-MibancoMovil-MibancoMovilTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MibancoMovil-MibancoMovilTests/Pods-MibancoMovil-MibancoMovilTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MibancoMovil-MibancoMovilTests/Pods-MibancoMovil-MibancoMovilTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* MibancoMovilTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				0671A8E129DDEC1000CB537C /* Sample.swift in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* MibancoMovil */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-MibancoMovil-MibancoMovilTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MibancoMovilTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MibancoMovil.app/MibancoMovil";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-MibancoMovil-MibancoMovilTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = MibancoMovilTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MibancoMovil.app/MibancoMovil";
+			};
+			name = Release;
+		};
+		06752A7A29DDDD4300B1358F /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = QA;
+		};
+		06752A7B29DDDD4300B1358F /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D5E209F2EC3CB03F793F227 /* Pods-MibancoMovil.qa.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MibancoMovil/MibancoMovil.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CURRENT_PROJECT_VERSION = 1000370;
+				DEVELOPMENT_TEAM = SHLF9JQ9DB;
+				DISPLAY_NAME = "Mibanco Móvil (QA)";
+				FB_APPID = 784865829726238;
+				FB_APPNAME = "Mi Banco App";
+				FB_CLIENT_TOKEN = 5cd72334d12b809e3ef842cb060ac7e2;
+				FB_URLSC = fb784865829726238;
+				INFOPLIST_FILE = MibancoMovil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.13.5;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mibanco.bancamovil.qa;
+				PRODUCT_NAME = MibancoMovil;
+				PROVISIONING_PROFILE_SPECIFIER = "com.mibanco.bancamovil.qa AdHoc";
+				SWIFT_OBJC_BRIDGING_HEADER = "MibancoMovil-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = QA;
+		};
+		06752A7C29DDDD4300B1358F /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE19BF3EB1E4F297E5214D8E /* Pods-MibancoMovil-MibancoMovilTests.qa.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = MibancoMovilTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MibancoMovil.app/MibancoMovil";
+			};
+			name = QA;
+		};
+		06752A8029DDDD6700B1358F /* DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = DEV;
+		};
+		06752A8129DDDD6700B1358F /* DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 671635F649547AB45D86DA6E /* Pods-MibancoMovil.dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MibancoMovil/MibancoMovil.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1000370;
+				DEVELOPMENT_TEAM = SHLF9JQ9DB;
+				DISPLAY_NAME = "Mibanco Móvil (Dev)";
+				FB_APPID = 784865829726238;
+				FB_APPNAME = "Mi Banco App";
+				FB_CLIENT_TOKEN = 5cd72334d12b809e3ef842cb060ac7e2;
+				FB_URLSC = fb784865829726238;
+				INFOPLIST_FILE = MibancoMovil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
+					"$(inherited)",
+					"\"${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseABTesting\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCrashlytics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFunctions\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebasePerformance\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseRemoteConfig\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCTTypeSafety\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RN-custom-keyboard\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNCAsyncStorage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNDeviceInfo\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNFBAnalytics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNFBApp\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNFBCrashlytics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNFBDatabase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNFBFunctions\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNFBMessaging\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNFBPerf\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNFBRemoteConfig\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNGestureHandler\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNInstabug\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNPDF\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNReanimated\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNSVG\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNScreens\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNShare\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Codegen\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Core\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-CoreModules\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTAnimation\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTBlob\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTLinking\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTNetwork\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTSettings\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTText\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTVibration\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-bridging\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-hermes\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsi\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsiexecutor\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspector\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-logger\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-perflogger\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactNativeLocalization\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RealmJS\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Yoga\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YogaKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/fmt\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/glog\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/jail-monkey\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/libevent\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-react-native\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-fast-rsa\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-netinfo\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-pinch\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-safe-area-context\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-view-shot\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-webview\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/RealmJS\"",
+					/usr/lib/swift,
+				);
+				MARKETING_VERSION = 3.13.5;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mibanco.bancamovil.dev;
+				PRODUCT_NAME = MibancoMovil;
+				PROVISIONING_PROFILE_SPECIFIER = "com.mibanco.bancamovil.dev Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "MibancoMovil-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = DEV;
+		};
+		06752A8229DDDD6700B1358F /* DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28C7BA24B1D5F248BF03F85 /* Pods-MibancoMovil-MibancoMovilTests.dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = MibancoMovilTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MibancoMovil.app/MibancoMovil";
+			};
+			name = DEV;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-MibancoMovil.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MibancoMovil/MibancoMovil.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1000370;
+				DEVELOPMENT_TEAM = SHLF9JQ9DB;
+				DISPLAY_NAME = "Mibanco Móvil (Debug)";
+				ENABLE_BITCODE = NO;
+				FB_APPID = 784865829726238;
+				FB_APPNAME = "Mi Banco App";
+				FB_CLIENT_TOKEN = 5cd72334d12b809e3ef842cb060ac7e2;
+				FB_URLSC = fb784865829726238;
+				INFOPLIST_FILE = MibancoMovil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.13.5;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mibanco.bancamovil.dev;
+				PRODUCT_NAME = MibancoMovil;
+				PROVISIONING_PROFILE_SPECIFIER = "com.mibanco.bancamovil.dev Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "MibancoMovil-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-MibancoMovil.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MibancoMovil/MibancoMovil.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1000370;
+				DEVELOPMENT_TEAM = SHLF9JQ9DB;
+				DISPLAY_NAME = "Mibanco Móvil";
+				FB_APPID = 398114181021216;
+				FB_APPNAME = "Banca Movil Mibanco";
+				FB_CLIENT_TOKEN = 2a571aa7883088d940d8123524571e90;
+				FB_URLSC = fb398114181021216;
+				INFOPLIST_FILE = MibancoMovil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.13.5;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mibanco.bancamovil;
+				PRODUCT_NAME = MibancoMovil;
+				PROVISIONING_PROFILE_SPECIFIER = "com.mibanco.bancamovil AppStore";
+				SWIFT_OBJC_BRIDGING_HEADER = "MibancoMovil-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MibancoMovilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+				06752A7C29DDDD4300B1358F /* QA */,
+				06752A8229DDDD6700B1358F /* DEV */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MibancoMovil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+				06752A7B29DDDD4300B1358F /* QA */,
+				06752A8129DDDD6700B1358F /* DEV */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MibancoMovil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+				06752A7A29DDDD4300B1358F /* QA */,
+				06752A8029DDDD6700B1358F /* DEV */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

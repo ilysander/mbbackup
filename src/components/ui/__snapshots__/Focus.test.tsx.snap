@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="focus_inactive"
+  duration={300}
+  style={
+    Array [
+      Object {
+        "marginLeft": -20,
+        "marginRight": -20,
+        "paddingLeft": 20,
+        "paddingRight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  />
+  <View
+    accessibilityLabel="focus_toggle"
+    activeOpacity={1}
+    style={
+      Object {
+        "bottom": 0,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 100,
+      }
+    }
+  />
+</View>
+`;

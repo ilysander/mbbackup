@@ -1,0 +1,12 @@
+export default {
+  ACCOUNT_NAME: '<<ACCOUNT_NAME>>',
+  ACCOUNT_NUMBER: '<<ACCOUNT_NUMBER>>',
+  CCI: '<<CCI>>',
+  CCITEXT: '<<CCITEXT>>',
+  MN: ' MN ',
+  ME: ' ME ',
+  GLOSA: '<<GLOSA>>',
+  AMOUNT: '<<AMOUNT>>',
+  DATE_MOVEMENT: '<<DATE_MOVEMENT>>',
+  MOVEMENT_NOTE: '<<MOVEMENT_NOTE>>',
+};

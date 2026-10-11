@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="headerlanding"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F7F9FC",
+    }
+  }
+>
+  <Image
+    accessibilityLabel="headerlanding_cover"
+    fadeDuration={400}
+    resizeMode="cover"
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/header-background-gradient-shadow.png",
+      }
+    }
+    style={
+      Object {
+        "height": 90,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "height": 87,
+        "justifyContent": "center",
+        "position": "absolute",
+      }
+    }
+  >
+    <Image
+      accessibilityLabel="headerlanding_logo"
+      fadeDuration={200}
+      resizeMode="cover"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/logo-colorful.png",
+        }
+      }
+      style={
+        Object {
+          "alignSelf": "flex-start",
+          "bottom": 5,
+          "height": 45,
+          "width": 96,
+        }
+      }
+    />
+  </View>
+</View>
+`;

@@ -1,0 +1,1068 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`session render just view 1`] = `
+<View
+  accessibilityLabel="container"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 100,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#F7F9FC",
+          "height": 25,
+          "left": 0,
+          "overflow": "visible",
+          "position": "absolute",
+          "right": 0,
+          "top": -20,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFD100",
+              "borderBottomLeftRadius": 20,
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "right": 60,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      accessibilityLabel="formsteps"
+      style={
+        Object {
+          "alignSelf": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="formsteps_step_1"
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+            },
+            Object {
+              "zIndex": 3,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="formsteps_indicator"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 22,
+                "justifyContent": "center",
+                "paddingBottom": 4,
+                "position": "relative",
+                "width": 34,
+              },
+              Object {
+                "height": 30,
+                "paddingBottom": 0,
+                "width": 40,
+              },
+              undefined,
+            ]
+          }
+        >
+          <Image
+            resizeMode="stretch"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/step-flag.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 22,
+                  "left": 0,
+                  "position": "absolute",
+                  "tintColor": "#E6E9ED",
+                  "top": 0,
+                  "width": 34,
+                },
+                Object {
+                  "tintColor": "#FFD100",
+                },
+                Object {
+                  "height": 30,
+                  "width": 40,
+                },
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#AAB2BD",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                  "textAlign": "center",
+                },
+                Object {
+                  "color": "#434A54",
+                },
+                Object {
+                  "fontSize": 22,
+                  "top": -2,
+                },
+              ]
+            }
+          >
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="formsteps_step_2"
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+            },
+            Object {
+              "zIndex": 2,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="formsteps_split"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#E6E9ED",
+                "height": 5,
+                "marginHorizontal": -4,
+                "overflow": "hidden",
+                "width": 80,
+              },
+              undefined,
+              Object {
+                "width": 284,
+              },
+              false,
+            ]
+          }
+        />
+        <View
+          accessibilityLabel="formsteps_indicator"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 22,
+                "justifyContent": "center",
+                "paddingBottom": 4,
+                "position": "relative",
+                "width": 34,
+              },
+              false,
+              undefined,
+            ]
+          }
+        >
+          <Image
+            resizeMode="stretch"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/step-flag.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 22,
+                  "left": 0,
+                  "position": "absolute",
+                  "tintColor": "#E6E9ED",
+                  "top": 0,
+                  "width": 34,
+                },
+                false,
+                false,
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#AAB2BD",
+                  "fontFamily": "Brevia",
+                  "fontSize": 13,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                  "textAlign": "center",
+                },
+                false,
+                false,
+              ]
+            }
+          >
+            2
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="formsteps_step_3"
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+            },
+            Object {
+              "zIndex": 1,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityLabel="formsteps_split"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#E6E9ED",
+                "height": 5,
+                "marginHorizontal": -4,
+                "overflow": "hidden",
+                "width": 80,
+              },
+              undefined,
+              Object {
+                "width": 284,
+              },
+              false,
+            ]
+          }
+        />
+        <View
+          accessibilityLabel="formsteps_indicator"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 22,
+                "justifyContent": "center",
+                "paddingBottom": 4,
+                "position": "relative",
+                "width": 34,
+              },
+              false,
+              undefined,
+            ]
+          }
+        >
+          <Image
+            resizeMode="stretch"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/step-flag.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 22,
+                  "left": 0,
+                  "position": "absolute",
+                  "tintColor": "#E6E9ED",
+                  "top": 0,
+                  "width": 34,
+                },
+                false,
+                false,
+              ]
+            }
+          />
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/icon-check.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "bottom": -1,
+                  "height": 8,
+                  "tintColor": "#AAB2BD",
+                  "width": 14,
+                },
+                false,
+                false,
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <RCTSafeAreaView
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="morecontainer"
+      style={
+        Object {
+          "flex": 1,
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="keyboardavoidingview"
+        onChangeDimensions={[Function]}
+        style={
+          Array [
+            Object {
+              "position": "relative",
+              "width": "100%",
+            },
+            Object {
+              "flex": 1,
+              "position": "relative",
+            },
+            false,
+            undefined,
+          ]
+        }
+      >
+        <RCTScrollView
+          accessibilityLabel="keyboardavoidingview_scrollview"
+          contentContainerStyle={
+            Array [
+              Object {
+                "minHeight": 1220,
+              },
+              false,
+            ]
+          }
+          keyboardShouldPersistTaps="handled"
+          onContentSizeChange={[Function]}
+          onLayout={[Function]}
+          onScroll={[Function]}
+          scrollEventThrottle={100}
+        >
+          <View>
+            <View
+              accessibilityLabel="content"
+              style={
+                Array [
+                  Object {
+                    "paddingHorizontal": 20,
+                  },
+                  false,
+                  Object {
+                    "flex": 1,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                accessibilityLabel="updateemailstartscreen_header_title"
+                style={
+                  Array [
+                    Object {
+                      "overflow": "visible",
+                    },
+                    Object {
+                      "marginBottom": 20,
+                      "marginTop": 30,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    accessibilityLabel="header_text_title"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#00964B",
+                          "fontFamily": "Brevia",
+                          "fontSize": 22,
+                          "fontStyle": "normal",
+                          "fontWeight": "700",
+                          "lineHeight": 25,
+                          "textAlign": "left",
+                        },
+                        undefined,
+                        Object {
+                          "textAlign": "center",
+                        },
+                        Object {
+                          "fontSize": 22,
+                        },
+                      ]
+                    }
+                  >
+                    Cambia tu correo
+electrónico registrado
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "position": "relative",
+                      },
+                      Object {
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                      },
+                      false,
+                    ]
+                  }
+                />
+              </View>
+              <View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#3FB4E5",
+                        "borderRadius": 12,
+                        "borderWidth": 1,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "marginBottom": -2.2,
+                        "paddingHorizontal": 10,
+                        "paddingVertical": 14,
+                      },
+                      Object {
+                        "elevation": 2,
+                        "shadowColor": "rgba(0,0,0,0.2)",
+                        "shadowOffset": Object {
+                          "height": 3,
+                          "width": 0,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 2,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "flex": 3.5,
+                      }
+                    }
+                  >
+                    <Image
+                      source={
+                        Object {
+                          "testUri": "../../../src/assets/images/adn-mujer-senalando.png",
+                        }
+                      }
+                      style={
+                        Object {
+                          "height": 60,
+                          "marginRight": 10,
+                          "resizeMode": "contain",
+                          "width": 64.55,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "flex": 10,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#3FB4E5",
+                            "fontFamily": "Brevia",
+                            "fontSize": 13,
+                            "fontStyle": "normal",
+                            "fontWeight": "500",
+                          },
+                        ]
+                      }
+                    >
+                      <Text>
+                        Para realizar tus operaciones en Mibanco, siempre ten actualizado tu correo electrónico y recibe tus constancias, documentos y más.
+                      </Text>
+                    </Text>
+                  </View>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "elevation": 2,
+                        "shadowColor": "rgba(0,0,0,0.2)",
+                        "shadowOffset": Object {
+                          "height": 3,
+                          "width": 0,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 2,
+                      },
+                    ]
+                  }
+                >
+                  <RNSVGSvgView
+                    bbHeight="16"
+                    bbWidth="100%"
+                    focusable={false}
+                    height="16"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderWidth": 0,
+                        },
+                        Object {
+                          "flex": 0,
+                          "height": 16,
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                    width="100%"
+                  >
+                    <RNSVGGroup
+                      fill={
+                        Object {
+                          "payload": 4278190080,
+                          "type": 0,
+                        }
+                      }
+                    >
+                      <RNSVGPath
+                        d="M15 1 41 1 27.5 16z"
+                        fill={
+                          Object {
+                            "payload": 4282365157,
+                            "type": 0,
+                          }
+                        }
+                        propList={
+                          Array [
+                            "fill",
+                            "strokeWidth",
+                          ]
+                        }
+                        strokeWidth="0"
+                      />
+                      <RNSVGPath
+                        d="M16 0 40 0 27.5 14z"
+                        fill={
+                          Object {
+                            "payload": 4294967295,
+                            "type": 0,
+                          }
+                        }
+                        propList={
+                          Array [
+                            "fill",
+                            "strokeWidth",
+                          ]
+                        }
+                        strokeWidth="0"
+                      />
+                    </RNSVGGroup>
+                  </RNSVGSvgView>
+                </View>
+              </View>
+              <View
+                accessibilityLabel="card"
+                removeClippedSubviews={false}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderColor": "#E6E9ED",
+                      "borderRadius": 12,
+                      "borderWidth": 0,
+                      "elevation": 3,
+                      "overflow": "visible",
+                      "shadowColor": "#434A54",
+                      "shadowOffset": Object {
+                        "height": 4,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.1,
+                      "shadowRadius": 16,
+                    },
+                    Object {
+                      "padding": 20,
+                    },
+                    Object {
+                      "marginTop": 5,
+                      "paddingBottom": 0,
+                      "paddingTop": 20,
+                    },
+                  ]
+                }
+              >
+                <View>
+                  <Text
+                    accessibilityLabel="updateemailstartscreen_text_addmail_title"
+                    style={
+                      Object {
+                        "color": "#434A54",
+                        "fontFamily": "Brevia",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "400",
+                      }
+                    }
+                  >
+                    Correo electrónico registrado
+                  </Text>
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#E6E9ED",
+                          "height": 1,
+                        },
+                        Object {
+                          "height": 1,
+                          "marginVertical": 15,
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  />
+                </View>
+                <Text
+                  accessibilityLabel="updateemailstartscreen_text_addmail_title"
+                  style={
+                    Object {
+                      "color": "#434A54",
+                      "fontFamily": "Brevia",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  Ingresa tu nuevo correo electrónico
+                </Text>
+                <View
+                  accessibilityLabel="updateemailstartscreen_textinputmasked_email_container"
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "column",
+                        "marginBottom": 20,
+                        "marginTop": 10,
+                        "position": "relative",
+                      },
+                      Object {
+                        "marginTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    accessibilityLabel="textinput_label_container"
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "paddingBottom": 4,
+                        },
+                        false,
+                        undefined,
+                      ]
+                    }
+                  />
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "position": "relative",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <TextInput
+                      accessibilityLabel="updateemailstartscreen_textinputmasked_email"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect={false}
+                      blurOnSubmit={true}
+                      editable={true}
+                      onBlur={[Function]}
+                      onChangeText={[Function]}
+                      onEmptyState={[Function]}
+                      onError={[Function]}
+                      onFocus={[Function]}
+                      onSubmitEditing={[Function]}
+                      placeholder="Ej. ejemplo@mail.com"
+                      placeholderTextColor="#AAB2BD"
+                      returnKeyType="done"
+                      selectionColor="#3FB4E5"
+                      style={
+                        Array [
+                          Object {
+                            "backgroundColor": "#F7F9FC",
+                            "borderColor": "#E6E9ED",
+                            "borderRadius": 12,
+                            "borderWidth": 1,
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 15,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "paddingBottom": 10,
+                            "paddingLeft": 10,
+                            "paddingRight": 8,
+                            "paddingTop": 10,
+                            "textDecorationLine": "none",
+                          },
+                          false,
+                          false,
+                          false,
+                          Object {
+                            "paddingRight": 30,
+                          },
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "height": 40,
+                            "lineHeight": 19,
+                          },
+                        ]
+                      }
+                      underlineColorAndroid="transparent"
+                      value=""
+                    />
+                    <View
+                      style={
+                        Array [
+                          Object {
+                            "position": "absolute",
+                            "right": -30,
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                  </View>
+                </View>
+                <Text
+                  accessibilityLabel="updateemailstartscreen_text_addrepeatamail_title"
+                  style={
+                    Object {
+                      "color": "#434A54",
+                      "fontFamily": "Brevia",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  Repite tu nuevo correo electrónico
+                </Text>
+                <View
+                  accessibilityLabel="updateemailstartscreen_textinputmasked_repeatemail_container"
+                  style={
+                    Array [
+                      Object {
+                        "flexDirection": "column",
+                        "marginBottom": 20,
+                        "marginTop": 10,
+                        "position": "relative",
+                      },
+                      Object {
+                        "marginTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    accessibilityLabel="textinput_label_container"
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "paddingBottom": 4,
+                        },
+                        false,
+                        undefined,
+                      ]
+                    }
+                  />
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "position": "relative",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <TextInput
+                      accessibilityLabel="updateemailstartscreen_textinputmasked_repeatemail"
+                      autoCapitalize="none"
+                      autoCorrect={false}
+                      blurOnSubmit={true}
+                      editable={true}
+                      onBlur={[Function]}
+                      onChangeText={[Function]}
+                      onEmptyState={[Function]}
+                      onError={[Function]}
+                      onFocus={[Function]}
+                      onSubmitEditing={[Function]}
+                      placeholder="Ej. ejemplo@mail.com"
+                      placeholderTextColor="#AAB2BD"
+                      returnKeyType="done"
+                      selectionColor="#3FB4E5"
+                      style={
+                        Array [
+                          Object {
+                            "backgroundColor": "#F7F9FC",
+                            "borderColor": "#E6E9ED",
+                            "borderRadius": 12,
+                            "borderWidth": 1,
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 15,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "paddingBottom": 10,
+                            "paddingLeft": 10,
+                            "paddingRight": 8,
+                            "paddingTop": 10,
+                            "textDecorationLine": "none",
+                          },
+                          false,
+                          false,
+                          false,
+                          Object {
+                            "paddingRight": 30,
+                          },
+                          Object {
+                            "color": "#434A54",
+                            "fontFamily": "Brevia",
+                            "fontSize": 14,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "height": 40,
+                            "lineHeight": 19,
+                          },
+                        ]
+                      }
+                      underlineColorAndroid="transparent"
+                      value=""
+                    />
+                    <View
+                      style={
+                        Array [
+                          Object {
+                            "position": "absolute",
+                            "right": -30,
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 50,
+                    "marginTop": 30,
+                  }
+                }
+              >
+                <View
+                  accessibilityLabel="updateemailstartscreen_button_continue"
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#CCD1D9",
+                      "borderColor": "#CCD1D9",
+                      "borderRadius": 25,
+                      "borderWidth": 1,
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "margin": 0,
+                      "minHeight": 50,
+                      "opacity": 1,
+                      "paddingHorizontal": 12,
+                      "zIndex": 1,
+                    }
+                  }
+                >
+                  <Text
+                    accessibilityLabel="button_text"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "Brevia",
+                          "fontSize": 16,
+                          "fontStyle": "normal",
+                          "fontWeight": "600",
+                          "textAlign": "center",
+                        },
+                        undefined,
+                        undefined,
+                        undefined,
+                      ]
+                    }
+                  >
+                    Siguiente
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </RCTScrollView>
+        <View
+          accessibilityLabel="morecontainer_scrollmore"
+          collapsable={false}
+          style={
+            Object {
+              "bottom": -100,
+              "opacity": 0,
+              "position": "absolute",
+              "right": 0,
+              "zIndex": 1000,
+            }
+          }
+        >
+          <View
+            accessibilityLabel="scrollmore_button"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+                "opacity": 1,
+              }
+            }
+          >
+            <Image
+              accessibilityLabel="scrollmore_image"
+              source={
+                Object {
+                  "testUri": "../../../src/assets/images/arrow-show-more-icon.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 70,
+                  "width": 70,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTSafeAreaView>
+</View>
+`;

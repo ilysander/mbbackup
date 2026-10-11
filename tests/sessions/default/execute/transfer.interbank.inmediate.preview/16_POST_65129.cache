@@ -1,0 +1,26 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/transfer.interbank.inmediate.preview/16",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "debitAccount": "",
+      "amount": {
+        "currency": "",
+        "quantity": ""
+      },
+      "transferReason": "",
+      "destinationAccount": "",
+      "mail": ""
+    }
+  },
+  "response": {
+    "statusCode": 404,
+    "headers": {},
+    "body": {}
+  }
+}

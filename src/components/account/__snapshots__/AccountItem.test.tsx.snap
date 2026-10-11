@@ -1,0 +1,313 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "opacity": 1,
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="accountitem_name"
+        style={
+          Object {
+            "color": "#434A54",
+            "fontFamily": "Brevia",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="accountitem_balance"
+          style={
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "600",
+            }
+          }
+        />
+        <Text
+          accessibilityLabel="accountitem_balance_description"
+          style={
+            Object {
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <Image
+    accessibilityLabel="accountitem_more_icon"
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/arrow-icon.png",
+      }
+    }
+    style={
+      Object {
+        "height": 12,
+        "marginLeft": 5,
+        "tintColor": "#AAB2BD",
+        "width": 6,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`render with propsWithAccountCTS 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "opacity": 1,
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="accountitem_name"
+        style={
+          Object {
+            "color": "#434A54",
+            "fontFamily": "Brevia",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="accountitem_balance"
+          style={
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "600",
+            }
+          }
+        />
+        <Text
+          accessibilityLabel="accountitem_balance_description"
+          style={
+            Object {
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <Image
+    accessibilityLabel="accountitem_more_icon"
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/arrow-icon.png",
+      }
+    }
+    style={
+      Object {
+        "height": 12,
+        "marginLeft": 5,
+        "tintColor": "#AAB2BD",
+        "width": 6,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`render with propsWithDeposit 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "opacity": 1,
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        accessibilityLabel="accountitem_name"
+        style={
+          Object {
+            "color": "#434A54",
+            "fontFamily": "Brevia",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="accountitem_balance"
+          style={
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "600",
+            }
+          }
+        />
+        <Text
+          accessibilityLabel="accountitem_balance_description"
+          style={
+            Object {
+              "color": "#656D78",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <Image
+    accessibilityLabel="accountitem_more_icon"
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/arrow-icon.png",
+      }
+    }
+    style={
+      Object {
+        "height": 12,
+        "marginLeft": 5,
+        "tintColor": "#AAB2BD",
+        "width": 6,
+      }
+    }
+  />
+</View>
+`;

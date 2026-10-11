@@ -1,0 +1,79 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/loans.listStatements",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "idLoan": "16115071",
+      "currency": "1"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {},
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "e53a6d0cb6fd4be48e18e679c82be150",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "moreStatements": false,
+        "pageNumber": 1,
+        "statements": [
+          {
+            "id": 179,
+            "note": null,
+            "fee": 34,
+            "dueDate": "2018-07-16T00:00:00.000-0500",
+            "paymentDate": "2018-07-16T00:00:00.000-0500",
+            "amount": 1138.21,
+            "totalAmount": 0,
+            "status": "DUE",
+            "closeDueDate": false,
+            "showPendingFee": 0
+          },
+          {
+            "id": 180,
+            "note": null,
+            "fee": 35,
+            "dueDate": "2018-08-14T00:00:00.000-0500",
+            "paymentDate": "2018-08-14T00:00:00.000-0500",
+            "amount": 1139.1,
+            "totalAmount": 0,
+            "status": "DUE",
+            "closeDueDate": false,
+            "showPendingFee": 0
+          },
+          {
+            "id": 181,
+            "note": null,
+            "fee": 36,
+            "dueDate": "2018-09-14T00:00:00.000-0500",
+            "paymentDate": "2018-09-14T00:00:00.000-0500",
+            "amount": 1141.23,
+            "totalAmount": 0,
+            "status": "DUE",
+            "closeDueDate": false,
+            "showPendingFee": 0
+          },
+          {
+            "id": 182,
+            "note": null,
+            "fee": 36,
+            "dueDate": "2018-09-14T00:00:00.000-0500",
+            "paymentDate": "2018-09-14T00:00:00.000-0500",
+            "amount": 1141.23,
+            "totalAmount": 0,
+            "status": "PENDING",
+            "closeDueDate": true,
+            "showPendingFee": 1
+          }
+        ],
+        "currency": "1"
+      }
+    }
+  }
+}

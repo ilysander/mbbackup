@@ -1,0 +1,35 @@
+{
+  "name": "@react-native-agconnect/crash",
+  "title": "AGConnect Crash",
+  "version": "1.2.0",
+  "description": "React Native AGConnect Crash Kit",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "private": false,
+  "scripts": {
+    "test": "jest",
+    "build:clean": "rimraf android/build"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "agconnect",
+    "crash"
+  ],
+  "license": "Apache License 2.0",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-native": ">=0.60.0-rc.0 <1.0.x"
+  },
+  "dependencies": {
+    "stacktrace-js": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^26.3.0",
+    "react": "^16.9.0",
+    "react-native": "^0.61.5",
+    "ts-jest": "^26.3.0"
+  }
+}

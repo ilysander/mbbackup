@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay_container"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "zIndex": 10,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessibilityLabel="circularcheck_button"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "opacity": 1,
+      }
+    }
+  >
+    <Image
+      accessibilityLabel="circularcheck_image_unchecked"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/radio-button-unselected.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 24,
+            "width": 24,
+          },
+          Object {
+            "tintColor": "#656D78",
+          },
+          undefined,
+        ]
+      }
+    />
+    <Text
+      accessibilityLabel="circularcheck_text"
+      style={
+        Array [
+          Object {
+            "color": "#656D78",
+            "flex": 1,
+            "fontFamily": "Brevia",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+            "marginLeft": 20,
+          },
+          undefined,
+          Object {
+            "color": "#F28F00",
+          },
+          false,
+        ]
+      }
+    >
+      example
+    </Text>
+  </View>
+</View>
+`;

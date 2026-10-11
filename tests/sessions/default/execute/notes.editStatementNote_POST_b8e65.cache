@@ -1,0 +1,37 @@
+{
+  "duration": 0,
+  "request": {
+    "url": "https://server/api/execute/notes.editStatementNote",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "authorization": "sample"
+    },
+    "body": {
+      "idProduct": "31240209",
+      "idStatement": "290907792",
+      "note": "test"
+    }
+  },
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS, DELETE",
+      "access-control-allow-headers": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "163",
+      "date": "Tue, 23 Oct 2018 15:19:48 GMT",
+      "connection": "close"
+    },
+    "body": {
+      "code": "COR000I",
+      "idTransaction": "a56d5a1df3dc4351841ad3140b80d1ca",
+      "message": "Operación ejecutada con éxito",
+      "data": {
+        "note": ""
+      }
+    }
+  }
+}

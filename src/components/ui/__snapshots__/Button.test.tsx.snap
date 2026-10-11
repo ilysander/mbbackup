@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="confirmationsendingmessage_text_set_mail"
+  activeOpacity={0.2}
+  analyticsParams="Sample"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 25,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "margin": 0,
+        "minHeight": 40,
+        "paddingHorizontal": 12,
+        "zIndex": 1,
+      },
+      Array [
+        Object {
+          "backgroundColor": "#00964B",
+          "borderColor": "#00964B",
+        },
+      ],
+      undefined,
+      undefined,
+      undefined,
+      false,
+    ]
+  }
+>
+  <Text
+    accessibilityLabel="button_text"
+    style={
+      Array [
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Brevia",
+          "fontSize": 16,
+          "fontStyle": "normal",
+          "fontWeight": "600",
+          "textAlign": "center",
+        },
+        undefined,
+        undefined,
+        undefined,
+      ]
+    }
+  >
+    Sample
+  </Text>
+</View>
+`;

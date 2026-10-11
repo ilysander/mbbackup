@@ -1,0 +1,8 @@
+android/build/
+android/.gradle
+.project
+.settings
+docs/
+src/
+!android/src
+*.iml

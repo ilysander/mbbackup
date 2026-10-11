@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="modal_overlay"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={
+    Object {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 30,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 30,
+    }
+  }
+>
+  <Image
+    accessibilityLabel="buttonexternal_image"
+    source={5}
+    style={
+      Array [
+        Object {
+          "height": 16,
+          "tintColor": "#434A54",
+          "width": 16,
+        },
+        Object {
+          "height": 20,
+          "width": 20,
+        },
+      ]
+    }
+  />
+</View>
+`;

@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="test"
+  activeOpacity={1}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "padding": 10,
+      },
+      Object {
+        "borderColor": "#3FB4E5",
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    accessibilityLabel="infomessage_icon"
+    resizeMode="contain"
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/info-icon.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "height": 21,
+          "marginRight": 10,
+          "width": 21,
+        },
+        Object {
+          "tintColor": "#3FB4E5",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      accessibilityLabel="infomessage_text_content"
+      style={
+        Array [
+          Object {
+            "fontFamily": "Brevia",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "lineHeight": 15,
+          },
+          Object {
+            "color": "#3FB4E5",
+          },
+        ]
+      }
+    >
+      test
+    </Text>
+  </View>
+</View>
+`;

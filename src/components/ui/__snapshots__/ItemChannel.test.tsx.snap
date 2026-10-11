@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  accessibilityLabel="accessibilityLabel_test"
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/cable-icon.png",
+      }
+    }
+  />
+  <Text
+    accessibilityLabel="ItemChannel_text_type"
+  >
+    FistLabel
+  </Text>
+  <Text
+    accessibilityLabel="ItemChannel_text_item"
+  >
+    SecondLabel
+  </Text>
+</View>
+`;

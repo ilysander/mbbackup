@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  collapsable={false}
+  style={
+    Object {
+      "marginBottom": -60,
+      "opacity": 0,
+    }
+  }
+>
+  <View
+    accessibilityLabel="toastcenteritem"
+    onLayout={[Function]}
+  >
+    <View
+      accessibilityLabel="toast"
+      duration={4000}
+      onTimeout={[MockFunction]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#656D78",
+            "borderRadius": 5,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "padding": 20,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        accessibilityLabel="toast_content"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="toast_text_message"
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "500",
+            }
+          }
+        />
+      </View>
+      <View />
+    </View>
+  </View>
+</View>
+`;

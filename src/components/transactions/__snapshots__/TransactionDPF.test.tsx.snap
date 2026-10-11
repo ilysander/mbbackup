@@ -1,0 +1,956 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render just views 1`] = `
+<View
+  collapsable={false}
+  style={
+    Object {
+      "padding": 20,
+      "paddingBottom": 10,
+    }
+  }
+>
+  <View
+    accessibilityLabel="transactiondpf_title"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+    <View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+              },
+              Object {
+                "color": "#FAB500",
+                "fontFamily": "Brevia",
+                "fontSize": 20,
+                "fontStyle": "normal",
+                "fontWeight": "800",
+              },
+            ],
+          ]
+        }
+      >
+        S/ 350.00
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiondpf_list_detail"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+    <View
+      optional={true}
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FAB500",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            undefined,
+          ]
+        }
+      >
+        TREA 1.60%
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiondpf_panelitem_term_of_deposit_label"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactiondpf_panelitem_term_of_deposit_label"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+        >
+          Plazo del depósito
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        15 días
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiondpf_panelitem_date_of_deposit_label"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactiondpf_panelitem_date_of_deposit_label"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+        >
+          Fecha del abono (monto+interés)
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        27/02/2019
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiondpf_panelitem_frequency_of_deposit_of_interest_label"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactiondpf_panelitem_frequency_of_deposit_of_interest_label"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+        >
+          Frecuencia del abono de intereses
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        Al final del plazo
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiondpf_panelitem_interest_label"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactiondpf_panelitem_interest_label"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+        >
+          Interés a ganar
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        S/ 0.23
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiondpf_panelitem_origin_account_label"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactiondpf_panelitem_origin_account_label"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+        >
+          Mi cuenta de origen
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        Cuenta ahorro negocios (MN) - 2861209802
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiondpf_panelitem_destination_account_label"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactiondpf_panelitem_destination_account_label"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+        >
+          Mi cuenta de destino
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        Cuenta ahorro negocios (MN) - 2861209802
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiondpf_panelitem_transaction_number"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactiondpf_panelitem_transaction_number"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+        >
+          Número de operación
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        1020030
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="transactiondpf_panelitem_date"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignSelf": "flex-end",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessibilityLabel="transactiondpf_panelitem_date"
+          style={
+            Array [
+              Object {
+                "color": "#434A54",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              },
+              Object {
+                "color": "#656D78",
+                "fontFamily": "Brevia",
+                "fontSize": 13,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+        >
+          Fecha y hora
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#434A54",
+              "fontFamily": "Brevia",
+              "fontSize": 13,
+              "fontStyle": "normal",
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        12/02/2019 - 09:45A.M.
+      </Text>
+    </View>
+  </View>
+</View>
+`;
